@@ -25,7 +25,13 @@ require_once 'settings.php';
     <meta name="description" content="This is an example of a responsive HTML5 template, based on HTML5 boilerplate">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/screen.css">
-    <script src="js/modernizr-2.5.3.min.js"></script>
+    <script src="js/lib/modernizr-2.5.3.min.js"></script>
+    <script>
+        Modernizr.load({
+            test: Modernizr.flexbox,
+            nope: 'js/lib/flexie.min.js'
+        });
+    </script>
 </head>
 
 <body>
