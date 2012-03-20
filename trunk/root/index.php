@@ -30,15 +30,137 @@ require_once 'settings.php';
 
 <body>
     <header>
-        Header
+        <img src="images/logo.png" alt="Company Logo" />
+        Switch to <a href="#english"><img src="images/english.png" alt="English language"></a>
+
+        <nav role="navigation">
+            <ul id="main_nav">
+                <li id="menu_footer_link">
+                    <a href="#footermenu">Menu</a>
+                </li>
+                <li>
+                    <a href="inner_page.php">Products</a>
+                </li>
+                <li>
+                    <a href="inner_page.php">Services</a>
+                </li>
+                <li>
+                    <a href="inner_page.php">About us</a>
+                </li>
+                <li class="highlighted fixed">
+                    <a href="inner_page.php">Contact</a>
+                </li>
+                <li class="call_to_action fixed">
+                    <a href="inner_page.php">Buy now</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="slider">
+            <article class="slide">            
+                <h3>Highlight reel 1</h3>
+                <img src="images/examples/slide1.jpg" alt="Slide 1">
+                <p class="description">An awesome product description for this product</p>
+                <a href="#" class="readmore">Read more</a>
+            </article>
+            <article class="slide">
+                <h3>Highlight reel 2</h3>
+                <img src="images/examples/slide2.jpg" alt="Slide 2">
+                <p class="description">An awesome product description for this product</p>
+                <a href="#" class="readmore">Read more</a>
+            </article>
+            <article class="slide">
+                <h3>Highlight reel 3</h3>
+                <img src="images/examples/slide3.jpg" alt="Slide 3">
+                <p class="description">An awesome product description for this product</p>
+                <a href="#" class="readmore">Read more</a>
+            </article>
+            <article class="slide">
+                <h3>Highlight reel 4</h3>
+                <img src="images/examples/slide4.jpg" alt="Slide 4">
+                <p class="description">An awesome product description for this product</p>
+                <a href="#" class="readmore">Read more</a>
+            </article>
+            <article class="slide">
+                <h3>Highlight reel 5</h3>
+                <img src="images/examples/slide5.jpg" alt="Slide 5">
+                <p class="description">An awesome product description for this product</p>
+                <a href="#" class="readmore">Read more</a>
+            </article>
+        </section>
     </header>
     
-    <div role="main">
-        Main
-    </div>
+    <section role="main" id="product_categories">
+        <article class="product_category">
+            <h3>Fantastic product 1</h3>
+            <img src="images/examples/product1.jpg" alt="Product 1">
+            <p class="description">An awesome product description for this product</p>
+            <a href="#" class="readmore">Read more</a>
+        </article>
+        <article class="product_category">
+            <h3>Fantastic product 2</h3>
+            <img src="images/examples/product2.jpg" alt="Product 2">
+            <p class="description">An awesome product description for this product</p>
+            <a href="#" class="readmore">Read more</a>
+        </article>
+        <article class="product_category">
+            <h3>Fantastic product 3</h3>
+            <img src="images/examples/product3.jpg" alt="Product 3">
+            <p class="description">An awesome product description for this product</p>
+            <a href="#" class="readmore">Read more</a>
+        </article>
+        <article class="product_category">
+            <h3>Fantastic product 4</h3>
+            <img src="images/examples/product4.jpg" alt="Product 4">
+            <p class="description">An awesome product description for this product</p>
+            <a href="#" class="readmore">Read more</a>
+        </article>
+        <article class="product_category">
+            <h3>Fantastic product 5</h3>
+            <img src="images/examples/product5.jpg" alt="Product 5">
+            <p class="description">An awesome product description for this product</p>
+            <a href="#" class="readmore">Read more</a>
+        </article>
+    </section>
     
     <footer>
-        Footer
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Products</a>
+                    <ul>
+                        <li><a href="#">Product range 1</a></li>
+                        <li><a href="#">Product range 2</a></li>
+                        <li><a href="#">Product range 3</a></li>
+                        <li><a href="#">Product range 4</a></li>
+                        <li><a href="#">Product range 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Services 1</a></li>
+                        <li><a href="#">Services 2</a></li>
+                        <li><a href="#">Services 3</a></li>
+                        <li><a href="#">Services 4</a></li>
+                        <li><a href="#">Services 5</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                    <ul>
+                        <li><a href="#">Our philosophy</a></li>
+                        <li><a href="#">Meet the staff</a></li>
+                        <li><a href="#">Contact support</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        Contact
+        Map
+        Copyright
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
