@@ -39,7 +39,7 @@ if (false === $deps) {
 foreach ($deps as $name => $dep) 
 {
     $dep = array_map('trim', $dep);
-    if(!(isset($dep['git']) && !isset($dep['svn'])) || !isset($dep['version']) || !isset($dep['target'])) {
+    if(!(isset($dep['git']) || isset($dep['svn'])) || !isset($dep['version']) || !isset($dep['target'])) {
         exit("deps: Missing variables in [$name]".PHP_EOL);
     }
 
