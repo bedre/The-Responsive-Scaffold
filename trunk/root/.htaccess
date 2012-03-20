@@ -1,0 +1,3 @@
+# Hide Compass resources
+RedirectMatch 404 /config.rb(/|$)
+RedirectMatch 404 /sass(/|$)

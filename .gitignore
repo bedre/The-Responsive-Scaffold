@@ -1,10 +1,11 @@
-# SVN files #
-#############
+# SVN files
 .svn
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Other files
+.sass-cache
