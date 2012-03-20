@@ -1,0 +1,3 @@
+[submodule "trunk/vendor/normalize.css"]
+	path = trunk/vendor/normalize.css
+	url = https://github.com/necolas/normalize.css.git
