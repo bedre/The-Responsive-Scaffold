@@ -26,6 +26,12 @@ require_once 'settings.php';
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/screen.css">
     <script src="js/lib/modernizr-2.5.3.min.js"></script>
+    <script>
+        Modernizr.load({
+            test: Modernizr.mediaqueries,
+            nope: 'js/lib/respond.min.js'
+        });
+    </script>
 </head>
 
 <body>

@@ -1,3 +1,6 @@
 [submodule "trunk/vendor/normalize.css"]
 	path = trunk/vendor/normalize.css
 	url = https://github.com/necolas/normalize.css.git
+[submodule "trunk/vendor/respond.js"]
+	path = trunk/vendor/respond.js
+	url = https://github.com/scottjehl/Respond.git
