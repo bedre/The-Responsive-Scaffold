@@ -124,6 +124,7 @@ require_once 'settings.php';
     </section>
     
     <footer>
+        <a name="footermenu"></a>
         <nav>
             <ul>
                 <li>
@@ -158,6 +159,7 @@ require_once 'settings.php';
                 </li>
             </ul>
         </nav>
+
         Contact
         Map
         Copyright
