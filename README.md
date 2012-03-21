@@ -15,9 +15,8 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
     *  Medium: 1024px
     *  Large: 1440px
 
-    These can be configured in `_respond_to.scss`.
 5.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
-5.  We snuck in some [microdata](http://schema.org) in the <footer>, yay :)
+6.  We snuck in some [microdata](http://schema.org) in the <footer>, yay :)
 
 ## Make sure that…
 1.  in _layout.scss, the URL to the HTC file must be relative to your HTML(!) document, not relative to your CSS. That's why we've used an absolute in this example.
