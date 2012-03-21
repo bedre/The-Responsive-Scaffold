@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 /* =============================================================================
    HTML5 display definitions
@@ -520,4 +516,132 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* General */
+/* line 3, ../sass/_layout.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/script/boxsizing.htc);
+  /* polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
+}
+
+/* line 10, ../sass/_layout.scss */
+body > * {
+  width: 100%;
+  clear: both;
+}
+
+/* Header */
+/* line 19, ../sass/_layout.scss */
+header #logo {
+  float: left;
+}
+/* line 23, ../sass/_layout.scss */
+header nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  background: #666;
+}
+/* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li:first-child, header nav ul li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+header nav ul li.last {
+  padding-right: 0;
+}
+/* line 28, ../sass/_layout.scss */
+header nav ul li {
+  border-right: 1px solid #fff;
+  text-align: center;
+  width: 33.333%;
+  padding: 0;
+}
+/* line 34, ../sass/_layout.scss */
+header nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 41, ../sass/_layout.scss */
+header nav ul li:last-child {
+  border-right: 0;
+  width: 33.334%;
+}
+/* line 46, ../sass/_layout.scss */
+header nav ul li.normal {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 6, ../sass/_layout_600.scss */
+  header nav ul li, header nav ul li:last-child {
+    width: 20%;
+  }
+  /* line 10, ../sass/_layout_600.scss */
+  header nav ul li.normal {
+    display: block;
+  }
+  /* line 14, ../sass/_layout_600.scss */
+  header nav ul #menu_footer_link {
+    display: none;
+  }
+}
+/* line 58, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+/* line 62, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+body html > body {
+  font-size: 16px;
+}
+
+/* line 5, ../sass/_typography.scss */
+a {
+  color: #00cc00;
+}
+/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #cccccc;
+}
+/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #cccc00;
+}
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #66cc00;
+}
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #cc0000;
+}
+
+/* line 11, ../sass/_typography.scss */
+header nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
 }

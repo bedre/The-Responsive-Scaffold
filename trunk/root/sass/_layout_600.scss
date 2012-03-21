@@ -1,0 +1,20 @@
+@media screen and (min-width: 600px) {
+
+    header {
+        nav ul {
+
+            li, li:last-child {
+                width: 20%;
+            }
+
+            li.normal {
+                display: block;
+            }
+
+            #menu_footer_link {
+                display: none;
+            }
+        }
+    }
+
+}
