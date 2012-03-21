@@ -166,7 +166,7 @@ require_once 'settings.php';
             </ul>
         </nav>
 
-        <divitemscope itemtype="http://schema.org/Organization">
+        <div itemscope itemtype="http://schema.org/Organization">
             <span itemprop="name">Your Corporation Inc.</span>
 
             <h3>Contact us</h3>
