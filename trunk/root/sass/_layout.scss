@@ -12,10 +12,6 @@ body > * {
     clear: both;
 }
 
-.hide {
-    display: none;
-}
-
 /* Header */
 
 header {
@@ -28,17 +24,33 @@ header {
             border-right: 1px solid #fff;
             text-align: center;
             width: 33.333%;
+
+            @media screen and (min-width: 600px) {
+                width: 20%;
+            }
         }
 
         li:last-child {
             border-right: 0;
             width: 33.334%;
+            
+            @media screen and (min-width: 600px) {
+                width: 20%;
+            }
         }
 
-        a {
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
+        li.normal {
+            display: none;
+
+            @media screen and (min-width: 600px) {
+                display: block;
+            }
+        }
+
+        #menu_footer_link {
+            @media screen and (min-width: 600px) {
+                display: none;
+            }
         }
     }
 }
