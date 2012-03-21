@@ -1,0 +1,7 @@
+body {
+    @include establish_baseline(16px);
+}
+
+a {
+    @include link-colors(#0c0, #6c0, #c00, #ccc, #cc0);
+}

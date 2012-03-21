@@ -1,3 +1,5 @@
+/* General */
+
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
@@ -5,3 +7,38 @@
     *behavior: url(/script/boxsizing.htc); /* polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
+body > * {
+    width: 100%;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+/* Header */
+
+header {
+    nav ul {
+        @include horizontal-list;
+
+        background: #666;
+
+        li {
+            border-right: 1px solid #fff;
+            text-align: center;
+            width: 33.333%;
+        }
+
+        li:last-child {
+            border-right: 0;
+            width: 33.334%;
+        }
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
