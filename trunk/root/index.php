@@ -44,13 +44,13 @@ require_once 'settings.php';
                 <li id="menu_footer_link">
                     <a href="#footermenu">Menu</a>
                 </li>
-                <li class="hide">
+                <li class="normal">
                     <a href="inner_page.php">Products</a>
                 </li>
-                <li class="hide">
+                <li class="normal">
                     <a href="inner_page.php">Services</a>
                 </li>
-                <li class="hide">
+                <li class="normal">
                     <a href="inner_page.php">About us</a>
                 </li>
                 <li class="highlighted">
