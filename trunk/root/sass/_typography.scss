@@ -5,3 +5,13 @@ body {
 a {
     @include link-colors(#0c0, #6c0, #c00, #ccc, #cc0);
 }
+
+header {
+    nav ul {
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
