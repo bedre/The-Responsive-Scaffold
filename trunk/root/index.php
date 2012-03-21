@@ -36,8 +36,8 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Company Logo" />
-        Switch to <a href="#english"><img src="images/english.png" alt="English language"></a>
+        <img src="images/examples/placeholder.png" alt="Company Logo" />
+        Switch to <a href="#english"><img src="images/examples/placeholder.png" alt="English language"></a>
 
         <nav role="navigation">
             <ul>
@@ -65,31 +65,31 @@ require_once 'settings.php';
         <section id="slider">
             <article class="slide">            
                 <h3>Highlight reel 1</h3>
-                <img src="images/examples/slide1.jpg" alt="Slide 1">
+                <img src="images/examples/placeholder.png" alt="Slide 1">
                 <p class="description">An awesome product description for this product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 2</h3>
-                <img src="images/examples/slide2.jpg" alt="Slide 2">
+                <img src="images/examples/placeholder.png" alt="Slide 2">
                 <p class="description">An awesome product description for this product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 3</h3>
-                <img src="images/examples/slide3.jpg" alt="Slide 3">
+                <img src="images/examples/placeholder.png" alt="Slide 3">
                 <p class="description">An awesome product description for this product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 4</h3>
-                <img src="images/examples/slide4.jpg" alt="Slide 4">
+                <img src="images/examples/placeholder.png" alt="Slide 4">
                 <p class="description">An awesome product description for this product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 5</h3>
-                <img src="images/examples/slide5.jpg" alt="Slide 5">
+                <img src="images/examples/placeholder.png" alt="Slide 5">
                 <p class="description">An awesome product description for this product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
@@ -99,31 +99,31 @@ require_once 'settings.php';
     <section role="main" id="product_categories">
         <article class="product_category">
             <h3>Fantastic product 1</h3>
-            <img src="images/examples/product1.jpg" alt="Product 1">
+            <img src="images/examples/placeholder.png" alt="Product 1">
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
             <h3>Fantastic product 2</h3>
-            <img src="images/examples/product2.jpg" alt="Product 2">
+            <img src="images/examples/placeholder.png" alt="Product 2">
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
             <h3>Fantastic product 3</h3>
-            <img src="images/examples/product3.jpg" alt="Product 3">
+            <img src="images/examples/placeholder.png" alt="Product 3">
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
             <h3>Fantastic product 4</h3>
-            <img src="images/examples/product4.jpg" alt="Product 4">
+            <img src="images/examples/placeholder.png" alt="Product 4">
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
             <h3>Fantastic product 5</h3>
-            <img src="images/examples/product5.jpg" alt="Product 5">
+            <img src="images/examples/placeholder.png" alt="Product 5">
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
