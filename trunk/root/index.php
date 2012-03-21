@@ -40,23 +40,23 @@ require_once 'settings.php';
         Switch to <a href="#english"><img src="images/english.png" alt="English language"></a>
 
         <nav role="navigation">
-            <ul id="main_nav">
+            <ul>
                 <li id="menu_footer_link">
                     <a href="#footermenu">Menu</a>
                 </li>
-                <li>
+                <li class="hide">
                     <a href="inner_page.php">Products</a>
                 </li>
-                <li>
+                <li class="hide">
                     <a href="inner_page.php">Services</a>
                 </li>
-                <li>
+                <li class="hide">
                     <a href="inner_page.php">About us</a>
                 </li>
-                <li class="highlighted fixed">
+                <li class="highlighted">
                     <a href="inner_page.php">Contact</a>
                 </li>
-                <li class="call_to_action fixed">
+                <li class="call_to_action">
                     <a href="inner_page.php">Buy now</a>
                 </li>
             </ul>
