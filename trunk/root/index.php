@@ -36,7 +36,7 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <img src="images/examples/placeholder.png" alt="Company Logo" />
+        <img id="logo" src="images/examples/placeholder.png" alt="Company Name" />
         Switch to <a href="#english"><img src="images/examples/placeholder.png" alt="English language"></a>
 
         <nav role="navigation">
