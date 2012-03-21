@@ -4,3 +4,6 @@
 [submodule "trunk/vendor/respond.js"]
 	path = trunk/vendor/respond.js
 	url = https://github.com/scottjehl/Respond.git
+[submodule "trunk/vendor/box-sizing-polyfill"]
+	path = trunk/vendor/box-sizing-polyfill
+	url = https://github.com/Schepp/box-sizing-polyfill.git
