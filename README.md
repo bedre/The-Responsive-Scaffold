@@ -14,6 +14,8 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
     *  Small: 600px
     *  Medium: 1024px
     *  Large: 1440px
+
+    These can be configured in `_respond_to.scss`.
 5.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
 5.  We snuck in some [microdata](http://schema.org) in the <footer>, yay :)
 
