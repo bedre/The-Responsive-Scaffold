@@ -24,6 +24,7 @@ header {
         @include horizontal-list;
 
         background: #666;
+        margin-bottom: 1px;
 
         li {
             border-right: 1px solid #fff;
