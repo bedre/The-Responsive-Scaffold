@@ -547,6 +547,7 @@ header nav ul {
   overflow: hidden;
   *zoom: 1;
   background: #666;
+  margin-bottom: 1px;
 }
 /* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li {
@@ -571,25 +572,25 @@ header nav ul li:last-child {
 header nav ul li.last {
   padding-right: 0;
 }
-/* line 28, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 header nav ul li {
   border-right: 1px solid #fff;
   text-align: center;
   width: 33.333%;
   padding: 0;
 }
-/* line 34, ../sass/_layout.scss */
+/* line 35, ../sass/_layout.scss */
 header nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 41, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
 header nav ul li:last-child {
   border-right: 0;
   width: 33.334%;
 }
-/* line 46, ../sass/_layout.scss */
+/* line 47, ../sass/_layout.scss */
 header nav ul li.normal {
   display: none;
 }
