@@ -36,8 +36,17 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <img id="logo" src="images/examples/placeholder.png" alt="Company Name" />
-        Switch to <a href="#english"><img src="images/examples/placeholder.png" alt="English language"></a>
+        <h1>Company name</h1>
+        
+        <div id="contact_short">
+            <span class="phone">755 19 100</span>
+            <a href="mailto:booking@skagen-hotel.no" class="email">booking@skagen-hotel.no</a>
+        </div>
+
+        <div id="language">
+            <span>Switch to</span>
+            <a href="#english"><img src="images/examples/placeholder.png" alt="English language"></a>
+        </div>
 
         <nav role="navigation">
             <ul>
@@ -98,32 +107,26 @@ require_once 'settings.php';
     
     <section role="main" id="product_categories">
         <article class="product_category">
-            <h3>Fantastic product 1</h3>
             <img src="images/examples/placeholder.png" alt="Product 1">
+            <h3>Fantastic product 1</h3>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <h3>Fantastic product 2</h3>
             <img src="images/examples/placeholder.png" alt="Product 2">
+            <h3>Fantastic product 2</h3>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <h3>Fantastic product 3</h3>
             <img src="images/examples/placeholder.png" alt="Product 3">
+            <h3>Fantastic product 3</h3>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <h3>Fantastic product 4</h3>
             <img src="images/examples/placeholder.png" alt="Product 4">
-            <p class="description">An awesome product description for this product</p>
-            <a href="#" class="readmore">Read more</a>
-        </article>
-        <article class="product_category">
-            <h3>Fantastic product 5</h3>
-            <img src="images/examples/placeholder.png" alt="Product 5">
+            <h3>Fantastic product 4</h3>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
@@ -134,7 +137,7 @@ require_once 'settings.php';
         <nav>
             <ul>
                 <li>
-                    <a href="#">Products</a>
+                    <h3><a href="#">Products</a></h3>
                     <ul>
                         <li><a href="#">Product range 1</a></li>
                         <li><a href="#">Product range 2</a></li>
@@ -144,7 +147,7 @@ require_once 'settings.php';
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <h3><a href="#">Services</a></h3>
                     <ul>
                         <li><a href="#">Services 1</a></li>
                         <li><a href="#">Services 2</a></li>
@@ -154,7 +157,7 @@ require_once 'settings.php';
                     </ul>
                 </li>
                 <li>
-                    <a href="#">About us</a>
+                    <h3><a href="#">About us</a></h3>
                     <ul>
                         <li><a href="#">Our philosophy</a></li>
                         <li><a href="#">Meet the staff</a></li>

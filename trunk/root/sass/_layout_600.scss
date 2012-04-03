@@ -15,6 +15,31 @@
                 display: none;
             }
         }
+
+        #contact_short {
+            display: block;
+            float: right;
+        }
     }
 
+    #product_categories {
+        article {
+            width: 50%;
+            padding: 1em;
+        }
+    }
+
+    footer {
+        nav > ul {
+
+            > li {
+                width: 33.333%;
+                clear: none;
+            }
+
+            > li:last-child {
+                width: 33.334%;
+            }
+        }
+    }
 }

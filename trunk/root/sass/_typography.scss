@@ -1,17 +1,53 @@
 body {
     @include establish_baseline(16px);
+    color: #555;
 }
 
 a {
-    @include link-colors(#0c0, #6c0, #c00, #ccc, #cc0);
+    @include link-colors($colour1, $colour2, #c00, #ccc, #cc0);
 }
 
 header {
     nav ul {
-        a {
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
+        li {
+            text-align: center;
+            a {
+                font-size: .8125em;
+                line-height: 3.385em;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
         }
+    }
+}
+
+#product_categories {
+    font-size: .8125em;
+
+    h3 {
+        font-size: 1.231em;
+        color: #000;
+        font-weight: normal;
+    }
+}
+
+footer {
+    a {
+        @include link-colors(#fff, #6c0, #c00, #ccc, #cc0);
+        text-decoration: none;
+    }
+
+    nav a {
+        font-size: .875em;
+    }
+
+    h3 a {
+        font-size: 1em;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #fff;
     }
 }

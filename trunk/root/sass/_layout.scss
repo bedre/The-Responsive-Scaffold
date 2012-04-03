@@ -4,7 +4,7 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
-    *behavior: url(/script/boxsizing.htc); /* polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
+    *behavior: url(/script/boxsizing.htc); /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
 body > * {
@@ -12,12 +12,16 @@ body > * {
     clear: both;
 }
 
-/* Header */
-
 header {
+
+    margin-bottom: 1em;
 
     #logo {
         float: left;
+    }
+
+    #contact_short {
+        display: none;
     }
 
     nav ul {
@@ -28,7 +32,6 @@ header {
 
         li {
             border-right: 1px solid #fff;
-            text-align: center;
             width: 33.333%;
             padding: 0;
 
@@ -48,5 +51,79 @@ header {
             display: none;
         }
 
+    }
+
+    #slider {
+        height: 250px;
+        overflow: hidden;
+    }
+}
+
+#product_categories {
+
+    padding: 0 1em;
+    margin-bottom: 1em;
+
+    article {
+        float: left;
+        width: 100%;
+        margin-bottom: 2em;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        img {
+            float: right;
+            padding: 4px;
+            border: 1px solid #ddd;
+            margin: 0 0 1em 1em;
+        }
+    }
+}
+
+footer {
+
+    padding: 1em;
+    background-color: $colour1;
+    color: #fff;
+    float: left;
+    width: 100%;
+
+    nav { 
+
+        ul {
+            float: left;
+            padding: 0;
+            margin: 0;
+            list-style:none;
+            width: 100%;
+        }
+
+        > ul > li {
+            width: 100%;
+            clear: both;
+            float: left;
+            padding: 1em;
+            margin-bottom: 1em;
+
+            > h3 {
+                margin-top: 0;
+            }
+
+            li {
+                width: 100%;
+                margin-bottom: 3px;
+
+                a {
+                    display: block;
+                    @include border-radius();
+                    background-color: darken($colour1, 30%);
+                    padding: 0 1em;
+                    width: 100%;
+                    line-height: 3.143em;
+                }
+            }
+        }
     }
 }
