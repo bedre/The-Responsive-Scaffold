@@ -34,7 +34,7 @@ header {
 
 footer {
     a {
-        @include link-colors(#fff, #6c0, #c00, #ccc, #cc0);
+        @include link-colors(#fff, lighten($colour1, 50%), #c00, #fff, #cc0);
         text-decoration: none;
     }
 
