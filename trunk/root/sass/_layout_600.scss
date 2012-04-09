@@ -11,6 +11,10 @@
                 display: block;
             }
 
+            li:not(.normal) {
+                background: url(../images/skagen/arrow.png) no-repeat 95% 50%;
+            }
+
             #menu_footer_link {
                 display: none;
             }
@@ -30,10 +34,12 @@
             > li {
                 width: 33.333%;
                 clear: none;
+                padding-right: 1em;
             }
 
             > li:last-child {
                 width: 33.334%;
+                padding-right: 0;
             }
         }
     }
