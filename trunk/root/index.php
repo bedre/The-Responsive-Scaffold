@@ -32,6 +32,13 @@ require_once 'settings.php';
             nope: 'js/lib/respond.min.js'
         });
     </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="js/lib/selectivizr-min-1.0.2.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -192,9 +199,6 @@ require_once 'settings.php';
 
         <div id="copyright">Copyright &copy; <?php echo date('Y') ?> some company, All rights reserved.</div>
     </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
     <script>
         var _gaq=[['_setAccount','<?php echo $settings['analytics_acct'] ?>'],['_trackPageview']];
