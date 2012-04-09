@@ -36,7 +36,7 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <h1>Company name</h1>
+        <img id="logo" src="images/skagen/logo.png" alt="Skagen Hotel">
         
         <div id="contact_short">
             <span class="phone">755 19 100</span>
@@ -44,8 +44,8 @@ require_once 'settings.php';
         </div>
 
         <div id="language">
-            <span>Switch to</span>
-            <a href="#english"><img src="images/examples/placeholder.png" alt="English language"></a>
+            <span>Switch to:</span>
+            <a href="#english"><img src="images/skagen/english_big.png" alt="English language"></a>
         </div>
 
         <nav role="navigation">
