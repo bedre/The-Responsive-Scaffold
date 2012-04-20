@@ -1,0 +1,20 @@
+@media screen and (min-width: 1024px) {
+    header {
+        #contact_short {
+            display: block;
+            float: right;
+        }
+    }
+
+    #product_categories {
+        article {
+            width: 25%;
+        }
+    }
+
+    footer {
+        nav {
+            width: 60%;
+        }
+    }
+}
