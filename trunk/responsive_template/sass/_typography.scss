@@ -8,6 +8,11 @@ a {
 }
 
 header {
+    #language {
+        font-size: .6875em;
+        text-align: center;
+    }
+
     nav ul {
         li {
             text-align: center;
@@ -21,12 +26,16 @@ header {
         }
     }
 
-    #slider > article > a > h3 {
-        color: #fff;
-        font-size: 1em;
-        font-weight: normal;
-        line-height: 2.5em;
-        @include rgba-background(rgba(0,0,0,0.8));
+    #slider > article > a {
+        @include link-colors(#fff, #fff, #fff, #fff, #fff);
+        text-decoration: none;
+
+        & > h3 {
+            font-size: 1em;
+            font-weight: normal;
+            line-height: 2.5em;
+            @include rgba-background(rgba(0,0,0,0.8));
+        }
     }
 }
 
@@ -35,6 +44,7 @@ header {
 
     a {
         text-decoration: none;
+        @include link-colors(#666, #666, #666, #666, #666);
     }
 
     h3 {

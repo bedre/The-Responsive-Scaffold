@@ -116,10 +116,12 @@ require_once 'settings.php';
     
     <section role="main" id="product_categories">
         <article class="product_category">
-            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1" class="clearfix"></a>
-            <a href="#product" class="name"><h3>Fantastic product 1</h3></a>
-            <p class="description">An awesome product description for this product</p>
-            <a href="#" class="readmore">Read more</a>
+            <a href="#">
+                <span class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1" class="clearfix"></span>
+                <h3>Fantastic product 1</h3>
+                <p class="description">An awesome product description for this product</p>
+                <span class="readmore">Read more</span>
+            </a>
         </article>
         <article class="product_category">
             <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 2"></a>
