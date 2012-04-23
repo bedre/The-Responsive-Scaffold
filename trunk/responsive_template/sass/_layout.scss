@@ -7,9 +7,11 @@
     *behavior: url(/script/boxsizing.htc); /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
-body > * {
-    width: 100%;
-    clear: both;
+body {
+    & > * {
+        width: 100%;
+        clear: both;
+    }
 }
 
 header {
@@ -86,25 +88,37 @@ header {
     margin-bottom: 1em;
 
     article {
+        position: relative;
         float: left;
         width: 100%;
         margin-bottom: 2em;
+
+        .name {
+            display: block;
+            position: absolute;
+            top: 10%;
+        }
 
         h3 {
             margin-top: 0;
         }
 
-        img {
-            float: right;
-            padding: 4px;
-            border: 1px solid #ddd;
-            margin: 0 0 1em 1em;
+        .imageholder {
+            display: block;
+            width: 100%;
+            line-height: 0em;
+            margin-bottom: 1em;
+            @include inner_shadow(20px);
+            @include double_border;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
 
 footer {
-
     padding: 1em;
     background-color: $colour1;
     color: #fff;
