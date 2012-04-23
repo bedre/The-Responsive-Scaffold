@@ -75,11 +75,42 @@ header {
     }
 
     #slider {
-        height: 250px;
-        overflow: hidden;
-        width: 100%;
-        clear: both;
-        background: #fc0;
+
+        article {
+            width: 100%;
+            display: none;
+
+            a {
+                position: relative;
+                display: block;
+                width: 100%;
+                line-height: 0;
+                @include pie-clearfix;
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    z-index: 1;
+                    position: absolute;
+                    bottom: .5em;
+                    padding: 0 2em 0 1em;
+                    float: left;
+                    margin: 0;
+                }
+
+                p.description,
+                span.readon {
+                    display: none;
+                }
+
+            }
+        }
+
+        &>article:first-child {
+            display: block;
+        }
     }
 }
 
