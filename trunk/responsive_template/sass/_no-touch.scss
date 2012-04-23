@@ -1,0 +1,22 @@
+.no-touch {
+    footer nav {
+        ul > li {
+            h3 {
+                margin-bottom: .5em;
+            }
+
+            > ul {
+                @include border-radius(0);
+                background: none;
+
+                > li {
+                    border-bottom: none;
+
+                    a {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

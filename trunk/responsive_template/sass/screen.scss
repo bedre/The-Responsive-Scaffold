@@ -14,5 +14,9 @@
 
 @import "typography";
 
+/* for non-touch enabled devices */
+@import "no-touch";
+@import "no-touch_typography";
+
 /* skagen hotel */
 @import "skagen";
