@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require "rgbapng"
 
 http_path = "/"
 css_dir = "css"

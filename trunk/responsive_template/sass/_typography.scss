@@ -20,6 +20,14 @@ header {
             }
         }
     }
+
+    #slider > article > a > h3 {
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 2.5em;
+        @include rgba-background(rgba(0,0,0,0.8));
+    }
 }
 
 #product_categories {
