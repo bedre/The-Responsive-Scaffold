@@ -24,26 +24,26 @@ require_once 'settings.php';
     <title>A responsive HTML5 template</title>
     <meta name="description" content="This is an example of a responsive HTML5 template, based on HTML5 boilerplate">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/screen.css">
-    <script src="js/lib/modernizr-2.5.3.min.js"></script>
+    <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>/css/screen.css">
+    <script src="<?php echo $settings['template_folder'] ?>js/lib/modernizr-2.5.3.min.js"></script>
     <script>
         Modernizr.load({
             test: Modernizr.mediaqueries,
-            nope: 'js/lib/respond.min.js'
+            nope: '<?php echo $settings['template_folder'] ?>js/lib/respond.min.js'
         });
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="<?php echo $settings['template_folder'] ?>js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
-        <script type="text/javascript" src="js/lib/selectivizr-min-1.0.2.js"></script>
+        <script type="text/javascript" src="<?php echo $settings['template_folder'] ?>js/lib/selectivizr-min-1.0.2.js"></script>
     <![endif]-->
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/skagen/logo.png" alt="Skagen Hotel">
+        <img id="logo" src="<?php echo $settings['template_folder'] ?>images/skagen/logo.png" alt="Skagen Hotel">
         
         <div id="contact_short">
             <span class="phone">755 19 100</span>
@@ -52,7 +52,7 @@ require_once 'settings.php';
 
         <div id="language">
             <span>Switch to:</span>
-            <a href="#english"><img src="images/skagen/english_big.png" alt="English language"></a>
+            <a href="#english"><img src="<?php echo $settings['template_folder'] ?>images/skagen/english_big.png" alt="English language"></a>
         </div>
 
         <nav role="navigation">
@@ -81,32 +81,32 @@ require_once 'settings.php';
         <section id="slider">
             <article class="slide">            
                 <h3>Highlight reel 1</h3>
-                <img src="images/examples/placeholder.png" alt="Slide 1">
-                <p class="description">An awesome product description for this product</p>
+                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 1">
+                <p class="description">An awesome product description for this superb product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 2</h3>
-                <img src="images/examples/placeholder.png" alt="Slide 2">
-                <p class="description">An awesome product description for this product</p>
+                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 2">
+                <p class="description">An awesome product description for this superb product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 3</h3>
-                <img src="images/examples/placeholder.png" alt="Slide 3">
-                <p class="description">An awesome product description for this product</p>
+                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 3">
+                <p class="description">An awesome product description for this superb product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 4</h3>
-                <img src="images/examples/placeholder.png" alt="Slide 4">
-                <p class="description">An awesome product description for this product</p>
+                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 4">
+                <p class="description">An awesome product description for this superb product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
             <article class="slide">
                 <h3>Highlight reel 5</h3>
-                <img src="images/examples/placeholder.png" alt="Slide 5">
-                <p class="description">An awesome product description for this product</p>
+                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 5">
+                <p class="description">An awesome product description for this superb product</p>
                 <a href="#" class="readmore">Read more</a>
             </article>
         </section>
@@ -114,26 +114,26 @@ require_once 'settings.php';
     
     <section role="main" id="product_categories">
         <article class="product_category">
-            <img src="images/examples/placeholder.png" alt="Product 1">
-            <h3>Fantastic product 1</h3>
+            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1" class="clearfix"></a>
+            <a href="#product" class="name"><h3>Fantastic product 1</h3></a>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <img src="images/examples/placeholder.png" alt="Product 2">
-            <h3>Fantastic product 2</h3>
+            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 2"></a>
+            <a href="#product" class="name"><h3>Fantastic product 2</h3></a>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <img src="images/examples/placeholder.png" alt="Product 3">
-            <h3>Fantastic product 3</h3>
+            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 3"></a>
+            <a href="#product" class="name"><h3>Fantastic product 3</h3></a>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
         <article class="product_category">
-            <img src="images/examples/placeholder.png" alt="Product 4">
-            <h3>Fantastic product 4</h3>
+            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 4"></a>
+            <a href="#product" class="name"><h3>Fantastic product 4</h3></a>
             <p class="description">An awesome product description for this product</p>
             <a href="#" class="readmore">Read more</a>
         </article>
