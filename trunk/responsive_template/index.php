@@ -79,35 +79,37 @@ require_once 'settings.php';
         </nav>
 
         <section id="slider">
-            <article class="slide">            
-                <h3>Highlight reel 1</h3>
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 1">
-                <p class="description">An awesome product description for this superb product</p>
-                <a href="#" class="readmore">Read more</a>
+            <article class="slide"> 
+                <a href="#">           
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 1">
+                    <h3>Highlight reel 1</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
             </article>
-            <article class="slide">
-                <h3>Highlight reel 2</h3>
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 2">
-                <p class="description">An awesome product description for this superb product</p>
-                <a href="#" class="readmore">Read more</a>
+            <article class="slide"> 
+                <a href="#">           
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 2">
+                    <h3>Highlight reel 2</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
             </article>
-            <article class="slide">
-                <h3>Highlight reel 3</h3>
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 3">
-                <p class="description">An awesome product description for this superb product</p>
-                <a href="#" class="readmore">Read more</a>
+            <article class="slide"> 
+                <a href="#">           
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 3">
+                    <h3>Highlight reel 3</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
             </article>
-            <article class="slide">
-                <h3>Highlight reel 4</h3>
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 4">
-                <p class="description">An awesome product description for this superb product</p>
-                <a href="#" class="readmore">Read more</a>
-            </article>
-            <article class="slide">
-                <h3>Highlight reel 5</h3>
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 5">
-                <p class="description">An awesome product description for this superb product</p>
-                <a href="#" class="readmore">Read more</a>
+            <article class="slide"> 
+                <a href="#">           
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 4">
+                    <h3>Highlight reel 4</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
             </article>
         </section>
     </header>
