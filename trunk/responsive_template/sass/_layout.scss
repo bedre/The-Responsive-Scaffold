@@ -17,6 +17,7 @@ body {
 header {
 
     margin-bottom: 1em;
+    border-bottom: 4px solid $separator_colour;
 
     #logo {
         float: left;
@@ -124,6 +125,7 @@ footer {
     color: #fff;
     float: left;
     width: 100%;
+    border-top: 4px solid $separator_colour;
 
     nav { 
 
