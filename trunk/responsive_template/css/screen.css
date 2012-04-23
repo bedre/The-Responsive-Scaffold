@@ -523,7 +523,7 @@ table {
 /*********************** 
   TYPOGRAPHY
 
-  configuration options: http://compass-style.org/reference/compass/typography/vertical_rhythm/ 
+  more configuration options: http://compass-style.org/reference/compass/typography/vertical_rhythm/ 
 ***********************/
 /*********************** 
   COLOUR
@@ -542,43 +542,43 @@ table {
   /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
-/* line 10, ../sass/_layout.scss */
+/* line 11, ../sass/_layout.scss */
 body > * {
   width: 100%;
   clear: both;
 }
 
-/* line 15, ../sass/_layout.scss */
+/* line 17, ../sass/_layout.scss */
 header {
   margin-bottom: 1em;
 }
-/* line 19, ../sass/_layout.scss */
+/* line 21, ../sass/_layout.scss */
 header #logo {
   float: left;
   width: 205px;
   margin: 1em 0 1em 1em;
 }
-/* line 25, ../sass/_layout.scss */
+/* line 27, ../sass/_layout.scss */
 header #contact_short {
   display: none;
 }
-/* line 29, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
 header #language {
   float: right;
   text-align: right;
   padding: 1em;
 }
-/* line 34, ../sass/_layout.scss */
+/* line 36, ../sass/_layout.scss */
 header #language span {
   display: block;
   clear: right;
 }
-/* line 40, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
 header nav {
   width: 100%;
   clear: both;
 }
-/* line 44, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 header nav ul {
   margin: 0;
   padding: 0;
@@ -588,7 +588,7 @@ header nav ul {
   background: #666;
   margin-bottom: 1px;
 }
-/* line 60, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 60, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li {
   list-style-image: none;
   list-style-type: none;
@@ -599,40 +599,40 @@ header nav ul li {
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 48, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 48, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li:first-child, header nav ul li.first {
   padding-left: 0;
 }
-/* line 49, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 49, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li:last-child {
   padding-right: 0;
 }
-/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+/* line 50, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li.last {
   padding-right: 0;
 }
-/* line 50, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 header nav ul li {
   border-right: 1px solid #fff;
   width: 33.333%;
   padding: 0;
 }
-/* line 55, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
 header nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 62, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 header nav ul li:last-child {
   border-right: 0;
   width: 33.334%;
 }
-/* line 67, ../sass/_layout.scss */
+/* line 69, ../sass/_layout.scss */
 header nav ul li.normal {
   display: none;
 }
-/* line 74, ../sass/_layout.scss */
+/* line 76, ../sass/_layout.scss */
 header #slider {
   height: 250px;
   overflow: hidden;
@@ -641,38 +641,76 @@ header #slider {
   background: #fc0;
 }
 
-/* line 83, ../sass/_layout.scss */
+/* line 85, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 88, ../sass/_layout.scss */
+/* line 90, ../sass/_layout.scss */
 #product_categories article {
+  position: relative;
   float: left;
   width: 100%;
   margin-bottom: 2em;
 }
-/* line 93, ../sass/_layout.scss */
+/* line 96, ../sass/_layout.scss */
+#product_categories article .name {
+  display: block;
+  position: absolute;
+  top: 10%;
+}
+/* line 102, ../sass/_layout.scss */
 #product_categories article h3 {
   margin-top: 0;
 }
-/* line 97, ../sass/_layout.scss */
-#product_categories article img {
-  float: right;
-  padding: 4px;
-  border: 1px solid #ddd;
-  margin: 0 0 1em 1em;
+/* line 106, ../sass/_layout.scss */
+#product_categories article .imageholder {
+  display: block;
+  width: 100%;
+  line-height: 0em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s false;
+  border: 4px solid white;
+  outline: 1px solid #dddddd;
+}
+/* line 4, ../sass/_mixins.scss */
+#product_categories article .imageholder > img {
+  z-index: -1;
+  position: relative;
+}
+/* line 9, ../sass/_mixins.scss */
+#product_categories article .imageholder:hover {
+  -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
+}
+/* line 13, ../sass/_mixins.scss */
+#product_categories article .imageholder:active {
+  -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
+}
+/* line 114, ../sass/_layout.scss */
+#product_categories article .imageholder img {
+  width: 100%;
 }
 
-/* line 106, ../sass/_layout.scss */
+/* line 121, ../sass/_layout.scss */
 footer {
   padding: 1em;
-  background-color: #0d4c84;
+  background-color: #999999;
   color: #fff;
   float: left;
   width: 100%;
 }
-/* line 116, ../sass/_layout.scss */
+/* line 130, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -680,39 +718,39 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 124, ../sass/_layout.scss */
+/* line 138, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 130, ../sass/_layout.scss */
+/* line 144, ../sass/_layout.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 134, ../sass/_layout.scss */
+/* line 148, ../sass/_layout.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  background-color: #0b3f6d;
+  background-color: #8c8c8c;
 }
-/* line 138, ../sass/_layout.scss */
+/* line 152, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
-  border-bottom: 1px solid #0d4c84;
+  border-bottom: 1px solid #999999;
 }
-/* line 142, ../sass/_layout.scss */
+/* line 156, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 150, ../sass/_layout.scss */
+/* line 164, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
@@ -774,33 +812,33 @@ footer nav > ul > li > ul > li:last-child {
 body {
   color: #555;
 }
-/* line 58, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 58, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body body {
   font-size: 100%;
   line-height: 1.5em;
 }
-/* line 62, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 62, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body html > body {
   font-size: 16px;
 }
 
 /* line 6, ../sass/_typography.scss */
 a {
-  color: #0d4c84;
+  color: #999999;
 }
-/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
   color: #cccccc;
 }
-/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:focus {
   color: #cccc00;
 }
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
-  color: #cd233c;
+  color: #666666;
 }
-/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #cc0000;
 }
@@ -823,45 +861,78 @@ header nav ul li a {
   font-size: .8125em;
 }
 /* line 28, ../sass/_typography.scss */
+#product_categories a {
+  text-decoration: none;
+}
+/* line 32, ../sass/_typography.scss */
 #product_categories h3 {
   font-size: 1.231em;
   color: #000;
   font-weight: normal;
 }
 
-/* line 36, ../sass/_typography.scss */
+/* line 40, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
 }
-/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 footer a:visited {
   color: white;
 }
-/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 footer a:focus {
   color: #cccc00;
 }
-/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 footer a:hover {
-  color: #9bcbf5;
+  color: white;
 }
-/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 footer a:active {
   color: #cc0000;
 }
-/* line 41, ../sass/_typography.scss */
+/* line 45, ../sass/_typography.scss */
 footer nav a {
   font-size: .875em;
 }
-/* line 45, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 49, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;
+}
+
+/* for non-touch enabled devices */
+/* line 4, ../sass/_no-touch.scss */
+.no-touch footer nav ul > li h3 {
+  margin-bottom: .5em;
+}
+/* line 8, ../sass/_no-touch.scss */
+.no-touch footer nav ul > li > ul {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: none;
+}
+/* line 12, ../sass/_no-touch.scss */
+.no-touch footer nav ul > li > ul > li {
+  border-bottom: none;
+}
+/* line 15, ../sass/_no-touch.scss */
+.no-touch footer nav ul > li > ul > li a {
+  padding: 0;
+}
+
+/* line 2, ../sass/_no-touch_typography.scss */
+.no-touch footer nav ul > li > ul > li a {
+  line-height: 1.5em;
+  text-decoration: underline;
 }
 
 /* skagen hotel */
