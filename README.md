@@ -8,7 +8,7 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 
 1.  Not developed with IE6 support in mind
 2.  Uses SASS/Compass for CSS, SCSS file formats
-3.  Uses box-sizing: border-box for everything, with a polyfill that works for IE6 & 7. See [blog post by Paul Irish](http://paulirish.com/2012/box-sizing-border-box-ftw/) and the [boxsizing.htc polyfill Github repo](https://github.com/Schepp/box-sizing-polyfill)
+3.  Uses [box-sizing: border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/) for everything, with [a polyfill that works for IE6 & 7](https://github.com/Schepp/box-sizing-polyfill). 
 4.  Responsive breakpoints:
     *  Tiny: <600px (the default layout)
     *  Small: 600px
@@ -19,7 +19,14 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 6.  We snuck in some [microdata](http://schema.org) in the <footer>, yay :)
 7.  The CSS pretty much assumes you will use exactly as many menu items as we have used in our example.
 
-## Make sure that…
-1.  in _layout.scss, the URL to the HTC file must be relative to your HTML(!) document, not relative to your CSS. That's why we've used an absolute in this example.
+
+## Setup
+
+1.  The template uses the rgbapng Compass plugin to provide cross-browser support for rgba() in CSS. Installation instructions: https://github.com/aaronrussell/compass-rgbapng
+2.  Check out _base.scss. It has a few variables you should be aware of/configure.
+3.  Check out settings.php for some more configuration.
+
+## FYI
+
+1.  in _layout.scss, the URL to the HTC file must be relative to your HTML(!) document, not relative to your CSS. That's why we've used an absolute in this example. This file is the [box-sizing polyfill](https://github.com/Schepp/box-sizing-polyfill for IE.
 2.  you're aware of [the bug jQuery has with box-sizing: border-box](http://bugs.jquery.com/ticket/11004).
-3.  you edit the settings in settings.php
