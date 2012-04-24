@@ -21,3 +21,20 @@
     border: $distance solid $background_colour;
     outline: $size solid $border_colour;
 }
+
+@mixin overlay-text-layout() {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2em 0 1em;
+    float: left;
+    margin: 0;
+}
+
+@mixin overlay-text-typography() {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2.5em;
+    @include rgba-background(rgba(0,0,0,0.8));
+    @include link-colors(#fff, #fff, #fff, #fff, #fff);
+}
