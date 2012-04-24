@@ -23,9 +23,19 @@ $colour2: #666;
 $text-colour: #555;
 $background-colour: #fff;
 $border-colour: #ddd;
+$separator-colour: #000;
 
 
 /*********************** 
   ROUNDED CORNERS
 ***********************/
 $default-border-radius: 5px;
+
+
+/*********************** 
+  BREAKPOINTS
+***********************/
+$break-small:  320px/$base-font-size*1em;
+$break-medium: 600px/$base-font-size*1em;
+$break-large:  1024px/$base-font-size*1em;
+$break-xlarge: 1440px/$base-font-size*1em;
