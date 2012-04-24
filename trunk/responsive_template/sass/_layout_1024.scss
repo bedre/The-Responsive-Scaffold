@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $break-large) {
     header {
         #contact_short {
             display: block;

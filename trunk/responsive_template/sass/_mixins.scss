@@ -18,8 +18,8 @@
 }
 
 @mixin double_border($distance: 4px, $size: 1px) {
-    border: $distance solid $background_colour;
-    outline: $size solid $border_colour;
+    border: $distance solid $background-colour;
+    outline: $size solid $border-colour;
 }
 
 @mixin overlay-text-layout() {

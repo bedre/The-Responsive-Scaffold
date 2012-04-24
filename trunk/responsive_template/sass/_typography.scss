@@ -25,14 +25,14 @@ header {
             }
         }
     }
+}
 
-    #slider > article > a {
-        @include link-colors(#fff, #fff, #fff, #fff, #fff);
-        text-decoration: none;
+#slider > article > a {
+    @include link-colors(#fff, #fff, #fff, #fff, #fff);
+    text-decoration: none;
 
-        & > h3 {
-            @include overlay-text-typography;
-        }
+    & > h3 {
+        @include overlay-text-typography;
     }
 }
 

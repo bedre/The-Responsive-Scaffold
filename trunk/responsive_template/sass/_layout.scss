@@ -4,7 +4,7 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
-    *behavior: url($template_root_folder + '/script/boxsizing.htc'); /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
+    *behavior: url($template-root-folder + '/script/boxsizing.htc'); /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
 body {
@@ -15,9 +15,6 @@ body {
 }
 
 header {
-
-    margin-bottom: 1em;
-    border-bottom: 4px solid $separator_colour;
 
     #logo {
         float: left;
@@ -57,8 +54,8 @@ header {
 
                 a {
                     display: block;
-                    width: 100%;
-                    height: 100%;
+                    width:   100%;
+                    height:  100%;
                 }
             }
 
@@ -73,39 +70,45 @@ header {
 
         }
     }
+}
 
-    #slider {
+#slider {
+    height: 10em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    border-bottom: 4px solid $separator-colour;
 
-        article {
-            width: 100%;
-            display: none;
+    article {
+        width: 100%;
+        display: none;
+        height: 100%;
 
-            a {
-                position: relative;
-                display: block;
-                width: 100%;
-                line-height: 0;
-                @include pie-clearfix;
-
-                img {
-                    width: 100%;
-                }
-
-                h3 {
-                    @include overlay-text-layout;
-                }
-
-                p.description,
-                span.readon {
-                    display: none;
-                }
-
-            }
-        }
-
-        &>article:first-child {
+        a {
+            position: relative;
             display: block;
+            width: 100%;
+            line-height: 0;
+            height: 100%;
+            @include pie-clearfix;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                @include overlay-text-layout;
+            }
+
+            p.description,
+            span.readon {
+                display: none;
+            }
+
         }
+    }
+
+    &>article:first-child {
+        display: block;
     }
 }
 
@@ -119,7 +122,7 @@ header {
         float: left;
         width: 100%;
         margin-bottom: 1em;
-        
+
         a {
             display: block;
             width: 100%;
@@ -166,7 +169,7 @@ footer {
     color: #fff;
     float: left;
     width: 100%;
-    border-top: 4px solid $separator_colour;
+    border-top: 4px solid $separator-colour;
 
     nav { 
 
