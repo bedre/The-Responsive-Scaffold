@@ -1,6 +1,6 @@
 body {
     @include establish_baseline(16px);
-    color: #555;
+    color: $text-colour;
 }
 
 a {
@@ -46,6 +46,7 @@ header {
         text-decoration: none;
         @include link-colors(#666, #666, #666, #666, #666);
     }
+        @include link-colors($text-colour, $text-colour, $text-colour, $text-colour, $text-colour);
 
     h3 {
         font-size: 1.231em;
