@@ -73,7 +73,7 @@ header {
 }
 
 #slider {
-    height: 10em;
+    height: $break-min/$slide-size;
     overflow: hidden;
     margin-bottom: 1em;
     border-bottom: 4px solid $separator-colour;

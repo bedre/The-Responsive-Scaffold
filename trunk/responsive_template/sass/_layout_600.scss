@@ -21,6 +21,10 @@
         }
     }
 
+    #slider {
+        height: $break-medium/$slide-size;
+    }
+
     #product_categories {
         article {
             width: 50%;

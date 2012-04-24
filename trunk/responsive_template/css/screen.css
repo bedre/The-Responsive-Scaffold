@@ -539,8 +539,14 @@ table {
   ROUNDED CORNERS
 ***********************/
 /*********************** 
+  SLIDESHOW PROPORTIONS
+
+  the lowest proportion the slideshow will have
+***********************/
+/*********************** 
   BREAKPOINTS
 ***********************/
+/* Site might not look good below this */
 /* layout */
 /* General */
 /* line 3, ../sass/_layout.scss */
@@ -641,7 +647,7 @@ header nav ul li.normal {
 
 /* line 75, ../sass/_layout.scss */
 #slider {
-  height: 10em;
+  height: 8.438em;
   overflow: hidden;
   margin-bottom: 1em;
   border-bottom: 4px solid black;
@@ -836,6 +842,11 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
 
+/* line 1, ../sass/_layout_320.scss */
+#slider {
+  height: 11.25em;
+}
+
 @media screen and (min-width: 37.5em) {
   /* line 6, ../sass/_layout_600.scss */
   header nav ul li, header nav ul li:last-child {
@@ -854,13 +865,18 @@ footer nav > ul > li > ul > li:last-child {
     display: none;
   }
 
-  /* line 25, ../sass/_layout_600.scss */
+  /* line 24, ../sass/_layout_600.scss */
+  #slider {
+    height: 21.094em;
+  }
+
+  /* line 29, ../sass/_layout_600.scss */
   #product_categories article {
     width: 50%;
     padding: 1em;
     margin-bottom: 0;
   }
-  /* line 32, ../sass/_layout_600.scss */
+  /* line 36, ../sass/_layout_600.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -870,18 +886,18 @@ footer nav > ul > li > ul > li:last-child {
     float: left;
     margin: 0;
   }
-  /* line 38, ../sass/_layout_600.scss */
+  /* line 42, ../sass/_layout_600.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 48, ../sass/_layout_600.scss */
+  /* line 52, ../sass/_layout_600.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 54, ../sass/_layout_600.scss */
+  /* line 58, ../sass/_layout_600.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
