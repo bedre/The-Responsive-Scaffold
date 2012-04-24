@@ -19,9 +19,9 @@ header {
             a {
                 font-size: .8125em;
                 line-height: 3.385em;
-                color: #fff;
                 text-transform: uppercase;
                 text-decoration: none;
+                @include link-colors(#fff, #fff, #fff, #fff, #fff);
             }
         }
     }
@@ -41,14 +41,8 @@ header {
 
     a {
         text-decoration: none;
-        @include link-colors(#666, #666, #666, #666, #666);
-    }
         @include link-colors($text-colour, $text-colour, $text-colour, $text-colour, $text-colour);
 
-    h3 {
-        font-size: 1.231em;
-        color: #000;
-        font-weight: normal;
         h3 {
             @media screen and (orientation:landscape) {
                 @include overlay-text-typography;

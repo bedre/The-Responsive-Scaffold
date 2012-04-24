@@ -32,7 +32,7 @@ header {
     #language {
         float: right;
         text-align: right;
-        padding: 1em;
+        padding: 13px 1em 1em 1em;
 
         span {
             display: block;
@@ -118,13 +118,9 @@ header {
         position: relative;
         float: left;
         width: 100%;
-        margin-bottom: 2em;
-
-        h3 {
-            margin-top: 0;
-        }
-
-        .imageholder {
+        margin-bottom: 1em;
+        
+        a {
             display: block;
             width: 100%;
             line-height: 0;

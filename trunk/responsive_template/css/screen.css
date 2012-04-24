@@ -574,7 +574,7 @@ header #contact_short {
 header #language {
   float: right;
   text-align: right;
-  padding: 1em;
+  padding: 13px 1em 1em 1em;
 }
 /* line 37, ../sass/_layout.scss */
 header #language span {
@@ -667,43 +667,52 @@ header #slider article a img {
 header #slider article a h3 {
   z-index: 1;
   position: absolute;
-  bottom: .5em;
+  bottom: 0;
   padding: 0 2em 0 1em;
   float: left;
   margin: 0;
 }
-/* line 104, ../sass/_layout.scss */
+/* line 99, ../sass/_layout.scss */
 header #slider article a p.description,
 header #slider article a span.readon {
   display: none;
 }
-/* line 111, ../sass/_layout.scss */
+/* line 106, ../sass/_layout.scss */
 header #slider > article:first-child {
   display: block;
 }
 
-/* line 117, ../sass/_layout.scss */
+/* line 112, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 122, ../sass/_layout.scss */
+/* line 117, ../sass/_layout.scss */
 #product_categories article {
   position: relative;
   float: left;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
-/* line 128, ../sass/_layout.scss */
-#product_categories article h3 {
-  margin-top: 0;
-}
-/* line 132, ../sass/_layout.scss */
-#product_categories article .imageholder {
+/* line 123, ../sass/_layout.scss */
+#product_categories article a {
   display: block;
   width: 100%;
-  line-height: 0em;
-  margin-bottom: 1em;
+  line-height: 0;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#product_categories article a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 129, ../sass/_layout.scss */
+#product_categories article a .imageholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 0;
   -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
@@ -716,28 +725,56 @@ header #slider > article:first-child {
   outline: 1px solid #dddddd;
 }
 /* line 4, ../sass/_mixins.scss */
-#product_categories article .imageholder > img {
+#product_categories article a .imageholder > img {
   z-index: -1;
   position: relative;
 }
 /* line 9, ../sass/_mixins.scss */
-#product_categories article .imageholder:hover {
+#product_categories article a .imageholder:hover {
   -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
 }
 /* line 13, ../sass/_mixins.scss */
-#product_categories article .imageholder:active {
+#product_categories article a .imageholder:active {
   -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
 }
-/* line 140, ../sass/_layout.scss */
-#product_categories article .imageholder img {
+/* line 137, ../sass/_layout.scss */
+#product_categories article a .imageholder img {
   width: 100%;
 }
+/* line 141, ../sass/_layout.scss */
+#product_categories article a .imageholder h3 {
+  position: absolute;
+  bottom: -2.5em;
+  left: -5px;
+}
+@media screen and (orientation:landscape) {
+  /* line 141, ../sass/_layout.scss */
+  #product_categories article a .imageholder h3 {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2em 0 1em;
+    float: left;
+    margin: 0;
+  }
+}
+/* line 153, ../sass/_layout.scss */
+#product_categories article a .description {
+  margin-top: 3em;
+}
+@media screen and (orientation:landscape) {
+  /* line 153, ../sass/_layout.scss */
+  #product_categories article a .description {
+    margin-top: 1em;
+  }
+}
 
-/* line 147, ../sass/_layout.scss */
+/* line 163, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #999999;
@@ -746,7 +783,7 @@ footer {
   width: 100%;
   border-top: 4px solid black;
 }
-/* line 157, ../sass/_layout.scss */
+/* line 173, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -754,18 +791,18 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 165, ../sass/_layout.scss */
+/* line 181, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 171, ../sass/_layout.scss */
+/* line 187, ../sass/_layout.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 175, ../sass/_layout.scss */
+/* line 191, ../sass/_layout.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -774,19 +811,19 @@ footer nav > ul > li > ul {
   border-radius: 5px;
   background-color: #8c8c8c;
 }
-/* line 179, ../sass/_layout.scss */
+/* line 195, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #999999;
 }
-/* line 183, ../sass/_layout.scss */
+/* line 199, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 191, ../sass/_layout.scss */
+/* line 207, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
@@ -813,15 +850,30 @@ footer nav > ul > li > ul > li:last-child {
   #product_categories article {
     width: 50%;
     padding: 1em;
+    margin-bottom: 0;
+  }
+  /* line 32, ../sass/_layout_600.scss */
+  #product_categories article a .imageholder h3 {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    padding: 0 2em 0 1em;
+    float: left;
+    margin: 0;
+  }
+  /* line 38, ../sass/_layout_600.scss */
+  #product_categories article a .description {
+    margin-top: 1em;
   }
 
-  /* line 34, ../sass/_layout_600.scss */
+  /* line 48, ../sass/_layout_600.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 40, ../sass/_layout_600.scss */
+  /* line 54, ../sass/_layout_600.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
@@ -846,7 +898,7 @@ footer nav > ul > li > ul > li:last-child {
 }
 /* line 1, ../sass/_typography.scss */
 body {
-  color: #555;
+  color: #555555;
 }
 /* line 58, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body body {
@@ -892,9 +944,25 @@ header nav ul li {
 header nav ul li a {
   font-size: .8125em;
   line-height: 3.385em;
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  color: white;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header nav ul li a:visited {
+  color: white;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header nav ul li a:focus {
+  color: white;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header nav ul li a:hover {
+  color: white;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header nav ul li a:active {
+  color: white;
 }
 /* line 29, ../sass/_typography.scss */
 header #slider > article > a {
@@ -924,41 +992,116 @@ header #slider > article > a > h3 {
   line-height: 2.5em;
   background: url('/images/rgbapng/000000cc.png?1335187167');
   background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #slider > article > a > h3:visited {
+  color: white;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #slider > article > a > h3:focus {
+  color: white;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #slider > article > a > h3:hover {
+  color: white;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #slider > article > a > h3:active {
+  color: white;
 }
 
-/* line 42, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
 #product_categories {
   font-size: .8125em;
 }
-/* line 45, ../sass/_typography.scss */
+/* line 42, ../sass/_typography.scss */
 #product_categories a {
   text-decoration: none;
-  color: #666666;
+  color: #555555;
 }
 /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #product_categories a:visited {
-  color: #666666;
+  color: #555555;
 }
 /* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #product_categories a:focus {
-  color: #666666;
+  color: #555555;
 }
 /* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #product_categories a:hover {
-  color: #666666;
+  color: #555555;
 }
 /* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 #product_categories a:active {
-  color: #666666;
+  color: #555555;
 }
-/* line 50, ../sass/_typography.scss */
-#product_categories h3 {
-  font-size: 1.231em;
-  color: #000;
-  font-weight: normal;
+@media screen and (orientation:landscape) {
+  /* line 46, ../sass/_typography.scss */
+  #product_categories a h3 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2.5em;
+    background: url('/images/rgbapng/000000cc.png?1335187167');
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:visited {
+    color: white;
+  }
+  /* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:focus {
+    color: white;
+  }
+  /* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:hover {
+    color: white;
+  }
+  /* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:active {
+    color: white;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 46, ../sass/_typography.scss */
+  #product_categories a h3 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 2.5em;
+    background: url('/images/rgbapng/000000cc.png?1335187167');
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:visited {
+    color: white;
+  }
+  /* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:focus {
+    color: white;
+  }
+  /* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:hover {
+    color: white;
+  }
+  /* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+  #product_categories a h3:active {
+    color: white;
+  }
+}
+/* line 56, ../sass/_typography.scss */
+#product_categories a .description {
+  line-height: 1.5em;
+}
+@media screen and (min-width: 600px) {
+  /* line 56, ../sass/_typography.scss */
+  #product_categories a .description {
+    margin-top: 1em;
+  }
 }
 
-/* line 58, ../sass/_typography.scss */
+/* line 67, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -979,15 +1122,15 @@ footer a:hover {
 footer a:active {
   color: #cc0000;
 }
-/* line 63, ../sass/_typography.scss */
+/* line 72, ../sass/_typography.scss */
 footer nav a {
   font-size: .875em;
 }
-/* line 67, ../sass/_typography.scss */
+/* line 76, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 71, ../sass/_typography.scss */
+/* line 80, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;

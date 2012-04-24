@@ -28,7 +28,9 @@
             margin-bottom: 0;
 
             a {
+                .imageholder {
                     h3 {
+                        left: 0;
                         @include overlay-text-layout;
                     }
                 }
