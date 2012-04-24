@@ -23,7 +23,7 @@ require_once 'settings.php';
     <meta charset="utf-8">
     <title>A responsive HTML5 template</title>
     <meta name="description" content="This is an example of a responsive HTML5 template, based on HTML5 boilerplate">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>/css/screen.css">
     <script src="<?php echo $settings['template_folder'] ?>js/lib/modernizr-2.5.3.min.js"></script>
     <script>
@@ -117,30 +117,41 @@ require_once 'settings.php';
     <section role="main" id="product_categories">
         <article class="product_category">
             <a href="#">
-                <span class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1" class="clearfix"></span>
-                <h3>Fantastic product 1</h3>
+                <span class="imageholder">
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1">
+                    <h3>Fantastic product 1</h3>
+                </span>
                 <p class="description">An awesome product description for this product</p>
-                <span class="readmore">Read more</span>
             </a>
         </article>
         <article class="product_category">
-            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 2"></a>
-            <a href="#product" class="name"><h3>Fantastic product 2</h3></a>
-            <p class="description">An awesome product description for this product</p>
-            <a href="#" class="readmore">Read more</a>
+            <a href="#">
+                <span class="imageholder">
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 2">
+                    <h3>Fantastic product 2</h3>
+                </span>
+                <p class="description">An awesome product description for this product</p>
+            </a>
         </article>
         <article class="product_category">
-            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 3"></a>
-            <a href="#product" class="name"><h3>Fantastic product 3</h3></a>
-            <p class="description">An awesome product description for this product</p>
-            <a href="#" class="readmore">Read more</a>
+            <a href="#">
+                <span class="imageholder">
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 3">
+                    <h3>Fantastic product 3</h3>
+                </span>
+                <p class="description">An awesome product description for this product</p>
+            </a>
         </article>
         <article class="product_category">
-            <a href="#product" class="imageholder"><img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 4"></a>
-            <a href="#product" class="name"><h3>Fantastic product 4</h3></a>
-            <p class="description">An awesome product description for this product</p>
-            <a href="#" class="readmore">Read more</a>
+            <a href="#">
+                <span class="imageholder">
+                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 4">
+                    <h3>Fantastic product 4</h3>
+                </span>
+                <p class="description">An awesome product description for this product</p>
+            </a>
         </article>
+        
     </section>
     
     <footer>
