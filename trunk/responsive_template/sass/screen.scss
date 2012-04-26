@@ -9,9 +9,12 @@
 @import "mixins";
 @import "base";
 
+/* style CSS to use */
+@import "_style_example";
+
 /* layout */
-@import "layout";
-@import "layout_320";
+@import "layout_240";
+@import "layout_320"; /* As pr mobile first, this is the main css */
 @import "layout_600";
 @import "layout_1024";
 
@@ -20,6 +23,3 @@
 /* for non-touch enabled devices */
 @import "no-touch";
 @import "no-touch_typography";
-
-/* skagen hotel */
-@import "skagen";

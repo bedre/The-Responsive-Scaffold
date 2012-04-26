@@ -12,7 +12,7 @@
             }
 
             li:not(.normal) {
-                background: url(../images/skagen/arrow.png) no-repeat 95% 50%;
+                background: url('../images/' + $template-style-folder + '/arrow.png') no-repeat 95% 50%;
             }
 
             #menu_footer_link {
