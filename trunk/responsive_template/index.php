@@ -43,7 +43,7 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <img id="logo" src="<?php echo $settings['template_folder'] ?>images/skagen/logo.png" alt="Skagen Hotel">
+        <img id="logo" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name">
         
         <div id="contact_short">
             <span class="phone">755 19 100</span>
@@ -51,8 +51,8 @@ require_once 'settings.php';
         </div>
 
         <div id="language">
-            <span>Switch to:</span>
-            <a href="#english"><img src="<?php echo $settings['template_folder'] ?>images/skagen/english_big.png" alt="English language"></a>
+            <span><?php echo JText::_('Switch to') ?></span>
+            <a href="#english"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/english_big.png" alt="English language"></a>
         </div>
 
         <nav role="navigation">
@@ -82,7 +82,7 @@ require_once 'settings.php';
     <section id="slider">
         <article class="slide"> 
             <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 1">
+                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
                 <h3>Highlight reel 1</h3>
                 <p class="description">An awesome product description for this superb product</p>
                 <span class="readon">Read more</span>
@@ -90,7 +90,7 @@ require_once 'settings.php';
         </article>
         <article class="slide"> 
             <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 2">
+                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
                 <h3>Highlight reel 2</h3>
                 <p class="description">An awesome product description for this superb product</p>
                 <span class="readon">Read more</span>
@@ -98,7 +98,7 @@ require_once 'settings.php';
         </article>
         <article class="slide"> 
             <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 3">
+                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
                 <h3>Highlight reel 3</h3>
                 <p class="description">An awesome product description for this superb product</p>
                 <span class="readon">Read more</span>
@@ -106,7 +106,7 @@ require_once 'settings.php';
         </article>
         <article class="slide"> 
             <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/examples/slideshow_image.png" alt="Slide 4">
+                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
                 <h3>Highlight reel 4</h3>
                 <p class="description">An awesome product description for this superb product</p>
                 <span class="readon">Read more</span>
@@ -118,7 +118,7 @@ require_once 'settings.php';
         <article class="product_category">
             <a href="#">
                 <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 1">
+                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 1">
                     <h3>Fantastic product 1</h3>
                 </span>
                 <p class="description">An awesome product description for this product</p>
@@ -127,7 +127,7 @@ require_once 'settings.php';
         <article class="product_category">
             <a href="#">
                 <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 2">
+                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 2">
                     <h3>Fantastic product 2</h3>
                 </span>
                 <p class="description">An awesome product description for this product</p>
@@ -136,7 +136,7 @@ require_once 'settings.php';
         <article class="product_category">
             <a href="#">
                 <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 3">
+                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 3">
                     <h3>Fantastic product 3</h3>
                 </span>
                 <p class="description">An awesome product description for this product</p>
@@ -145,7 +145,7 @@ require_once 'settings.php';
         <article class="product_category">
             <a href="#">
                 <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/examples/product_image.png" alt="Product 4">
+                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 4">
                     <h3>Fantastic product 4</h3>
                 </span>
                 <p class="description">An awesome product description for this product</p>
