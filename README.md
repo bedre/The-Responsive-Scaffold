@@ -26,6 +26,7 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 1.  The template uses the rgbapng Compass plugin to provide cross-browser support for rgba() in CSS. Installation instructions: https://github.com/aaronrussell/compass-rgbapng
 2.  Check out _base.scss. It has a few variables you should be aware of/configure.
 3.  Check out settings.php for some more configuration.
+4.  In screen.css you need to edit the style specific CSS names (change example to your style name)
 
 ## FYI
 

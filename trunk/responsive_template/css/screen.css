@@ -547,15 +547,15 @@ table {
   BREAKPOINTS
 ***********************/
 /* Site might not look good below this */
-/* style CSS to use */
-/* layout */
-/* line 1, ../sass/_layout_240.scss */
-#slider {
-  height: 11.25em;
+/* which style specific CSS to use */
+/* line 82, example/icons/*.png */
+.icons-sprite {
+  background: url('../images/example/icons-s15874615cd.png') no-repeat;
 }
 
+/* layout */
 /* General */
-/* line 3, ../sass/_layout_320.scss */
+/* line 3, ../sass/_layout_240.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -564,39 +564,106 @@ table {
   /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
-/* line 11, ../sass/_layout_320.scss */
+/* line 11, ../sass/_layout_240.scss */
 body > * {
   width: 100%;
   clear: both;
 }
 
-/* line 19, ../sass/_layout_320.scss */
+/* line 17, ../sass/_layout_240.scss */
+header {
+  *zoom: 1;
+  margin-bottom: 1px;
+}
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 21, ../sass/_layout_240.scss */
 header #logo {
-  float: left;
-  width: 205px;
-  margin: 1em 0 1em 1em;
+  align: left;
+  width: 150px;
+  margin: 1em 0 0 1em;
 }
-/* line 25, ../sass/_layout_320.scss */
-header #contact_short {
-  display: none;
-}
-/* line 29, ../sass/_layout_320.scss */
-header #language {
+/* line 27, ../sass/_layout_240.scss */
+header #extra {
+  *zoom: 1;
   float: right;
-  text-align: right;
-  padding: 13px 1em 1em 1em;
+  width: 80px;
+  /* make room for logo */
 }
-/* line 34, ../sass/_layout_320.scss */
-header #language span {
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header #extra:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 33, ../sass/_layout_240.scss */
+header #extra #contact_short {
+  display: none;
+  float: right;
+  margin: 1em 0 0 0;
+}
+/* line 39, ../sass/_layout_240.scss */
+header #extra #language {
+  *zoom: 1;
+  margin: 1em 1em 0 0;
+  float: right;
+  text-align: center;
+  width: 60px;
+}
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header #extra #language:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 47, ../sass/_layout_240.scss */
+header #extra #language span {
   display: block;
   clear: right;
 }
-/* line 40, ../sass/_layout_320.scss */
+/* line 52, ../sass/_layout_240.scss */
+header #extra #language a {
+  display: block;
+  margin: 0 auto;
+  height: 22px;
+}
+/* line 57, ../sass/_layout_240.scss */
+header #extra #language a.active {
+  display: none;
+}
+/* line 62, ../sass/_layout_240.scss */
+header #extra #language #english {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: 0 0;
+  height: 22px;
+  width: 30px;
+  background-image: url('../images/example/icons-s4c620de0f8.png');
+  background-repeat: no-repeat;
+}
+/* line 66, ../sass/_layout_240.scss */
+header #extra #language #norwegian {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: 0 -22px;
+  height: 22px;
+  width: 30px;
+  background-image: url('../images/example/icons-s4c620de0f8.png');
+  background-repeat: no-repeat;
+}
+/* line 72, ../sass/_layout_240.scss */
 header nav {
   width: 100%;
   clear: both;
+  margin: 0;
 }
-/* line 44, ../sass/_layout_320.scss */
+/* line 77, ../sass/_layout_240.scss */
 header nav ul {
   margin: 0;
   padding: 0;
@@ -604,7 +671,6 @@ header nav ul {
   overflow: hidden;
   *zoom: 1;
   background: #666;
-  margin-bottom: 1px;
 }
 /* line 60, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li {
@@ -629,42 +695,42 @@ header nav ul li:last-child {
 header nav ul li.last {
   padding-right: 0;
 }
-/* line 50, ../sass/_layout_320.scss */
+/* line 82, ../sass/_layout_240.scss */
 header nav ul li {
   border-right: 1px solid #fff;
   width: 33.333%;
   padding: 0;
 }
-/* line 55, ../sass/_layout_320.scss */
+/* line 87, ../sass/_layout_240.scss */
 header nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 62, ../sass/_layout_320.scss */
+/* line 94, ../sass/_layout_240.scss */
 header nav ul li:last-child {
   border-right: 0;
   width: 33.334%;
 }
-/* line 67, ../sass/_layout_320.scss */
+/* line 99, ../sass/_layout_240.scss */
 header nav ul li.normal {
   display: none;
 }
 
-/* line 75, ../sass/_layout_320.scss */
+/* line 107, ../sass/_layout_240.scss */
 #slider {
   height: 8.438em;
   overflow: hidden;
   margin-bottom: 1em;
   border-bottom: 4px solid black;
 }
-/* line 81, ../sass/_layout_320.scss */
+/* line 113, ../sass/_layout_240.scss */
 #slider article {
   width: 100%;
   display: none;
   height: 100%;
 }
-/* line 86, ../sass/_layout_320.scss */
+/* line 118, ../sass/_layout_240.scss */
 #slider article a {
   position: relative;
   display: block;
@@ -679,11 +745,11 @@ header nav ul li.normal {
   display: table;
   clear: both;
 }
-/* line 94, ../sass/_layout_320.scss */
+/* line 126, ../sass/_layout_240.scss */
 #slider article a img {
   width: 100%;
 }
-/* line 98, ../sass/_layout_320.scss */
+/* line 130, ../sass/_layout_240.scss */
 #slider article a h3 {
   z-index: 1;
   position: absolute;
@@ -692,29 +758,29 @@ header nav ul li.normal {
   float: left;
   margin: 0;
 }
-/* line 103, ../sass/_layout_320.scss */
+/* line 135, ../sass/_layout_240.scss */
 #slider article a p.description,
 #slider article a span.readon {
   display: none;
 }
-/* line 110, ../sass/_layout_320.scss */
+/* line 142, ../sass/_layout_240.scss */
 #slider > article:first-child {
   display: block;
 }
 
-/* line 115, ../sass/_layout_320.scss */
+/* line 147, ../sass/_layout_240.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 120, ../sass/_layout_320.scss */
+/* line 152, ../sass/_layout_240.scss */
 #product_categories article {
   position: relative;
   float: left;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 126, ../sass/_layout_320.scss */
+/* line 158, ../sass/_layout_240.scss */
 #product_categories article a {
   display: block;
   width: 100%;
@@ -727,7 +793,7 @@ header nav ul li.normal {
   display: table;
   clear: both;
 }
-/* line 132, ../sass/_layout_320.scss */
+/* line 164, ../sass/_layout_240.scss */
 #product_categories article a .imageholder {
   position: relative;
   display: block;
@@ -761,18 +827,18 @@ header nav ul li.normal {
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
 }
-/* line 140, ../sass/_layout_320.scss */
+/* line 172, ../sass/_layout_240.scss */
 #product_categories article a .imageholder img {
   width: 100%;
 }
-/* line 144, ../sass/_layout_320.scss */
+/* line 176, ../sass/_layout_240.scss */
 #product_categories article a .imageholder h3 {
   position: absolute;
   bottom: -2.5em;
   left: -5px;
 }
 @media screen and (orientation: landscape) {
-  /* line 144, ../sass/_layout_320.scss */
+  /* line 176, ../sass/_layout_240.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -783,18 +849,18 @@ header nav ul li.normal {
     margin: 0;
   }
 }
-/* line 156, ../sass/_layout_320.scss */
+/* line 188, ../sass/_layout_240.scss */
 #product_categories article a .description {
   margin-top: 3em;
 }
 @media screen and (orientation: landscape) {
-  /* line 156, ../sass/_layout_320.scss */
+  /* line 188, ../sass/_layout_240.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 }
 
-/* line 166, ../sass/_layout_320.scss */
+/* line 198, ../sass/_layout_240.scss */
 footer {
   padding: 1em;
   background-color: #999999;
@@ -803,7 +869,7 @@ footer {
   width: 100%;
   border-top: 4px solid black;
 }
-/* line 176, ../sass/_layout_320.scss */
+/* line 208, ../sass/_layout_240.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -811,18 +877,18 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 184, ../sass/_layout_320.scss */
+/* line 216, ../sass/_layout_240.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 190, ../sass/_layout_320.scss */
+/* line 222, ../sass/_layout_240.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 194, ../sass/_layout_320.scss */
+/* line 226, ../sass/_layout_240.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -831,54 +897,158 @@ footer nav > ul > li > ul {
   border-radius: 5px;
   background-color: #8c8c8c;
 }
-/* line 198, ../sass/_layout_320.scss */
+/* line 230, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #999999;
 }
-/* line 202, ../sass/_layout_320.scss */
+/* line 234, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 210, ../sass/_layout_320.scss */
+/* line 242, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
 
-/* As pr mobile first, this is the main css */
+@media screen and (min-width: 20em) {
+  /* line 3, ../sass/_layout_320.scss */
+  header #logo {
+    width: 190px;
+  }
+  /* line 7, ../sass/_layout_320.scss */
+  header #extra {
+    width: 100px;
+  }
+
+  /* line 12, ../sass/_layout_320.scss */
+  #slider {
+    height: 11.25em;
+  }
+}
 @media screen and (min-width: 37.5em) {
+  /* If we're not on a touch device, we can fit in some extra content */
   /* line 6, ../sass/_layout_600.scss */
+  .no-touch header #extra {
+    margin-top: 1em;
+  }
+  /* line 9, ../sass/_layout_600.scss */
+  .no-touch header #extra #contact_short {
+    display: block;
+  }
+  /* line 13, ../sass/_layout_600.scss */
+  .no-touch header #extra #contact_short .phone,
+  .no-touch header #extra #contact_short .email {
+    display: block;
+    float: right;
+    line-height: 16px;
+    /* follow the icons size */
+    margin-right: 2em;
+  }
+  /* line 21, ../sass/_layout_600.scss */
+  .no-touch header #extra #contact_short .email_icon,
+  .no-touch header #extra #contact_short .phone_icon {
+    float: left;
+    margin-right: .5em;
+  }
+  /* line 26, ../sass/_layout_600.scss */
+  .no-touch header #extra #contact_short .email_icon {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -82px;
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/example/icons-s4c620de0f8.png');
+    background-repeat: no-repeat;
+  }
+  /* line 30, ../sass/_layout_600.scss */
+  .no-touch header #extra #contact_short .phone_icon {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -66px;
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/example/icons-s4c620de0f8.png');
+    background-repeat: no-repeat;
+  }
+  /* line 35, ../sass/_layout_600.scss */
+  .no-touch header #extra #language {
+    padding-top: 2px;
+    height: 11px;
+    width: 35px;
+  }
+  /* line 40, ../sass/_layout_600.scss */
+  .no-touch header #extra #language span {
+    display: none;
+  }
+  /* line 44, ../sass/_layout_600.scss */
+  .no-touch header #extra #language a.active {
+    display: block;
+    opacity: .4;
+    float: left;
+  }
+  /* line 50, ../sass/_layout_600.scss */
+  .no-touch header #extra #language #english {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -44px;
+    height: 11px;
+    width: 14px;
+    background-image: url('../images/example/icons-s4c620de0f8.png');
+    background-repeat: no-repeat;
+  }
+  /* line 53, ../sass/_layout_600.scss */
+  .no-touch header #extra #language #norwegian {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -55px;
+    height: 11px;
+    width: 14px;
+    background-image: url('../images/example/icons-s4c620de0f8.png');
+    background-repeat: no-repeat;
+    float: right;
+  }
+
+  /* line 63, ../sass/_layout_600.scss */
+  header #extra {
+    width: 380px;
+  }
+  /* line 69, ../sass/_layout_600.scss */
   header nav ul li, header nav ul li:last-child {
     width: 20%;
   }
-  /* line 10, ../sass/_layout_600.scss */
+  /* line 73, ../sass/_layout_600.scss */
   header nav ul li.normal {
     display: block;
   }
-  /* line 14, ../sass/_layout_600.scss */
+  /* line 77, ../sass/_layout_600.scss */
   header nav ul li:not(.normal) {
     background: url("../images/example/arrow.png") no-repeat 95% 50%;
   }
-  /* line 18, ../sass/_layout_600.scss */
+  /* line 81, ../sass/_layout_600.scss */
   header nav ul #menu_footer_link {
     display: none;
   }
 
-  /* line 24, ../sass/_layout_600.scss */
+  /* line 87, ../sass/_layout_600.scss */
   #slider {
     height: 21.094em;
   }
 
-  /* line 29, ../sass/_layout_600.scss */
+  /* line 92, ../sass/_layout_600.scss */
   #product_categories article {
     width: 50%;
     padding: 1em;
     margin-bottom: 0;
   }
-  /* line 36, ../sass/_layout_600.scss */
+  /* line 99, ../sass/_layout_600.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -888,18 +1058,18 @@ footer nav > ul > li > ul > li:last-child {
     float: left;
     margin: 0;
   }
-  /* line 42, ../sass/_layout_600.scss */
+  /* line 105, ../sass/_layout_600.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 52, ../sass/_layout_600.scss */
+  /* line 115, ../sass/_layout_600.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 58, ../sass/_layout_600.scss */
+  /* line 121, ../sass/_layout_600.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
@@ -907,36 +1077,121 @@ footer nav > ul > li > ul > li:last-child {
 }
 @media screen and (min-width: 64em) {
   /* line 3, ../sass/_layout_1024.scss */
-  header #contact_short {
+  .no-touch header #extra {
+    margin-top: 0;
+  }
+
+  /* line 9, ../sass/_layout_1024.scss */
+  header #logo {
+    margin-bottom: 0;
+    width: 202px;
+  }
+  /* line 15, ../sass/_layout_1024.scss */
+  header #extra #contact_short {
     display: block;
     float: right;
   }
+  /* line 20, ../sass/_layout_1024.scss */
+  header #extra #language {
+    height: 22px;
+    width: 75px;
+  }
+  /* line 24, ../sass/_layout_1024.scss */
+  header #extra #language span {
+    display: none;
+  }
+  /* line 28, ../sass/_layout_1024.scss */
+  header #extra #language a.active {
+    display: block;
+    opacity: .4;
+  }
+  /* line 33, ../sass/_layout_1024.scss */
+  header #extra #language #norwegian {
+    float: right;
+  }
+  /* line 39, ../sass/_layout_1024.scss */
+  header nav {
+    width: auto;
+    float: right;
+    margin-right: 1em;
+  }
+  /* line 44, ../sass/_layout_1024.scss */
+  header nav > ul {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  /* line 47, ../sass/_layout_1024.scss */
+  header nav > ul > li > a {
+    padding: 0 3em;
+  }
 
-  /* line 10, ../sass/_layout_1024.scss */
+  /* line 55, ../sass/_layout_1024.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 16, ../sass/_layout_1024.scss */
+  /* line 61, ../sass/_layout_1024.scss */
   footer nav {
     width: 60%;
   }
 }
-/* line 1, ../sass/_typography.scss */
-body {
-  color: #555555;
+@media screen and (min-width: 90em) {
+  /* line 4, ../sass/_layout_1440.scss */
+  header nav > ul {
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -ms-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  /* line 7, ../sass/_layout_1440.scss */
+  header nav > ul > li > a {
+    padding: 0 4em;
+  }
 }
+/* typography */
 /* line 58, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-body body {
+body {
   font-size: 100%;
   line-height: 1.5em;
 }
+
 /* line 62, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-body html > body {
+html > body {
   font-size: 16px;
 }
 
-/* line 6, ../sass/_typography.scss */
+@media screen and (min-width: 90em) {
+  /* line 58, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  body {
+    font-size: 112.5%;
+    line-height: 1.333em;
+  }
+
+  /* line 62, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+  html > body {
+    font-size: 18px;
+  }
+}
+/* line 7, ../sass/_typography.scss */
+body {
+  color: #555555;
+}
+
+/* line 11, ../sass/_typography.scss */
 a {
   color: #999999;
 }
@@ -957,19 +1212,46 @@ a:active {
   color: #cc0000;
 }
 
-/* line 11, ../sass/_typography.scss */
+/* line 17, ../sass/_typography.scss */
 header #language {
   font-size: .6875em;
   text-align: center;
 }
-/* line 17, ../sass/_typography.scss */
+/* line 22, ../sass/_typography.scss */
+header #contact_short {
+  font-size: .75em;
+  color: #000;
+  font-weight: bold;
+}
+/* line 27, ../sass/_typography.scss */
+header #contact_short a {
+  color: black;
+  text-decoration: none;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #contact_short a:visited {
+  color: black;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #contact_short a:focus {
+  color: black;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #contact_short a:hover {
+  color: black;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #contact_short a:active {
+  color: black;
+}
+/* line 34, ../sass/_typography.scss */
 header nav ul li {
   text-align: center;
 }
-/* line 19, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 header nav ul li a {
-  font-size: .8125em;
-  line-height: 3.385em;
+  font-size: .75em;
+  line-height: 3.333em;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
@@ -991,7 +1273,7 @@ header nav ul li a:active {
   color: white;
 }
 
-/* line 30, ../sass/_typography.scss */
+/* line 47, ../sass/_typography.scss */
 #slider > article > a {
   color: white;
   text-decoration: none;
@@ -1012,12 +1294,12 @@ header nav ul li a:active {
 #slider > article > a:active {
   color: white;
 }
-/* line 34, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 #slider > article > a > h3 {
   font-size: 1em;
   font-weight: normal;
   line-height: 2.5em;
-  background: url('/images/rgbapng/000000cc.png?1335187167');
+  background: url('../images/rgbapng/000000cc.png?1335187167');
   background: rgba(0, 0, 0, 0.8);
   color: white;
 }
@@ -1038,11 +1320,11 @@ header nav ul li a:active {
   color: white;
 }
 
-/* line 39, ../sass/_typography.scss */
+/* line 56, ../sass/_typography.scss */
 #product_categories {
   font-size: .8125em;
 }
-/* line 42, ../sass/_typography.scss */
+/* line 59, ../sass/_typography.scss */
 #product_categories a {
   text-decoration: none;
   color: #555555;
@@ -1064,12 +1346,12 @@ header nav ul li a:active {
   color: #555555;
 }
 @media screen and (orientation: landscape) {
-  /* line 46, ../sass/_typography.scss */
+  /* line 63, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
     line-height: 2.5em;
-    background: url('/images/rgbapng/000000cc.png?1335187167');
+    background: url('../images/rgbapng/000000cc.png?1335187167');
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -1090,13 +1372,13 @@ header nav ul li a:active {
     color: white;
   }
 }
-@media screen and (min-width: 600px) {
-  /* line 46, ../sass/_typography.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 63, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
     line-height: 2.5em;
-    background: url('/images/rgbapng/000000cc.png?1335187167');
+    background: url('../images/rgbapng/000000cc.png?1335187167');
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -1117,18 +1399,18 @@ header nav ul li a:active {
     color: white;
   }
 }
-/* line 56, ../sass/_typography.scss */
+/* line 73, ../sass/_typography.scss */
 #product_categories a .description {
   line-height: 1.5em;
 }
-@media screen and (min-width: 600px) {
-  /* line 56, ../sass/_typography.scss */
+@media screen and (min-width: 37.5em) {
+  /* line 73, ../sass/_typography.scss */
   #product_categories a .description {
     margin-top: 1em;
   }
 }
 
-/* line 67, ../sass/_typography.scss */
+/* line 84, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -1149,15 +1431,15 @@ footer a:hover {
 footer a:active {
   color: #cc0000;
 }
-/* line 72, ../sass/_typography.scss */
+/* line 89, ../sass/_typography.scss */
 footer nav a {
   font-size: .875em;
 }
-/* line 76, ../sass/_typography.scss */
+/* line 93, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 80, ../sass/_typography.scss */
+/* line 97, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;

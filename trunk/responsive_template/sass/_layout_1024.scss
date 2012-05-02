@@ -1,8 +1,53 @@
 @media screen and (min-width: $break-large) {
+
+    .no-touch header #extra {
+        margin-top: 0;
+    }
+
     header {
-        #contact_short {
-            display: block;
+
+        #logo {
+            margin-bottom: 0;
+            width: 202px;
+        }
+
+        #extra {
+            #contact_short {
+                display: block;
+                float: right;
+            }
+
+            #language {
+                height: image-height(sprite-file($icons-sprite-map, english_large));
+                width:  2.5*image-width(sprite-file($icons-sprite-map, english_large));
+
+                span {
+                    display: none;
+                }
+
+                a.active {
+                    display: block;
+                    opacity: .4;
+                }
+
+                #norwegian {
+                    float: right;
+                }
+            }
+        }
+
+        nav {
+            width: auto;
             float: right;
+            margin-right: 1em;
+
+            & > ul {
+                @include border-top-radius();
+
+                & > li > a {
+                    padding: 0 3em;
+                }
+            }
         }
     }
 

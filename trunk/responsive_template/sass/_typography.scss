@@ -1,5 +1,10 @@
+@include establish_baseline(16px);
+
+@media screen and (min-width: $break-xlarge) {
+    @include establish_baseline(18px);
+}
+
 body {
-    @include establish_baseline(16px);
     color: $text-colour;
 }
 
@@ -8,17 +13,29 @@ a {
 }
 
 header {
+
     #language {
         font-size: .6875em;
         text-align: center;
+    }
+
+    #contact_short {
+        font-size: .75em;
+        color: #000;
+        font-weight: bold;
+
+        a {
+            @include link-colors(#000, #000, #000, #000, #000);
+            text-decoration: none;
+        }
     }
 
     nav ul {
         li {
             text-align: center;
             a {
-                font-size: .8125em;
-                line-height: 3.385em;
+                font-size: .75em;
+                line-height: 3.333em;
                 text-transform: uppercase;
                 text-decoration: none;
                 @include link-colors(#fff, #fff, #fff, #fff, #fff);
@@ -48,7 +65,7 @@ header {
                 @include overlay-text-typography;
             }
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: $break-medium) {
                 @include overlay-text-typography;   
             }
         }
@@ -56,7 +73,7 @@ header {
         .description {
             line-height: 1.5em;
 
-            @media screen and (min-width: 600px) {
+            @media screen and (min-width: $break-medium) {
                 margin-top: 1em;
             }
         }

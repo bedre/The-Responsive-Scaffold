@@ -2,6 +2,7 @@
 @import "compass/css3";
 @import "compass/typography";
 @import "compass/utilities/general/clearfix";
+@import "compass/utilities/sprites/sprite-img";
 @import "rgbapng";
 
 /* initialization, variables */
@@ -9,15 +10,18 @@
 @import "mixins";
 @import "base";
 
-/* style CSS to use */
+/* which style specific CSS to use */
 @import "_style_example";
+@import "_sprites_example";
 
 /* layout */
 @import "layout_240";
-@import "layout_320"; /* As pr mobile first, this is the main css */
+@import "layout_320";
 @import "layout_600";
 @import "layout_1024";
+@import "layout_1440";
 
+/* typography */
 @import "typography";
 
 /* for non-touch enabled devices */

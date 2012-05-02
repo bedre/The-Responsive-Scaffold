@@ -1,6 +1,69 @@
 @media screen and (min-width: $break-medium) { 
 
+    /* If we're not on a touch device, we can fit in some extra content */
+    .no-touch {
+        header {
+            #extra {
+                margin-top: 1em;
+
+                #contact_short {
+                    display: block;
+
+                    .phone, 
+                    .email {
+                        display: block;
+                        float: right;
+                        line-height: 16px; /* follow the icons size */
+                        margin-right: 2em;
+                    }
+
+                    .email_icon,
+                    .phone_icon {
+                        float: left;
+                        margin-right: .5em;
+                    }
+
+                    .email_icon {
+                        @include sprite-replace-text-with-dimensions($icons-sprite-map, email); 
+                    }
+
+                    .phone_icon {
+                        @include sprite-replace-text-with-dimensions($icons-sprite-map, phone); 
+                    }
+                }
+
+                #language {
+                    padding-top: 2px;
+                    height: image-height(sprite-file($icons-sprite-map, english_small));
+                    width:  2.5*image-width(sprite-file($icons-sprite-map, english_small));
+
+                    span {
+                        display: none;
+                    }
+
+                    a.active {
+                        display: block;
+                        opacity: .4;
+                        float: left;
+                    }  
+
+                    #english {
+                        @include sprite-replace-text-with-dimensions($icons-sprite-map, english_small);            
+                    }
+                    #norwegian {
+                        @include sprite-replace-text-with-dimensions($icons-sprite-map, norwegian_small);
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
     header {
+        #extra {
+            width: 380px;
+        }
+
         nav ul {
 
             li, li:last-child {

@@ -24,7 +24,7 @@ require_once 'settings.php';
     <title>A responsive HTML5 template</title>
     <meta name="description" content="This is an example of a responsive HTML5 template, based on HTML5 boilerplate">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>/css/screen.css">
+    <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>css/screen.css">
     <script src="<?php echo $settings['template_folder'] ?>js/lib/modernizr-2.5.3.min.js"></script>
     <script>
         Modernizr.load({
@@ -43,18 +43,22 @@ require_once 'settings.php';
 
 <body>
     <header>
+
         <img id="logo" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name">
+
+        <div id="extra">
+            <div id="language">
+                <span><?php echo JText::_('Switch to') ?></span>
+                <a id="english" href="#english" class="active">English</a>
+                <a id="norwegian" href="#norwegian">Norsk</a>
+            </div>
+
+            <div id="contact_short">
+                <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>booking@skagen-hotel.no</a>
+                <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
+            </div>
+        </div>
         
-        <div id="contact_short">
-            <span class="phone">755 19 100</span>
-            <a href="mailto:booking@skagen-hotel.no" class="email">booking@skagen-hotel.no</a>
-        </div>
-
-        <div id="language">
-            <span><?php echo JText::_('Switch to') ?></span>
-            <a href="#english"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/english_big.png" alt="English language"></a>
-        </div>
-
         <nav role="navigation">
             <ul>
                 <li id="menu_footer_link">
@@ -77,6 +81,7 @@ require_once 'settings.php';
                 </li>
             </ul>
         </nav>
+
     </header>
 
     <section id="slider">

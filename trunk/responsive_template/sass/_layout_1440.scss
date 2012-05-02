@@ -1,0 +1,13 @@
+@media screen and (min-width: $break-xlarge) {
+    header {
+        nav {
+            & > ul {
+                @include border-top-radius();
+
+                & > li > a {
+                    padding: 0 4em;
+                }
+            }
+        }
+    }
+}
