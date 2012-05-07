@@ -98,4 +98,19 @@ footer {
         text-transform: uppercase;
         color: #fff;
     }
+
+    #contact {
+        font-size: .875em;
+
+        [itemprop="telephone"],
+        [itemprop="url"] {
+            font-size: .875em;
+            line-height: image-height(sprite-file($icons-sprite-map, button_arrow)); // match the icons size
+        }
+    }
+
+    #copyright {
+        font-size: .75em;
+        opacity: .6;
+    }
 }

@@ -1,5 +1,10 @@
 @media screen and (min-width: $break-xlarge) {
     header {
+
+        #logo {
+            width: 20%;
+        }
+
         nav {
             & > ul {
                 @include border-top-radius();

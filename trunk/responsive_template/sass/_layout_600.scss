@@ -11,7 +11,6 @@
 
                     .phone, 
                     .email {
-                        display: block;
                         float: right;
                         line-height: 16px; /* follow the icons size */
                         margin-right: 2em;
@@ -19,8 +18,7 @@
 
                     .email_icon,
                     .phone_icon {
-                        float: left;
-                        margin-right: .5em;
+                        @include inline-icon;
                     }
 
                     .email_icon {
@@ -60,8 +58,12 @@
     }
 
     header {
+        #logo {
+            width: 25%;
+        }
+
         #extra {
-            width: 380px;
+            width: 60%;
         }
 
         nav ul {
@@ -121,6 +123,24 @@
             > li:last-child {
                 width: 33.334%;
                 padding-right: 0;
+            }
+        }
+
+        #contact {
+            position: relative;
+
+            #company_contact {
+                width: 50%;
+                float: left;
+            }
+
+            [itemprop="address"] {
+                float: right;
+                width: 50%;
+
+                #map {
+                    display: block;
+                }
             }
         }
     }

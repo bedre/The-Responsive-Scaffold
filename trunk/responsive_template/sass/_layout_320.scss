@@ -1,11 +1,18 @@
 @media screen and (min-width: $break-small) { 
     header {
         #logo {
-            width: 190px;
+            width: 40%;
         }
 
         #extra {
-            width: 100px;
+            #language {
+                span {
+                    display: block;
+                    float: right;
+                    margin-right: 1em;
+                    line-height: image-height(sprite-file($icons-sprite-map, english_large));
+                }
+            }
         }
     }
 

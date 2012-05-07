@@ -43,18 +43,17 @@ require_once 'settings.php';
 
 <body>
     <header>
-
-        <img id="logo" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name">
+        <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
 
         <div id="extra">
             <div id="language">
-                <span><?php echo JText::_('Switch to') ?></span>
                 <a id="english" href="#english" class="active">English</a>
                 <a id="norwegian" href="#norwegian">Norsk</a>
+                <span><?php echo JText::_('Switch to') ?>: </span>
             </div>
 
             <div id="contact_short">
-                <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>booking@skagen-hotel.no</a>
+                <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>order@company-name.com</a>
                 <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
             </div>
         </div>
@@ -195,24 +194,24 @@ require_once 'settings.php';
             </ul>
         </nav>
 
-        <div itemscope itemtype="http://schema.org/Organization">
-            <span itemprop="name">Your Corporation Inc.</span>
-
+        <div itemscope itemtype="http://schema.org/Organization" id="contact">
+            <a name="contact"></a>
             <h3>Contact us</h3>
-            <span itemprop="telephone">+47 22 22 22 22</span>
-            <span itemprop="url">http://facebook.com/yourcorp</span>
-            <span itemprop="url">http://twitter.com/yourcorp</span>
+            <div id="company_contact">
+                <span itemprop="name">Your Corporation Inc.</span>
+                <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 22 22 22 22</span>
+                <a itemprop="url" href="http://facebook.com/yourcorp" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/yourcorp</a>
+            </div>
 
             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">
-                    Storgata 1,
-                    Andre etasje
-                </span>
+                <span itemprop="description">Your Corporation Inc.</span>
+                <span itemprop="streetAddress">Storgata 1</span>
+                <span itemprop="postalCode">8001</span>
                 <span itemprop="addressLocality">Bodø</span>
                 <span itemprop="addressRegion">Nordland</span>
-                <span itemprop="postalCode">8001</span>
                 <span itemprop="addressCountry">Norway</span>
-                <a itemprop="url" href="#">Map</a>
+                <a itemprop="url" href="#">Directions</a>
+                <img id="map" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
             </div>
         </div>
 

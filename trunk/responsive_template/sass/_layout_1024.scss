@@ -7,11 +7,15 @@
     header {
 
         #logo {
-            margin-bottom: 0;
-            width: 202px;
+            margin-bottom: 1em;
         }
 
         #extra {
+
+            position: absolute;
+            right: 0;
+            bottom: 3.25em;
+
             #contact_short {
                 display: block;
                 float: right;
@@ -38,8 +42,12 @@
 
         nav {
             width: auto;
-            float: right;
+            clear: right;
             margin-right: 1em;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
 
             & > ul {
                 @include border-top-radius();
@@ -59,7 +67,15 @@
 
     footer {
         nav {
-            width: 60%;
+            width: 50%;
+            max-width: 50em;
+            float: left;
+        }
+
+        #contact {
+            width: 50%;
+            float: right;
+            max-width: 40em;
         }
     }
 }

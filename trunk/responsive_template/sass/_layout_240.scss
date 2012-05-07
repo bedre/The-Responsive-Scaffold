@@ -17,41 +17,48 @@ body {
 header {
     @include pie-clearfix;
     margin-bottom: 1px;
+    position: relative;
 
     #logo {
-        align: left;
-        width: 150px;
-        margin: 1em 0 0 1em;
+        float: left;
+        width: 50%;
+        margin: 1em 0 1em 1em;
+        line-height: 0;
+
+        img {
+            width: 100%;
+        }
     }
 
     #extra {
         @include pie-clearfix;
 
-        float: right;
-        width: 80px; /* make room for logo */
+        position: absolute;
+        right: 0;
+        bottom: 3.5em;
+        width: 50%; /* make room for logo */
 
         #contact_short {
             display: none;
             float: right;
-            margin: 1em 0 0 0;
+            margin: 1.333em 0 0 0;
         }
 
         #language {
             @include pie-clearfix;
 
-            margin: 1em 1em 0 0;
+            margin: 1.455em 1.455em 0 0;
             float: right;
             text-align: center;
-            width:  30+image-width(sprite-file($icons-sprite-map, english_large));
+            width: 100%;
 
             span {
-                display: block;
-                clear: right;
+                display: none;
             }
 
             a {
                 display: block;
-                margin: 0 auto;
+                float: right;
                 height: image-height(sprite-file($icons-sprite-map, english_large));
 
                 &.active {
@@ -72,7 +79,6 @@ header {
     nav {
         width: 100%;
         clear: both; 
-        margin: 0;
 
         ul {
             @include horizontal-list;
@@ -204,6 +210,8 @@ footer {
     border-top: 4px solid $separator-colour;
 
     nav { 
+        @include pie-clearfix;
+        margin-bottom: 1em;
 
         ul {
             float: left;
@@ -244,5 +252,90 @@ footer {
                 }
             }
         }
+    }
+
+    #contact {
+        width: 100%;
+        @include pie-clearfix;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        [itemprop="name"] {
+            display: none;
+        }
+
+        [itemprop="telephone"],
+        [itemprop="url"] {
+            width: 100%;
+            display: block;
+            clear: both;
+            margin-bottom: .5em;
+        }
+
+        .icon {
+            @include inline-icon;
+        }
+
+        #phone-icon {
+            @include sprite-replace-text-with-dimensions($icons-sprite-map, phone_white); 
+        }
+
+        #facebook-icon {
+            @include sprite-replace-text-with-dimensions($icons-sprite-map, facebook_white); 
+        }
+
+        & > [itemprop="address"] {
+            position: relative;
+            @include pie-clearfix;
+            background-color: darken($colour1, 10%);
+            @include border-radius();
+            padding: 1.125em;
+            margin-top: 1em;
+            max-width: 24em;
+
+            span {
+                width: 100%;
+                display: block;
+                clear: both;
+            }
+
+            [itemprop="addressRegion"],
+            [itemprop="addressCountry"] {
+                display: none;
+            }
+
+            [itemprop="addressLocality"],
+            [itemprop="postalCode"] {
+                width: auto;
+                float: left;
+                margin-right: .5em;
+                clear: none;
+            }
+
+            [itemprop="url"] {
+                float: left;
+                width: auto;
+                @include button;
+                @include button-arrow;
+                clear: both;
+                margin-top: .5em;
+                margin-bottom: 0;
+            }
+
+            #map {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+            }
+        }
+
+    }
+
+    #copyright {
+        clear: both;
+        width: 100%;
+        margin-top: 2em;
     }
 }

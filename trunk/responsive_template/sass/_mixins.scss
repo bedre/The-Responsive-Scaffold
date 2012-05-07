@@ -38,3 +38,27 @@
     @include rgba-background(rgba(0,0,0,0.8));
     @include link-colors(#fff, #fff, #fff, #fff, #fff);
 }
+
+@mixin inline-icon {
+    float: left;
+    margin-right: .5em;
+}
+
+@mixin button ($bgcolor: $colour1) {
+    @include border-radius();
+    background-color: darken($bgcolor, 20%);
+    padding: 1em;
+}
+
+@mixin button-arrow {
+    &:after {
+        display: block;
+        float: right;
+        margin-top: 1px;
+        margin-left: .5em;
+        content: "";
+        width: image-width(sprite-file($icons-sprite-map, button_arrow));
+        height: image-height(sprite-file($icons-sprite-map, button_arrow));
+        background: transparent url('../images/'+$template-style-folder+'/icons/button_arrow.png') no-repeat;
+    }
+}

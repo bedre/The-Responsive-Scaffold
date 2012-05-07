@@ -1,0 +1,22 @@
+@media screen and (min-width: 28em) {
+    footer {
+        #contact {
+            position: relative;
+
+            #company_contact {
+                width: 50%;
+                float: left;
+            }
+
+            [itemprop="address"] {
+                float: right;
+                width: 50%;
+                margin-top: -2.852em;
+
+                #map {
+                    display: none;
+                }
+            }
+        }
+    }
+} 
