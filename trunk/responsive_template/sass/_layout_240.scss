@@ -135,6 +135,7 @@ header {
 
             h3 {
                 @include overlay-text-layout;
+                @include button-arrow(.9em);
             }
 
             p.description,

@@ -104,8 +104,11 @@ footer {
 
         [itemprop="telephone"],
         [itemprop="url"] {
-            font-size: .875em;
             line-height: image-height(sprite-file($icons-sprite-map, button_arrow)); // match the icons size
+        }
+
+        [itemprop="address"] a {
+            font-size: .875em;
         }
     }
 

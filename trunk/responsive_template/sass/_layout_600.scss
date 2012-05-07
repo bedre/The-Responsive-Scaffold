@@ -91,9 +91,11 @@
     }
 
     #product_categories {
+        padding: 0;
+        
         article {
             width: 50%;
-            padding: 1em;
+            padding: 1.231em;
             margin-bottom: 0;
 
             a {
@@ -136,7 +138,7 @@
 
             [itemprop="address"] {
                 float: right;
-                width: 50%;
+                width: 45%;
 
                 #map {
                     display: block;

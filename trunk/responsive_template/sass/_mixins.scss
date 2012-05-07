@@ -26,7 +26,7 @@
     z-index: 1;
     position: absolute;
     bottom: 0;
-    padding: 0 2em 0 1em;
+    padding: 0 1em 0 1em;
     float: left;
     margin: 0;
 }
@@ -50,15 +50,18 @@
     padding: 1em;
 }
 
-@mixin button-arrow {
+@mixin button-arrow ($margin-top: 0) {
     &:after {
         display: block;
         float: right;
-        margin-top: 1px;
+        @if ($margin-top != 0) {
+            margin-top: $margin-top;
+        }
         margin-left: .5em;
         content: "";
         width: image-width(sprite-file($icons-sprite-map, button_arrow));
         height: image-height(sprite-file($icons-sprite-map, button_arrow));
-        background: transparent url('../images/'+$template-style-folder+'/icons/button_arrow.png') no-repeat;
+        @include sprite-replace-text-with-dimensions($icons-sprite-map, button_arrow);
+        opacity: .8;
     }
 }
