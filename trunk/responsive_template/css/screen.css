@@ -724,88 +724,18 @@ header nav ul li.normal {
 }
 
 /* line 113, ../sass/_layout_240.scss */
-#slider {
-  height: 8.438em;
-  overflow: hidden;
-  margin-bottom: 1em;
-  border-bottom: 4px solid black;
-}
-/* line 119, ../sass/_layout_240.scss */
-#slider article {
-  width: 100%;
-  display: none;
-  height: 100%;
-}
-/* line 124, ../sass/_layout_240.scss */
-#slider article a {
-  position: relative;
-  display: block;
-  width: 100%;
-  line-height: 0;
-  height: 100%;
-  *zoom: 1;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#slider article a:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 132, ../sass/_layout_240.scss */
-#slider article a img {
-  width: 100%;
-}
-/* line 136, ../sass/_layout_240.scss */
-#slider article a h3 {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  padding: 0 1em 0 1em;
-  float: left;
-  margin: 0;
-}
-/* line 54, ../sass/_mixins.scss */
-#slider article a h3:after {
-  display: block;
-  float: right;
-  margin-top: 0.9em;
-  margin-left: .5em;
-  content: "";
-  width: 13px;
-  height: 13px;
-  text-indent: 110%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-position: 0 -130px;
-  height: 13px;
-  width: 13px;
-  background-image: url('../images/example/icons-s262188356a.png');
-  background-repeat: no-repeat;
-  opacity: .8;
-}
-/* line 142, ../sass/_layout_240.scss */
-#slider article a p.description,
-#slider article a span.readon {
-  display: none;
-}
-/* line 149, ../sass/_layout_240.scss */
-#slider > article:first-child {
-  display: block;
-}
-
-/* line 154, ../sass/_layout_240.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 159, ../sass/_layout_240.scss */
+/* line 118, ../sass/_layout_240.scss */
 #product_categories article {
   position: relative;
   float: left;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 165, ../sass/_layout_240.scss */
+/* line 124, ../sass/_layout_240.scss */
 #product_categories article a {
   display: block;
   width: 100%;
@@ -818,7 +748,7 @@ header nav ul li.normal {
   display: table;
   clear: both;
 }
-/* line 171, ../sass/_layout_240.scss */
+/* line 130, ../sass/_layout_240.scss */
 #product_categories article a .imageholder {
   position: relative;
   display: block;
@@ -852,18 +782,18 @@ header nav ul li.normal {
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
 }
-/* line 179, ../sass/_layout_240.scss */
+/* line 138, ../sass/_layout_240.scss */
 #product_categories article a .imageholder img {
   width: 100%;
 }
-/* line 183, ../sass/_layout_240.scss */
+/* line 142, ../sass/_layout_240.scss */
 #product_categories article a .imageholder h3 {
   position: absolute;
   bottom: -2.5em;
   left: -5px;
 }
 @media screen and (orientation: landscape) {
-  /* line 183, ../sass/_layout_240.scss */
+  /* line 142, ../sass/_layout_240.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -874,18 +804,18 @@ header nav ul li.normal {
     margin: 0;
   }
 }
-/* line 195, ../sass/_layout_240.scss */
+/* line 154, ../sass/_layout_240.scss */
 #product_categories article a .description {
   margin-top: 3em;
 }
 @media screen and (orientation: landscape) {
-  /* line 195, ../sass/_layout_240.scss */
+  /* line 154, ../sass/_layout_240.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 }
 
-/* line 205, ../sass/_layout_240.scss */
+/* line 164, ../sass/_layout_240.scss */
 footer {
   padding: 1em;
   background-color: #999999;
@@ -894,7 +824,7 @@ footer {
   width: 100%;
   border-top: 4px solid black;
 }
-/* line 213, ../sass/_layout_240.scss */
+/* line 172, ../sass/_layout_240.scss */
 footer nav {
   *zoom: 1;
   margin-bottom: 1em;
@@ -905,7 +835,7 @@ footer nav:after {
   display: table;
   clear: both;
 }
-/* line 217, ../sass/_layout_240.scss */
+/* line 176, ../sass/_layout_240.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -913,18 +843,18 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 225, ../sass/_layout_240.scss */
+/* line 184, ../sass/_layout_240.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 231, ../sass/_layout_240.scss */
+/* line 190, ../sass/_layout_240.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 235, ../sass/_layout_240.scss */
+/* line 194, ../sass/_layout_240.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -933,23 +863,23 @@ footer nav > ul > li > ul {
   border-radius: 5px;
   background-color: #8c8c8c;
 }
-/* line 239, ../sass/_layout_240.scss */
+/* line 198, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #999999;
 }
-/* line 243, ../sass/_layout_240.scss */
+/* line 202, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 251, ../sass/_layout_240.scss */
+/* line 210, ../sass/_layout_240.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
-/* line 258, ../sass/_layout_240.scss */
+/* line 217, ../sass/_layout_240.scss */
 footer #contact {
   width: 100%;
   *zoom: 1;
@@ -960,15 +890,15 @@ footer #contact:after {
   display: table;
   clear: both;
 }
-/* line 262, ../sass/_layout_240.scss */
+/* line 221, ../sass/_layout_240.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 266, ../sass/_layout_240.scss */
+/* line 225, ../sass/_layout_240.scss */
 footer #contact [itemprop="name"] {
   display: none;
 }
-/* line 271, ../sass/_layout_240.scss */
+/* line 230, ../sass/_layout_240.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   width: 100%;
@@ -976,12 +906,12 @@ footer #contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 278, ../sass/_layout_240.scss */
+/* line 237, ../sass/_layout_240.scss */
 footer #contact .icon {
   float: left;
   margin-right: .5em;
 }
-/* line 282, ../sass/_layout_240.scss */
+/* line 241, ../sass/_layout_240.scss */
 footer #contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -992,7 +922,7 @@ footer #contact #phone-icon {
   background-image: url('../images/example/icons-s262188356a.png');
   background-repeat: no-repeat;
 }
-/* line 286, ../sass/_layout_240.scss */
+/* line 245, ../sass/_layout_240.scss */
 footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1003,7 +933,7 @@ footer #contact #facebook-icon {
   background-image: url('../images/example/icons-s262188356a.png');
   background-repeat: no-repeat;
 }
-/* line 290, ../sass/_layout_240.scss */
+/* line 249, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   *zoom: 1;
@@ -1023,18 +953,18 @@ footer #contact > [itemprop="address"]:after {
   display: table;
   clear: both;
 }
-/* line 299, ../sass/_layout_240.scss */
+/* line 258, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 306, ../sass/_layout_240.scss */
+/* line 265, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 311, ../sass/_layout_240.scss */
+/* line 270, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1042,7 +972,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 318, ../sass/_layout_240.scss */
+/* line 277, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1075,13 +1005,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-repeat: no-repeat;
   opacity: .8;
 }
-/* line 328, ../sass/_layout_240.scss */
+/* line 287, ../sass/_layout_240.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 337, ../sass/_layout_240.scss */
+/* line 296, ../sass/_layout_240.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1737,4 +1667,233 @@ footer #copyright {
 .no-touch footer nav ul > li > ul > li a {
   line-height: 1.5em;
   text-decoration: underline;
+}
+
+/* plugins, extras */
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+/* line 14, ../sass/_flexslider.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+/* line 17, ../sass/_flexslider.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 21, ../sass/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 22, ../sass/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 23, ../sass/_flexslider.scss */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 24, ../sass/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 27, ../sass/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 28, ../sass/_flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 29, ../sass/_flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 34, ../sass/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 39, ../sass/_flexslider.scss */
+.flexslider {
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  zoom: 1;
+}
+
+/* line 40, ../sass/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 41, ../sass/_flexslider.scss */
+.flexslider .slides > li {
+  position: relative;
+}
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+/* line 43, ../sass/_flexslider.scss */
+.flex-container {
+  zoom: 1;
+  position: relative;
+}
+
+/* Caption style */
+/* IE rgba() hack */
+/* line 47, ../sass/_flexslider.scss */
+.flex-caption {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  zoom: 1;
+}
+
+/* line 49, ../sass/_flexslider.scss */
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Direction Nav */
+/* line 52, ../sass/_flexslider.scss */
+.flex-direction-nav {
+  height: 0;
+}
+
+/* line 53, ../sass/_flexslider.scss */
+.flex-direction-nav li a {
+  width: 52px;
+  height: 52px;
+  margin: -13px 0 0;
+  display: block;
+  background: url(theme/bg_direction_nav.png) no-repeat;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-indent: -999em;
+}
+
+/* line 54, ../sass/_flexslider.scss */
+.flex-direction-nav li .next {
+  background-position: -52px 0;
+  right: -21px;
+}
+
+/* line 55, ../sass/_flexslider.scss */
+.flex-direction-nav li .prev {
+  left: -20px;
+}
+
+/* line 56, ../sass/_flexslider.scss */
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 59, ../sass/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+}
+
+/* line 60, ../sass/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 0 0 5px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 61, ../sass/_flexslider.scss */
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+
+/* line 62, ../sass/_flexslider.scss */
+.flex-control-nav li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(theme/bg_control_nav.png) no-repeat;
+  cursor: pointer;
+  text-indent: -999em;
+}
+
+/* line 63, ../sass/_flexslider.scss */
+.flex-control-nav li a:hover {
+  background-position: 0 -13px;
+}
+
+/* line 64, ../sass/_flexslider.scss */
+.flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default;
+}
+
+/* Cropping of images */
+/* line 69, ../sass/_flexslider.scss */
+body.landscape .flexslider .imagemask {
+  position: relative;
+}
+/* line 71, ../sass/_flexslider.scss */
+body.landscape .flexslider .imagemask img {
+  position: absolute;
+  top: 0;
 }

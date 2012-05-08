@@ -35,10 +35,58 @@ require_once 'settings.php';
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?php echo $settings['template_folder'] ?>js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="<?php echo $settings['template_folder'] ?>js/lib/jquery.flexslider-min.js"></script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?php echo $settings['template_folder'] ?>js/lib/selectivizr-min-1.0.2.js"></script>
     <![endif]-->
+
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: 'slide',
+                animationDuration: 400,
+                directionNav: false
+            });
+
+            if ($(window).height() < $(window).width()) {
+                $('body').addClass('landscape');
+                maskImages();
+            } else {
+                $('body').addClass('portrait');
+            }
+        });
+
+        $(window).resize(function() {
+            var body = $('body');
+
+            if ($(window).width() > $(window).height()) {
+                body.addClass('landscape');
+                body.removeClass('portrait');
+                maskImages();
+            } else {
+                body.addClass('portrait');
+                body.removeClass('landscape');
+            }
+        });
+
+        // TODO: Find image height...
+        function maskImages() {
+            $('.imagemask').each(function(){
+                var mask = $(this);
+                var img  = mask.children('img').first();
+                var idealHeight = Math.round($(window).height()*0.7);
+                if (img.height() > idealHeight) {
+                    mask.css({
+                        'height':   idealHeight,
+                        'overflow': 'hidden'
+                    });
+                    img.css('top', -(img.height()-idealHeight)/2);
+                }
+            });
+        };
+    </script>
+
 </head>
 
 <body>
@@ -83,40 +131,50 @@ require_once 'settings.php';
 
     </header>
 
-    <section id="slider">
-        <article class="slide"> 
-            <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
-                <h3>Highlight reel 1</h3>
-                <p class="description">An awesome product description for this superb product</p>
-                <span class="readon">Read more</span>
-            </a>
-        </article>
-        <article class="slide"> 
-            <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
-                <h3>Highlight reel 2</h3>
-                <p class="description">An awesome product description for this superb product</p>
-                <span class="readon">Read more</span>
-            </a>
-        </article>
-        <article class="slide"> 
-            <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
-                <h3>Highlight reel 3</h3>
-                <p class="description">An awesome product description for this superb product</p>
-                <span class="readon">Read more</span>
-            </a>
-        </article>
-        <article class="slide"> 
-            <a href="#">           
-                <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
-                <h3>Highlight reel 4</h3>
-                <p class="description">An awesome product description for this superb product</p>
-                <span class="readon">Read more</span>
-            </a>
-        </article>
-    </section>
+    <div class="flexslider">
+        <ul class="slides">
+            <li> 
+                <a href="#">
+                    <div class="imagemask">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
+                    </div>
+                    <h3>Highlight reel 1</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <div class="imagemask">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
+                    </div>
+                    <h3>Highlight reel 2</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <div class="imagemask">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
+                    </div>
+                    <h3>Highlight reel 3</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
+            </li>
+            <li> 
+                <a href="#">
+                    <div class="imagemask">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
+                    </div>
+                    <h3>Highlight reel 4</h3>
+                    <p class="description">An awesome product description for this superb product</p>
+                    <span class="readon">Read more</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     
     <section role="main" id="product_categories">
         <article class="product_category">

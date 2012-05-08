@@ -110,47 +110,6 @@ header {
     }
 }
 
-#slider {
-    height: $break-min/$slide-size;
-    overflow: hidden;
-    margin-bottom: 1em;
-    border-bottom: 4px solid $separator-colour;
-
-    article {
-        width: 100%;
-        display: none;
-        height: 100%;
-
-        a {
-            position: relative;
-            display: block;
-            width: 100%;
-            line-height: 0;
-            height: 100%;
-            @include pie-clearfix;
-
-            img {
-                width: 100%;
-            }
-
-            h3 {
-                @include overlay-text-layout;
-                @include button-arrow(.9em);
-            }
-
-            p.description,
-            span.readon {
-                display: none;
-            }
-
-        }
-    }
-
-    &>article:first-child {
-        display: block;
-    }
-}
-
 #product_categories {
 
     padding: 0 1.231em;
