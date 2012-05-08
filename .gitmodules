@@ -7,3 +7,9 @@
 [submodule "trunk/vendor/box-sizing-polyfill"]
 	path = trunk/vendor/box-sizing-polyfill
 	url = https://github.com/Schepp/box-sizing-polyfill.git
+[submodule "trunk/vendors/FlexSlider"]
+	path = trunk/vendors/FlexSlider
+	url = https://github.com/woothemes/FlexSlider
+[submodule "trunk/vendor/FlexSlider"]
+	path = trunk/vendor/FlexSlider
+	url = https://github.com/woothemes/FlexSlider
