@@ -16,7 +16,7 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
     *  Large: 1440px
 
 5.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
-6.  We snuck in some [microdata](http://schema.org) in the <footer>, yay :)
+6.  We snuck in some [microdata](http://schema.org) in the `<footer>`, yay :)
 7.  The CSS pretty much assumes you will use exactly as many menu items as we have used in our example.
 8.  Must be used with SASS 3.2 or above, so that you for instance can use [variables in media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32).
 
