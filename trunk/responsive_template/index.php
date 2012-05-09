@@ -51,10 +51,10 @@ require_once 'settings.php';
 
             if ($(window).height() < $(window).width()) {
                 $('body').addClass('landscape');
-                maskImages();
+                maskSliderImages();
             } else {
                 $('body').addClass('portrait');
-                unMaskImages();
+                unMaskSliderImages();
             }
 
         });
@@ -65,15 +65,15 @@ require_once 'settings.php';
             if ($(window).width() > $(window).height()) {
                 body.addClass('landscape');
                 body.removeClass('portrait');
-                maskImages();
+                maskSliderImages();
             } else {
                 body.addClass('portrait');
                 body.removeClass('landscape');
-                unMaskImages();
+                unMaskSliderImages();
             }
         });
 
-        function maskImages() {
+        function maskSliderImages() {
             $('.imagemask').find('img').each(function(){
                 var imgTag = $(this);
                 var mask   = imgTag.parent();
@@ -81,7 +81,7 @@ require_once 'settings.php';
                 img.onload = function() {
                     var windowWidth      = $(window).width();
                     var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
-                    var idealHeight      = Math.round($(window).height()*0.4);
+                    var idealHeight      = Math.round($(window).height()*0.55);
                     if (imgDisplayHeight > idealHeight) {
                         mask.css({
                             'height':   idealHeight,
@@ -94,7 +94,7 @@ require_once 'settings.php';
             });
         }
 
-        function unMaskImages() {
+        function unMaskSliderImages() {
             $('.imagemask').each(function(){
                 var mask = $(this);
 
@@ -116,8 +116,8 @@ require_once 'settings.php';
 
         <div id="extra">
             <div id="language">
-                <a id="english" href="#english" class="active">English</a>
-                <a id="norwegian" href="#norwegian">Norsk</a>
+                <a id="english" href="#english">English</a>
+                <a id="norwegian" href="#norwegian" class="active">Norwegian</a>
                 <span><?php echo JText::_('Switch to') ?>: </span>
             </div>
 

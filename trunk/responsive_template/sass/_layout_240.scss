@@ -21,7 +21,7 @@ header {
 
     #logo {
         float: left;
-        width: 50%;
+        width: 65%;
         margin: 1em 0 1em 1em;
         line-height: 0;
 
@@ -36,7 +36,7 @@ header {
         position: absolute;
         right: 0;
         bottom: 3.5em;
-        width: 50%; /* make room for logo */
+        width: 30%; /* make room for logo */
 
         #contact_short {
             display: none;
@@ -115,11 +115,19 @@ header {
 
     .slides {
         @include pie-clearfix;
-        
+
         h3 {
             @include overlay-text-layout;
             @include button-arrow(.9em);
         }
+
+        .imagemask {
+            position: relative;
+            img {
+                position: absolute;
+            }
+        }
+
         .description,
         .readon {
             display: none;

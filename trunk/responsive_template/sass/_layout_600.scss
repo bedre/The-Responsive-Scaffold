@@ -42,11 +42,11 @@
                     a.active {
                         display: block;
                         opacity: .4;
-                        float: left;
                     }  
 
                     #english {
                         @include sprite-replace-text-with-dimensions($icons-sprite-map, english_small);            
+                        float: left;
                     }
                     #norwegian {
                         @include sprite-replace-text-with-dimensions($icons-sprite-map, norwegian_small);
