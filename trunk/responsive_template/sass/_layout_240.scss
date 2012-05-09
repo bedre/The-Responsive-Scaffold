@@ -110,11 +110,11 @@ header {
     }
 }
 
-.flexslider {
+.slider-wrapper {
     margin: 0 0 1em 0;
+    @include pie-clearfix;
 
     .slides {
-        @include pie-clearfix;
 
         h3 {
             @include overlay-text-layout;
@@ -124,13 +124,42 @@ header {
         .imagemask {
             position: relative;
             img {
-                position: absolute;
+                width: 100%;
             }
         }
 
         .description,
         .readon {
             display: none;
+        }
+    }
+
+    /* bullets underneath the slider */
+    .flex-control-nav { 
+        @include horizontal-list(0);
+        height: image-height(sprite-file($icons-sprite-map, navbullet_off)); 
+        @include filter-gradient(#fcfcfc, #dfdfdf);
+        @include background-image(linear-gradient(#fcfcfc, #dfdfdf));
+        text-align: center;
+
+        li {
+            float: none;
+            a {
+                width: image-width(sprite-file($icons-sprite-map, navbullet_off));
+                height: image-height(sprite-file($icons-sprite-map, navbullet_off)); 
+                @include sprite-replace-text($icons-sprite-map, navbullet_off); 
+                cursor: pointer; 
+                display: inline-block;
+
+                &:hover {
+                    @include sprite($icons-sprite-map, navbullet_hover);
+                }
+
+                &.active {
+                    @include sprite($icons-sprite-map, navbullet_on);
+                    cursor: default;
+                }
+            }
         }
     }
 }

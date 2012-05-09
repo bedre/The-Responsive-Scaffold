@@ -44,9 +44,11 @@ require_once 'settings.php';
     <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
 
-            $('.flexslider').flexslider({
+            $('.slider').flexslider({
                 animation: 'slide',
-                animationDuration: 400
+                animationDuration: 400,
+                controlsContainer: '.slider-wrapper',
+                slideshow: false
             });
 
             if ($(window).height() < $(window).width()) {
@@ -74,20 +76,25 @@ require_once 'settings.php';
         });
 
         function maskSliderImages() {
+            var windowWidth = $(window).width();
+            var idealHeight = Math.round($(window).height()*0.55);
+
             $('.imagemask').find('img').each(function(){
                 var imgTag = $(this);
                 var mask   = imgTag.parent();
                 var img    = new Image();
                 img.onload = function() {
-                    var windowWidth      = $(window).width();
                     var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
-                    var idealHeight      = Math.round($(window).height()*0.55);
+                    console.log('Ideal: '+idealHeight);
                     if (imgDisplayHeight > idealHeight) {
                         mask.css({
-                            'height':   idealHeight,
+                            'height'  : idealHeight,
                             'overflow': 'hidden'
                         });
-                        imgTag.css('top', -(imgDisplayHeight-idealHeight)/2);
+                        imgTag.css({
+                            'top'     : Math.round(-((imgDisplayHeight-idealHeight)/2)),
+                            'position': 'absolute'
+                        });
                     }
                 }
                 img.src = imgTag.attr('src');
@@ -99,11 +106,14 @@ require_once 'settings.php';
                 var mask = $(this);
 
                 mask.css({
-                    'height':   'auto',
+                    'height'  : 'auto',
                     'overflow': 'auto'
                 });
 
-                mask.find('img').first().css('top', 0);
+                mask.find('img').first().css({
+                    'top'     : 0,
+                    'position': 'relative'
+                });
             });
         }
     </script>
@@ -151,50 +161,51 @@ require_once 'settings.php';
         </nav>
 
     </header>
-
-    <div class="flexslider">
-        <ul class="slides">
-            <li> 
-                <a href="#">
-                    <div class="imagemask">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
-                    </div>
-                    <h3>Highlight reel 1</h3>
-                    <p class="description">An awesome product description for this superb product</p>
-                    <span class="readon">Read more</span>
-                </a>
-            </li>
-            <li> 
-                <a href="#">
-                    <div class="imagemask">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
-                    </div>
-                    <h3>Highlight reel 2</h3>
-                    <p class="description">An awesome product description for this superb product</p>
-                    <span class="readon">Read more</span>
-                </a>
-            </li>
-            <li> 
-                <a href="#">
-                    <div class="imagemask">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
-                    </div>
-                    <h3>Highlight reel 3</h3>
-                    <p class="description">An awesome product description for this superb product</p>
-                    <span class="readon">Read more</span>
-                </a>
-            </li>
-            <li> 
-                <a href="#">
-                    <div class="imagemask">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
-                    </div>
-                    <h3>Highlight reel 4</h3>
-                    <p class="description">An awesome product description for this superb product</p>
-                    <span class="readon">Read more</span>
-                </a>
-            </li>
-        </ul>
+    <div class="slider-wrapper">
+        <div class="slider">
+            <ul class="slides">
+                <li> 
+                    <a href="#">
+                        <div class="imagemask">
+                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
+                        </div>
+                        <h3>Highlight reel 1</h3>
+                        <p class="description">An awesome product description for this superb product</p>
+                        <span class="readon">Read more</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <div class="imagemask">
+                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
+                        </div>
+                        <h3>Highlight reel 2</h3>
+                        <p class="description">An awesome product description for this superb product</p>
+                        <span class="readon">Read more</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <div class="imagemask">
+                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
+                        </div>
+                        <h3>Highlight reel 3</h3>
+                        <p class="description">An awesome product description for this superb product</p>
+                        <span class="readon">Read more</span>
+                    </a>
+                </li>
+                <li> 
+                    <a href="#">
+                        <div class="imagemask">
+                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
+                        </div>
+                        <h3>Highlight reel 4</h3>
+                        <p class="description">An awesome product description for this superb product</p>
+                        <span class="readon">Read more</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     
     <section role="main" id="product_categories">
