@@ -110,10 +110,28 @@ header {
     }
 }
 
+.flexslider {
+    margin: 0 0 1em 0;
+
+    .slides {
+        @include pie-clearfix;
+        
+        h3 {
+            @include overlay-text-layout;
+            @include button-arrow(.9em);
+        }
+        .description,
+        .readon {
+            display: none;
+        }
+    }
+}
+
 #product_categories {
 
     padding: 0 1.231em;
     margin-bottom: 1em;
+    @include pie-clearfix;
 
     article {
         position: relative;

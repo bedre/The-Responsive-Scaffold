@@ -44,7 +44,7 @@ header {
     }
 }
 
-#slider > article > a {
+.flexslider > .slides > li > a {
     @include link-colors(#fff, #fff, #fff, #fff, #fff);
     text-decoration: none;
 

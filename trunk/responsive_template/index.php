@@ -43,10 +43,10 @@ require_once 'settings.php';
 
     <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
+
             $('.flexslider').flexslider({
                 animation: 'slide',
-                animationDuration: 400,
-                directionNav: false
+                animationDuration: 400
             });
 
             if ($(window).height() < $(window).width()) {
@@ -54,7 +54,9 @@ require_once 'settings.php';
                 maskImages();
             } else {
                 $('body').addClass('portrait');
+                unMaskImages();
             }
+
         });
 
         $(window).resize(function() {
@@ -67,24 +69,43 @@ require_once 'settings.php';
             } else {
                 body.addClass('portrait');
                 body.removeClass('landscape');
+                unMaskImages();
             }
         });
 
-        // TODO: Find image height...
         function maskImages() {
+            $('.imagemask').find('img').each(function(){
+                var imgTag = $(this);
+                var mask   = imgTag.parent();
+                var img    = new Image();
+                img.onload = function() {
+                    var windowWidth      = $(window).width();
+                    var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
+                    var idealHeight      = Math.round($(window).height()*0.4);
+                    if (imgDisplayHeight > idealHeight) {
+                        mask.css({
+                            'height':   idealHeight,
+                            'overflow': 'hidden'
+                        });
+                        imgTag.css('top', -(imgDisplayHeight-idealHeight)/2);
+                    }
+                }
+                img.src = imgTag.attr('src');
+            });
+        }
+
+        function unMaskImages() {
             $('.imagemask').each(function(){
                 var mask = $(this);
-                var img  = mask.children('img').first();
-                var idealHeight = Math.round($(window).height()*0.7);
-                if (img.height() > idealHeight) {
-                    mask.css({
-                        'height':   idealHeight,
-                        'overflow': 'hidden'
-                    });
-                    img.css('top', -(img.height()-idealHeight)/2);
-                }
+
+                mask.css({
+                    'height':   'auto',
+                    'overflow': 'auto'
+                });
+
+                mask.find('img').first().css('top', 0);
             });
-        };
+        }
     </script>
 
 </head>
