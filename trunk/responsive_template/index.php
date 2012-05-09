@@ -48,7 +48,8 @@ require_once 'settings.php';
                 animation: 'slide',
                 animationDuration: 400,
                 controlsContainer: '.slider-wrapper',
-                directionNav: false
+                directionNav: false,
+                slideshow: false // TODO: Remove!
             });
 
             if ($(window).height() < $(window).width()) {
@@ -169,9 +170,11 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
                         </div>
-                        <h3>Highlight reel 1</h3>
-                        <p class="description">An awesome product description for this superb product</p>
-                        <span class="readon">Read more</span>
+                        <div class="infobox">
+                            <h3>Highlight reel 1</h3>
+                            <p class="description">An awesome product description for this superb product</p>
+                            <span class="readon">Read more</span>
+                        </div>
                     </a>
                 </li>
                 <li> 

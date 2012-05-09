@@ -1286,17 +1286,22 @@ footer #copyright {
     display: none;
   }
 
-  /* line 89, ../sass/_layout_600.scss */
+  /* line 91, ../sass/_layout_600.scss */
+  .slider-wrapper .slides h3 {
+    bottom: 1em;
+  }
+
+  /* line 97, ../sass/_layout_600.scss */
   #product_categories {
     padding: 0;
   }
-  /* line 92, ../sass/_layout_600.scss */
+  /* line 100, ../sass/_layout_600.scss */
   #product_categories article {
     width: 50%;
     padding: 1.231em;
     margin-bottom: 0;
   }
-  /* line 99, ../sass/_layout_600.scss */
+  /* line 107, ../sass/_layout_600.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -1306,37 +1311,37 @@ footer #copyright {
     float: left;
     margin: 0;
   }
-  /* line 105, ../sass/_layout_600.scss */
+  /* line 113, ../sass/_layout_600.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 115, ../sass/_layout_600.scss */
+  /* line 123, ../sass/_layout_600.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 121, ../sass/_layout_600.scss */
+  /* line 129, ../sass/_layout_600.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 127, ../sass/_layout_600.scss */
+  /* line 135, ../sass/_layout_600.scss */
   footer #contact {
     position: relative;
   }
-  /* line 130, ../sass/_layout_600.scss */
+  /* line 138, ../sass/_layout_600.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 135, ../sass/_layout_600.scss */
+  /* line 143, ../sass/_layout_600.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 139, ../sass/_layout_600.scss */
+  /* line 147, ../sass/_layout_600.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1407,18 +1412,48 @@ footer #copyright {
     padding: 0 3em;
   }
 
-  /* line 63, ../sass/_layout_1024.scss */
+  /* line 64, ../sass/_layout_1024.scss */
+  .slider-wrapper .slides .infobox {
+    width: 26.875em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    background-color: red;
+    background: url('../images/rgbapng/00000099.png?1336572227');
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+  }
+  /* line 73, ../sass/_layout_1024.scss */
+  .slider-wrapper .slides .infobox h3 {
+    position: relative;
+    clear: both;
+    width: 100%;
+    background: none;
+    bottom: 0;
+    padding: 0;
+  }
+  /* line 81, ../sass/_layout_1024.scss */
+  .slider-wrapper .slides .infobox h3:after {
+    display: none;
+  }
+  /* line 87, ../sass/_layout_1024.scss */
+  .slider-wrapper .slides .infobox .description,
+  .slider-wrapper .slides .infobox .readon {
+    display: inherit;
+  }
+
+  /* line 95, ../sass/_layout_1024.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 69, ../sass/_layout_1024.scss */
+  /* line 101, ../sass/_layout_1024.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 75, ../sass/_layout_1024.scss */
+  /* line 107, ../sass/_layout_1024.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1581,36 +1616,73 @@ header nav ul li a:active {
   color: white;
 }
 /* line 52, ../sass/_typography.scss */
-.slider-wrapper .slides > li > a > h3 {
+.slider-wrapper .slides > li > a h3 {
   font-size: 1em;
   font-weight: normal;
   line-height: 2.5em;
-  background: url('../images/rgbapng/000000cc.png?1335187167');
-  background: rgba(0, 0, 0, 0.8);
+  background: url('../images/rgbapng/00000099.png?1336572227');
+  background: rgba(0, 0, 0, 0.6);
   color: white;
 }
 /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.slider-wrapper .slides > li > a > h3:visited {
+.slider-wrapper .slides > li > a h3:visited {
   color: white;
 }
 /* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.slider-wrapper .slides > li > a > h3:focus {
+.slider-wrapper .slides > li > a h3:focus {
   color: white;
 }
 /* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.slider-wrapper .slides > li > a > h3:hover {
+.slider-wrapper .slides > li > a h3:hover {
   color: white;
 }
 /* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.slider-wrapper .slides > li > a > h3:active {
+.slider-wrapper .slides > li > a h3:active {
   color: white;
 }
+@media screen and (min-width: 37.5em) {
+  /* line 52, ../sass/_typography.scss */
+  .slider-wrapper .slides > li > a h3 {
+    font-size: 1.5em;
+  }
+  /* line 54, ../sass/_mixins.scss */
+  .slider-wrapper .slides > li > a h3:after {
+    display: block;
+    float: right;
+    margin-top: 1em;
+    margin-left: .5em;
+    content: "";
+    width: 13px;
+    height: 13px;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -265px;
+    height: 13px;
+    width: 13px;
+    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-repeat: no-repeat;
+    opacity: .8;
+  }
+}
+@media screen and (min-width: 64em) {
+  /* line 52, ../sass/_typography.scss */
+  .slider-wrapper .slides > li > a h3 {
+    font-size: 1.875em;
+    line-height: 1.5em;
+  }
+}
+/* line 67, ../sass/_typography.scss */
+.slider-wrapper .slides > li > a .description,
+.slider-wrapper .slides > li > a .readon {
+  font-size: 0.75em;
+}
 
-/* line 57, ../sass/_typography.scss */
+/* line 72, ../sass/_typography.scss */
 #product_categories {
   font-size: 0.813em;
 }
-/* line 60, ../sass/_typography.scss */
+/* line 75, ../sass/_typography.scss */
 #product_categories a {
   text-decoration: none;
   color: #555555;
@@ -1632,13 +1704,13 @@ header nav ul li a:active {
   color: #555555;
 }
 @media screen and (orientation: landscape) {
-  /* line 64, ../sass/_typography.scss */
+  /* line 79, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
     line-height: 2.5em;
-    background: url('../images/rgbapng/000000cc.png?1335187167');
-    background: rgba(0, 0, 0, 0.8);
+    background: url('../images/rgbapng/00000099.png?1336572227');
+    background: rgba(0, 0, 0, 0.6);
     color: white;
   }
   /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
@@ -1659,13 +1731,13 @@ header nav ul li a:active {
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 64, ../sass/_typography.scss */
+  /* line 79, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
     line-height: 2.5em;
-    background: url('../images/rgbapng/000000cc.png?1335187167');
-    background: rgba(0, 0, 0, 0.8);
+    background: url('../images/rgbapng/00000099.png?1336572227');
+    background: rgba(0, 0, 0, 0.6);
     color: white;
   }
   /* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
@@ -1685,18 +1757,18 @@ header nav ul li a:active {
     color: white;
   }
 }
-/* line 74, ../sass/_typography.scss */
+/* line 89, ../sass/_typography.scss */
 #product_categories a .description {
   line-height: 1.5em;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 74, ../sass/_typography.scss */
+  /* line 89, ../sass/_typography.scss */
   #product_categories a .description {
     margin-top: 1em;
   }
 }
 
-/* line 85, ../sass/_typography.scss */
+/* line 100, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -1717,33 +1789,33 @@ footer a:hover {
 footer a:active {
   color: #cc0000;
 }
-/* line 90, ../sass/_typography.scss */
+/* line 105, ../sass/_typography.scss */
 footer nav a {
   font-size: 0.875em;
 }
-/* line 94, ../sass/_typography.scss */
+/* line 109, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 98, ../sass/_typography.scss */
+/* line 113, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 103, ../sass/_typography.scss */
+/* line 118, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 107, ../sass/_typography.scss */
+/* line 122, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 111, ../sass/_typography.scss */
+/* line 126, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 116, ../sass/_typography.scss */
+/* line 131, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;

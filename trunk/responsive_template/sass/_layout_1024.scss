@@ -59,6 +59,38 @@
         }
     }
 
+    .slider-wrapper {
+        .slides {
+            .infobox {
+                width: 430px/$base-font-size*1em;
+                position: absolute;
+                bottom: 1em;
+                left: 1em;
+                background-color: red;
+                @include rgba-background(rgba(0,0,0,0.6));
+                padding: 2em;
+
+                h3 {
+                    position: relative;
+                    clear: both;
+                    width: 100%;
+                    background: none;
+                    bottom: 0;
+                    padding: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                .description,
+                .readon {
+                    display: inherit;
+                }
+            }
+        }
+    }
+
     #product_categories {
         article {
             width: 25%;

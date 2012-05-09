@@ -34,8 +34,8 @@
 @mixin overlay-text-typography() {
     font-size: 1em;
     font-weight: normal;
-    line-height: 2.5em;
-    @include rgba-background(rgba(0,0,0,0.8));
+    line-height: em(40,16);
+    @include rgba-background(rgba(0,0,0,0.6));
     @include link-colors(#fff, #fff, #fff, #fff, #fff);
 }
 
