@@ -65,3 +65,7 @@
         opacity: .8;
     }
 }
+
+@function em($target, $context) {
+    @return ($target / $context) * 1em;
+}

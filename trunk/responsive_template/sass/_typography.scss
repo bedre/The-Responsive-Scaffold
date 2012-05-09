@@ -1,7 +1,10 @@
-@include establish_baseline(16px);
+$base-font-size: 16px;
+
+@include establish_baseline;
 
 @media screen and (min-width: $break-xlarge) {
-    @include establish_baseline(18px);
+    $base-font-size: 18px;
+    @include establish_baseline;
 }
 
 body {
@@ -15,12 +18,12 @@ a {
 header {
 
     #language {
-        font-size: .6875em;
+        font-size: em(11,16);
         text-align: center;
     }
 
     #contact_short {
-        font-size: .75em;
+        font-size: em(12,16);
         color: #000;
         font-weight: bold;
 
@@ -34,8 +37,8 @@ header {
         li {
             text-align: center;
             a {
-                font-size: .75em;
-                line-height: 3.333em;
+                font-size: em(12,16);
+                line-height: em(40,12);
                 text-transform: uppercase;
                 text-decoration: none;
                 @include link-colors(#fff, #fff, #fff, #fff, #fff);
@@ -54,7 +57,7 @@ header {
 }
 
 #product_categories {
-    font-size: .8125em;
+    font-size: em(13,16);
 
     a {
         text-decoration: none;
@@ -87,11 +90,11 @@ footer {
     }
 
     nav a {
-        font-size: .875em;
+        font-size: em(14,16);
     }
 
     h3 a {
-        font-size: 1em;
+        font-size: em(16,16);
     }
 
     h3 {
@@ -100,7 +103,7 @@ footer {
     }
 
     #contact {
-        font-size: .875em;
+        font-size: em(14,16);
 
         [itemprop="telephone"],
         [itemprop="url"] {
@@ -108,12 +111,12 @@ footer {
         }
 
         [itemprop="address"] a {
-            font-size: .875em;
+            font-size: em(12,14);
         }
     }
 
     #copyright {
-        font-size: .75em;
+        font-size: em(12,16);
         opacity: .6;
     }
 }
