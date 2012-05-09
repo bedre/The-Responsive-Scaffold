@@ -10,10 +10,11 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 2.  Uses SASS/Compass for CSS, SCSS file formats
 3.  Uses [box-sizing: border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/) for everything, with [a polyfill that works for IE6 & 7](https://github.com/Schepp/box-sizing-polyfill). 
 4.  Responsive breakpoints:
-    *  Tiny: <600px (the default layout)
-    *  Small: 600px
-    *  Medium: 1024px
-    *  Large: 1440px
+    *  Mini: <320px (the default layout)
+    *  Small: 320px 
+    *  Medium: 600px
+    *  Large: 1024px
+    *  X-large: 1440px
 
 5.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
 6.  We snuck in some [microdata](http://schema.org) in the `<footer>`, yay :)
