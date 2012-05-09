@@ -542,7 +542,7 @@ table {
   BREAKPOINTS
 ***********************/
 /* Site might not look good below this */
-/* which style specific CSS to use */
+/* which style specific CSS to use. Change "example" to "mystyle" */
 /* line 130, example/icons/*.png */
 .icons-sprite {
   background: url('../images/example/icons-s1cfd4d061e.png') no-repeat;
@@ -1191,7 +1191,6 @@ footer #copyright {
   .no-touch header #extra #contact_short .email {
     float: right;
     line-height: 16px;
-    /* follow the icons size */
     margin-right: 2em;
   }
   /* line 20, ../sass/_layout_600.scss */
@@ -1473,12 +1472,12 @@ html > body {
     font-size: 18px;
   }
 }
-/* line 10, ../sass/_typography.scss */
+/* line 8, ../sass/_typography.scss */
 body {
   color: #555555;
 }
 
-/* line 14, ../sass/_typography.scss */
+/* line 12, ../sass/_typography.scss */
 a {
   color: #999999;
 }
@@ -1499,18 +1498,18 @@ a:active {
   color: #cc0000;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 18, ../sass/_typography.scss */
 header #language {
   font-size: 0.688em;
   text-align: center;
 }
-/* line 25, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 header #contact_short {
   font-size: 0.75em;
   color: #000;
   font-weight: bold;
 }
-/* line 30, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 header #contact_short a {
   color: black;
   text-decoration: none;
@@ -1531,11 +1530,11 @@ header #contact_short a:hover {
 header #contact_short a:active {
   color: black;
 }
-/* line 37, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 header nav ul li {
   text-align: center;
 }
-/* line 39, ../sass/_typography.scss */
+/* line 37, ../sass/_typography.scss */
 header nav ul li a {
   font-size: 0.75em;
   line-height: 3.333em;
@@ -1560,7 +1559,7 @@ header nav ul li a:active {
   color: white;
 }
 
-/* line 50, ../sass/_typography.scss */
+/* line 48, ../sass/_typography.scss */
 .slider-wrapper .slides > li > a {
   color: white;
   text-decoration: none;
@@ -1581,7 +1580,7 @@ header nav ul li a:active {
 .slider-wrapper .slides > li > a:active {
   color: white;
 }
-/* line 54, ../sass/_typography.scss */
+/* line 52, ../sass/_typography.scss */
 .slider-wrapper .slides > li > a > h3 {
   font-size: 1em;
   font-weight: normal;
@@ -1607,11 +1606,11 @@ header nav ul li a:active {
   color: white;
 }
 
-/* line 59, ../sass/_typography.scss */
+/* line 57, ../sass/_typography.scss */
 #product_categories {
   font-size: 0.813em;
 }
-/* line 62, ../sass/_typography.scss */
+/* line 60, ../sass/_typography.scss */
 #product_categories a {
   text-decoration: none;
   color: #555555;
@@ -1633,7 +1632,7 @@ header nav ul li a:active {
   color: #555555;
 }
 @media screen and (orientation: landscape) {
-  /* line 66, ../sass/_typography.scss */
+  /* line 64, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
@@ -1660,7 +1659,7 @@ header nav ul li a:active {
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 66, ../sass/_typography.scss */
+  /* line 64, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
@@ -1686,18 +1685,18 @@ header nav ul li a:active {
     color: white;
   }
 }
-/* line 76, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 #product_categories a .description {
   line-height: 1.5em;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 76, ../sass/_typography.scss */
+  /* line 74, ../sass/_typography.scss */
   #product_categories a .description {
     margin-top: 1em;
   }
 }
 
-/* line 87, ../sass/_typography.scss */
+/* line 85, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -1718,33 +1717,33 @@ footer a:hover {
 footer a:active {
   color: #cc0000;
 }
-/* line 92, ../sass/_typography.scss */
+/* line 90, ../sass/_typography.scss */
 footer nav a {
   font-size: 0.875em;
 }
-/* line 96, ../sass/_typography.scss */
+/* line 94, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 100, ../sass/_typography.scss */
+/* line 98, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 105, ../sass/_typography.scss */
+/* line 103, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 109, ../sass/_typography.scss */
+/* line 107, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 113, ../sass/_typography.scss */
+/* line 111, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 118, ../sass/_typography.scss */
+/* line 116, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;
