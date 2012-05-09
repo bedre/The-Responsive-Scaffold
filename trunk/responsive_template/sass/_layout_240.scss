@@ -138,6 +138,7 @@ header {
     .flex-control-nav { 
         @include horizontal-list(0);
         height: image-height(sprite-file($icons-sprite-map, navbullet_off)); 
+        background-color: #eee;
         @include filter-gradient(#fcfcfc, #dfdfdf);
         @include background-image(linear-gradient(#fcfcfc, #dfdfdf));
         text-align: center;

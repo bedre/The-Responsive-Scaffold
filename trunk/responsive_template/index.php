@@ -48,7 +48,7 @@ require_once 'settings.php';
                 animation: 'slide',
                 animationDuration: 400,
                 controlsContainer: '.slider-wrapper',
-                slideshow: false
+                directionNav: false
             });
 
             if ($(window).height() < $(window).width()) {
