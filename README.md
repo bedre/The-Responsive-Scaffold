@@ -7,7 +7,7 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 ## Good to know / features
 
 1.  Not developed with IE6 support in mind
-2.  Uses SASS/Compass for CSS, SCSS file formats
+2.  Uses Sass/Compass for CSS, with the SCSS file format
 3.  Uses [box-sizing: border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/) for everything, with [a polyfill that works for IE6 & 7](https://github.com/Schepp/box-sizing-polyfill). 
 4.  Responsive breakpoints:
     *  Mini: <320px (the default layout)
@@ -20,14 +20,16 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 6.  We snuck in some [microdata](http://schema.org) in the `<footer>`, yay :)
 7.  The CSS pretty much assumes you will use exactly as many menu items as we have used in our example.
 8.  Must be used with SASS 3.2 or above, so that you for instance can use [variables in media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32).
+9.  [Flexslider](http://www.woothemes.com/flexslider/) from WooThemes is included in the package.
 
 
 ## Setup
 
-1.  Make sure you have the [rgbapng Compass plugin](https://github.com/aaronrussell/compass-rgbapng) installed. We use it to provide cross-browser support for rgba() in CSS.
-2.  Check out _base.scss. It has a few variables you should be aware of/configure.
-3.  Check out settings.php for some more configuration.
-4.  In screen.css you need to edit the style specific CSS names (change example to your style name).
+1.  Run `sass --version` to verify that you're using Sass 3.2 or higher.
+2.  Make sure you have the [rgbapng Compass plugin](https://github.com/aaronrussell/compass-rgbapng) installed. We use it to provide cross-browser support for rgba() in CSS, which we use for some transparent backgrounds.
+3.  Check out _base.scss. It has a few variables you should be aware of/configure.
+4.  Check out settings.php for some more configuration.
+5.  In screen.css you need to edit the style specific CSS names (change example to your style name).
 
 ## FYI
 
