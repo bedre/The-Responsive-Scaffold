@@ -524,6 +524,17 @@ table {
   border-spacing: 0;
 }
 
+/* line 1, ../sass/_mixins.scss */
+.clearfix, header, header #extra, header #extra #language, .slider-wrapper, #product_categories, #product_categories article a, footer nav, footer #contact, footer #contact > [itemprop="address"], .slider-wrapper .slides > li > a, .wrap {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after, header:after, header #extra:after, header #extra #language:after, .slider-wrapper:after, #product_categories:after, #product_categories article a:after, footer nav:after, footer #contact:after, footer #contact > [itemprop="address"]:after, .slider-wrapper .slides > li > a:after, .wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*********************** 
   LOCATION
 ***********************/
@@ -554,7 +565,7 @@ table {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/responsive_template/script/boxsizing.htc);
+  *behavior: url("/templates/responsive_template/script/boxsizing.htc");
   /* box sizing hack/polyfill for IE6/7, see https://github.com/Schepp/box-sizing-polyfill */
 }
 
@@ -566,15 +577,8 @@ body > * {
 
 /* line 17, ../sass/_layout.scss */
 header {
-  *zoom: 1;
   margin-bottom: 1px;
   position: relative;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 22, ../sass/_layout.scss */
 header #logo {
@@ -589,18 +593,11 @@ header #logo img {
 }
 /* line 33, ../sass/_layout.scss */
 header #extra {
-  *zoom: 1;
   position: absolute;
   right: 0;
   bottom: 3.5em;
   width: 30%;
   /* make room for logo */
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header #extra:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 41, ../sass/_layout.scss */
 header #extra #contact_short {
@@ -610,17 +607,10 @@ header #extra #contact_short {
 }
 /* line 47, ../sass/_layout.scss */
 header #extra #language {
-  *zoom: 1;
   margin: 1.455em 1.455em 0 0;
   float: right;
   text-align: center;
   width: 100%;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header #extra #language:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 55, ../sass/_layout.scss */
 header #extra #language span {
@@ -721,14 +711,7 @@ header nav ul li.normal {
 .slider-wrapper {
   position: relative;
   margin: 0 0 1em 0;
-  *zoom: 1;
   /* bullets underneath the slider */
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.slider-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 120, ../sass/_layout.scss */
 .slider-wrapper .slides h3 {
@@ -739,7 +722,7 @@ header nav ul li.normal {
   float: left;
   margin: 0;
 }
-/* line 54, ../sass/_mixins.scss */
+/* line 58, ../sass/_mixins.scss */
 .slider-wrapper .slides h3:after {
   display: block;
   float: right;
@@ -842,13 +825,6 @@ header nav ul li.normal {
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
-  *zoom: 1;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#product_categories:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 174, ../sass/_layout.scss */
 #product_categories article {
@@ -862,13 +838,6 @@ header nav ul li.normal {
   display: block;
   width: 100%;
   line-height: 0;
-  *zoom: 1;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#product_categories article a:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 186, ../sass/_layout.scss */
 #product_categories article a .imageholder {
@@ -887,18 +856,18 @@ header nav ul li.normal {
   border: 4px solid white;
   outline: 1px solid #dddddd;
 }
-/* line 4, ../sass/_mixins.scss */
+/* line 8, ../sass/_mixins.scss */
 #product_categories article a .imageholder > img {
   z-index: -1;
   position: relative;
 }
-/* line 9, ../sass/_mixins.scss */
+/* line 13, ../sass/_mixins.scss */
 #product_categories article a .imageholder:hover {
   -webkit-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
 }
-/* line 13, ../sass/_mixins.scss */
+/* line 17, ../sass/_mixins.scss */
 #product_categories article a .imageholder:active {
   -webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
@@ -948,14 +917,7 @@ footer {
 }
 /* line 228, ../sass/_layout.scss */
 footer nav {
-  *zoom: 1;
   margin-bottom: 1em;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-footer nav:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 232, ../sass/_layout.scss */
 footer nav ul {
@@ -1004,13 +966,6 @@ footer nav > ul > li > ul > li:last-child {
 /* line 273, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
-  *zoom: 1;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-footer #contact:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 277, ../sass/_layout.scss */
 footer #contact h3 {
@@ -1058,7 +1013,6 @@ footer #contact #facebook-icon {
 /* line 305, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
-  *zoom: 1;
   background-color: gray;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1068,12 +1022,6 @@ footer #contact > [itemprop="address"] {
   padding: 1.125em;
   margin-top: 1em;
   max-width: 24em;
-}
-/* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-footer #contact > [itemprop="address"]:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 /* line 314, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
@@ -1109,7 +1057,7 @@ footer #contact > [itemprop="address"] [itemprop="url"] {
   margin-top: .5em;
   margin-bottom: 0;
 }
-/* line 54, ../sass/_mixins.scss */
+/* line 58, ../sass/_mixins.scss */
 footer #contact > [itemprop="address"] [itemprop="url"]:after {
   display: block;
   float: right;
@@ -1458,7 +1406,7 @@ footer #copyright {
     right: 0;
     padding: .5em 1em;
   }
-  /* line 54, ../sass/_mixins.scss */
+  /* line 58, ../sass/_mixins.scss */
   .slider-wrapper .slides .infobox .readon:after {
     display: block;
     float: right;
@@ -1530,13 +1478,6 @@ footer #copyright {
   /* line 22, ../sass/_layout_huge.scss */
   .slider-wrapper .slides > li > a {
     display: block;
-    *zoom: 1;
-  }
-  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .slider-wrapper .slides > li > a:after {
-    content: "";
-    display: table;
-    clear: both;
   }
   /* line 26, ../sass/_layout_huge.scss */
   .slider-wrapper .slides > li > a .infobox {
@@ -1560,16 +1501,9 @@ footer #copyright {
 @media screen and (min-width: 103.5em) {
   /* line 3, ../sass/_layout_colossal.scss */
   .wrap {
-    *zoom: 1;
     position: relative;
     max-width: 90em;
     margin: 0 auto;
-  }
-  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .wrap:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 
   /* line 11, ../sass/_layout_colossal.scss */
@@ -1756,7 +1690,7 @@ header nav ul li a:active {
   .slider-wrapper .slides > li > a h3 {
     font-size: 1.5em;
   }
-  /* line 54, ../sass/_mixins.scss */
+  /* line 58, ../sass/_mixins.scss */
   .slider-wrapper .slides > li > a h3:after {
     display: block;
     float: right;

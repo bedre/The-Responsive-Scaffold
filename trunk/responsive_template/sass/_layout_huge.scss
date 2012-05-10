@@ -21,7 +21,7 @@
             & > li {
                 & > a {
                     display: block;
-                    @include pie-clearfix;
+                    @extend .clearfix;
 
                     .infobox {
                         bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);

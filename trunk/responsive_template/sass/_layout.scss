@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    @include pie-clearfix;
+    @extend .clearfix;
     margin-bottom: 1px;
     position: relative;
 
@@ -31,7 +31,7 @@ header {
     }
 
     #extra {
-        @include pie-clearfix;
+        @extend .clearfix;
 
         position: absolute;
         right: 0;
@@ -45,7 +45,7 @@ header {
         }
 
         #language {
-            @include pie-clearfix;
+            @extend .clearfix;
 
             margin: 1.455em 1.455em 0 0;
             float: right;
@@ -113,7 +113,7 @@ header {
 .slider-wrapper {
     position: relative;
     margin: 0 0 1em 0;
-    @include pie-clearfix;
+    @extend .clearfix;
 
     .slides {
 
@@ -169,7 +169,7 @@ header {
 
     padding: 0 1.231em;
     margin-bottom: 1em;
-    @include pie-clearfix;
+    @extend .clearfix;
 
     article {
         position: relative;
@@ -181,7 +181,7 @@ header {
             display: block;
             width: 100%;
             line-height: 0;
-            @include pie-clearfix;
+            @extend .clearfix;
 
             .imageholder {
                 position: relative;
@@ -226,7 +226,7 @@ footer {
     border-top: 4px solid $separator-colour;
 
     nav { 
-        @include pie-clearfix;
+        @extend .clearfix;
         margin-bottom: 1em;
 
         ul {
@@ -272,7 +272,7 @@ footer {
 
     #contact {
         width: 100%;
-        @include pie-clearfix;
+        @extend .clearfix;
 
         h3 {
             margin-top: 0;
@@ -304,7 +304,7 @@ footer {
 
         & > [itemprop="address"] {
             position: relative;
-            @include pie-clearfix;
+            @extend .clearfix;
             background-color: darken($colour1, 10%);
             @include border-radius();
             padding: 1.125em;
