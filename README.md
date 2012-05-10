@@ -34,5 +34,5 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 
 ## FYI
 
-1.  in _layout.scss, the URL to the HTC file must be relative to your HTML(!) document, not relative to your CSS. That's why we've used an absolute in this example. This file is the [box-sizing polyfill](https://github.com/Schepp/box-sizing-polyfill for IE.
+1.  in _layout.scss, the URL to the HTC file must be relative to your HTML(!) document, not relative to your CSS. That's why we've used an absolute in this example. This file is the [box-sizing polyfill](https://github.com/Schepp/box-sizing-polyfill) for IE.
 2.  you're aware of [the bug jQuery has with box-sizing: border-box](http://bugs.jquery.com/ticket/11004).
