@@ -1,6 +1,6 @@
 @media screen and (min-width: $break-xlarge) {
-    header {
 
+    header {
         #logo {
             width: 20%;
         }
@@ -13,6 +13,35 @@
                     padding: 0 4em;
                 }
             }
+        }
+    }
+
+    .slider-wrapper {
+        .slides {
+            & > li {
+                & > a {
+                    display: block;
+                    @include pie-clearfix;
+
+                    .infobox {
+                        bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
+                        
+                        .description {
+                        width: 100%;
+                        margin-bottom: 1em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .flex-control-nav {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-image: none;
+            background-color: transparent;
         }
     }
 }

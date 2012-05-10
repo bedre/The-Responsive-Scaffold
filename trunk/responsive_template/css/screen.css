@@ -1411,7 +1411,11 @@ footer #copyright {
     padding: 0 3em;
   }
 
-  /* line 64, ../sass/_layout_1024.scss */
+  /* line 62, ../sass/_layout_1024.scss */
+  .slider-wrapper {
+    border-bottom: 4px solid black;
+  }
+  /* line 66, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox {
     width: 26.875em;
     position: absolute;
@@ -1422,7 +1426,7 @@ footer #copyright {
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
   }
-  /* line 73, ../sass/_layout_1024.scss */
+  /* line 75, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox h3 {
     position: relative;
     clear: both;
@@ -1431,22 +1435,22 @@ footer #copyright {
     bottom: 0;
     padding: 0;
   }
-  /* line 81, ../sass/_layout_1024.scss */
+  /* line 83, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox h3:after {
     display: none;
   }
-  /* line 87, ../sass/_layout_1024.scss */
+  /* line 89, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox .description,
   .slider-wrapper .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
-  /* line 93, ../sass/_layout_1024.scss */
+  /* line 95, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox .description {
     width: 19.286em;
   }
-  /* line 97, ../sass/_layout_1024.scss */
+  /* line 99, ../sass/_layout_1024.scss */
   .slider-wrapper .slides .infobox .readon {
     background-color: #666666;
     width: auto;
@@ -1474,7 +1478,7 @@ footer #copyright {
     background-repeat: no-repeat;
     opacity: .8;
   }
-  /* line 109, ../sass/_layout_1024.scss */
+  /* line 111, ../sass/_layout_1024.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -1483,18 +1487,18 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 119, ../sass/_layout_1024.scss */
+  /* line 121, ../sass/_layout_1024.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 125, ../sass/_layout_1024.scss */
+  /* line 127, ../sass/_layout_1024.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 131, ../sass/_layout_1024.scss */
+  /* line 133, ../sass/_layout_1024.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1522,6 +1526,73 @@ footer #copyright {
   /* line 12, ../sass/_layout_1440.scss */
   header nav > ul > li > a {
     padding: 0 4em;
+  }
+
+  /* line 22, ../sass/_layout_1440.scss */
+  .slider-wrapper .slides > li > a {
+    display: block;
+    *zoom: 1;
+  }
+  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .slider-wrapper .slides > li > a:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* line 26, ../sass/_layout_1440.scss */
+  .slider-wrapper .slides > li > a .infobox {
+    bottom: 3.813em;
+  }
+  /* line 29, ../sass/_layout_1440.scss */
+  .slider-wrapper .slides > li > a .infobox .description {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  /* line 38, ../sass/_layout_1440.scss */
+  .slider-wrapper .flex-control-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: none;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 105em) {
+  /* line 3, ../sass/_layout_1620.scss */
+  .wrap {
+    *zoom: 1;
+    position: relative;
+    max-width: 90em;
+    margin: 0 auto;
+  }
+  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 11, ../sass/_layout_1620.scss */
+  header #logo {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/_layout_1620.scss */
+  header #extra #language,
+  header nav {
+    margin-right: 0;
+  }
+
+  /* line 25, ../sass/_layout_1620.scss */
+  .slider-wrapper .slides > li > a .infobox {
+    left: 0;
+  }
+
+  /* line 34, ../sass/_layout_1620.scss */
+  #product_categories .wrap {
+    /* Compensate for the 13/16 font size in this section */
+    /* Give +36px extra room to compensate for the articles' side paddings */
+    max-width: 113.231em;
   }
 }
 /* typography */

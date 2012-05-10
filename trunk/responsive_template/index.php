@@ -122,45 +122,48 @@ require_once 'settings.php';
 
 <body>
     <header>
-        <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
+        <div class="wrap">
+            <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
 
-        <div id="extra">
-            <div id="language">
-                <a id="english" href="#english">English</a>
-                <a id="norwegian" href="#norwegian" class="active">Norwegian</a>
-                <span><?php echo JText::_('Switch to') ?>: </span>
+            <div id="extra">
+                <div id="language">
+                    <a id="english" href="#english">English</a>
+                    <a id="norwegian" href="#norwegian" class="active">Norwegian</a>
+                    <span><?php echo JText::_('Switch to') ?>: </span>
+                </div>
+
+                <div id="contact_short">
+                    <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>order@company-name.com</a>
+                    <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
+                </div>
             </div>
 
-            <div id="contact_short">
-                <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>order@company-name.com</a>
-                <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
-            </div>
-        </div>
         
-        <nav role="navigation">
-            <ul>
-                <li id="menu_footer_link">
-                    <a href="#footermenu">Menu</a>
-                </li>
-                <li class="normal">
-                    <a href="inner_page.php">Products</a>
-                </li>
-                <li class="normal">
-                    <a href="inner_page.php">Services</a>
-                </li>
-                <li class="normal">
-                    <a href="inner_page.php">About us</a>
-                </li>
-                <li class="highlighted">
-                    <a href="inner_page.php">Contact</a>
-                </li>
-                <li class="call_to_action">
-                    <a href="inner_page.php">Buy now</a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav role="navigation">
+                <ul>
+                    <li id="menu_footer_link">
+                        <a href="#footermenu">Menu</a>
+                    </li>
+                    <li class="normal">
+                        <a href="inner_page.php">Products</a>
+                    </li>
+                    <li class="normal">
+                        <a href="inner_page.php">Services</a>
+                    </li>
+                    <li class="normal">
+                        <a href="inner_page.php">About us</a>
+                    </li>
+                    <li class="highlighted">
+                        <a href="inner_page.php">Contact</a>
+                    </li>
+                    <li class="call_to_action">
+                        <a href="inner_page.php">Buy now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <div class="slider-wrapper">
         <div class="slider">
             <ul class="slides">
@@ -169,10 +172,12 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
                         </div>
-                        <div class="infobox">
-                            <h3>Highlight reel 1</h3>
-                            <p class="description">An awesome product description for this superb product</p>
-                            <span class="readon">Read more</span>
+                        <div class="wrap">
+                            <div class="infobox">
+                                <h3>Highlight reel 1</h3>
+                                <p class="description">An awesome product description for this extremely well made and utterly superb product</p>
+                                <span class="readon">Read more</span>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -181,10 +186,12 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
                         </div>
-                        <div class="infobox">
-                            <h3>Highlight reel 2</h3>
-                            <p class="description">An awesome product description for this superb product</p>
-                            <span class="readon">Read more</span>
+                        <div class="wrap">
+                            <div class="infobox">
+                                <h3>Highlight reel 2</h3>
+                                <p class="description">An awesome product description for this superb product</p>
+                                <span class="readon">Read more</span>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -193,10 +200,12 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
                         </div>
-                        <div class="infobox">
-                            <h3>Highlight reel 3</h3>
-                            <p class="description">An awesome product description for this superb product</p>
-                            <span class="readon">Read more</span>
+                        <div class="wrap">
+                            <div class="infobox">
+                                <h3>Highlight reel 3</h3>
+                                <p class="description">An awesome product description for this superb product</p>
+                                <span class="readon">Read more</span>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -205,10 +214,12 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
                         </div>
-                        <div class="infobox">
-                            <h3>Highlight reel 4</h3>
-                            <p class="description">An awesome product description for this superb product</p>
-                            <span class="readon">Read more</span>
+                        <div class="wrap">
+                            <div class="infobox">
+                                <h3>Highlight reel 4</h3>
+                                <p class="description">An awesome product description for this superb product</p>
+                                <span class="readon">Read more</span>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -217,103 +228,107 @@ require_once 'settings.php';
     </div>
     
     <section role="main" id="product_categories">
-        <article class="product_category">
-            <a href="#">
-                <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 1">
-                    <h3>Fantastic product 1</h3>
-                </span>
-                <p class="description">An awesome product description for this product</p>
-            </a>
-        </article>
-        <article class="product_category">
-            <a href="#">
-                <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 2">
-                    <h3>Fantastic product 2</h3>
-                </span>
-                <p class="description">An awesome product description for this product</p>
-            </a>
-        </article>
-        <article class="product_category">
-            <a href="#">
-                <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 3">
-                    <h3>Fantastic product 3</h3>
-                </span>
-                <p class="description">An awesome product description for this product</p>
-            </a>
-        </article>
-        <article class="product_category">
-            <a href="#">
-                <span class="imageholder">
-                    <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 4">
-                    <h3>Fantastic product 4</h3>
-                </span>
-                <p class="description">An awesome product description for this product</p>
-            </a>
-        </article>
+        <div class="wrap">        
+            <article class="product_category">
+                <a href="#">
+                    <span class="imageholder">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 1">
+                        <h3>Fantastic product 1</h3>
+                    </span>
+                    <p class="description">An awesome product description for this product</p>
+                </a>
+            </article>
+            <article class="product_category">
+                <a href="#">
+                    <span class="imageholder">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 2">
+                        <h3>Fantastic product 2</h3>
+                    </span>
+                    <p class="description">An awesome product description for this product</p>
+                </a>
+            </article>
+            <article class="product_category">
+                <a href="#">
+                    <span class="imageholder">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 3">
+                        <h3>Fantastic product 3</h3>
+                    </span>
+                    <p class="description">An awesome product description for this product</p>
+                </a>
+            </article>
+            <article class="product_category">
+                <a href="#">
+                    <span class="imageholder">
+                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 4">
+                        <h3>Fantastic product 4</h3>
+                    </span>
+                    <p class="description">An awesome product description for this product</p>
+                </a>
+            </article>
+        </div>
     </section>
     
     <footer>
-        <a name="footermenu"></a>
-        <nav>
-            <ul>
-                <li>
-                    <h3><a href="#">Products</a></h3>
-                    <ul>
-                        <li><a href="#">Product range 1</a></li>
-                        <li><a href="#">Product range 2</a></li>
-                        <li><a href="#">Product range 3</a></li>
-                        <li><a href="#">Product range 4</a></li>
-                        <li><a href="#">Product range 5</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3><a href="#">Services</a></h3>
-                    <ul>
-                        <li><a href="#">Services 1</a></li>
-                        <li><a href="#">Services 2</a></li>
-                        <li><a href="#">Services 3</a></li>
-                        <li><a href="#">Services 4</a></li>
-                        <li><a href="#">Services 5</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3><a href="#">About us</a></h3>
-                    <ul>
-                        <li><a href="#">Our philosophy</a></li>
-                        <li><a href="#">Meet the staff</a></li>
-                        <li><a href="#">Contact support</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <a name="footermenu"></a>
+            <nav>
+                <ul>
+                    <li>
+                        <h3><a href="#">Products</a></h3>
+                        <ul>
+                            <li><a href="#">Product range 1</a></li>
+                            <li><a href="#">Product range 2</a></li>
+                            <li><a href="#">Product range 3</a></li>
+                            <li><a href="#">Product range 4</a></li>
+                            <li><a href="#">Product range 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="#">Services</a></h3>
+                        <ul>
+                            <li><a href="#">Services 1</a></li>
+                            <li><a href="#">Services 2</a></li>
+                            <li><a href="#">Services 3</a></li>
+                            <li><a href="#">Services 4</a></li>
+                            <li><a href="#">Services 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="#">About us</a></h3>
+                        <ul>
+                            <li><a href="#">Our philosophy</a></li>
+                            <li><a href="#">Meet the staff</a></li>
+                            <li><a href="#">Contact support</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-        <div itemscope itemtype="http://schema.org/Organization" id="contact">
-            <a name="contact"></a>
-            <h3>Contact us</h3>
-            <div id="company_contact">
-                <span itemprop="name">Your Corporation Inc.</span>
-                <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 22 22 22 22</span>
-                <a itemprop="url" href="http://facebook.com/yourcorp" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/yourcorp</a>
+            <div itemscope itemtype="http://schema.org/Organization" id="contact">
+                <a name="contact"></a>
+                <h3>Contact us</h3>
+                <div id="company_contact">
+                    <span itemprop="name">Your Corporation Inc.</span>
+                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 22 22 22 22</span>
+                    <a itemprop="url" href="http://facebook.com/yourcorp" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/yourcorp</a>
+                </div>
+
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="description">Your Corporation Inc.</span>
+                    <span itemprop="streetAddress">Storgata 1</span>
+                    <span itemprop="postalCode">8001</span>
+                    <span itemprop="addressLocality">Bodø</span>
+                    <span itemprop="addressRegion">Nordland</span>
+                    <span itemprop="addressCountry">Norway</span>
+                    <a itemprop="url" href="#">Directions</a>
+                    <img id="map" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
+                </div>
             </div>
 
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="description">Your Corporation Inc.</span>
-                <span itemprop="streetAddress">Storgata 1</span>
-                <span itemprop="postalCode">8001</span>
-                <span itemprop="addressLocality">Bodø</span>
-                <span itemprop="addressRegion">Nordland</span>
-                <span itemprop="addressCountry">Norway</span>
-                <a itemprop="url" href="#">Directions</a>
-                <img id="map" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
-            </div>
+            <div id="copyright">Copyright &copy; <?php echo date('Y') ?> some company, All rights reserved.</div>
         </div>
-
-        <div id="copyright">Copyright &copy; <?php echo date('Y') ?> some company, All rights reserved.</div>
     </footer>
 
     <script>

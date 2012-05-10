@@ -60,6 +60,8 @@
     }
 
     .slider-wrapper {
+        border-bottom: 4px solid $separator-colour;
+        
         .slides {
             .infobox {
                 width: 430px/16px*1em;
