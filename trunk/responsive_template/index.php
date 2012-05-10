@@ -36,6 +36,7 @@ require_once 'settings.php';
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?php echo $settings['template_folder'] ?>js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="<?php echo $settings['template_folder'] ?>js/lib/jquery.flexslider-min.js"></script>
+    <script src="<?php echo $settings['template_folder'] ?>js/flexslider_mask.js"></script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?php echo $settings['template_folder'] ?>js/lib/selectivizr-min-1.0.2.js"></script>
@@ -74,48 +75,6 @@ require_once 'settings.php';
                 unMaskSliderImages();
             }
         });
-
-        function maskSliderImages() {
-            var windowWidth = $(window).width();
-            var idealHeight = Math.round($(window).height()*0.55);
-
-            $('.imagemask').find('img').each(function(){
-                var imgTag = $(this);
-                var mask   = imgTag.parent();
-                var img    = new Image();
-                img.onload = function() {
-                    var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
-                    console.log('Ideal: '+idealHeight);
-                    if (imgDisplayHeight > idealHeight) {
-                        mask.css({
-                            'height'  : idealHeight,
-                            'overflow': 'hidden'
-                        });
-                        imgTag.css({
-                            'top'     : Math.round(-((imgDisplayHeight-idealHeight)/2)),
-                            'position': 'absolute'
-                        });
-                    }
-                }
-                img.src = imgTag.attr('src');
-            });
-        }
-
-        function unMaskSliderImages() {
-            $('.imagemask').each(function(){
-                var mask = $(this);
-
-                mask.css({
-                    'height'  : 'auto',
-                    'overflow': 'auto'
-                });
-
-                mask.find('img').first().css({
-                    'top'     : 0,
-                    'position': 'relative'
-                });
-            });
-        }
     </script>
 
 </head>
