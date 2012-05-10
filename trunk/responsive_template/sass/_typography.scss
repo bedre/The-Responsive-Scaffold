@@ -58,14 +58,14 @@ header {
         }
 
         @media screen and (min-width: $break-large) {
-            font-size: em(30,16);
+            font-size: em(32,16);
             line-height: 1.5em;   
         }
     }
 
     .description,
     .readon {
-        font-size: em(12,16);
+        font-size: em(14,16);
     }
 }
 

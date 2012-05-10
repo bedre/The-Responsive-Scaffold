@@ -62,7 +62,7 @@
     .slider-wrapper {
         .slides {
             .infobox {
-                width: 430px/$base-font-size*1em;
+                width: 430px/16px*1em;
                 position: absolute;
                 bottom: 1em;
                 left: 1em;
@@ -85,7 +85,23 @@
 
                 .description,
                 .readon {
-                    display: inherit;
+                    margin: 0;
+                    display: block;
+                    clear: both;
+                }
+
+                .description {
+                    width: 270px/14px*1em;
+                }
+
+                .readon {
+                    background-color: $colour2;
+                    width: auto;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: .5em 1em;
+                    @include button-arrow(.45em);
                 }
             }
         }
