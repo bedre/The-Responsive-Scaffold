@@ -8,20 +8,21 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 
 1.  Not developed with IE6 support in mind
 2.  Uses Sass/Compass for CSS, with the SCSS file format
-3.  Uses [box-sizing: border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/) for everything, with [a polyfill that works for IE6 & 7](https://github.com/Schepp/box-sizing-polyfill). 
-4.  Responsive breakpoints:
-    *  Mini: <320px (the default layout)
+3.  Built thinking mobile first, hence the default layout assumes you're using a small screen.
+4.  Uses [box-sizing: border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/) for everything, with [a polyfill that works for IE6 & 7](https://github.com/Schepp/box-sizing-polyfill). 
+5.  Default responsive breakpoints:
+    *  Minimal: <320px (the default layout)
     *  Small: 320px 
     *  Medium: 600px
     *  Large: 1024px
-    *  X-large: 1440px
-    *  Max width: 1620px
+    *  Huge: 1440px
+    *  Colossal: 1620px
 
-5.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
-6.  We snuck in some [microdata](http://schema.org) in the `<footer>`, yay :)
-7.  The CSS pretty much assumes you will use exactly as many menu items as we have used in our example.
-8.  Must be used with SASS 3.2 or above, so that you for instance can use [variables in media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32).
-9.  [Flexslider](http://www.woothemes.com/flexslider/) from WooThemes is included in the package.
+6.  Small screen navigation (<1024px) comes in the shape of the [footer anchor navigation pattern](http://bradfrostweb.com/blog/web/responsive-nav-patterns/#footer-anchor).
+7.  We snuck in some [microdata](http://schema.org) in the `<footer>`, yay :)
+8.  The CSS pretty much assumes you will use exactly the same number of menu items as we have used in our example.
+9.  Must be used with SASS 3.2 or above, so that you for instance can use [variables in media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32).
+10.  [Flexslider](http://www.woothemes.com/flexslider/) from WooThemes is included in the package.
 
 
 ## Setup
