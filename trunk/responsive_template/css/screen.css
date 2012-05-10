@@ -543,9 +543,9 @@ table {
 ***********************/
 /* Site might not look good below this */
 /* which style specific CSS to use. Change "example" to "mystyle" */
-/* line 130, example/icons/*.png */
+/* line 154, example/icons/*.png */
 .icons-sprite {
-  background: url('../images/example/icons-s1cfd4d061e.png') no-repeat;
+  background: url('../images/example/icons-sef0cb7ec0b.png') no-repeat;
 }
 
 /* layout */
@@ -645,7 +645,7 @@ header #extra #language #english {
   background-position: 0 -90px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
 /* line 73, ../sass/_layout_240.scss */
@@ -653,10 +653,10 @@ header #extra #language #norwegian {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -157px;
+  background-position: 0 -203px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
 /* line 79, ../sass/_layout_240.scss */
@@ -752,10 +752,10 @@ header nav ul li.normal {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -265px;
+  background-position: 0 -334px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
   opacity: .8;
 }
@@ -824,7 +824,7 @@ header nav ul li.normal {
   white-space: nowrap;
   overflow: hidden;
   background-position: 0 -112px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
   cursor: pointer;
   display: inline-block;
@@ -1039,10 +1039,10 @@ footer #contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -190px;
+  background-position: 0 -259px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
 /* line 301, ../sass/_layout_240.scss */
@@ -1050,10 +1050,10 @@ footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -249px;
+  background-position: 0 -318px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
 /* line 305, ../sass/_layout_240.scss */
@@ -1121,10 +1121,10 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -265px;
+  background-position: 0 -334px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/example/icons-sfcd2dd6da2.png');
+  background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
   opacity: .8;
 }
@@ -1203,10 +1203,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -233px;
+    background-position: 0 -302px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
   }
   /* line 28, ../sass/_layout_600.scss */
@@ -1214,10 +1214,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -217px;
+    background-position: 0 -286px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
   }
   /* line 33, ../sass/_layout_600.scss */
@@ -1240,10 +1240,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -179px;
+    background-position: 0 -225px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
     float: left;
   }
@@ -1252,10 +1252,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -206px;
+    background-position: 0 -275px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
     float: right;
   }
@@ -1471,10 +1471,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -265px;
+    background-position: 0 -334px;
     height: 13px;
     width: 13px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
     opacity: .8;
   }
@@ -1769,10 +1769,10 @@ header nav ul li a:active {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -265px;
+    background-position: 0 -334px;
     height: 13px;
     width: 13px;
-    background-image: url('../images/example/icons-sfcd2dd6da2.png');
+    background-image: url('../images/example/icons-sc27111e038.png');
     background-repeat: no-repeat;
     opacity: .8;
   }
@@ -1934,11 +1934,35 @@ footer #copyright {
 }
 
 /* styles for special devices */
-/* line 5, ../sass/_no-touch.scss */
+/* line 3, ../sass/_no-touch.scss */
+.no-touch .slider-wrapper .flex-control-nav {
+  height: 23px;
+}
+/* line 7, ../sass/_no-touch.scss */
+.no-touch .slider-wrapper .flex-control-nav li a {
+  width: 23px;
+  height: 23px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: 0 -236px;
+  background-image: url('../images/example/icons-sc27111e038.png');
+  background-repeat: no-repeat;
+}
+/* line 12, ../sass/_no-touch.scss */
+.no-touch .slider-wrapper .flex-control-nav li a:hover {
+  background-position: 0 -157px;
+}
+/* line 16, ../sass/_no-touch.scss */
+.no-touch .slider-wrapper .flex-control-nav li a.active {
+  background-position: 0 -180px;
+  cursor: default;
+}
+/* line 28, ../sass/_no-touch.scss */
 .no-touch footer nav ul > li h3 {
   margin-bottom: .5em;
 }
-/* line 9, ../sass/_no-touch.scss */
+/* line 32, ../sass/_no-touch.scss */
 .no-touch footer nav ul > li > ul {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1947,15 +1971,15 @@ footer #copyright {
   border-radius: 0;
   background: none;
 }
-/* line 13, ../sass/_no-touch.scss */
+/* line 36, ../sass/_no-touch.scss */
 .no-touch footer nav ul > li > ul > li {
   border-bottom: none;
 }
-/* line 16, ../sass/_no-touch.scss */
+/* line 39, ../sass/_no-touch.scss */
 .no-touch footer nav ul > li > ul > li a {
   padding: 0;
 }
-/* line 26, ../sass/_no-touch.scss */
+/* line 49, ../sass/_no-touch.scss */
 .no-touch footer #contact > [itemprop="address"] [itemprop="url"] {
   padding: .5em;
 }

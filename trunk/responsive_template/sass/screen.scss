@@ -11,8 +11,8 @@
 @import "base";
 
 /* which style specific CSS to use. Change "example" to "mystyle" */
-@import "_style_example";
-@import "_sprites_example";
+@import "style_example";
+@import "sprites_example";
 
 /* layout */
 @import "layout_240";

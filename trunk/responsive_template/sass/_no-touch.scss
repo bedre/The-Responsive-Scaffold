@@ -1,4 +1,27 @@
 .no-touch {
+    .slider-wrapper {
+        .flex-control-nav { 
+            height: image-height(sprite-file($icons-sprite-map, navbullet_small_off)); 
+
+            li {
+                a {
+                    width: image-width(sprite-file($icons-sprite-map, navbullet_small_off));
+                    height: image-height(sprite-file($icons-sprite-map, navbullet_small_off)); 
+                    @include sprite-replace-text($icons-sprite-map, navbullet_small_off); 
+
+                    &:hover {
+                        @include sprite($icons-sprite-map, navbullet_small_hover);
+                    }
+
+                    &.active {
+                        @include sprite($icons-sprite-map, navbullet_small_on);
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
         nav {
             ul > li {
