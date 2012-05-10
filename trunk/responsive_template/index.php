@@ -49,7 +49,17 @@ require_once 'settings.php';
                 animation: 'slide',
                 animationDuration: 400,
                 controlsContainer: '.slider-wrapper',
-                directionNav: false
+                directionNav: false,
+                start: function(slider) {
+                    $(slider.slides).find('.infobox').hide();
+                    $(slider.slides[slider.currentSlide]).find('.infobox').delay(500).fadeIn(600);
+                },
+                before: function(slider) {
+                    $(slider.slides).find('.infobox').hide();
+                },
+                after: function(slider) {
+                    $(slider.slides[slider.currentSlide]).find('.infobox').delay(200).fadeIn(600);
+                }
             });
 
             if ($(window).height() < $(window).width()) {
