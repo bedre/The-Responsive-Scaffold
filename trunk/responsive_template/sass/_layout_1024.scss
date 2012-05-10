@@ -105,6 +105,14 @@
                 }
             }
         }
+
+        .flex-control-nav {
+            position: absolute;
+            bottom: 0;
+            right: 1em;
+            background-image: none;
+            background-color: transparent;
+        }
     }
 
     #product_categories {

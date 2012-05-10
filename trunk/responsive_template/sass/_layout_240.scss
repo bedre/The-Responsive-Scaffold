@@ -111,6 +111,7 @@ header {
 }
 
 .slider-wrapper {
+    position: relative;
     margin: 0 0 1em 0;
     @include pie-clearfix;
 
