@@ -1,0 +1,8 @@
+// Gradient for IE 7-9
+.lt-ie10 {
+    .slider-wrapper {
+        .flex-control-nav {
+            @include filter-gradient(#fcfcfc, #dfdfdf);
+        }
+    }
+}

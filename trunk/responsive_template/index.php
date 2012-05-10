@@ -14,10 +14,11 @@
 require_once 'settings.php';
 ?>
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="<?php echo $settings['lang'] ?>"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="<?php echo $settings['lang'] ?>"> <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">

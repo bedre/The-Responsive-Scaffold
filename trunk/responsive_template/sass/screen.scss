@@ -25,9 +25,10 @@
 /* typography */
 @import "typography";
 
-/* for non-touch enabled devices */
+/* styles for special devices */
 @import "no-touch";
 @import "no-touch_typography";
+@import "ie";
 
 /* plugins, extras */
 @import "flexslider";
