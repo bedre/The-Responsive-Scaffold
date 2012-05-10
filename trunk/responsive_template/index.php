@@ -181,9 +181,11 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
                         </div>
-                        <h3>Highlight reel 2</h3>
-                        <p class="description">An awesome product description for this superb product</p>
-                        <span class="readon">Read more</span>
+                        <div class="infobox">
+                            <h3>Highlight reel 2</h3>
+                            <p class="description">An awesome product description for this superb product</p>
+                            <span class="readon">Read more</span>
+                        </div>
                     </a>
                 </li>
                 <li> 
@@ -191,9 +193,11 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
                         </div>
-                        <h3>Highlight reel 3</h3>
-                        <p class="description">An awesome product description for this superb product</p>
-                        <span class="readon">Read more</span>
+                        <div class="infobox">
+                            <h3>Highlight reel 3</h3>
+                            <p class="description">An awesome product description for this superb product</p>
+                            <span class="readon">Read more</span>
+                        </div>
                     </a>
                 </li>
                 <li> 
@@ -201,9 +205,11 @@ require_once 'settings.php';
                         <div class="imagemask">
                             <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
                         </div>
-                        <h3>Highlight reel 4</h3>
-                        <p class="description">An awesome product description for this superb product</p>
-                        <span class="readon">Read more</span>
+                        <div class="infobox">
+                            <h3>Highlight reel 4</h3>
+                            <p class="description">An awesome product description for this superb product</p>
+                            <span class="readon">Read more</span>
+                        </div>
                     </a>
                 </li>
             </ul>
