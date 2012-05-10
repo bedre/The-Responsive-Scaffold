@@ -8,7 +8,6 @@ function maskSliderImages() {
         var img    = new Image();
         img.onload = function() {
             var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
-            console.log('Ideal: '+idealHeight);
             if (imgDisplayHeight > idealHeight) {
                 mask.css({
                     'height'  : idealHeight,
