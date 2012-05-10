@@ -39,11 +39,12 @@ $default-border-radius: 5px;
   BREAKPOINTS
 ***********************/
 
-$break-min:     240px/$base-font-size*1em; /* Site might not look good below this */
-$break-small:   320px/$base-font-size*1em;
-$break-medium:  600px/$base-font-size*1em;
-$break-large:   1024px/$base-font-size*1em;
-$break-xlarge:  1440px/$base-font-size*1em;
+$break-minimal:   240px/$base-font-size*1em; /* Site might not look good below this */
+$break-tiny:      320px/$base-font-size*1em;
+$break-small:     440px/$base-font-size*1em;
+$break-medium:    600px/$base-font-size*1em;
+$break-large:    1024px/$base-font-size*1em;
+$break-huge:     1440px/$base-font-size*1em;
 
-$max-width:     1620px;
-$break-xxlarge: ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides
+$max-width:      1620px;
+$break-colossal: ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides

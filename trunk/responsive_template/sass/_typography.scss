@@ -1,6 +1,6 @@
 @include establish_baseline;
 
-@media screen and (min-width: $break-xlarge) {
+@media screen and (min-width: $break-huge) {
     $base-font-size: 18px;
     @include establish_baseline;
 }
