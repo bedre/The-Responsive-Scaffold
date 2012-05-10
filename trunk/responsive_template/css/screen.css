@@ -1558,7 +1558,7 @@ footer #copyright {
     background-color: transparent;
   }
 }
-@media screen and (min-width: 105em) {
+@media screen and (min-width: 103.5em) {
   /* line 3, ../sass/_layout_1620.scss */
   .wrap {
     *zoom: 1;

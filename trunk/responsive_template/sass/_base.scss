@@ -46,4 +46,4 @@ $break-large:   1024px/$base-font-size*1em;
 $break-xlarge:  1440px/$base-font-size*1em;
 
 $max-width:     1620px;
-$break-xxlarge: ($max-width+60px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides
+$break-xxlarge: ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides
