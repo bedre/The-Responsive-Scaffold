@@ -50,7 +50,7 @@
     padding: 1em;
 }
 
-@mixin button-arrow ($margin-top: 0) {
+@mixin button-arrow ($margin-top: 0, $button-arrow: 'button_arrow') {
     &:after {
         display: block;
         float: right;
@@ -59,9 +59,9 @@
         }
         margin-left: .5em;
         content: "";
-        width: image-width(sprite-file($icons-sprite-map, button_arrow));
-        height: image-height(sprite-file($icons-sprite-map, button_arrow));
-        @include sprite-replace-text-with-dimensions($icons-sprite-map, button_arrow);
+        width: image-width(sprite-file($icons-sprite-map, $button-arrow));
+        height: image-height(sprite-file($icons-sprite-map, $button-arrow));
+        @include sprite-replace-text-with-dimensions($icons-sprite-map, $button-arrow);
         opacity: .8;
     }
 }
