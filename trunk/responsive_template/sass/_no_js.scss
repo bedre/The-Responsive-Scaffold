@@ -1,0 +1,13 @@
+/* No JavaScript Fallbacks */
+
+.no-js {
+    .slider-wrapper {
+        .slider {
+            .slides {
+                & > li:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -61,49 +61,50 @@
 
     .slider-wrapper {
         border-bottom: 4px solid $separator-colour;
-        
-        .slides {
-            .infobox {
-                width: 430px/16px*1em;
-                position: absolute;
-                bottom: 1em;
-                left: 1em;
-                background-color: red;
-                @include rgba-background(rgba(0,0,0,0.6));
-                padding: 2em;
-
-                h3 {
-                    position: relative;
-                    clear: both;
-                    width: 100%;
-                    background: none;
-                    bottom: 0;
-                    padding: 0;
-
-                    &:after {
-                        display: none;
-                    }
-                }
-
-                .description,
-                .readon {
-                    margin: 0;
-                    display: block;
-                    clear: both;
-                }
-
-                .description {
-                    width: 270px/14px*1em;
-                }
-
-                .readon {
-                    background-color: $colour2;
-                    width: auto;
+        .slider {
+            .slides {
+                .infobox {
+                    width: 430px/16px*1em;
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    padding: .5em 1em;
-                    @include button-arrow(.45em);
+                    bottom: 1em;
+                    left: 1em;
+                    background-color: red;
+                    @include rgba-background(rgba(0,0,0,0.6));
+                    padding: 2em;
+
+                    h3 {
+                        position: relative;
+                        clear: both;
+                        width: 100%;
+                        background: none;
+                        bottom: 0;
+                        padding: 0;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    .description,
+                    .readon {
+                        margin: 0;
+                        display: block;
+                        clear: both;
+                    }
+
+                    .description {
+                        width: 270px/14px*1em;
+                    }
+
+                    .readon {
+                        background-color: $colour2;
+                        width: auto;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        padding: .5em 1em;
+                        @include button-arrow(.45em);
+                    }
                 }
             }
         }

@@ -17,18 +17,20 @@
     }
 
     .slider-wrapper {
-        .slides {
-            & > li {
-                & > a {
-                    display: block;
-                    @extend .clearfix;
+        .slider {
+            .slides {
+                & > li {
+                    & > a {
+                        display: block;
+                        @extend .clearfix;
 
-                    .infobox {
-                        bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
-                        
-                        .description {
-                        width: 100%;
-                        margin-bottom: 1em;
+                        .infobox {
+                            bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
+                            
+                            .description {
+                            width: 100%;
+                            margin-bottom: 1em;
+                            }
                         }
                     }
                 }

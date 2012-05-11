@@ -19,11 +19,13 @@
     }
 
     .slider-wrapper {
-        .slides {
-            & > li {
-                & > a {
-                    .infobox {
-                        left: 0;
+        .slider {
+            .slides {
+                & > li {
+                    & > a {
+                        .infobox {
+                            left: 0;
+                        }
                     }
                 }
             }
