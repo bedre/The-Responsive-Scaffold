@@ -525,11 +525,11 @@ table {
 }
 
 /* line 1, ../sass/_mixins.scss */
-.clearfix, header, header #extra, header #extra #language, .slider-wrapper, #product_categories, #product_categories article a, footer nav, footer #contact, footer #contact > [itemprop="address"], .slider-wrapper .slides > li > a, .wrap {
+.clearfix, header, header #extra, header #extra #language, .slider-wrapper, #product_categories, #product_categories article a, footer nav, footer #contact, footer #contact > [itemprop="address"], .slider-wrapper .slider .slides > li > a, .wrap {
   *zoom: 1;
 }
 /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.clearfix:after, header:after, header #extra:after, header #extra #language:after, .slider-wrapper:after, #product_categories:after, #product_categories article a:after, footer nav:after, footer #contact:after, footer #contact > [itemprop="address"]:after, .slider-wrapper .slides > li > a:after, .wrap:after {
+.clearfix:after, header:after, header #extra:after, header #extra #language:after, .slider-wrapper:after, #product_categories:after, #product_categories article a:after, footer nav:after, footer #contact:after, footer #contact > [itemprop="address"]:after, .slider-wrapper .slider .slides > li > a:after, .wrap:after {
   content: "";
   display: table;
   clear: both;
@@ -711,10 +711,35 @@ header nav ul li.normal {
 .slider-wrapper {
   position: relative;
   margin: 0 0 1em 0;
+  zoom: 1;
   /* bullets underneath the slider */
 }
-/* line 120, ../sass/_layout.scss */
-.slider-wrapper .slides h3 {
+/* line 119, ../sass/_layout.scss */
+.slider-wrapper a:active, .slider-wrapper a:focus {
+  outline: none;
+}
+/* line 123, ../sass/_layout.scss */
+.slider-wrapper .slider {
+  background: #fff;
+  position: relative;
+  zoom: 1;
+}
+/* line 128, ../sass/_layout.scss */
+.slider-wrapper .slider .slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+/* line 134, ../sass/_layout.scss */
+.slider-wrapper .slider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  /* Hide the slides before the JS is loaded. Avoids image jumping */
+  position: relative;
+}
+/* line 139, ../sass/_layout.scss */
+.slider-wrapper .slider .slides > li h3 {
   z-index: 1;
   position: absolute;
   bottom: 0;
@@ -723,7 +748,7 @@ header nav ul li.normal {
   margin: 0;
 }
 /* line 58, ../sass/_mixins.scss */
-.slider-wrapper .slides h3:after {
+.slider-wrapper .slider .slides > li h3:after {
   display: block;
   float: right;
   margin-top: 0.9em;
@@ -741,20 +766,20 @@ header nav ul li.normal {
   background-repeat: no-repeat;
   opacity: .8;
 }
-/* line 125, ../sass/_layout.scss */
-.slider-wrapper .slides .imagemask {
+/* line 144, ../sass/_layout.scss */
+.slider-wrapper .slider .slides > li .imagemask {
   position: relative;
 }
-/* line 127, ../sass/_layout.scss */
-.slider-wrapper .slides .imagemask img {
+/* line 146, ../sass/_layout.scss */
+.slider-wrapper .slider .slides > li .imagemask img {
   width: 100%;
 }
-/* line 133, ../sass/_layout.scss */
-.slider-wrapper .slides .description,
-.slider-wrapper .slides .readon {
+/* line 152, ../sass/_layout.scss */
+.slider-wrapper .slider .slides > li .description,
+.slider-wrapper .slider .slides > li .readon {
   display: none;
 }
-/* line 139, ../sass/_layout.scss */
+/* line 160, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav {
   margin: 0;
   padding: 0;
@@ -794,11 +819,11 @@ header nav ul li.normal {
 .slider-wrapper .flex-control-nav li.last {
   padding-right: 0;
 }
-/* line 146, ../sass/_layout.scss */
+/* line 167, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li {
   float: none;
 }
-/* line 148, ../sass/_layout.scss */
+/* line 169, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a {
   width: 45px;
   height: 45px;
@@ -811,35 +836,35 @@ header nav ul li.normal {
   cursor: pointer;
   display: inline-block;
 }
-/* line 155, ../sass/_layout.scss */
+/* line 176, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
   background-position: 0 0;
 }
-/* line 159, ../sass/_layout.scss */
+/* line 180, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
   background-position: 0 -45px;
   cursor: default;
 }
 
-/* line 168, ../sass/_layout.scss */
+/* line 189, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 174, ../sass/_layout.scss */
+/* line 195, ../sass/_layout.scss */
 #product_categories article {
   position: relative;
   float: left;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 180, ../sass/_layout.scss */
+/* line 201, ../sass/_layout.scss */
 #product_categories article a {
   display: block;
   width: 100%;
   line-height: 0;
 }
-/* line 186, ../sass/_layout.scss */
+/* line 207, ../sass/_layout.scss */
 #product_categories article a .imageholder {
   position: relative;
   display: block;
@@ -873,18 +898,18 @@ header nav ul li.normal {
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
 }
-/* line 194, ../sass/_layout.scss */
+/* line 215, ../sass/_layout.scss */
 #product_categories article a .imageholder img {
   width: 100%;
 }
-/* line 198, ../sass/_layout.scss */
+/* line 219, ../sass/_layout.scss */
 #product_categories article a .imageholder h3 {
   position: absolute;
   bottom: -2.5em;
   left: -5px;
 }
 @media screen and (orientation: landscape) {
-  /* line 198, ../sass/_layout.scss */
+  /* line 219, ../sass/_layout.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -895,18 +920,18 @@ header nav ul li.normal {
     margin: 0;
   }
 }
-/* line 210, ../sass/_layout.scss */
+/* line 231, ../sass/_layout.scss */
 #product_categories article a .description {
   margin-top: 3em;
 }
 @media screen and (orientation: landscape) {
-  /* line 210, ../sass/_layout.scss */
+  /* line 231, ../sass/_layout.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 }
 
-/* line 220, ../sass/_layout.scss */
+/* line 241, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #999999;
@@ -915,11 +940,11 @@ footer {
   width: 100%;
   border-top: 4px solid black;
 }
-/* line 228, ../sass/_layout.scss */
+/* line 249, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 232, ../sass/_layout.scss */
+/* line 253, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -927,18 +952,18 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 240, ../sass/_layout.scss */
+/* line 261, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 246, ../sass/_layout.scss */
+/* line 267, ../sass/_layout.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 250, ../sass/_layout.scss */
+/* line 271, ../sass/_layout.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -947,35 +972,35 @@ footer nav > ul > li > ul {
   border-radius: 5px;
   background-color: #8c8c8c;
 }
-/* line 254, ../sass/_layout.scss */
+/* line 275, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #999999;
 }
-/* line 258, ../sass/_layout.scss */
+/* line 279, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 266, ../sass/_layout.scss */
+/* line 287, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
-/* line 273, ../sass/_layout.scss */
+/* line 294, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 277, ../sass/_layout.scss */
+/* line 298, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 281, ../sass/_layout.scss */
+/* line 302, ../sass/_layout.scss */
 footer #contact [itemprop="name"] {
   display: none;
 }
-/* line 286, ../sass/_layout.scss */
+/* line 307, ../sass/_layout.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   width: 100%;
@@ -983,12 +1008,12 @@ footer #contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 293, ../sass/_layout.scss */
+/* line 314, ../sass/_layout.scss */
 footer #contact .icon {
   float: left;
   margin-right: .5em;
 }
-/* line 297, ../sass/_layout.scss */
+/* line 318, ../sass/_layout.scss */
 footer #contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -999,7 +1024,7 @@ footer #contact #phone-icon {
   background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
-/* line 301, ../sass/_layout.scss */
+/* line 322, ../sass/_layout.scss */
 footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1010,7 +1035,7 @@ footer #contact #facebook-icon {
   background-image: url('../images/example/icons-sc27111e038.png');
   background-repeat: no-repeat;
 }
-/* line 305, ../sass/_layout.scss */
+/* line 326, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: gray;
@@ -1023,18 +1048,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 314, ../sass/_layout.scss */
+/* line 335, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 321, ../sass/_layout.scss */
+/* line 342, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 326, ../sass/_layout.scss */
+/* line 347, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1042,7 +1067,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 333, ../sass/_layout.scss */
+/* line 354, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1075,13 +1100,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-repeat: no-repeat;
   opacity: .8;
 }
-/* line 343, ../sass/_layout.scss */
+/* line 364, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 352, ../sass/_layout.scss */
+/* line 373, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1232,22 +1257,22 @@ footer #copyright {
     display: none;
   }
 
-  /* line 91, ../sass/_layout_medium.scss */
-  .slider-wrapper .slides h3 {
+  /* line 92, ../sass/_layout_medium.scss */
+  .slider-wrapper .slider .slides h3 {
     bottom: 1em;
   }
 
-  /* line 97, ../sass/_layout_medium.scss */
+  /* line 99, ../sass/_layout_medium.scss */
   #product_categories {
     padding: 0;
   }
-  /* line 100, ../sass/_layout_medium.scss */
+  /* line 102, ../sass/_layout_medium.scss */
   #product_categories article {
     width: 50%;
     padding: 1.231em;
     margin-bottom: 0;
   }
-  /* line 107, ../sass/_layout_medium.scss */
+  /* line 109, ../sass/_layout_medium.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -1257,37 +1282,37 @@ footer #copyright {
     float: left;
     margin: 0;
   }
-  /* line 113, ../sass/_layout_medium.scss */
+  /* line 115, ../sass/_layout_medium.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 123, ../sass/_layout_medium.scss */
+  /* line 125, ../sass/_layout_medium.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 129, ../sass/_layout_medium.scss */
+  /* line 131, ../sass/_layout_medium.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 135, ../sass/_layout_medium.scss */
+  /* line 137, ../sass/_layout_medium.scss */
   footer #contact {
     position: relative;
   }
-  /* line 138, ../sass/_layout_medium.scss */
+  /* line 140, ../sass/_layout_medium.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 143, ../sass/_layout_medium.scss */
+  /* line 145, ../sass/_layout_medium.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 147, ../sass/_layout_medium.scss */
+  /* line 149, ../sass/_layout_medium.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1363,7 +1388,7 @@ footer #copyright {
     border-bottom: 4px solid black;
   }
   /* line 66, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox {
+  .slider-wrapper .slider .slides .infobox {
     width: 26.875em;
     position: absolute;
     bottom: 1em;
@@ -1374,7 +1399,7 @@ footer #copyright {
     padding: 2em;
   }
   /* line 75, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox h3 {
+  .slider-wrapper .slider .slides .infobox h3 {
     position: relative;
     clear: both;
     width: 100%;
@@ -1383,22 +1408,22 @@ footer #copyright {
     padding: 0;
   }
   /* line 83, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox h3:after {
+  .slider-wrapper .slider .slides .infobox h3:after {
     display: none;
   }
   /* line 89, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox .description,
-  .slider-wrapper .slides .infobox .readon {
+  .slider-wrapper .slider .slides .infobox .description,
+  .slider-wrapper .slider .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
   /* line 95, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox .description {
+  .slider-wrapper .slider .slides .infobox .description {
     width: 19.286em;
   }
   /* line 99, ../sass/_layout_large.scss */
-  .slider-wrapper .slides .infobox .readon {
+  .slider-wrapper .slider .slides .infobox .readon {
     background-color: #666666;
     width: auto;
     position: absolute;
@@ -1407,7 +1432,7 @@ footer #copyright {
     padding: .5em 1em;
   }
   /* line 58, ../sass/_mixins.scss */
-  .slider-wrapper .slides .infobox .readon:after {
+  .slider-wrapper .slider .slides .infobox .readon:after {
     display: block;
     float: right;
     margin-top: 0.45em;
@@ -1425,7 +1450,7 @@ footer #copyright {
     background-repeat: no-repeat;
     opacity: .8;
   }
-  /* line 111, ../sass/_layout_large.scss */
+  /* line 112, ../sass/_layout_large.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -1434,18 +1459,18 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 121, ../sass/_layout_large.scss */
+  /* line 122, ../sass/_layout_large.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 127, ../sass/_layout_large.scss */
+  /* line 128, ../sass/_layout_large.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 133, ../sass/_layout_large.scss */
+  /* line 134, ../sass/_layout_large.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1475,20 +1500,20 @@ footer #copyright {
     padding: 0 4em;
   }
 
-  /* line 22, ../sass/_layout_huge.scss */
-  .slider-wrapper .slides > li > a {
+  /* line 23, ../sass/_layout_huge.scss */
+  .slider-wrapper .slider .slides > li > a {
     display: block;
   }
-  /* line 26, ../sass/_layout_huge.scss */
-  .slider-wrapper .slides > li > a .infobox {
+  /* line 27, ../sass/_layout_huge.scss */
+  .slider-wrapper .slider .slides > li > a .infobox {
     bottom: 3.813em;
   }
-  /* line 29, ../sass/_layout_huge.scss */
-  .slider-wrapper .slides > li > a .infobox .description {
+  /* line 30, ../sass/_layout_huge.scss */
+  .slider-wrapper .slider .slides > li > a .infobox .description {
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 38, ../sass/_layout_huge.scss */
+  /* line 40, ../sass/_layout_huge.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     width: 100%;
@@ -1516,12 +1541,12 @@ footer #copyright {
     margin-right: 0;
   }
 
-  /* line 25, ../sass/_layout_colossal.scss */
-  .slider-wrapper .slides > li > a .infobox {
+  /* line 26, ../sass/_layout_colossal.scss */
+  .slider-wrapper .slider .slides > li > a .infobox {
     left: 0;
   }
 
-  /* line 34, ../sass/_layout_colossal.scss */
+  /* line 36, ../sass/_layout_colossal.scss */
   #product_categories .wrap {
     /* Compensate for the 13/16 font size in this section */
     /* Give +36px extra room to compensate for the articles' side paddings */
@@ -1923,92 +1948,14 @@ footer #copyright {
   text-decoration: underline;
 }
 
+/* No JavaScript Fallbacks */
+/* line 7, ../sass/_no_js.scss */
+.no-js .slider-wrapper .slider .slides > li:first-child {
+  display: block;
+}
+
 /* line 4, ../sass/_ie.scss */
 .lt-ie10 .slider-wrapper .flex-control-nav {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFCFCFC', endColorstr='#FFDFDFDF');
-}
-
-/* plugins, extras */
-/*
- * jQuery FlexSlider v1.8
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-/* Browser Resets */
-/* line 14, ../sass/_flexslider.scss */
-.slider-wrapper a:active,
-.slider a:active,
-.slider-wrapper a:focus,
-.slider a:focus {
-  outline: none;
-}
-
-/* line 16, ../sass/_flexslider.scss */
-.slides,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* FlexSlider Necessary Styles
-*********************************/
-/* line 20, ../sass/_flexslider.scss */
-.slider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden;
-}
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 21, ../sass/_flexslider.scss */
-.slider .slides img {
-  max-width: 100%;
-  display: block;
-}
-
-/* line 22, ../sass/_flexslider.scss */
-.flex-pauseplay span {
-  text-transform: capitalize;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-/* line 27, ../sass/_flexslider.scss */
-.no-js .slides > li:first-child {
-  display: block;
-}
-
-/* FlexSlider Default Theme
-*********************************/
-/* line 32, ../sass/_flexslider.scss */
-.slider {
-  background: #fff;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  zoom: 1;
-}
-
-/* line 33, ../sass/_flexslider.scss */
-.slider .slides {
-  zoom: 1;
-}
-
-/* line 34, ../sass/_flexslider.scss */
-.slider .slides > li {
-  position: relative;
-}
-
-/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
-/* line 36, ../sass/_flexslider.scss */
-.slider-wrapper {
-  zoom: 1;
-  position: relative;
 }
