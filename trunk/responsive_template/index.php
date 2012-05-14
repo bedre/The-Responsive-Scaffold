@@ -89,7 +89,7 @@ require_once 'settings.php';
 
 </head>
 
-<body>
+<body> 
     <header>
         <div class="wrap">
             <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
