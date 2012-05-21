@@ -88,6 +88,8 @@ header {
                 border-right: 1px solid #fff;
                 width: 33.333%;
                 padding: 0;
+                @include transition-property(background-color);
+                @include transition-duration(.3s);
 
                 &:last-child {
                     border-right: 0;
@@ -100,10 +102,22 @@ header {
 
                 &.highlighted {
                     background-color: $colour2;
+
+                    &:hover {
+                        background-color: darken($colour2, 10%);
+                    }
                 }
 
                 &.call_to_action {
                     background-color: $colour3;
+
+                    &:hover {
+                        background-color: darken($colour3, 10%);
+                    }
+                }
+
+                &:hover {
+                    background-color: darken($colour1, 10%);
                 }
 
                 a {
