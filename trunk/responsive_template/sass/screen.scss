@@ -8,14 +8,10 @@
 /* initialization, variables, styles */
 @import "normalize";
 @import "base";
-
-/* which style specific CSS to use */
-@import "style_skagen";
 @import "sprites_skagen";
-
-/* common stuff */
-@import "breakpoints";
 @import "mixins";
+@import "breakpoints";
+@import "style_skagen";
 
 /* layout */
 @import "layout";

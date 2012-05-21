@@ -54,7 +54,6 @@ header {
 
         @media screen and (min-width: $break-3) {
             font-size: em(24,16);
-            @include button_arrow(1em);
         }
 
         @media screen and (min-width: $break-4) {

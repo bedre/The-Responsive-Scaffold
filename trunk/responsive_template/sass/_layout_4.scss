@@ -111,7 +111,7 @@
                         bottom: 0;
                         right: 0;
                         padding: .5em 1em;
-                        @include button-arrow(.45em);
+                        @include button-arrow(.45em, 'button_arrow_white_red');
                     }
                 }
             }

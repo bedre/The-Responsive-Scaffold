@@ -26,8 +26,12 @@
                             bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
                             
                             .description {
-                            width: 100%;
-                            margin-bottom: 1em;
+                                width: 100%;
+                                margin-bottom: 1em;
+                            }
+
+                            .readon {
+                                @include button-arrow(.35em, 'button_arrow_white_red');
                             }
                         }
                     }

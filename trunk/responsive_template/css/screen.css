@@ -541,23 +541,11 @@ table {
 /*********************** 
   ROUNDED CORNERS
 ***********************/
-/* which style specific CSS to use */
-/* settings */
-/* CSS */
-/* line 10, ../sass/_style_skagen.scss */
-header #logo {
-  max-width: 308px;
-}
-
-/* line 164, skagen/icons/*.png */
+/* line 180, skagen/icons/*.png */
 .icons-sprite {
-  background: url('../images/skagen/icons-s0ee7b4aa50.png') no-repeat;
+  background: url('../images/skagen/icons-s27cd61a84c.png') no-repeat;
 }
 
-/* common stuff */
-/*********************** 
-  BREAKPOINTS
-***********************/
 /* line 1, ../sass/_mixins.scss */
 .clearfix, header, header #extra, header #extra #language, .slider-wrapper, #product_categories, #product_categories article a, footer nav, footer #contact, footer #contact > [itemprop="address"] {
   *zoom: 1;
@@ -567,6 +555,55 @@ header #logo {
   content: "";
   display: table;
   clear: both;
+}
+
+/*********************** 
+  BREAKPOINTS
+***********************/
+/* settings */
+/* CSS */
+/* line 10, ../sass/_style_skagen.scss */
+header #logo {
+  max-width: 308px;
+}
+
+/* line 58, ../sass/_mixins.scss */
+.slider-wrapper .slider .slides > li a h3:after {
+  display: block;
+  float: right;
+  margin-top: 0.85em;
+  margin-left: .5em;
+  content: "";
+  width: 14px;
+  height: 14px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: 0 -332px;
+  height: 14px;
+  width: 14px;
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 37.5em) {
+  /* line 58, ../sass/_mixins.scss */
+  .slider-wrapper .slider .slides > li a h3:after {
+    display: block;
+    float: right;
+    margin-top: 1em;
+    margin-left: .5em;
+    content: "";
+    width: 14px;
+    height: 14px;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -332px;
+    height: 14px;
+    width: 14px;
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
+    background-repeat: no-repeat;
+  }
 }
 
 /* layout */
@@ -645,7 +682,7 @@ header #extra #language #english {
   background-position: 0 -90px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
 /* line 73, ../sass/_layout.scss */
@@ -656,7 +693,7 @@ header #extra #language #norwegian {
   background-position: 0 -203px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
 /* line 79, ../sass/_layout.scss */
@@ -800,12 +837,11 @@ header nav ul li a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -348px;
+  background-position: 0 -362px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
-  opacity: .8;
 }
 /* line 164, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .imagemask {
@@ -873,7 +909,7 @@ header nav ul li a {
   white-space: nowrap;
   overflow: hidden;
   background-position: 0 -112px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
   cursor: pointer;
   display: inline-block;
@@ -1070,7 +1106,7 @@ footer #contact #phone-icon {
   background-position: 0 -259px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
 /* line 347, ../sass/_layout.scss */
@@ -1078,10 +1114,10 @@ footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -332px;
+  background-position: 0 -346px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
 /* line 351, ../sass/_layout.scss */
@@ -1142,12 +1178,11 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -348px;
+  background-position: 0 -362px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
-  opacity: .8;
 }
 /* line 389, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
@@ -1227,7 +1262,7 @@ footer #copyright {
     background-position: 0 -316px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
   }
   /* line 28, ../sass/_layout_3.scss */
@@ -1238,7 +1273,7 @@ footer #copyright {
     background-position: 0 -300px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
   }
   /* line 33, ../sass/_layout_3.scss */
@@ -1264,7 +1299,7 @@ footer #copyright {
     background-position: 0 -225px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
     float: left;
   }
@@ -1276,7 +1311,7 @@ footer #copyright {
     background-position: 0 -289px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
     float: right;
   }
@@ -1322,22 +1357,22 @@ footer #copyright {
     display: none;
   }
 
-  /* line 106, ../sass/_layout_3.scss */
-  .slider-wrapper .slider .slides h3 {
+  /* line 107, ../sass/_layout_3.scss */
+  .slider-wrapper .slider .slides > li h3 {
     bottom: 1em;
   }
 
-  /* line 113, ../sass/_layout_3.scss */
+  /* line 115, ../sass/_layout_3.scss */
   #product_categories {
     padding: 0;
   }
-  /* line 116, ../sass/_layout_3.scss */
+  /* line 118, ../sass/_layout_3.scss */
   #product_categories article {
     width: 50%;
     padding: 1.231em;
     margin-bottom: 0;
   }
-  /* line 123, ../sass/_layout_3.scss */
+  /* line 125, ../sass/_layout_3.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -1347,37 +1382,37 @@ footer #copyright {
     float: left;
     margin: 0;
   }
-  /* line 129, ../sass/_layout_3.scss */
+  /* line 131, ../sass/_layout_3.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 139, ../sass/_layout_3.scss */
+  /* line 141, ../sass/_layout_3.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 145, ../sass/_layout_3.scss */
+  /* line 147, ../sass/_layout_3.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 151, ../sass/_layout_3.scss */
+  /* line 153, ../sass/_layout_3.scss */
   footer #contact {
     position: relative;
   }
-  /* line 154, ../sass/_layout_3.scss */
+  /* line 156, ../sass/_layout_3.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 159, ../sass/_layout_3.scss */
+  /* line 161, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 163, ../sass/_layout_3.scss */
+  /* line 165, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1502,17 +1537,16 @@ footer #copyright {
     margin-top: 0.45em;
     margin-left: .5em;
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -348px;
-    height: 13px;
-    width: 13px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+    background-position: 0 -375px;
+    height: 14px;
+    width: 14px;
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
-    opacity: .8;
   }
   /* line 120, ../sass/_layout_4.scss */
   .slider-wrapper .flex-control-nav {
@@ -1571,7 +1605,25 @@ footer #copyright {
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 38, ../sass/_layout_5.scss */
+  /* line 58, ../sass/_mixins.scss */
+  .slider-wrapper .slider .slides > li > a .infobox .readon:after {
+    display: block;
+    float: right;
+    margin-top: 0.35em;
+    margin-left: .5em;
+    content: "";
+    width: 14px;
+    height: 14px;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 -375px;
+    height: 14px;
+    width: 14px;
+    background-image: url('../images/skagen/icons-saed15d23ef.png');
+    background-repeat: no-repeat;
+  }
+  /* line 42, ../sass/_layout_5.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     width: 100%;
@@ -1770,25 +1822,6 @@ header nav ul li a:active {
   .slider-wrapper .slides > li > a h3 {
     font-size: 1.5em;
   }
-  /* line 58, ../sass/_mixins.scss */
-  .slider-wrapper .slides > li > a h3:after {
-    display: block;
-    float: right;
-    margin-top: 1em;
-    margin-left: .5em;
-    content: "";
-    width: 13px;
-    height: 13px;
-    text-indent: 110%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-position: 0 -348px;
-    height: 13px;
-    width: 13px;
-    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
-    background-repeat: no-repeat;
-    opacity: .8;
-  }
 }
 @media screen and (min-width: 64em) {
   /* line 52, ../sass/_typography.scss */
@@ -1797,17 +1830,17 @@ header nav ul li a:active {
     line-height: 1.5em;
   }
 }
-/* line 67, ../sass/_typography.scss */
+/* line 66, ../sass/_typography.scss */
 .slider-wrapper .slides > li > a .description,
 .slider-wrapper .slides > li > a .readon {
   font-size: 0.875em;
 }
 
-/* line 72, ../sass/_typography.scss */
+/* line 71, ../sass/_typography.scss */
 #product_categories {
   font-size: 0.813em;
 }
-/* line 75, ../sass/_typography.scss */
+/* line 74, ../sass/_typography.scss */
 #product_categories a {
   text-decoration: none;
   color: #555555;
@@ -1829,7 +1862,7 @@ header nav ul li a:active {
   color: #555555;
 }
 @media screen and (orientation: landscape) {
-  /* line 79, ../sass/_typography.scss */
+  /* line 78, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
@@ -1856,7 +1889,7 @@ header nav ul li a:active {
   }
 }
 @media screen and (min-width: 37.5em) {
-  /* line 79, ../sass/_typography.scss */
+  /* line 78, ../sass/_typography.scss */
   #product_categories a h3 {
     font-size: 1em;
     font-weight: normal;
@@ -1882,18 +1915,18 @@ header nav ul li a:active {
     color: white;
   }
 }
-/* line 89, ../sass/_typography.scss */
+/* line 88, ../sass/_typography.scss */
 #product_categories a .description {
   line-height: 1.5em;
 }
 @media screen and (min-width: 37.5em) {
-  /* line 89, ../sass/_typography.scss */
+  /* line 88, ../sass/_typography.scss */
   #product_categories a .description {
     margin-top: 1em;
   }
 }
 
-/* line 100, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -1914,33 +1947,33 @@ footer a:hover {
 footer a:active {
   color: white;
 }
-/* line 105, ../sass/_typography.scss */
+/* line 104, ../sass/_typography.scss */
 footer nav a {
   font-size: 0.875em;
 }
-/* line 109, ../sass/_typography.scss */
+/* line 108, ../sass/_typography.scss */
 footer h3 a {
   font-size: 1em;
 }
-/* line 113, ../sass/_typography.scss */
+/* line 112, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 118, ../sass/_typography.scss */
+/* line 117, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 122, ../sass/_typography.scss */
+/* line 121, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 126, ../sass/_typography.scss */
+/* line 125, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 131, ../sass/_typography.scss */
+/* line 130, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;
@@ -1959,7 +1992,7 @@ footer #copyright {
   white-space: nowrap;
   overflow: hidden;
   background-position: 0 -236px;
-  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
+  background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
 /* line 12, ../sass/_no-touch.scss */

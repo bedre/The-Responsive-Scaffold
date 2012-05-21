@@ -103,8 +103,10 @@
     .slider-wrapper {
         .slider {
             .slides {
-                h3 {
-                    bottom: 1em;
+                & > li {
+                    h3 {
+                        bottom: 1em;
+                    }
                 }
             }
         }
