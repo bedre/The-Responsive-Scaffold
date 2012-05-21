@@ -294,8 +294,6 @@ footer {
                     width: 100%;
                     border-bottom: 1px solid $colour1;
                     background-color: darken($colour1, 5%);
-                    @include transition-property(background-color);
-                    @include transition-duration(.3s);
 
                     &:first-child {
                         @include border-top-radius();
@@ -304,10 +302,6 @@ footer {
                     &:last-child {
                         @include border-bottom-radius();
                         border-bottom: 0;
-                    }
-
-                    &:hover {
-                        background-color: darken($colour1, 15%);
                     }
 
                     a {
