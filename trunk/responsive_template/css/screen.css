@@ -671,7 +671,6 @@ header nav ul {
   border: 0;
   overflow: hidden;
   *zoom: 1;
-  background: #0d4c84;
 }
 /* line 60, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 header nav ul li {
@@ -696,68 +695,69 @@ header nav ul li:last-child {
 header nav ul li.last {
   padding-right: 0;
 }
-/* line 88, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 header nav ul li {
+  background: #0d4c84;
   border-right: 1px solid #fff;
   width: 33.333%;
   padding: 0;
 }
-/* line 93, ../sass/_layout.scss */
+/* line 92, ../sass/_layout.scss */
 header nav ul li:last-child {
   border-right: 0;
   width: 33.334%;
 }
-/* line 98, ../sass/_layout.scss */
+/* line 97, ../sass/_layout.scss */
 header nav ul li.normal {
   display: none;
 }
-/* line 102, ../sass/_layout.scss */
+/* line 101, ../sass/_layout.scss */
 header nav ul li.highlighted {
   background-color: #333333;
 }
-/* line 106, ../sass/_layout.scss */
+/* line 105, ../sass/_layout.scss */
 header nav ul li.call_to_action {
   background-color: #cd233c;
 }
-/* line 110, ../sass/_layout.scss */
+/* line 109, ../sass/_layout.scss */
 header nav ul li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 120, ../sass/_layout.scss */
+/* line 119, ../sass/_layout.scss */
 .slider-wrapper {
   position: relative;
   margin: 0 0 1em 0;
   zoom: 1;
   /* bullets underneath the slider */
 }
-/* line 126, ../sass/_layout.scss */
+/* line 125, ../sass/_layout.scss */
 .slider-wrapper a:active, .slider-wrapper a:focus {
   outline: none;
 }
-/* line 130, ../sass/_layout.scss */
+/* line 129, ../sass/_layout.scss */
 .slider-wrapper .slider {
   background: #fff;
   position: relative;
   zoom: 1;
 }
-/* line 135, ../sass/_layout.scss */
+/* line 134, ../sass/_layout.scss */
 .slider-wrapper .slider .slides {
   margin: 0;
   padding: 0;
   list-style: none;
   zoom: 1;
 }
-/* line 141, ../sass/_layout.scss */
+/* line 140, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
   /* Hide the slides before the JS is loaded. Avoids image jumping */
   position: relative;
 }
-/* line 146, ../sass/_layout.scss */
+/* line 145, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li h3 {
   z-index: 1;
   position: absolute;
@@ -785,20 +785,20 @@ header nav ul li a {
   background-repeat: no-repeat;
   opacity: .8;
 }
-/* line 151, ../sass/_layout.scss */
+/* line 150, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .imagemask {
   position: relative;
 }
-/* line 153, ../sass/_layout.scss */
+/* line 152, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .imagemask img {
   width: 100%;
 }
-/* line 159, ../sass/_layout.scss */
+/* line 158, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .description,
 .slider-wrapper .slider .slides > li .readon {
   display: none;
 }
-/* line 167, ../sass/_layout.scss */
+/* line 166, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav {
   margin: 0;
   padding: 0;
@@ -838,11 +838,11 @@ header nav ul li a {
 .slider-wrapper .flex-control-nav li.last {
   padding-right: 0;
 }
-/* line 174, ../sass/_layout.scss */
+/* line 173, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li {
   float: none;
 }
-/* line 176, ../sass/_layout.scss */
+/* line 175, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a {
   width: 45px;
   height: 45px;
@@ -855,35 +855,35 @@ header nav ul li a {
   cursor: pointer;
   display: inline-block;
 }
-/* line 183, ../sass/_layout.scss */
+/* line 182, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
   background-position: 0 0;
 }
-/* line 187, ../sass/_layout.scss */
+/* line 186, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
   background-position: 0 -45px;
   cursor: default;
 }
 
-/* line 196, ../sass/_layout.scss */
+/* line 195, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
 }
-/* line 202, ../sass/_layout.scss */
+/* line 201, ../sass/_layout.scss */
 #product_categories article {
   position: relative;
   float: left;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 208, ../sass/_layout.scss */
+/* line 207, ../sass/_layout.scss */
 #product_categories article a {
   display: block;
   width: 100%;
   line-height: 0;
 }
-/* line 214, ../sass/_layout.scss */
+/* line 213, ../sass/_layout.scss */
 #product_categories article a .imageholder {
   position: relative;
   display: block;
@@ -917,18 +917,18 @@ header nav ul li a {
   -moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
 }
-/* line 222, ../sass/_layout.scss */
+/* line 221, ../sass/_layout.scss */
 #product_categories article a .imageholder img {
   width: 100%;
 }
-/* line 226, ../sass/_layout.scss */
+/* line 225, ../sass/_layout.scss */
 #product_categories article a .imageholder h3 {
   position: absolute;
   bottom: -2.5em;
   left: -5px;
 }
 @media screen and (orientation: landscape) {
-  /* line 226, ../sass/_layout.scss */
+  /* line 225, ../sass/_layout.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -939,18 +939,18 @@ header nav ul li a {
     margin: 0;
   }
 }
-/* line 238, ../sass/_layout.scss */
+/* line 237, ../sass/_layout.scss */
 #product_categories article a .description {
   margin-top: 3em;
 }
 @media screen and (orientation: landscape) {
-  /* line 238, ../sass/_layout.scss */
+  /* line 237, ../sass/_layout.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 }
 
-/* line 248, ../sass/_layout.scss */
+/* line 247, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -959,11 +959,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 256, ../sass/_layout.scss */
+/* line 255, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 260, ../sass/_layout.scss */
+/* line 259, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -971,18 +971,18 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 268, ../sass/_layout.scss */
+/* line 267, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
   float: left;
   margin-bottom: 1em;
 }
-/* line 274, ../sass/_layout.scss */
+/* line 273, ../sass/_layout.scss */
 footer nav > ul > li > h3 {
   margin-top: 0;
 }
-/* line 278, ../sass/_layout.scss */
+/* line 277, ../sass/_layout.scss */
 footer nav > ul > li > ul {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -991,35 +991,35 @@ footer nav > ul > li > ul {
   border-radius: 5px;
   background-color: #0b3f6d;
 }
-/* line 282, ../sass/_layout.scss */
+/* line 281, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
 }
-/* line 286, ../sass/_layout.scss */
+/* line 285, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 294, ../sass/_layout.scss */
+/* line 293, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   border-bottom: 0;
 }
-/* line 301, ../sass/_layout.scss */
+/* line 300, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 305, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 309, ../sass/_layout.scss */
+/* line 308, ../sass/_layout.scss */
 footer #contact [itemprop="name"] {
   display: none;
 }
-/* line 314, ../sass/_layout.scss */
+/* line 313, ../sass/_layout.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   width: 100%;
@@ -1027,12 +1027,12 @@ footer #contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 321, ../sass/_layout.scss */
+/* line 320, ../sass/_layout.scss */
 footer #contact .icon {
   float: left;
   margin-right: .5em;
 }
-/* line 325, ../sass/_layout.scss */
+/* line 324, ../sass/_layout.scss */
 footer #contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1043,7 +1043,7 @@ footer #contact #phone-icon {
   background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
-/* line 329, ../sass/_layout.scss */
+/* line 328, ../sass/_layout.scss */
 footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1054,7 +1054,7 @@ footer #contact #facebook-icon {
   background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
-/* line 333, ../sass/_layout.scss */
+/* line 332, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1067,18 +1067,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 342, ../sass/_layout.scss */
+/* line 341, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 349, ../sass/_layout.scss */
+/* line 348, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 354, ../sass/_layout.scss */
+/* line 353, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1086,7 +1086,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 361, ../sass/_layout.scss */
+/* line 360, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1119,13 +1119,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-repeat: no-repeat;
   opacity: .8;
 }
-/* line 371, ../sass/_layout.scss */
+/* line 370, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 380, ../sass/_layout.scss */
+/* line 379, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1400,25 +1400,28 @@ footer #copyright {
     bottom: 0;
     right: 0;
   }
-  /* line 52, ../sass/_layout_4.scss */
-  header nav > ul {
+  /* line 54, ../sass/_layout_4.scss */
+  header nav > ul > li:nth-child(2) {
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
+  }
+  /* line 58, ../sass/_layout_4.scss */
+  header nav > ul > li:last-child {
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
     border-top-right-radius: 5px;
   }
-  /* line 55, ../sass/_layout_4.scss */
+  /* line 62, ../sass/_layout_4.scss */
   header nav > ul > li > a {
     padding: 0 3em;
   }
 
-  /* line 62, ../sass/_layout_4.scss */
+  /* line 70, ../sass/_layout_4.scss */
   .slider-wrapper {
     border-bottom: 4px solid #cd233c;
   }
-  /* line 66, ../sass/_layout_4.scss */
+  /* line 74, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox {
     width: 26.875em;
     position: absolute;
@@ -1429,7 +1432,7 @@ footer #copyright {
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
   }
-  /* line 75, ../sass/_layout_4.scss */
+  /* line 83, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox h3 {
     position: relative;
     clear: both;
@@ -1438,22 +1441,22 @@ footer #copyright {
     bottom: 0;
     padding: 0;
   }
-  /* line 83, ../sass/_layout_4.scss */
+  /* line 91, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox h3:after {
     display: none;
   }
-  /* line 89, ../sass/_layout_4.scss */
+  /* line 97, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox .description,
   .slider-wrapper .slider .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
-  /* line 95, ../sass/_layout_4.scss */
+  /* line 103, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox .description {
     width: 19.286em;
   }
-  /* line 99, ../sass/_layout_4.scss */
+  /* line 107, ../sass/_layout_4.scss */
   .slider-wrapper .slider .slides .infobox .readon {
     background-color: #333333;
     width: auto;
@@ -1481,7 +1484,7 @@ footer #copyright {
     background-repeat: no-repeat;
     opacity: .8;
   }
-  /* line 112, ../sass/_layout_4.scss */
+  /* line 120, ../sass/_layout_4.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -1490,18 +1493,18 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 122, ../sass/_layout_4.scss */
+  /* line 130, ../sass/_layout_4.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 128, ../sass/_layout_4.scss */
+  /* line 136, ../sass/_layout_4.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 134, ../sass/_layout_4.scss */
+  /* line 142, ../sass/_layout_4.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1513,21 +1516,12 @@ footer #copyright {
   header #logo {
     width: 20%;
   }
-  /* line 9, ../sass/_layout_5.scss */
-  header nav > ul {
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  /* line 12, ../sass/_layout_5.scss */
+  /* line 10, ../sass/_layout_5.scss */
   header nav > ul > li > a {
     padding: 0 4em;
   }
 
-  /* line 23, ../sass/_layout_5.scss */
+  /* line 21, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides > li > a {
     display: block;
     *zoom: 1;
@@ -1538,16 +1532,16 @@ footer #copyright {
     display: table;
     clear: both;
   }
-  /* line 27, ../sass/_layout_5.scss */
+  /* line 25, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides > li > a .infobox {
     bottom: 3.813em;
   }
-  /* line 30, ../sass/_layout_5.scss */
+  /* line 28, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides > li > a .infobox .description {
     width: 100%;
     margin-bottom: 1em;
   }
-  /* line 40, ../sass/_layout_5.scss */
+  /* line 38, ../sass/_layout_5.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     width: 100%;

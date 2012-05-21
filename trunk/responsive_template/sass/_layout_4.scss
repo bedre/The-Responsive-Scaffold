@@ -50,10 +50,18 @@
             right: 0;
 
             & > ul {
-                @include border-top-radius();
+                & > li {
+                    &:nth-child(2) {
+                        @include border-top-left-radius();
+                    }
 
-                & > li > a {
-                    padding: 0 3em;
+                    &:last-child {
+                        @include border-top-right-radius();
+                    }
+
+                    & > a {
+                        padding: 0 3em;
+                    }
                 }
             }
         }
