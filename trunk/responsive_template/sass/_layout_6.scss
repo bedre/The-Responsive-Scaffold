@@ -1,7 +1,7 @@
-@media screen and (min-width: $break-colossal) {
+@media screen and (min-width: $break-6) {
 
     .wrap {
-        @extend .clearfix;
+        @include pie-clearfix;
         position: relative;
         max-width: $max-width/18px*1em;
         margin: 0 auto;

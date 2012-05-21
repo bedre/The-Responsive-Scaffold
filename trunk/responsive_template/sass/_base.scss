@@ -3,7 +3,6 @@
 ***********************/
 
 $template-root-folder:  '/templates/responsive_template';
-$template-style-folder: 'example';
 
 
 /*********************** 
@@ -20,8 +19,9 @@ $base-line-height:  24px;
   COLOUR
 ***********************/
 
-$colour1:           #999;
-$colour2:           #666;
+$colour1:           #999; /* main theme colour */
+$colour2:           #666; /* secondary colour */
+$colour3:           #333; /* call to action colour */
 $text-colour:       #555;
 $background-colour: #fff;
 $border-colour:     #ddd;
@@ -33,17 +33,3 @@ $separator-colour:  #000;
 ***********************/
 
 $default-border-radius: 5px;
-
-
-/*********************** 
-  BREAKPOINTS
-***********************/
-
-$break-tiny:      320px/$base-font-size*1em;
-$break-small:     440px/$base-font-size*1em;
-$break-medium:    600px/$base-font-size*1em;
-$break-large:    1024px/$base-font-size*1em;
-$break-huge:     1440px/$base-font-size*1em;
-
-$max-width:      1620px;
-$break-colossal: ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides

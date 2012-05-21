@@ -83,12 +83,42 @@ header {
         ul {
             @include horizontal-list;
 
-            background: #666;
-
             li {
+                background: $colour1;
                 border-right: 1px solid #fff;
                 width: 33.333%;
                 padding: 0;
+                @include transition-property(background-color);
+                @include transition-duration(.3s);
+
+                &:last-child {
+                    border-right: 0;
+                    width: 33.334%;
+                }
+
+                &.normal {
+                    display: none;
+                }
+
+                &.highlighted {
+                    background-color: $colour2;
+
+                    &:hover {
+                        background-color: darken($colour2, 10%);
+                    }
+                }
+
+                &.call_to_action {
+                    background-color: $colour3;
+
+                    &:hover {
+                        background-color: darken($colour3, 10%);
+                    }
+                }
+
+                &:hover {
+                    background-color: darken($colour1, 10%);
+                }
 
                 a {
                     display: block;
@@ -96,16 +126,6 @@ header {
                     height:  100%;
                 }
             }
-
-            li:last-child {
-                border-right: 0;
-                width: 33.334%;
-            }
-
-            li.normal {
-                display: none;
-            }
-
         }
     }
 }
@@ -138,11 +158,12 @@ header {
                 
                 h3 {
                     @include overlay-text-layout;
-                    @include button-arrow(.9em);
+                    @include button-arrow(1em);
                 }
 
                 .imagemask {
                     position: relative;
+                    line-height: 0;
                     img {
                         width: 100%;
                     }
@@ -269,12 +290,20 @@ footer {
             }
 
             > ul {
-                @include border-radius();
-                background-color: darken($colour1, 5%);
 
                 > li {
                     width: 100%;
                     border-bottom: 1px solid $colour1;
+                    background-color: darken($colour1, 5%);
+
+                    &:first-child {
+                        @include border-top-radius();
+                    }
+                    
+                    &:last-child {
+                        @include border-bottom-radius();
+                        border-bottom: 0;
+                    }
 
                     a {
                         display: block;
@@ -282,10 +311,6 @@ footer {
                         width: 100%;
                         line-height: 3.143em;
                     }
-                }
-
-                > li:last-child {
-                    border-bottom: 0;
                 }
             }
         }

@@ -1,4 +1,4 @@
-@media screen and (min-width: $break-medium) { 
+@media screen and (min-width: $break-3) { 
 
     /* If we're not on a touch device, we can fit in some extra content */
     .no-touch {
@@ -68,16 +68,30 @@
 
         nav ul {
 
-            li, li:last-child {
+            li {
                 width: 20%;
-            }
 
-            li.normal {
-                display: block;
-            }
+                &:last-child {
+                    width: 20%;
+                }
 
-            li:not(.normal) {
-                background: url('../images/' + $template-style-folder + '/arrow.png') no-repeat 95% 50%;
+                &.normal {
+                    display: block;
+                }
+
+                &.popout a {
+                   @include sprite-background($template-style-folder+'/icons/menu_arrow.png', 100%, 100%);
+                   background-position: 90% 48%;
+                }
+
+                &.highlighted {
+                    background-color: $colour2;
+                }
+
+                &.call_to_action {
+                    background-color: $colour3;
+                }
+
             }
 
             #menu_footer_link {
@@ -89,8 +103,10 @@
     .slider-wrapper {
         .slider {
             .slides {
-                h3 {
-                    bottom: 1em;
+                & > li {
+                    h3 {
+                        bottom: 1em;
+                    }
                 }
             }
         }
