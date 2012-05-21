@@ -158,11 +158,12 @@ header {
                 
                 h3 {
                     @include overlay-text-layout;
-                    @include button-arrow(.9em);
+                    @include button-arrow(1em);
                 }
 
                 .imagemask {
                     position: relative;
+                    line-height: 0;
                     img {
                         width: 100%;
                     }
