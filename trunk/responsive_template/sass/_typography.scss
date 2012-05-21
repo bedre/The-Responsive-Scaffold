@@ -98,7 +98,7 @@ header {
 
 footer {
     a {
-        @include link-colors(#fff, lighten($colour1, 50%), #c00, #fff, #cc0);
+        @include link-colors(#fff, #fff, #fff, #fff, #fff);
         text-decoration: none;
     }
 
