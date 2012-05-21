@@ -1,4 +1,4 @@
-@media screen and (min-width: $break-huge) {
+@media screen and (min-width: $break-5) {
 
     header {
         #logo {
@@ -7,8 +7,6 @@
 
         nav {
             & > ul {
-                @include border-top-radius();
-
                 & > li > a {
                     padding: 0 4em;
                 }
@@ -22,14 +20,18 @@
                 & > li {
                     & > a {
                         display: block;
-                        @extend .clearfix;
+                        @include pie-clearfix;
 
                         .infobox {
                             bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
                             
                             .description {
-                            width: 100%;
-                            margin-bottom: 1em;
+                                width: 100%;
+                                margin-bottom: 1em;
+                            }
+
+                            .readon {
+                                @include button-arrow(.35em, 'button_arrow_white_red');
                             }
                         }
                     }

@@ -1,4 +1,4 @@
-@media screen and (min-width: $break-large) {
+@media screen and (min-width: $break-4) {
 
     .no-touch header #extra {
         margin-top: 0;
@@ -50,10 +50,18 @@
             right: 0;
 
             & > ul {
-                @include border-top-radius();
+                & > li {
+                    &:nth-child(2) {
+                        @include border-top-left-radius();
+                    }
 
-                & > li > a {
-                    padding: 0 3em;
+                    &:last-child {
+                        @include border-top-right-radius();
+                    }
+
+                    & > a {
+                        padding: 0 3em;
+                    }
                 }
             }
         }
@@ -97,13 +105,13 @@
                     }
 
                     .readon {
-                        background-color: $colour2;
+                        background-color: $colour3;
                         width: auto;
                         position: absolute;
                         bottom: 0;
                         right: 0;
                         padding: .5em 1em;
-                        @include button-arrow(.45em);
+                        @include button-arrow(.45em, 'button_arrow_white_red');
                     }
                 }
             }

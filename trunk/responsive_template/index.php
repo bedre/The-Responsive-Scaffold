@@ -11,6 +11,7 @@
  * Other than that, the licence is to be considered public domain
  */
 
+defined( '_JEXEC' ) or die( 'Restricted access' );
 require_once 'settings.php';
 ?>
 <!doctype html>
@@ -89,7 +90,7 @@ require_once 'settings.php';
 
 </head>
 
-<body>
+<body> 
     <header>
         <div class="wrap">
             <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
@@ -102,7 +103,7 @@ require_once 'settings.php';
                 </div>
 
                 <div id="contact_short">
-                    <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>order@company-name.com</a>
+                    <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>booking@skagen-hotel.no</a>
                     <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
                 </div>
             </div>
@@ -122,10 +123,10 @@ require_once 'settings.php';
                     <li class="normal">
                         <a href="inner_page.php">About us</a>
                     </li>
-                    <li class="highlighted">
+                    <li class="highlighted popout">
                         <a href="inner_page.php">Contact</a>
                     </li>
-                    <li class="call_to_action">
+                    <li class="call_to_action popout">
                         <a href="inner_page.php">Buy now</a>
                     </li>
                 </ul>
@@ -279,24 +280,24 @@ require_once 'settings.php';
                 <a name="contact"></a>
                 <h3>Contact us</h3>
                 <div id="company_contact">
-                    <span itemprop="name">Your Corporation Inc.</span>
-                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 22 22 22 22</span>
-                    <a itemprop="url" href="http://facebook.com/yourcorp" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/yourcorp</a>
+                    <span itemprop="name">Skagen Hotel</span>
+                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 755 19 100</span>
+                    <a itemprop="url" href="http://facebook.com/skagenhotel" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/skagenhotel</a>
                 </div>
 
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="description">Your Corporation Inc.</span>
-                    <span itemprop="streetAddress">Storgata 1</span>
-                    <span itemprop="postalCode">8001</span>
+                    <span itemprop="description">Skagen Hotel</span>
+                    <span itemprop="streetAddress">Nyholmsgata 11</span>
+                    <span itemprop="postalCode">8005</span>
                     <span itemprop="addressLocality">Bodø</span>
                     <span itemprop="addressRegion">Nordland</span>
                     <span itemprop="addressCountry">Norway</span>
-                    <a itemprop="url" href="#">Directions</a>
+                    <a itemprop="url" href="#">Kart</a>
                     <img id="map" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
                 </div>
             </div>
 
-            <div id="copyright">Copyright &copy; <?php echo date('Y') ?> some company, All rights reserved.</div>
+            <div id="copyright">Copyright &copy; <?php echo date('Y') ?> Skagen Hotel, All rights reserved.</div>
         </div>
     </footer>
 
