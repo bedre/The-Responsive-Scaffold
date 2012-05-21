@@ -549,9 +549,9 @@ header #logo {
   max-width: 308px;
 }
 
-/* line 156, skagen/icons/*.png */
+/* line 164, skagen/icons/*.png */
 .icons-sprite {
-  background: url('../images/skagen/icons-scafb2595a2.png') no-repeat;
+  background: url('../images/skagen/icons-s0ee7b4aa50.png') no-repeat;
 }
 
 /* common stuff */
@@ -645,7 +645,7 @@ header #extra #language #english {
   background-position: 0 -90px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
 /* line 73, ../sass/_layout.scss */
@@ -656,7 +656,7 @@ header #extra #language #norwegian {
   background-position: 0 -203px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
 /* line 79, ../sass/_layout.scss */
@@ -778,10 +778,10 @@ header nav ul li a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -334px;
+  background-position: 0 -348px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
   opacity: .8;
 }
@@ -850,7 +850,7 @@ header nav ul li a {
   white-space: nowrap;
   overflow: hidden;
   background-position: 0 -112px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
   cursor: pointer;
   display: inline-block;
@@ -1040,7 +1040,7 @@ footer #contact #phone-icon {
   background-position: 0 -259px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
 /* line 329, ../sass/_layout.scss */
@@ -1048,10 +1048,10 @@ footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -318px;
+  background-position: 0 -332px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
 /* line 333, ../sass/_layout.scss */
@@ -1112,10 +1112,10 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -334px;
+  background-position: 0 -348px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
   opacity: .8;
 }
@@ -1194,10 +1194,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -302px;
+    background-position: 0 -316px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
   }
   /* line 28, ../sass/_layout_3.scss */
@@ -1205,10 +1205,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -286px;
+    background-position: 0 -300px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
   }
   /* line 33, ../sass/_layout_3.scss */
@@ -1234,7 +1234,7 @@ footer #copyright {
     background-position: 0 -225px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
     float: left;
   }
@@ -1243,10 +1243,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -275px;
+    background-position: 0 -289px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
     float: right;
   }
@@ -1260,46 +1260,54 @@ footer #copyright {
     width: 60%;
   }
   /* line 71, ../sass/_layout_3.scss */
-  header nav ul li, header nav ul li:last-child {
+  header nav ul li {
     width: 20%;
   }
-  /* line 75, ../sass/_layout_3.scss */
+  /* line 74, ../sass/_layout_3.scss */
+  header nav ul li:last-child {
+    width: 20%;
+  }
+  /* line 78, ../sass/_layout_3.scss */
   header nav ul li.normal {
     display: block;
   }
-  /* line 79, ../sass/_layout_3.scss */
-  header nav ul li:not(.normal) {
-    background: #0d4c84 url("../images/skagen/arrow.png") no-repeat 95% 50%;
-  }
-  /* line 83, ../sass/_layout_3.scss */
-  header nav ul li.highlighted:not(.normal) {
-    background: #333333 url("../images/skagen/arrow.png") no-repeat 95% 50%;
+  /* line 82, ../sass/_layout_3.scss */
+  header nav ul li.popout a {
+    background: url('../images/skagen/icons/menu_arrow.png?1337597621') no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: 90% 48%;
   }
   /* line 87, ../sass/_layout_3.scss */
-  header nav ul li.call_to_action:not(.normal) {
-    background: #cd233c url("../images/skagen/arrow.png") no-repeat 95% 50%;
+  header nav ul li.highlighted {
+    background-color: #333333;
   }
   /* line 91, ../sass/_layout_3.scss */
+  header nav ul li.call_to_action {
+    background-color: #cd233c;
+  }
+  /* line 97, ../sass/_layout_3.scss */
   header nav ul #menu_footer_link {
     display: none;
   }
 
-  /* line 100, ../sass/_layout_3.scss */
+  /* line 106, ../sass/_layout_3.scss */
   .slider-wrapper .slider .slides h3 {
     bottom: 1em;
   }
 
-  /* line 107, ../sass/_layout_3.scss */
+  /* line 113, ../sass/_layout_3.scss */
   #product_categories {
     padding: 0;
   }
-  /* line 110, ../sass/_layout_3.scss */
+  /* line 116, ../sass/_layout_3.scss */
   #product_categories article {
     width: 50%;
     padding: 1.231em;
     margin-bottom: 0;
   }
-  /* line 117, ../sass/_layout_3.scss */
+  /* line 123, ../sass/_layout_3.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -1309,37 +1317,37 @@ footer #copyright {
     float: left;
     margin: 0;
   }
-  /* line 123, ../sass/_layout_3.scss */
+  /* line 129, ../sass/_layout_3.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 133, ../sass/_layout_3.scss */
+  /* line 139, ../sass/_layout_3.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 139, ../sass/_layout_3.scss */
+  /* line 145, ../sass/_layout_3.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 145, ../sass/_layout_3.scss */
+  /* line 151, ../sass/_layout_3.scss */
   footer #contact {
     position: relative;
   }
-  /* line 148, ../sass/_layout_3.scss */
+  /* line 154, ../sass/_layout_3.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 153, ../sass/_layout_3.scss */
+  /* line 159, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 157, ../sass/_layout_3.scss */
+  /* line 163, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1466,10 +1474,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -334px;
+    background-position: 0 -348px;
     height: 13px;
     width: 13px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
     opacity: .8;
   }
@@ -1750,10 +1758,10 @@ header nav ul li a:active {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -334px;
+    background-position: 0 -348px;
     height: 13px;
     width: 13px;
-    background-image: url('../images/skagen/icons-se31a1588e7.png');
+    background-image: url('../images/skagen/icons-s9d6a0c221e.png');
     background-repeat: no-repeat;
     opacity: .8;
   }
@@ -1927,7 +1935,7 @@ footer #copyright {
   white-space: nowrap;
   overflow: hidden;
   background-position: 0 -236px;
-  background-image: url('../images/skagen/icons-se31a1588e7.png');
+  background-image: url('../images/skagen/icons-s9d6a0c221e.png');
   background-repeat: no-repeat;
 }
 /* line 12, ../sass/_no-touch.scss */

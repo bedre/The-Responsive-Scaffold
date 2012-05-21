@@ -123,10 +123,10 @@ require_once 'settings.php';
                     <li class="normal">
                         <a href="inner_page.php">About us</a>
                     </li>
-                    <li class="highlighted">
+                    <li class="highlighted popout">
                         <a href="inner_page.php">Contact</a>
                     </li>
-                    <li class="call_to_action">
+                    <li class="call_to_action popout">
                         <a href="inner_page.php">Buy now</a>
                     </li>
                 </ul>

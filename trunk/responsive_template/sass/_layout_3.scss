@@ -68,24 +68,30 @@
 
         nav ul {
 
-            li, li:last-child {
+            li {
                 width: 20%;
-            }
 
-            li.normal {
-                display: block;
-            }
+                &:last-child {
+                    width: 20%;
+                }
 
-            li:not(.normal) {
-                background: $colour1 url('../images/' + $template-style-folder + '/arrow.png') no-repeat 95% 50%;
-            }
+                &.normal {
+                    display: block;
+                }
 
-            li.highlighted:not(.normal) {
-                background: $colour2 url('../images/' + $template-style-folder + '/arrow.png') no-repeat 95% 50%;
-            }
+                &.popout a {
+                   @include sprite-background($template-style-folder+'/icons/menu_arrow.png', 100%, 100%);
+                   background-position: 90% 48%;
+                }
 
-            li.call_to_action:not(.normal) {
-                background: $colour3 url('../images/' + $template-style-folder + '/arrow.png') no-repeat 95% 50%;
+                &.highlighted {
+                    background-color: $colour2;
+                }
+
+                &.call_to_action {
+                    background-color: $colour3;
+                }
+
             }
 
             #menu_footer_link {
