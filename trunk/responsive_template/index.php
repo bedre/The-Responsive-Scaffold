@@ -11,6 +11,7 @@
  * Other than that, the licence is to be considered public domain
  */
 
+defined( '_JEXEC' ) or die( 'Restricted access' );
 require_once 'settings.php';
 ?>
 <!doctype html>

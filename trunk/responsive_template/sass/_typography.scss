@@ -1,6 +1,6 @@
 @include establish_baseline;
 
-@media screen and (min-width: $break-huge) {
+@media screen and (min-width: $break-5) {
     $base-font-size: 18px;
     @include establish_baseline;
 }
@@ -52,12 +52,12 @@ header {
     h3 {
         @include overlay-text-typography;
 
-        @media screen and (min-width: $break-medium) {
+        @media screen and (min-width: $break-3) {
             font-size: em(24,16);
             @include button_arrow(1em);
         }
 
-        @media screen and (min-width: $break-large) {
+        @media screen and (min-width: $break-4) {
             font-size: em(32,16);
             line-height: 1.5em;   
         }
@@ -81,7 +81,7 @@ header {
                 @include overlay-text-typography;
             }
 
-            @media screen and (min-width: $break-medium) {
+            @media screen and (min-width: $break-3) {
                 @include overlay-text-typography;   
             }
         }
@@ -89,7 +89,7 @@ header {
         .description {
             line-height: 1.5em;
 
-            @media screen and (min-width: $break-medium) {
+            @media screen and (min-width: $break-3) {
                 margin-top: 1em;
             }
         }

@@ -5,23 +5,26 @@
 @import "compass/utilities/sprites/sprite-img";
 @import "rgbapng";
 
-/* initialization, variables */
+/* initialization, variables, styles */
 @import "normalize";
-@import "mixins";
 @import "base";
 
-/* which style specific CSS to use. Change "example" to "mystyle" */
-@import "style_example";
-@import "sprites_example";
+/* which style specific CSS to use */
+@import "style_skagen";
+@import "sprites_skagen";
+
+/* common stuff */
+@import "breakpoints";
+@import "mixins";
 
 /* layout */
 @import "layout";
-@import "layout_tiny";
-@import "layout_small";
-@import "layout_medium"; 
-@import "layout_large";
-@import "layout_huge";
-@import "layout_colossal";
+@import "layout_1";
+@import "layout_2";
+@import "layout_3"; 
+@import "layout_4";
+@import "layout_5";
+@import "layout_6";
 
 /* typography */
 @import "typography";

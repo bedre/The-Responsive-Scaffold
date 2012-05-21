@@ -1,4 +1,4 @@
-@media screen and (min-width: $break-huge) {
+@media screen and (min-width: $break-5) {
 
     header {
         #logo {
@@ -22,7 +22,7 @@
                 & > li {
                     & > a {
                         display: block;
-                        @extend .clearfix;
+                        @include pie-clearfix;
 
                         .infobox {
                             bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);

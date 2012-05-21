@@ -83,12 +83,29 @@ header {
         ul {
             @include horizontal-list;
 
-            background: #666;
+            background: $colour1;
 
             li {
                 border-right: 1px solid #fff;
                 width: 33.333%;
                 padding: 0;
+
+                &:last-child {
+                    border-right: 0;
+                    width: 33.334%;
+                }
+
+                &.normal {
+                    display: none;
+                }
+
+                &.highlighted {
+                    background-color: $colour2;
+                }
+
+                &.call_to_action {
+                    background-color: $colour3;
+                }
 
                 a {
                     display: block;
@@ -96,16 +113,6 @@ header {
                     height:  100%;
                 }
             }
-
-            li:last-child {
-                border-right: 0;
-                width: 33.334%;
-            }
-
-            li.normal {
-                display: none;
-            }
-
         }
     }
 }
