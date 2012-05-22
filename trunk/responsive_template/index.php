@@ -15,32 +15,30 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 require_once 'settings.php';
 ?>
 <!doctype html>
-<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js lt-ie10" lang="<?php echo $settings['lang'] ?>"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="<?php echo $settings['lang'] ?>"> <!--<![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" <?php echo $settings['html_attribs'] ?>> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" <?php echo $settings['html_attribs'] ?>> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" <?php echo $settings['html_attribs'] ?>> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" <?php echo $settings['html_attribs'] ?>> <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <title>A responsive HTML5 template</title>
-    <meta name="description" content="This is an example of a responsive HTML5 template, based on HTML5 boilerplate">
+    <jdoc:include type="head" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>css/screen.css">
-    <script src="<?php echo $settings['template_folder'] ?>js/lib/modernizr-2.5.3.min.js"></script>
+    <link rel="stylesheet" href="<?php echo $settings['template_folder'] ?>/css/screen.css">
+    <script src="<?php echo $settings['template_folder'] ?>/js/lib/modernizr-2.5.3.min.js"></script>
     <script>
         Modernizr.load({
             test: Modernizr.mediaqueries,
-            nope: '<?php echo $settings['template_folder'] ?>js/lib/respond.min.js'
+            nope: '<?php echo $settings['template_folder'] ?>/js/lib/respond.min.js'
         });
     </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="<?php echo $settings['template_folder'] ?>js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="<?php echo $settings['template_folder'] ?>js/lib/jquery.flexslider-min.js"></script>
-    <script src="<?php echo $settings['template_folder'] ?>js/flexslider_mask.js"></script>
+    <script>window.jQuery || document.write('<script src="<?php echo $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="<?php echo $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
+    <script src="<?php echo $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
-        <script type="text/javascript" src="<?php echo $settings['template_folder'] ?>js/lib/selectivizr-min-1.0.2.js"></script>
+        <script type="text/javascript" src="<?php echo $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.2.js"></script>
     <![endif]-->
 
     <script type="text/javascript" charset="utf-8">
@@ -93,7 +91,7 @@ require_once 'settings.php';
 <body> 
     <header>
         <div class="wrap">
-            <div id="logo"><img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
+            <div id="logo"><img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
 
             <div id="extra">
                 <div id="language">
@@ -142,7 +140,7 @@ require_once 'settings.php';
                 <li> 
                     <a href="#">
                         <div class="imagemask">
-                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
+                            <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
                         </div>
                         <div class="wrap">
                             <div class="infobox">
@@ -156,7 +154,7 @@ require_once 'settings.php';
                 <li> 
                     <a href="#">
                         <div class="imagemask">
-                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
+                            <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
                         </div>
                         <div class="wrap">
                             <div class="infobox">
@@ -170,7 +168,7 @@ require_once 'settings.php';
                 <li> 
                     <a href="#">
                         <div class="imagemask">
-                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
+                            <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
                         </div>
                         <div class="wrap">
                             <div class="infobox">
@@ -184,7 +182,7 @@ require_once 'settings.php';
                 <li> 
                     <a href="#">
                         <div class="imagemask">
-                            <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
+                            <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
                         </div>
                         <div class="wrap">
                             <div class="infobox">
@@ -204,7 +202,7 @@ require_once 'settings.php';
             <article class="product_category">
                 <a href="#">
                     <span class="imageholder">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 1">
+                        <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 1">
                         <h3>Fantastic product 1</h3>
                     </span>
                     <p class="description">An awesome product description for this product</p>
@@ -213,7 +211,7 @@ require_once 'settings.php';
             <article class="product_category">
                 <a href="#">
                     <span class="imageholder">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 2">
+                        <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 2">
                         <h3>Fantastic product 2</h3>
                     </span>
                     <p class="description">An awesome product description for this product</p>
@@ -222,7 +220,7 @@ require_once 'settings.php';
             <article class="product_category">
                 <a href="#">
                     <span class="imageholder">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 3">
+                        <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 3">
                         <h3>Fantastic product 3</h3>
                     </span>
                     <p class="description">An awesome product description for this product</p>
@@ -231,7 +229,7 @@ require_once 'settings.php';
             <article class="product_category">
                 <a href="#">
                     <span class="imageholder">
-                        <img src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 4">
+                        <img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/product_image.png" alt="Product 4">
                         <h3>Fantastic product 4</h3>
                     </span>
                     <p class="description">An awesome product description for this product</p>
@@ -295,7 +293,7 @@ require_once 'settings.php';
                     <span itemprop="addressRegion">Nordland</span>
                     <span itemprop="addressCountry">Norway</span>
                     <a itemprop="url" href="#">Kart</a>
-                    <img id="map" src="<?php echo $settings['template_folder'] ?>images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
+                    <img id="map" src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
                 </div>
             </div>
 
