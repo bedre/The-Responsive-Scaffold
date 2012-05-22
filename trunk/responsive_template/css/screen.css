@@ -1669,6 +1669,10 @@ footer #copyright {
     /* Give +36px extra room to compensate for the articles' side paddings */
     max-width: 113.231em;
   }
+  /* line 40, /Users/torkil/Sites/skagen-hotell/vendor/bedre/The-Responsive-Scaffold/trunk/responsive_template/sass/_layout_6.scss */
+  #product_categories .wrap article a .imageholder h3 {
+    bottom: 1em;
+  }
 }
 /* typography */
 /* line 66, /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */

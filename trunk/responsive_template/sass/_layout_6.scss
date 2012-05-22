@@ -37,6 +37,9 @@
             /* Compensate for the 13/16 font size in this section */
             /* Give +36px extra room to compensate for the articles' side paddings */
             max-width: ($max-width+36px)/(13/16*18px)*1em;
+            article a .imageholder h3 {
+                bottom: 1em;
+            }
         }
     }
 }
