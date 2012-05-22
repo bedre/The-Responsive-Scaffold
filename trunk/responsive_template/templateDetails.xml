@@ -11,6 +11,8 @@
 	<version>1.0</version>
 	<description>TPL_RESPONSIVE_TEMPLATE</description>
 	<files/>
-	<positions/>
+	<positions>
+		<position>mainmenu</position>
+	</positions>
 	<params/>
 </install>

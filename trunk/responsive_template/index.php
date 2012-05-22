@@ -110,6 +110,8 @@ require_once 'settings.php';
 
         
             <nav role="navigation">
+                <jdoc:include type="modules" name="mainmenu" />
+
                 <ul>
                     <li id="menu_footer_link">
                         <a href="#footermenu">Menu</a>
