@@ -221,38 +221,7 @@ require_once 'settings.php';
         <div class="wrap">
             <a name="footermenu"></a>
             <nav>
-                <ul>
-                    <li>
-                        <h3><a href="#">Products</a></h3>
-                        <ul>
-                            <li><a href="#">Product range 1</a></li>
-                            <li><a href="#">Product range 2</a></li>
-                            <li><a href="#">Product range 3</a></li>
-                            <li><a href="#">Product range 4</a></li>
-                            <li><a href="#">Product range 5</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3><a href="#">Services</a></h3>
-                        <ul>
-                            <li><a href="#">Services 1</a></li>
-                            <li><a href="#">Services 2</a></li>
-                            <li><a href="#">Services 3</a></li>
-                            <li><a href="#">Services 4</a></li>
-                            <li><a href="#">Services 5</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3><a href="#">About us</a></h3>
-                        <ul>
-                            <li><a href="#">Our philosophy</a></li>
-                            <li><a href="#">Meet the staff</a></li>
-                            <li><a href="#">Contact support</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <jdoc:include type="modules" name="footermenu" />
             </nav>
 
             <div itemscope itemtype="http://schema.org/Organization" id="contact">

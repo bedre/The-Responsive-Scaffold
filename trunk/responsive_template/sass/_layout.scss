@@ -290,9 +290,10 @@ footer {
             clear: both;
             float: left;
             margin-bottom: 1em;
+            display: none;
 
-            > h3 {
-                margin-top: 0;
+            &.normal {
+                display: block;
             }
 
             > ul {

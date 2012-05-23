@@ -1,6 +1,8 @@
 .no-touch {
     footer nav ul > li > ul > li a {
-        line-height: 1.5em;
+        line-height: 1.5 * em(16,13);
         text-decoration: underline;
+        $f-link-color: rgba(255,255,255,0.8);
+        @include link-colors($f-link-color, $f-link-color, $f-link-color, $f-link-color, $f-link-color);
     }
 }

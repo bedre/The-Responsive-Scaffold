@@ -96,22 +96,32 @@ header {
 }
 
 footer {
+
     a {
         @include link-colors(#fff, #fff, #fff, #fff, #fff);
         text-decoration: none;
     }
 
-    nav a {
-        font-size: em(14,16);
-    }
+    nav {
+        li.parent {
+            > a {
+                display: block;
+                font-size: em(16,16);
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: .5em;
+            }
+        }
 
-    h3 a {
-        font-size: em(16,16);
+        a {
+            font-size: em(13,16);
+        }
+
     }
 
     h3 {
         text-transform: uppercase;
-        color: #fff;
+        margin-bottom: .5em;
     }
 
     #contact {

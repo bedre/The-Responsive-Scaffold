@@ -1041,18 +1041,19 @@ footer nav > ul > li {
   clear: both;
   float: left;
   margin-bottom: 1em;
+  display: none;
 }
-/* line 294, ../sass/_layout.scss */
-footer nav > ul > li > h3 {
-  margin-top: 0;
+/* line 295, ../sass/_layout.scss */
+footer nav > ul > li.normal {
+  display: block;
 }
-/* line 300, ../sass/_layout.scss */
+/* line 301, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
 }
-/* line 305, ../sass/_layout.scss */
+/* line 306, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1061,7 +1062,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 309, ../sass/_layout.scss */
+/* line 310, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1071,26 +1072,26 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 314, ../sass/_layout.scss */
+/* line 315, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 325, ../sass/_layout.scss */
+/* line 326, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 329, ../sass/_layout.scss */
+/* line 330, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 333, ../sass/_layout.scss */
+/* line 334, ../sass/_layout.scss */
 footer #contact [itemprop="name"] {
   display: none;
 }
-/* line 338, ../sass/_layout.scss */
+/* line 339, ../sass/_layout.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   width: 100%;
@@ -1098,12 +1099,12 @@ footer #contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 345, ../sass/_layout.scss */
+/* line 346, ../sass/_layout.scss */
 footer #contact .icon {
   float: left;
   margin-right: .5em;
 }
-/* line 349, ../sass/_layout.scss */
+/* line 350, ../sass/_layout.scss */
 footer #contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1114,7 +1115,7 @@ footer #contact #phone-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 353, ../sass/_layout.scss */
+/* line 354, ../sass/_layout.scss */
 footer #contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1125,7 +1126,7 @@ footer #contact #facebook-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 357, ../sass/_layout.scss */
+/* line 358, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1138,18 +1139,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 366, ../sass/_layout.scss */
+/* line 367, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 373, ../sass/_layout.scss */
+/* line 374, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 378, ../sass/_layout.scss */
+/* line 379, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1157,7 +1158,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 385, ../sass/_layout.scss */
+/* line 386, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1189,13 +1190,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 395, ../sass/_layout.scss */
+/* line 396, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 404, ../sass/_layout.scss */
+/* line 405, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1885,7 +1886,7 @@ header nav ul li a:active {
   }
 }
 
-/* line 99, ../sass/_typography.scss */
+/* line 100, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -1906,33 +1907,37 @@ footer a:hover {
 footer a:active {
   color: white;
 }
-/* line 104, ../sass/_typography.scss */
-footer nav a {
-  font-size: 0.875em;
-}
-/* line 108, ../sass/_typography.scss */
-footer h3 a {
+/* line 107, ../sass/_typography.scss */
+footer nav li.parent > a {
+  display: block;
   font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: .5em;
 }
-/* line 112, ../sass/_typography.scss */
+/* line 116, ../sass/_typography.scss */
+footer nav a {
+  font-size: 0.813em;
+}
+/* line 122, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
-  color: #fff;
+  margin-bottom: .5em;
 }
-/* line 117, ../sass/_typography.scss */
+/* line 127, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 121, ../sass/_typography.scss */
+/* line 131, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 125, ../sass/_typography.scss */
+/* line 135, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 130, ../sass/_typography.scss */
+/* line 140, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;
@@ -1988,8 +1993,25 @@ footer #copyright {
 
 /* line 2, ../sass/_no-touch_typography.scss */
 .no-touch footer nav ul > li > ul > li a {
-  line-height: 1.5em;
+  line-height: 1.846em;
   text-decoration: underline;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.no-touch footer nav ul > li > ul > li a:visited {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.no-touch footer nav ul > li > ul > li a:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.no-touch footer nav ul > li > ul > li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.no-touch footer nav ul > li > ul > li a:active {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* No JavaScript Fallbacks */
