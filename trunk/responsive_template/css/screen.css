@@ -1087,25 +1087,30 @@ footer #contact {
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 334, ../sass/_layout.scss */
-footer #contact [itemprop="name"] {
+/* line 336, ../sass/_layout.scss */
+footer #contact #company_contact > * {
+  line-height: 1.5em;
+}
+/* line 340, ../sass/_layout.scss */
+footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 339, ../sass/_layout.scss */
-footer #contact [itemprop="telephone"],
-footer #contact [itemprop="url"] {
+/* line 345, ../sass/_layout.scss */
+footer #contact #company_contact [itemprop="telephone"],
+footer #contact #company_contact [itemprop="url"] {
   width: 100%;
   display: block;
   clear: both;
   margin-bottom: .5em;
 }
-/* line 346, ../sass/_layout.scss */
-footer #contact .icon {
+/* line 352, ../sass/_layout.scss */
+footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
+  margin-top: 0.125em;
 }
-/* line 350, ../sass/_layout.scss */
-footer #contact #phone-icon {
+/* line 357, ../sass/_layout.scss */
+footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -1115,8 +1120,8 @@ footer #contact #phone-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 354, ../sass/_layout.scss */
-footer #contact #facebook-icon {
+/* line 361, ../sass/_layout.scss */
+footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -1126,7 +1131,7 @@ footer #contact #facebook-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 358, ../sass/_layout.scss */
+/* line 366, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1139,18 +1144,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 367, ../sass/_layout.scss */
+/* line 375, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 374, ../sass/_layout.scss */
+/* line 382, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 379, ../sass/_layout.scss */
+/* line 387, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1158,7 +1163,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 386, ../sass/_layout.scss */
+/* line 394, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1190,13 +1195,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 396, ../sass/_layout.scss */
+/* line 404, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 405, ../sass/_layout.scss */
+/* line 413, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;

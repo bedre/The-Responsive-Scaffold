@@ -331,28 +331,36 @@ footer {
             margin-top: 0;
         }
 
-        [itemprop="name"] {
-            display: none;
-        }
+        #company_contact {
 
-        [itemprop="telephone"],
-        [itemprop="url"] {
-            width: 100%;
-            display: block;
-            clear: both;
-            margin-bottom: .5em;
-        }
+            & > * {
+                line-height: 1.5em;
+            }
 
-        .icon {
-            @include inline-icon;
-        }
+            [itemprop="name"] {
+                display: none;
+            }
 
-        #phone-icon {
-            @include sprite-replace-text-with-dimensions($icons-sprite-map, phone_white); 
-        }
+            [itemprop="telephone"],
+            [itemprop="url"] {
+                width: 100%;
+                display: block;
+                clear: both;
+                margin-bottom: .5em;
+            }
 
-        #facebook-icon {
-            @include sprite-replace-text-with-dimensions($icons-sprite-map, facebook_white); 
+            .icon {
+                @include inline-icon;
+                margin-top: em(2,16);
+            }
+
+            #phone-icon {
+                @include sprite-replace-text-with-dimensions($icons-sprite-map, phone_white); 
+            }
+
+            #facebook-icon {
+                @include sprite-replace-text-with-dimensions($icons-sprite-map, facebook_white); 
+            }
         }
 
         & > [itemprop="address"] {
