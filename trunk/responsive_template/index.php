@@ -105,7 +105,6 @@ require_once 'settings.php';
                     <span class="phone"><span class="phone_icon"> </span><?= $this->params->get('phone');?></span>
                 </div>
             </div>
-
         
             <nav role="navigation">
                 <jdoc:include type="modules" name="mainmenu" />
