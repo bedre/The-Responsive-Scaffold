@@ -1,6 +1,6 @@
 @include establish_baseline;
 
-@media screen and (min-width: $break-5) {
+@media screen and (min-width: $break-6) {
     $base-font-size: 18px;
     @include establish_baseline;
 }
@@ -56,7 +56,7 @@ header {
             font-size: em(24,16);
         }
 
-        @media screen and (min-width: $break-4) {
+        @media screen and (min-width: $break-6) {
             font-size: em(32,16);
             line-height: 1.5em;   
         }

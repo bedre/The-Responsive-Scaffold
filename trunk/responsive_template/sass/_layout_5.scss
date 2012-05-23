@@ -1,35 +1,110 @@
 @media screen and (min-width: $break-5) {
 
+    .no-touch header #extra {
+        margin-top: 0;
+    }
+
     header {
+
         #logo {
-            width: 20%;
+            margin-bottom: 1em;
+        }
+
+        #extra {
+
+            position: absolute;
+            right: 0;
+            bottom: 3.25em;
+
+            #contact_short {
+                display: block;
+                float: right;
+            }
+
+            #language {
+                height: image-height(sprite-file($icons-sprite-map, english_large));
+                width:  2.5*image-width(sprite-file($icons-sprite-map, english_large));
+
+                span {
+                    display: none;
+                }
+
+                a.active {
+                    display: block;
+                    opacity: .4;
+                }
+
+                #norwegian {
+                    float: right;
+                }
+            }
         }
 
         nav {
-            width: 60%;
+            width: 65%;
+            clear: right;
+            margin-right: 1em;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            & > ul {
+                @include border-top-left-radius();
+                & > li {
+                    &:last-child {
+                        @include border-top-right-radius();
+                    }
+                }
+            }
         }
     }
 
     .slider-wrapper {
+        border-bottom: 4px solid $separator-colour;
         .slider {
             .slides {
-                & > li {
-                    & > a {
-                        display: block;
-                        @include pie-clearfix;
+                .infobox {
+                    width: 430px/16px*1em;
+                    position: absolute;
+                    bottom: 1em;
+                    left: 1em;
+                    background-color: red;
+                    @include rgba-background(rgba(0,0,0,0.6));
+                    padding: 2em;
 
-                        .infobox {
-                            bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
-                            
-                            .description {
-                                width: 100%;
-                                margin-bottom: 1em;
-                            }
+                    h3 {
+                        position: relative;
+                        clear: both;
+                        width: 100%;
+                        background: none;
+                        bottom: 0;
+                        padding: 0;
 
-                            .readon {
-                                @include button-arrow(.35em, 'button_arrow_white_red');
-                            }
+                        &:after {
+                            display: none;
                         }
+                    }
+
+                    .description,
+                    .readon {
+                        margin: 0;
+                        display: block;
+                        clear: both;
+                    }
+
+                    .description {
+                        width: 270px/14px*1em;
+                    }
+
+                    .readon {
+                        background-color: $colour3;
+                        width: auto;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        padding: .5em 1em;
+                        @include button-arrow(.45em, 'button_arrow_white_red');
                     }
                 }
             }
@@ -37,11 +112,30 @@
 
         .flex-control-nav {
             position: absolute;
-            width: 100%;
             bottom: 0;
-            left: 0;
+            right: 1em;
             background-image: none;
             background-color: transparent;
+        }
+    }
+
+    #product_categories {
+        article {
+            width: 25%;
+        }
+    }
+
+    footer {
+        nav {
+            width: 50%;
+            max-width: 50em;
+            float: left;
+        }
+
+        #contact {
+            width: 50%;
+            float: right;
+            max-width: 40em;
         }
     }
 }

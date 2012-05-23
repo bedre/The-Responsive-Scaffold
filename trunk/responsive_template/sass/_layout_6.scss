@@ -1,20 +1,12 @@
 @media screen and (min-width: $break-6) {
 
-    .wrap {
-        @include pie-clearfix;
-        position: relative;
-        max-width: $max-width/18px*1em;
-        margin: 0 auto;
-    }
-
     header {
         #logo {
-            margin-left: 0;
+            width: 20%;
         }
 
-        #extra #language,
         nav {
-            margin-right: 0;
+            width: 60%;
         }
     }
 
@@ -23,23 +15,33 @@
             .slides {
                 & > li {
                     & > a {
+                        display: block;
+                        @include pie-clearfix;
+
                         .infobox {
-                            left: 0;
+                            bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
+                            
+                            .description {
+                                width: 100%;
+                                margin-bottom: 1em;
+                            }
+
+                            .readon {
+                                @include button-arrow(.35em, 'button_arrow_white_red');
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    #product_categories {
-        .wrap {
-            /* Compensate for the 13/16 font size in this section */
-            /* Give +36px extra room to compensate for the articles' side paddings */
-            max-width: ($max-width+36px)/(13/16*18px)*1em;
-            article a .imageholder h3 {
-                bottom: 1em;
-            }
+        .flex-control-nav {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-image: none;
+            background-color: transparent;
         }
     }
 }

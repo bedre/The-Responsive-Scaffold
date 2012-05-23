@@ -79,11 +79,6 @@
                 &.menulink {
                     display: none;
                 }
-
-                a.popout {
-                   @include sprite-background($template-style-folder+'/icons/menu_arrow.png', 100%, 100%);
-                   background-position: 92% 48%;
-                }
             }
 
             #menu_footer_link {
