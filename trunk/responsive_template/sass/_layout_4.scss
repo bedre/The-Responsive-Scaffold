@@ -41,7 +41,7 @@
         }
 
         nav {
-            width: auto;
+            width: 65%;
             clear: right;
             margin-right: 1em;
 
@@ -51,16 +51,12 @@
 
             & > ul {
                 & > li {
-                    &:nth-child(2) {
+                    &:nth-child(3) {
                         @include border-top-left-radius();
                     }
 
                     &:last-child {
                         @include border-top-right-radius();
-                    }
-
-                    & > a {
-                        padding: 0 3em;
                     }
                 }
             }

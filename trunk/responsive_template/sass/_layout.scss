@@ -96,11 +96,14 @@ header {
                     width: 33.334%;
                 }
 
-                &.normal {
+                &:first-child,
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
                     display: none;
                 }
 
-                &.highlighted {
+                &:nth-child(6) {
                     background-color: $colour2;
 
                     &:hover {
@@ -108,7 +111,7 @@ header {
                     }
                 }
 
-                &.call_to_action {
+                &:nth-child(7) {
                     background-color: $colour3;
 
                     &:hover {

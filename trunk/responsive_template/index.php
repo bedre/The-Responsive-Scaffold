@@ -109,27 +109,6 @@ require_once 'settings.php';
         
             <nav role="navigation">
                 <jdoc:include type="modules" name="mainmenu" />
-
-                <ul>
-                    <li id="menu_footer_link">
-                        <a href="#footermenu">Menu</a>
-                    </li>
-                    <li class="normal">
-                        <a href="inner_page.php">Products</a>
-                    </li>
-                    <li class="normal">
-                        <a href="inner_page.php">Services</a>
-                    </li>
-                    <li class="normal">
-                        <a href="inner_page.php">About us</a>
-                    </li>
-                    <li class="highlighted popout">
-                        <a href="inner_page.php">Contact</a>
-                    </li>
-                    <li class="call_to_action popout">
-                        <a href="inner_page.php">Buy now</a>
-                    </li>
-                </ul>
             </nav>
         </div>
     </header>

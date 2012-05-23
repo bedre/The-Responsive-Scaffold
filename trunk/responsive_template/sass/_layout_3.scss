@@ -75,23 +75,20 @@
                     width: 20%;
                 }
 
-                &.normal {
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
                     display: block;
                 }
 
-                &.popout a {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                a.popout {
                    @include sprite-background($template-style-folder+'/icons/menu_arrow.png', 100%, 100%);
-                   background-position: 90% 48%;
+                   background-position: 92% 48%;
                 }
-
-                &.highlighted {
-                    background-color: $colour2;
-                }
-
-                &.call_to_action {
-                    background-color: $colour3;
-                }
-
             }
 
             #menu_footer_link {
