@@ -70,18 +70,13 @@
 
             li {
                 width: 20%;
+                display: block;
 
                 &:last-child {
                     width: 20%;
                 }
 
-                &:nth-child(3),
-                &:nth-child(4),
-                &:nth-child(5) {
-                    display: block;
-                }
-
-                &:nth-child(2) {
+                &.menulink {
                     display: none;
                 }
 

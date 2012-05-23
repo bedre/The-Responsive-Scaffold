@@ -50,11 +50,8 @@
             right: 0;
 
             & > ul {
+                @include border-top-left-radius();
                 & > li {
-                    &:nth-child(3) {
-                        @include border-top-left-radius();
-                    }
-
                     &:last-child {
                         @include border-top-right-radius();
                     }
