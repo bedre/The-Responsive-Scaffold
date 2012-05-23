@@ -73,6 +73,11 @@
 					description="TPL_RWDTPL_FIELD_MAP_URL_DESC"
 					filter="string" />
 
+				<field name="facebook_url" type="text" default=""
+					label="TPL_RWDTPL_FIELD_FACEBOOK_URL"
+					description="TPL_RWDTPL_FIELD_FACEBOOK_URL_DESC"
+					filter="string" />
+
 			</fieldset>
 		</fields>
 	</config>

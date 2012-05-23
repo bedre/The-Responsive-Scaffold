@@ -91,7 +91,7 @@ require_once 'settings.php';
 <body> 
     <header>
         <div class="wrap">
-            <div id="logo"><img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/logo.png" alt="Company Name"></div>
+            <div id="logo"><a href="/" title="<?php echo JText::_('TPL_RWDTPL_GOTO_FRONTPAGE', true); ?>"><img src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/logo.png" alt="<?php echo $this->params->get('company_name');?>"></a></div>
 
             <div id="extra">
                 <div id="language">
@@ -101,8 +101,8 @@ require_once 'settings.php';
                 </div>
 
                 <div id="contact_short">
-                    <a href="mailto:booking@skagen-hotel.no" class="email"><span class="email_icon"> </span>booking@skagen-hotel.no</a>
-                    <span class="phone"><span class="phone_icon"> </span>755 19 100</span>
+                    <a href="mailto:<?php echo $this->params->get('email');?>" class="email"><span class="email_icon"> </span><?php echo $this->params->get('email');?></a>
+                    <span class="phone"><span class="phone_icon"> </span><?php echo $this->params->get('phone');?></span>
                 </div>
             </div>
 
@@ -226,26 +226,26 @@ require_once 'settings.php';
 
             <div itemscope itemtype="http://schema.org/Organization" id="contact">
                 <a name="contact"></a>
-                <h3>Contact us</h3>
+                <h3><?php echo JText::_('TPL_RWDTPL_CONTACT_US'); ?></h3>
                 <div id="company_contact">
-                    <span itemprop="name">Skagen Hotel</span>
-                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span>+47 755 19 100</span>
-                    <a itemprop="url" href="http://facebook.com/skagenhotel" target="_blank"><span id="facebook-icon" class="icon"> </span>http://facebook.com/skagenhotel</a>
+                    <span itemprop="name"><?php echo $this->params->get('company_name');?></span>
+                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span><?php echo $this->params->get('phone');?></span>
+                    <a itemprop="url" href="<?php echo $this->params->get('facebook_url');?>" target="_blank"><span id="facebook-icon" class="icon"> </span><?php echo $this->params->get('facebook_url');?></a>
                 </div>
 
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="description">Skagen Hotel</span>
-                    <span itemprop="streetAddress">Nyholmsgata 11</span>
-                    <span itemprop="postalCode">8005</span>
-                    <span itemprop="addressLocality">Bodø</span>
-                    <span itemprop="addressRegion">Nordland</span>
-                    <span itemprop="addressCountry">Norway</span>
-                    <a itemprop="url" href="#">Kart</a>
+                    <span itemprop="description"><?php echo $this->params->get('company_name');?></span>
+                    <span itemprop="streetAddress"><?php echo $this->params->get('street_address');?></span>
+                    <span itemprop="postalCode"><?php echo $this->params->get('postal_code');?></span>
+                    <span itemprop="addressLocality"><?php echo $this->params->get('locality');?></span>
+                    <span itemprop="addressRegion"><?php echo $this->params->get('region');?></span>
+                    <span itemprop="addressCountry"><?php echo $this->params->get('country');?></span>
+                    <a itemprop="url" href="<?php echo $this->params->get('map_url');?>"><?php echo JText::_('TPL_RWDTPL_MAP'); ?></a>
                     <img id="map" src="<?php echo $settings['template_folder'] ?>/images/<?php echo $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
                 </div>
             </div>
 
-            <div id="copyright">Copyright &copy; <?php echo date('Y') ?> Skagen Hotel, All rights reserved.</div>
+            <div id="copyright"><?php JText::sprintf('Copyright &copy; %s %s, All rights reserved.', date('Y'), $this->params->get('company_name')); ?></div>
         </div>
     </footer>
 
