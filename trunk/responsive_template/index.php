@@ -114,64 +114,7 @@ require_once 'settings.php';
 
     <div class="slider-wrapper">
         <div class="slider">
-            <ul class="slides">
-                <li> 
-                    <a href="#">
-                        <div class="imagemask">
-                            <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/slideshow_image.png" alt="Slide 1">
-                        </div>
-                        <div class="wrap">
-                            <div class="infobox">
-                                <h3>Highlight reel 1</h3>
-                                <p class="description">An awesome product description for this extremely well made and utterly superb product</p>
-                                <span class="readon">Read more</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#">
-                        <div class="imagemask">
-                            <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/slideshow_image.png" alt="Slide 2">
-                        </div>
-                        <div class="wrap">
-                            <div class="infobox">
-                                <h3>Highlight reel 2</h3>
-                                <p class="description">An awesome product description for this superb product</p>
-                                <span class="readon">Read more</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#">
-                        <div class="imagemask">
-                            <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/slideshow_image.png" alt="Slide 3">
-                        </div>
-                        <div class="wrap">
-                            <div class="infobox">
-                                <h3>Highlight reel 3</h3>
-                                <p class="description">An awesome product description for this superb product</p>
-                                <span class="readon">Read more</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#">
-                        <div class="imagemask">
-                            <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/slideshow_image.png" alt="Slide 4">
-                        </div>
-                        <div class="wrap">
-                            <div class="infobox">
-                                <h3>Highlight reel 4</h3>
-                                <p class="description">An awesome product description for this superb product</p>
-                                <span class="readon">Read more</span>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <jdoc:include type="modules" name="slideshow_frontpage" />
         </div>
     </div>
     
