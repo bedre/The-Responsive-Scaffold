@@ -5,13 +5,14 @@ defined('_JEXEC') or die;
 <ul class="slides">
 <?php foreach ($list as $item) : ?>
     <?php 
-        $images = json_decode($item->images);
-        $urls   = json_decode($item->urls);
+        $images  = json_decode($item->images);
+        $urls    = json_decode($item->urls);
+        $imgsize = getimagesize($images->image_fulltext); 
     ?>
     <li>
         <a href="<?= $urls->urla ?>">
             <div class="imagemask">
-                <img src="<?= $images->image_fulltext ?>" alt="<?= $images->image_fulltext_alt ?>">              
+                <img src="<?= $images->image_fulltext ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_fulltext_alt ?>">              
             </div>
             <div class="wrap">
                 <div class="infobox">

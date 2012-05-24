@@ -3,38 +3,48 @@ function maskSliderImages() {
     var idealHeight = Math.round($(window).height()*0.55);
 
     $('.imagemask').find('img').each(function(){
-        var imgTag = $(this);
-        var mask   = imgTag.parent();
-        var img    = new Image();
-        img.onload = function() {
-            var imgDisplayHeight = Math.round(windowWidth * img.height / img.width);
-            if (imgDisplayHeight > idealHeight) {
-                mask.css({
-                    'height'  : idealHeight,
-                    'overflow': 'hidden'
-                });
-                imgTag.css({
-                    'top'     : Math.round(-((imgDisplayHeight-idealHeight)/2)),
-                    'position': 'absolute'
-                });
-            }
+        var img    = $(this);
+        var mask   = img.parent();
+
+        var imgDisplayHeight = Math.round(windowWidth * img.attr('data-height') / img.attr('data-width'));
+
+        if (imgDisplayHeight > idealHeight) {
+            mask.css({
+                'height'  : idealHeight,
+                'overflow': 'hidden'
+            });
+            img.css({
+                'top'     : Math.round(-((imgDisplayHeight-idealHeight)/2)),
+                'position': 'absolute'
+            });
         }
-        img.src = imgTag.attr('src');
     });
 }
 
 function unMaskSliderImages() {
-    $('.imagemask').each(function(){
-        var mask = $(this);
+    // Find image with highest width/height ratio
+    var windowWidth = $(window).width();
+    var images = $('.imagemask').find('img');
+    var maxRatio = 0;
 
-        mask.css({
-            'height'  : 'auto',
-            'overflow': 'auto'
+    images.each(function(){
+        maxRatio = Math.max(maxRatio, $(this).attr('data-width')/$(this).attr('data-height'));
+    });
+
+    var slideshowHeight = windowWidth / maxRatio;
+
+    var ratio = 0;
+    images.each(function(){
+        var img = $(this);
+        img.parent().css({
+            'height'  : slideshowHeight,
+            'overflow': 'hidden'
         });
 
-        mask.find('img').first().css({
-            'top'     : 0,
-            'position': 'relative'
+        var imgDisplayHeight = Math.round(windowWidth * img.attr('data-height') / img.attr('data-width'));
+        img.css({
+            'top'     : Math.round(-((imgDisplayHeight-slideshowHeight)/2)),
+            'position': 'absolute'
         });
     });
 }
