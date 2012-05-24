@@ -1635,6 +1635,47 @@ footer #copyright {
     background-color: transparent;
   }
 }
+@media screen and (min-width: 103.5em) {
+  /* line 3, ../sass/_layout_7.scss */
+  .wrap {
+    *zoom: 1;
+    position: relative;
+    max-width: 90em;
+    margin: 0 auto;
+  }
+  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 11, ../sass/_layout_7.scss */
+  header #logo {
+    margin-left: 0;
+  }
+  /* line 16, ../sass/_layout_7.scss */
+  header #extra #language,
+  header nav {
+    margin-right: 0;
+  }
+
+  /* line 26, ../sass/_layout_7.scss */
+  .slider-wrapper .slider .slides > li > a .infobox {
+    left: 0;
+  }
+
+  /* line 36, ../sass/_layout_7.scss */
+  #product_categories .wrap {
+    /* Compensate for the 13/16 font size in this section */
+    /* Give +36px extra room to compensate for the articles' side paddings */
+    max-width: 113.231em;
+  }
+  /* line 40, ../sass/_layout_7.scss */
+  #product_categories .wrap article a .imageholder h3 {
+    bottom: 1em;
+  }
+}
 /* typography */
 /* line 66, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
