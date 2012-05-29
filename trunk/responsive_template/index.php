@@ -21,6 +21,7 @@ require_once 'settings.php';
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" <?= $settings['html_attribs'] ?>> <!--<![endif]-->
 
 <head>
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
     <jdoc:include type="head" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= $settings['template_folder'] ?>/css/screen.css">
