@@ -283,6 +283,10 @@ header {
     }
 }
 
+#subpage {
+    border-top: 4px solid darken($colour1, 10%);
+}
+
 footer {
     padding: 1em;
     background-color: $colour1;

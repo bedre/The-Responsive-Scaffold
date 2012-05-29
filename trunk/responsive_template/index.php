@@ -119,14 +119,27 @@ require_once 'settings.php';
         </div>
     </header>
 
-    <div class="slider-wrapper">
-        <div class="slider">
-            <jdoc:include type="modules" name="slideshow_frontpage" />
+    <?php
+        $menu = JFactory::getApplication()->getMenu();
+        $lang = JFactory::getLanguage();
+    ?>
+
+    <? if ($menu->getActive() == $menu->getDefault($lang->getTag())): ?>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <jdoc:include type="modules" name="slideshow_frontpage" />
+            </div>
         </div>
-    </div>
-    
-    <jdoc:include type="message" />
-    <jdoc:include type="component" />
+
+        <jdoc:include type="message" />
+        <jdoc:include type="component" />
+    <? else: ?>
+        <div id="subpage" role="main">
+            <div class="wrap">
+                Undersideinnhold
+            </div>
+        </div>
+    <? endif; ?>
     
     <footer>
         <div class="wrap">
