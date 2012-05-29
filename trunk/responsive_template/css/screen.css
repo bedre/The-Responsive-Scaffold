@@ -1235,7 +1235,7 @@ footer #copyright {
   footer #contact [itemprop="address"] {
     float: right;
     width: 50%;
-    margin-top: -2.852em;
+    margin-top: -2.063em;
   }
   /* line 16, ../sass/_layout_2.scss */
   footer #contact [itemprop="address"] #map {

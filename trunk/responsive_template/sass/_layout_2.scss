@@ -11,7 +11,7 @@
             [itemprop="address"] {
                 float: right;
                 width: 50%;
-                margin-top: -2.852em;
+                margin-top: em(33,16)*-1;
 
                 #map {
                     display: none;
