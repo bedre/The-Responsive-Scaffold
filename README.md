@@ -38,7 +38,8 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 5.  In screen.css you need to edit the style specific CSS names (change example to your style name).
 6.  In your site's root folder, make sure you add the .htaccess directive required by [Adaptive Images](http://adaptive-images.com/details.htm).
 7.  In the Adaptive Images .htaccess, make sure you change "adaptive-images.php" to "templates/template-name/adaptive-images.php".
-8.  Set your responsive breakpoints in [adaptive-images.php, line 14](https://github.com/bedre/The-Responsive-Scaffold/blob/master/trunk/responsive_template/adaptive-images.php#14). These are just the points where images will scale, so they don't have to match your CSS breakpoints if you don't want to or can't be bothered.
+8.  Set your CSS breakpoints in [_breakpoints.scss](https://github.com/bedre/The-Responsive-Scaffold/blob/master/trunk/responsive_template/sass/_breakpoints.scss). Adjust screen.scss if you change the number of breakpoints too.
+9.  Set your adaptive images scaling breakpoints in [adaptive-images.php, line 14](https://github.com/bedre/The-Responsive-Scaffold/blob/master/trunk/responsive_template/adaptive-images.php#14). These are just the points where images will scale according to screen width, so the breakpoints doesn't have to match the CSS breakpoints at all.
 
 ## FYI
 
