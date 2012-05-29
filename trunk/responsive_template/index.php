@@ -74,8 +74,9 @@ require_once 'settings.php';
 
         $(window).resize(function() {
             var body = $('body');
+            var win  = $(this);
 
-            if ($(window).width() > $(window).height()) {
+            if (win.width() > win.height()) {
                 body.addClass('landscape');
                 body.removeClass('portrait');
                 maskSliderImages();
@@ -119,46 +120,8 @@ require_once 'settings.php';
         </div>
     </div>
     
-    <section role="main" id="product_categories">
-        <div class="wrap">        
-            <article class="product_category">
-                <a href="#">
-                    <span class="imageholder">
-                        <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/product_image.png" alt="Product 1">
-                        <h3>Fantastic product 1</h3>
-                    </span>
-                    <p class="description">An awesome product description for this product</p>
-                </a>
-            </article>
-            <article class="product_category">
-                <a href="#">
-                    <span class="imageholder">
-                        <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/product_image.png" alt="Product 2">
-                        <h3>Fantastic product 2</h3>
-                    </span>
-                    <p class="description">An awesome product description for this product</p>
-                </a>
-            </article>
-            <article class="product_category">
-                <a href="#">
-                    <span class="imageholder">
-                        <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/product_image.png" alt="Product 3">
-                        <h3>Fantastic product 3</h3>
-                    </span>
-                    <p class="description">An awesome product description for this product</p>
-                </a>
-            </article>
-            <article class="product_category">
-                <a href="#">
-                    <span class="imageholder">
-                        <img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/product_image.png" alt="Product 4">
-                        <h3>Fantastic product 4</h3>
-                    </span>
-                    <p class="description">An awesome product description for this product</p>
-                </a>
-            </article>
-        </div>
-    </section>
+    <jdoc:include type="message" />
+    <jdoc:include type="component" />
     
     <footer>
         <div class="wrap">
@@ -173,7 +136,7 @@ require_once 'settings.php';
                 <div id="company_contact">
                     <span itemprop="name"><?= $this->params->get('company_name');?></span>
                     <span itemprop="telephone"><span id="phone-icon" class="icon"> </span><?= $this->params->get('phone');?></span>
-                    <a itemprop="url" href="<?= $this->params->get('facebook_url');?>" target="_blank"><span id="facebook-icon" class="icon"> </span><?= $this->params->get('facebook_url');?></a>
+                    <a itemprop="url" href="<?= $this->params->get('facebook_url');?>" target="_blank"><span id="facebook-icon" class="icon"> </span><?= str_replace('http://', '', $this->params->get('facebook_url'));?></a>
                 </div>
 
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
