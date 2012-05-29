@@ -93,7 +93,12 @@ require_once 'settings.php';
 <body> 
     <header>
         <div class="wrap">
-            <div id="logo"><a href="/" title="<?= JText::_('TPL_RWDTPL_GOTO_FRONTPAGE', true); ?>"><img src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/logo.png" alt="<?= $this->params->get('company_name');?>"></a></div>
+            <div id="logo">
+                <a href="/" title="<?= JText::_('TPL_RWDTPL_GOTO_FRONTPAGE', true); ?>">
+                    <img class="png-over-svg" src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/logo.png" alt="<?= $this->params->get('company_name');?>">
+                    <img class="svg-over-png" src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/logo.svg" alt="<?= $this->params->get('company_name');?>">
+                </a>
+            </div>
 
             <div id="extra">
                 <div id="language">

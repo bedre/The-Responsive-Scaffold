@@ -12,6 +12,24 @@ body {
         width: 100%;
         clear: both;
     }
+
+    img.svg-over-png {
+        display: none;
+    }
+
+    img.png-over-svg {
+        display: block;
+    }
+}
+
+body.svg {
+    .svg-over-png {
+        display: block;
+    }
+
+    .png-over-svg {
+        display: none;
+    }
 }
 
 header {
