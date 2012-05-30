@@ -1033,11 +1033,14 @@ header nav ul li a {
 
 /* line 289, ../sass/_layout.scss */
 #subpage {
-  border-top: 8px solid #083156;
+  border-top: 0.5em solid #083156;
+}
+/* line 291, ../sass/_layout.scss */
+#subpage #contents {
   padding: 1em;
 }
 
-/* line 294, ../sass/_layout.scss */
+/* line 296, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -1046,11 +1049,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 302, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 306, ../sass/_layout.scss */
+/* line 308, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -1058,7 +1061,7 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 314, ../sass/_layout.scss */
+/* line 316, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
@@ -1066,17 +1069,17 @@ footer nav > ul > li {
   margin-bottom: 1em;
   display: none;
 }
-/* line 321, ../sass/_layout.scss */
+/* line 323, ../sass/_layout.scss */
 footer nav > ul > li.normal {
   display: block;
 }
-/* line 327, ../sass/_layout.scss */
+/* line 329, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
 }
-/* line 332, ../sass/_layout.scss */
+/* line 334, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1085,7 +1088,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 336, ../sass/_layout.scss */
+/* line 338, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1095,30 +1098,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 341, ../sass/_layout.scss */
+/* line 343, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 352, ../sass/_layout.scss */
+/* line 354, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 356, ../sass/_layout.scss */
+/* line 358, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 362, ../sass/_layout.scss */
+/* line 364, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 366, ../sass/_layout.scss */
+/* line 368, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 371, ../sass/_layout.scss */
+/* line 373, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1126,13 +1129,13 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 378, ../sass/_layout.scss */
+/* line 380, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 383, ../sass/_layout.scss */
+/* line 385, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1143,7 +1146,7 @@ footer #contact #company_contact #phone-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 387, ../sass/_layout.scss */
+/* line 389, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1154,7 +1157,7 @@ footer #contact #company_contact #facebook-icon {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 392, ../sass/_layout.scss */
+/* line 394, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1167,18 +1170,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 401, ../sass/_layout.scss */
+/* line 403, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 408, ../sass/_layout.scss */
+/* line 410, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 413, ../sass/_layout.scss */
+/* line 415, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1186,7 +1189,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 420, ../sass/_layout.scss */
+/* line 422, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1218,13 +1221,13 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-saed15d23ef.png');
   background-repeat: no-repeat;
 }
-/* line 430, ../sass/_layout.scss */
+/* line 432, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
 }
-/* line 439, ../sass/_layout.scss */
+/* line 441, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1438,32 +1441,78 @@ footer #copyright {
     margin-top: 1em;
   }
 
-  /* line 153, ../sass/_layout_3.scss */
+  /* line 151, ../sass/_layout_3.scss */
+  #subpage nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #dedede;
+  }
+  /* line 60, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 0.857em;
+    padding-right: 0.857em;
+  }
+  /* line 48, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li:first-child, #subpage nav li.first {
+    padding-left: 0;
+  }
+  /* line 49, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li:last-child {
+    padding-right: 0;
+  }
+  /* line 50, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li.last {
+    padding-right: 0;
+  }
+  /* line 156, ../sass/_layout_3.scss */
+  #subpage nav ul {
+    *zoom: 1;
+    margin: 0;
+    padding: 0 1.143em;
+  }
+  /* line 38, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  #subpage nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 167, ../sass/_layout_3.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 159, ../sass/_layout_3.scss */
+  /* line 173, ../sass/_layout_3.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 165, ../sass/_layout_3.scss */
+  /* line 179, ../sass/_layout_3.scss */
   footer #contact {
     position: relative;
   }
-  /* line 168, ../sass/_layout_3.scss */
+  /* line 182, ../sass/_layout_3.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 173, ../sass/_layout_3.scss */
+  /* line 187, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 177, ../sass/_layout_3.scss */
+  /* line 191, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1492,7 +1541,7 @@ footer #copyright {
   header #extra {
     position: absolute;
     right: 0;
-    bottom: 3.25em;
+    bottom: 3.5em;
   }
   /* line 19, ../sass/_layout_5.scss */
   header #extra #contact_short {
@@ -1526,24 +1575,24 @@ footer #copyright {
     bottom: 0;
     right: 0;
   }
-  /* line 52, ../sass/_layout_5.scss */
-  header nav > ul {
+  /* line 54, ../sass/_layout_5.scss */
+  header nav > ul > li:nth-child(3) {
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
   }
-  /* line 55, ../sass/_layout_5.scss */
+  /* line 57, ../sass/_layout_5.scss */
   header nav > ul > li:last-child {
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
     border-top-right-radius: 5px;
   }
 
-  /* line 63, ../sass/_layout_5.scss */
+  /* line 65, ../sass/_layout_5.scss */
   .slider-wrapper {
     border-bottom: 4px solid #cd233c;
   }
-  /* line 67, ../sass/_layout_5.scss */
+  /* line 69, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox {
     width: 26.875em;
     position: absolute;
@@ -1554,7 +1603,7 @@ footer #copyright {
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
   }
-  /* line 76, ../sass/_layout_5.scss */
+  /* line 78, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3 {
     position: relative;
     clear: both;
@@ -1563,22 +1612,22 @@ footer #copyright {
     bottom: 0;
     padding: 0;
   }
-  /* line 84, ../sass/_layout_5.scss */
+  /* line 86, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3:after {
     display: none;
   }
-  /* line 90, ../sass/_layout_5.scss */
+  /* line 92, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description,
   .slider-wrapper .slider .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
-  /* line 96, ../sass/_layout_5.scss */
+  /* line 98, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description {
     width: 19.286em;
   }
-  /* line 100, ../sass/_layout_5.scss */
+  /* line 102, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .readon {
     background-color: #cd233c;
     width: auto;
@@ -1605,7 +1654,7 @@ footer #copyright {
     background-image: url('../images/skagen/icons-saed15d23ef.png');
     background-repeat: no-repeat;
   }
-  /* line 113, ../sass/_layout_5.scss */
+  /* line 115, ../sass/_layout_5.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -1614,18 +1663,62 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 123, ../sass/_layout_5.scss */
+  /* line 125, ../sass/_layout_5.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 129, ../sass/_layout_5.scss */
+  /* line 131, ../sass/_layout_5.scss */
+  #subpage nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    border-bottom: 1px solid #dedede;
+  }
+  /* line 60, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 1.143em;
+    padding-right: 1.143em;
+  }
+  /* line 48, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li:first-child, #subpage nav li.first {
+    padding-left: 0;
+  }
+  /* line 49, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li:last-child {
+    padding-right: 0;
+  }
+  /* line 50, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  #subpage nav li.last {
+    padding-right: 0;
+  }
+  /* line 135, ../sass/_layout_5.scss */
+  #subpage nav .wrap {
+    width: 100%;
+  }
+  /* line 138, ../sass/_layout_5.scss */
+  #subpage nav .wrap ul {
+    padding: 0;
+    width: 65%;
+    float: right;
+    margin-right: 0.875em;
+  }
+
+  /* line 149, ../sass/_layout_5.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 135, ../sass/_layout_5.scss */
+  /* line 155, ../sass/_layout_5.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1987,7 +2080,55 @@ header nav ul li a:active {
   }
 }
 
-/* line 100, ../sass/_typography.scss */
+/* line 99, ../sass/_typography.scss */
+#subpage nav {
+  font-size: 0.875em;
+  line-height: 3.357em;
+}
+/* line 104, ../sass/_typography.scss */
+#subpage nav li a {
+  color: #666666;
+  text-decoration: none;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li a:visited {
+  color: #666666;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li a:focus {
+  color: #666666;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li a:hover {
+  color: #666666;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li a:active {
+  color: #666666;
+}
+/* line 109, ../sass/_typography.scss */
+#subpage nav li.active a {
+  color: #0d4c84;
+  text-decoration: underline;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li.active a:visited {
+  color: #0d4c84;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li.active a:focus {
+  color: #0d4c84;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li.active a:hover {
+  color: #0d4c84;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#subpage nav li.active a:active {
+  color: #0d4c84;
+}
+
+/* line 119, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -2008,7 +2149,7 @@ footer a:hover {
 footer a:active {
   color: white;
 }
-/* line 107, ../sass/_typography.scss */
+/* line 126, ../sass/_typography.scss */
 footer nav li.parent > a {
   display: block;
   font-size: 1em;
@@ -2016,29 +2157,29 @@ footer nav li.parent > a {
   font-weight: bold;
   margin-bottom: .5em;
 }
-/* line 116, ../sass/_typography.scss */
+/* line 135, ../sass/_typography.scss */
 footer nav a {
   font-size: 0.813em;
 }
-/* line 122, ../sass/_typography.scss */
+/* line 141, ../sass/_typography.scss */
 footer h3 {
   text-transform: uppercase;
   margin-bottom: .5em;
 }
-/* line 127, ../sass/_typography.scss */
+/* line 146, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 131, ../sass/_typography.scss */
+/* line 150, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 135, ../sass/_typography.scss */
+/* line 154, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 140, ../sass/_typography.scss */
+/* line 159, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;
@@ -2092,7 +2233,11 @@ footer #copyright {
   padding: .5em;
 }
 
-/* line 2, ../sass/_no-touch_typography.scss */
+/* line 4, ../sass/_no-touch_typography.scss */
+.no-touch #subpage nav {
+  line-height: 2.857em;
+}
+/* line 9, ../sass/_no-touch_typography.scss */
 .no-touch footer nav ul > li > ul > li a {
   line-height: 1.846em;
   text-decoration: underline;

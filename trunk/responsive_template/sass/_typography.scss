@@ -95,6 +95,25 @@ header {
     }
 }
 
+#subpage {
+    nav {
+        font-size: em(14,16);
+        line-height: em(47,14);
+
+        li {
+            a {
+                @include link-colors(#666, #666, #666, #666, #666);
+                text-decoration: none;
+            }
+
+            &.active a {
+                @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 footer {
 
     a {

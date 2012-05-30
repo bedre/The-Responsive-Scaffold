@@ -147,6 +147,20 @@
         }
     }
 
+    #subpage {
+        nav {
+            @include horizontal-list(em(12,14));
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #dedede;
+
+            ul {
+                @include pie-clearfix;
+                margin: 0;
+                padding: 0 em(16,14);
+            }
+        }
+    }
+
     footer {
         nav > ul {
 

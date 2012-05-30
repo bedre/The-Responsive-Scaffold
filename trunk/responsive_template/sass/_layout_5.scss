@@ -14,7 +14,7 @@
 
             position: absolute;
             right: 0;
-            bottom: 3.25em;
+            bottom: 3.5em;
 
             #contact_short {
                 display: block;
@@ -50,8 +50,10 @@
             right: 0;
 
             & > ul {
-                @include border-top-left-radius();
                 & > li {
+                    &:nth-child(3) {
+                        @include border-top-left-radius();
+                    }
                     &:last-child {
                         @include border-top-right-radius();
                     }
@@ -122,6 +124,24 @@
     #product_categories {
         article {
             width: 25%;
+        }
+    }
+
+    #subpage {
+        nav {
+            @include horizontal-list(em(16,14));
+            border-bottom: 1px solid #dedede;
+
+            .wrap {
+                width: 100%;
+
+                ul {
+                    padding: 0;
+                    width: 65%;
+                    float: right;
+                    margin-right: em(14,16);
+                }
+            }
         }
     }
 

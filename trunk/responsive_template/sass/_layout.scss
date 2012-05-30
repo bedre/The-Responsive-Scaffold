@@ -287,8 +287,10 @@ header {
 }
 
 #subpage {
-    border-top: 8px solid darken($colour1, 10%);
-    padding: 1em;
+    border-top: em(8,16) solid darken($colour1, 10%);
+    #contents {
+        padding: 1em;
+    }
 }
 
 footer {

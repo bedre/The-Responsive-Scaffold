@@ -113,13 +113,15 @@ require_once 'settings.php';
                 </div>
             </div>
         
-            <nav role="navigation">
+            <nav>
                 <jdoc:include type="modules" name="mainmenu" />
             </nav>
         </div>
     </header>
 
     <?php
+        // MAIN CONTENTS START
+        // different layouts for frontpage and subpages
         $menu = JFactory::getApplication()->getMenu();
         $lang = JFactory::getLanguage();
     ?>
@@ -135,11 +137,20 @@ require_once 'settings.php';
         <jdoc:include type="component" />
     <? else: ?>
         <div id="subpage" role="main">
-            <div class="wrap">
-                Undersideinnhold
+            <nav>
+                <div class="wrap">
+                    <jdoc:include type="modules" name="submenu" />
+                </div>
+            </nav>
+            <div id="contents">
+                <div class="wrap">    
+                    <jdoc:include type="message" />
+                    <jdoc:include type="component" />
+                </div>
             </div>
         </div>
     <? endif; ?>
+    <?php // MAIN CONTENTS END ?>
     
     <footer>
         <div class="wrap">

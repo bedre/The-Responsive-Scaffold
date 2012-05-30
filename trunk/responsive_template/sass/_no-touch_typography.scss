@@ -1,4 +1,11 @@
 .no-touch {
+
+    #subpage {
+        nav {
+            line-height: em(40,14);
+        }
+    }
+
     footer nav ul > li > ul > li a {
         line-height: 1.5 * em(16,13);
         text-decoration: underline;
