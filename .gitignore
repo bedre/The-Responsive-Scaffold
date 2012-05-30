@@ -13,4 +13,4 @@ Thumbs.db
 rgbapng/
 
 # the settings for adaptive images
-responsive_template/adaptive-images.php
+trunk/responsive_template/adaptive-images.php
