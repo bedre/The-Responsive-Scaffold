@@ -124,9 +124,15 @@ header {
                     display: block;
                 }
 
+                &.active,
+                &:hover {
+                    background-color: darken($colour1, 10%);
+                }
+
                 &.highlighted {
                     background-color: $colour2;
 
+                    &.active,
                     &:hover {
                         background-color: darken($colour2, 10%);
                     }
@@ -135,13 +141,10 @@ header {
                 &.call-to-action {
                     background-color: $colour3;
 
+                    &.active,
                     &:hover {
                         background-color: darken($colour3, 10%);
                     }
-                }
-
-                &:hover {
-                    background-color: darken($colour1, 10%);
                 }
 
                 a {
@@ -284,7 +287,8 @@ header {
 }
 
 #subpage {
-    border-top: 4px solid darken($colour1, 10%);
+    border-top: 8px solid darken($colour1, 10%);
+    padding: 1em;
 }
 
 footer {

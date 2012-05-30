@@ -58,6 +58,8 @@
     }
 
     header {
+        margin-bottom: 0;
+
         #logo {
             width: 25%;
         }
@@ -69,6 +71,7 @@
         nav ul {
 
             li {
+                margin-top: 5px;
                 width: 20%;
                 display: block;
 
@@ -78,6 +81,28 @@
 
                 &.menulink {
                     display: none;
+                }
+
+                a {
+                    border-bottom: 1px solid #fff;
+                }
+
+                &.active {
+                    margin-top: 0;
+                    padding-top: 5px;
+                    @include border-top-radius;
+
+                    a {
+                        border-bottom: 1px solid darken($colour1, 10%);
+                    }
+                }
+
+                &.highlighted.active a {
+                    border-bottom: 1px solid darken($colour2, 10%);
+                }
+
+                &.call-to-action.active a {
+                    border-bottom: 1px solid darken($colour3, 10%);
                 }
             }
 
