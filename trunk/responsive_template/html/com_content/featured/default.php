@@ -18,20 +18,32 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
         <?php if (!empty($this->lead_items)) : ?>
 
             <?php foreach ($this->lead_items as &$item) :
-                $images  = json_decode($item->images);
-                $imgsize = getimagesize($images->image_fulltext); 
-                $urls    = json_decode($item->urls);
-                $link    = !empty($urls->urla) ? $urls->urla : JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
-
+                $images = json_decode($item->images);
+                
+                if (file_exists($images->image_fulltext)) {
+                    $imgsize = getimagesize($images->image_fulltext); 
+                }
+                
                 // If urla link/text is specified, it is used as headline/link. If not, article title and link are used.
+                $urls     = json_decode($item->urls);
+                if (empty($urls->urla)) {
+                    $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
+                } else {
+                    $link = $urls->urla;
+                }
+
                 ?>
 
                 <article class="product_category">
                     <a href="<?= $link ?>">
-                        <span class="imageholder">
-                            <img src="<?= $images->image_fulltext ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_fulltext_alt ?>">
-                            <h3><?= !empty($urls->urlatext) ? $urls->urlatext : $item->title; ?></h3>
-                        </span>
+                        
+                        <? if (file_exists($images->image_fulltext)): ?>
+                            <span class="imageholder">
+                                <img src="<?= $images->image_fulltext ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_fulltext_alt ?>">
+                                <h3><?= !empty($urls->urlatext) ? $urls->urlatext : $item->title; ?></h3>
+                            </span>
+                        <? endif; ?>
+                        
                         <p class="description"><?= strip_tags($item->introtext) ?></p>
                         <a class="readon" href="<?= $link ?>">Les videre &raquo;</a>
                     </a>
