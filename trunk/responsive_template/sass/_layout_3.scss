@@ -148,15 +148,32 @@
     }
 
     #subpage {
-        nav {
-            @include horizontal-list(em(12,14));
+        .wrap > nav {
             background-color: #f4f4f4;
             border-bottom: 1px solid #dedede;
 
-            ul {
+            & > ul {
                 @include pie-clearfix;
                 margin: 0;
-                padding: 0 em(16,14);
+                padding: 0;
+
+                & > li {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                        width: 100%;
+                        & > a {
+                            display: none;                         
+                        }
+
+                        ul {
+                            @include horizontal-list(em(12,14));
+                            margin: 0;
+                            padding: 0 em(16,14);
+                        }  
+                    }
+                }
             }
         }
     }

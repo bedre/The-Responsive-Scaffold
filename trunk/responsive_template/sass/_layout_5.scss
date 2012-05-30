@@ -128,18 +128,19 @@
     }
 
     #subpage {
-        nav {
-            @include horizontal-list(em(16,14));
-            border-bottom: 1px solid #dedede;
-
-            .wrap {
+        .wrap {
+            nav {
                 width: 100%;
 
-                ul {
+                & > ul > li.active {
                     padding: 0;
                     width: 65%;
                     float: right;
-                    margin-right: em(14,16);
+                    margin-right: 1em;
+
+                    ul {
+                        padding: 0;
+                    }
                 }
             }
         }

@@ -137,15 +137,16 @@ require_once 'settings.php';
         <jdoc:include type="component" />
     <? else: ?>
         <div id="subpage" role="main">
-            <nav>
-                <div class="wrap">
+            <div class="wrap">
+                <nav>
                     <jdoc:include type="modules" name="submenu" />
-                </div>
-            </nav>
-            <div id="contents">
-                <div class="wrap">    
+                </nav>
+                <div id="contents">
                     <jdoc:include type="message" />
                     <jdoc:include type="component" />
+                </div>
+                <div id="sidebar">
+                    skjema kommer her
                 </div>
             </div>
         </div>

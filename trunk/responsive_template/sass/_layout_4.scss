@@ -9,4 +9,17 @@
             }
         }
     }
+
+    #subpage {
+        nav {
+            .wrap {
+                & > ul > li.active {
+                    ul {
+                        @include horizontal-list(em(16,14));
+                        padding: 0 em(16,14);
+                    }
+                }
+            }
+        }
+    }
 }

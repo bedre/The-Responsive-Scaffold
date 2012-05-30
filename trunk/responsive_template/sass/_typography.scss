@@ -96,19 +96,67 @@ header {
 }
 
 #subpage {
-    nav {
-        font-size: em(14,16);
-        line-height: em(47,14);
+    .wrap {
+        nav {
+            font-size: em(14,16);
+            line-height: em(47,14);
 
-        li {
-            a {
-                @include link-colors(#666, #666, #666, #666, #666);
-                text-decoration: none;
+            @media screen and (min-width: $break-6) {
+                // Compensate for 1px borders top and bottom
+                line-height: em(46,14);
+                font-size: em(14,18);
             }
 
-            &.active a {
-                @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
-                text-decoration: underline;
+
+            > ul {
+                > li.active {
+                    > a {
+                        @include link-colors(#fff, #fff, #fff, #fff, #fff);
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        @media screen and (min-width: $break-6) {
+                            // Compensate for border underneath link
+                            line-height: em(39,14);
+                            padding-top: em(8,14);
+                        }
+
+                        &:after {
+                            content: ' :';
+                        }
+                    }
+
+                    > ul {
+                        > li {
+                            > a {
+                                @include link-colors(#666, #666, #666, #666, #666);
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: darken(#666, 15%);
+                                }
+                            }
+
+                            &.active a {
+                                @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
+                                text-decoration: underline;
+
+                                @media screen and (min-width: $break-6) {
+                                    text-decoration: none;
+                                    @include link-colors(#fff, #fff, #fff, #fff, #fff);
+                                }
+                            }
+
+                            &:first-child {
+                                @media screen and (min-width: $break-6) {
+                                    // Compensate for 1px border
+                                    line-height: em(47,14);
+                                }
+                            }
+                        } 
+                    }
+
+                }
             }
         }
     }

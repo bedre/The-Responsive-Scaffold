@@ -1,8 +1,31 @@
 .no-touch {
 
     #subpage {
-        nav {
-            line-height: em(40,14);
+        .wrap {
+            nav {
+                line-height: em(40,14);
+                @media screen and (min-width: $break-6) {
+                    // Compensate for 1px borders top and bottom
+                    line-height: em(38,14);
+                }
+
+                & > ul > li.active {
+                    > a {
+                        @media screen and (min-width: $break-6) {
+                            // Compensate for border underneath link
+                            line-height: em(32,14);
+                            padding-top: em(8,14);
+                        }
+                    }
+
+                    > ul > li:first-child {
+                        @media screen and (min-width: $break-6) {
+                            // Compensate for 1px border
+                            line-height: em(39,14);
+                        }
+                    }
+                }
+            }
         }
     }
 
