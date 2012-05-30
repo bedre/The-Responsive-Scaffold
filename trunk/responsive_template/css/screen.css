@@ -1732,28 +1732,49 @@ footer #copyright {
   }
 
   /* line 132, ../sass/_layout_5.scss */
-  #subpage .wrap nav {
+  #subpage .wrap {
     width: 100%;
   }
   /* line 135, ../sass/_layout_5.scss */
+  #subpage .wrap nav {
+    width: 100%;
+  }
+  /* line 138, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active {
     padding: 0;
     width: 65%;
     float: right;
     margin-right: 1em;
   }
-  /* line 141, ../sass/_layout_5.scss */
+  /* line 144, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active ul {
     padding: 0;
   }
+  /* line 150, ../sass/_layout_5.scss */
+  #subpage .wrap #contents {
+    padding-right: 0;
+    width: 63%;
+    float: left;
+  }
+  /* line 156, ../sass/_layout_5.scss */
+  #subpage .wrap #sidebar {
+    margin: 1em 1em 1em 0;
+    width: 33%;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
 
-  /* line 154, ../sass/_layout_5.scss */
+  /* line 166, ../sass/_layout_5.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 160, ../sass/_layout_5.scss */
+  /* line 172, ../sass/_layout_5.scss */
   footer #contact {
     width: 50%;
     float: right;
@@ -1918,11 +1939,17 @@ footer #copyright {
   #subpage .wrap nav > ul > li.active ul li a:hover {
     text-indent: .5em;
   }
-  /* line 126, ../sass/_layout_6.scss */
-  #subpage #contents {
-    width: 80%;
-    float: right;
+  /* line 125, ../sass/_layout_6.scss */
+  #subpage .wrap #contents {
+    width: 45%;
+    float: left;
     padding: 0;
+  }
+  /* line 131, ../sass/_layout_6.scss */
+  #subpage .wrap #sidebar {
+    width: 30%;
+    float: right;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 103.5em) {

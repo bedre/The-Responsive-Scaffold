@@ -49,7 +49,7 @@
         padding: 1em;
 
         .wrap {
-            
+
             nav {
                 width: 15%;
                 float: left;
@@ -121,12 +121,19 @@
                     }
                 }
             }
-        }
 
-        #contents {
-            width: 80%;
-            float: right;
-            padding: 0;
+            #contents {
+                width: 45%;
+                float: left;
+                padding: 0;
+            }
+
+            #sidebar {
+                width: 30%;
+                float: right;
+                margin-right: 0;
+            }
+
         }
     }
 }
