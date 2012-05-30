@@ -7,7 +7,8 @@ $break-2:   440px/$base-font-size*1em;
 $break-3:   600px/$base-font-size*1em;
 $break-4:   720px/$base-font-size*1em;
 $break-5:   1024px/$base-font-size*1em;
-$break-6:   1440px/$base-font-size*1em;
+$break-6:   1250px/$base-font-size*1em;
+$break-7:   1500px/$base-font-size*1em;
 
 $max-width: 1620px;
-$break-7:   ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides
+$break-8:   ($max-width+36px)/$base-font-size*1em; // Break above the max-width to avoid getting no whitespace on the sides
