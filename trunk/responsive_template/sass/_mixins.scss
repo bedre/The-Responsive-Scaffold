@@ -73,7 +73,8 @@
     @return ($target / $context) * 1em;
 }
 
-@mixin subnav {
+@mixin subnav($show-parent: true) {
+
     width: 100%;
     @include pie-clearfix;
     margin: 0;
@@ -88,19 +89,39 @@
             margin-right: 0;
             
             > a {
-                @include border-top-radius;
-                display: block;
-                background-color: $colour2;
-                padding: 0 8%;
-                border-bottom: em(8,16) solid darken($colour2, 10%);
+                @if $show-parent == true {
+                    @include border-top-radius;
+                    display: block;
+                    background-color: $colour2;
+                    padding: 0 8%;
+
+                    @media screen and (min-width: $break-3) {
+                        padding: 0;
+                    }
+
+                    @media screen and (min-width: $break-6) {
+                        padding: 0 8%;
+                    }
+                    
+                    border-bottom: em(8,16) solid darken($colour2, 10%);
+                } @else {
+                    display: none;
+                }
             }
 
             ul  {
                 width: 100%;
                 margin: 0;
                 padding: 0;
-                background-color: #f4f4f4;
-                @include border-bottom-radius;
+
+                @if $show-parent == true {
+                    background-color: #f4f4f4;
+                    @include border-top-radius(0);
+                    @include border-bottom-radius;
+                } @else {
+                    border: 6px solid rgba($colour2, 0.3);
+                    @include border-radius;
+                }
 
                 li {
                     width: 100%;
@@ -109,13 +130,24 @@
                     padding: 0;
                     border-top: 1px solid #fafafa;
                     border-bottom: 1px solid #dedede;
+                    @if $show-parent == false {
+                        background-color: #f4f4f4;
+                    }
 
                     &:first-child {
                         border-top: none;
+                        @if $show-parent == false {
+                            @include border-top-radius;
+                        } @else {
+                            @include border-top-radius(0);
+                        }
                     }
 
                     &:last-child {
                         border-bottom: none;
+                        @if $show-parent == false {
+                            @include border-top-radius;
+                        }
                     }
 
                     &.active {
@@ -132,6 +164,13 @@
                     a {
                         display: block;
                         padding: 0 8%;
+                        @media screen and (min-width: $break-3) {
+                            padding: 0;
+                        }
+
+                        @media screen and (min-width: $break-6) {
+                            padding: 0 8%;
+                        }
                         @include sprite-img('skagen/icons/submenu_arrow_inactive.png', 1, 1, 100%, 100%, 50%);
                         background-position: 92% center;
 

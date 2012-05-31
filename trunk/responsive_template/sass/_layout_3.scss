@@ -150,44 +150,63 @@
     #subpage {
         border-top: em(8,16) solid darken($colour1, 10%);
         
-        .wrap > nav {
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #dedede;
-            padding: 0;
+        .wrap {
+            #menutoggle {
+                display: none;
+            }
 
-            & > ul {
-                & > li {
-                    &.active {
-                        width: 100%;
-                        & > a {
-                            display: none;
-                        }
+            nav {
 
-                        ul {
-                            @include horizontal-list(em(12,14));
-                            margin: 0;
-                            padding: 0 em(16,14);
+                html.js & {
+                    display: block !important;
+                }
 
-                            li {
-                                border: none;
-                                width: auto;
-                                clear: none;
+                background-color: #f4f4f4;
+                border-bottom: 1px solid #dedede;
+                padding: 0;
 
-                                a {
-                                    background-image: none;
+                & > ul {
+                    & > li {
+                        &.active {
+                            width: 100%;
+                            & > a {
+                                display: none;
+                            }
 
-                                    &:hover {
-                                        text-indent: 0;
+                            ul {
+                                @include horizontal-list(em(12,14));
+                                margin: 0;
+                                padding: 0 em(16,14);
+
+                                li {
+                                    border: none;
+                                    width: auto;
+                                    clear: none;
+
+                                    a {
+                                        background-image: none;
+
+                                        &:hover {
+                                            text-indent: 0;
+                                        }
+                                    }
+
+                                    &.active a {
+                                        background-color: transparent;
+                                        @include box-shadow(inset 0 0 0 rgba(0,0,0,0));
                                     }
                                 }
-
-                                &.active a {
-                                    background-color: transparent;
-                                    @include box-shadow(inset 0 0 0 rgba(0,0,0,0));
-                                }
-                            }
-                        }  
+                            }  
+                        }
                     }
+                }
+            }
+
+            #contents {
+                padding: 1em;
+
+                html.js & h1 {
+                    display: block;
                 }
             }
         }

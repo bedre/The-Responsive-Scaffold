@@ -45,6 +45,7 @@ require_once 'settings.php';
     <script type="text/javascript" charset="utf-8">
         $(window).load(function() {
 
+            // Slider init
             $('.slider').flexslider({
                 animation: 'slide',
                 animationDuration: 400,
@@ -70,8 +71,26 @@ require_once 'settings.php';
                 unMaskSliderImages();
             }
 
+            // Show/hide submenu
+            var subnav  = $('#subpage').find('nav');
+
+            if (subnav.length) {
+                var submenu = subnav.children('ul');
+                var level_1 = submenu.children('li.active').children('a').html();
+                var level_2 = submenu.find('li.current').children('a').html();
+                
+                var button = $('<div id="menutoggle"><div class="button"><div class="arrow"><span class="text"><span class="level_1">'+level_1+'</span><span class="level_2">'+level_2+'</span></span></div></div></div>');
+                button.children('.button').on(Modernizr.touch ? 'touchend' : 'click', function(){
+                    this.toggleClass('active'),
+                    subnav.slideToggle()
+                });
+                $('#subpage').children('.wrap').prepend(button);
+
+            }
+
         });
 
+        // Adjust slider when window resizes
         $(window).resize(function() {
             var body = $('body');
             var win  = $(this);
@@ -119,14 +138,7 @@ require_once 'settings.php';
         </div>
     </header>
 
-    <?php
-        // MAIN CONTENTS START
-        // different layouts for frontpage and subpages
-        $menu = JFactory::getApplication()->getMenu();
-        $lang = JFactory::getLanguage();
-    ?>
-
-    <? if ($menu->getActive() == $menu->getDefault($lang->getTag())): ?>
+    <? if ($settings['is_frontpage']): ?>
         <div class="slider-wrapper">
             <div class="slider">
                 <jdoc:include type="modules" name="slideshow_frontpage" />

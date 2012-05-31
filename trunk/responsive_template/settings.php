@@ -5,3 +5,12 @@
         'template_folder' => $this->baseurl .'/templates/'. $this->template,
         'template_style'  => 'skagen'
     );
+
+    $menu = JFactory::getApplication()->getMenu();
+    $lang = JFactory::getLanguage();
+    
+    if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
+        $settings['is_frontpage'] = true;
+    } else {
+        $settings['is_frontpage'] = false;
+    }

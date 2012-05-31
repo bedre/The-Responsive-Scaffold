@@ -295,14 +295,73 @@ header {
 #subpage {
     @include pie-clearfix;
 
-    #contents {
-        padding: 1em;
+    #menutoggle {
+        @include pie-clearfix;
+        clear: both;
+        padding: 1em 1em 0 1em;
+        width: 100%;
+
+        .button {
+            @include pie-clearfix;
+            @include border-radius;
+            display: block;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            @include background(linear-gradient(#f7f7f7, #e6e6e6));
+
+            .arrow {
+                @include pie-clearfix;
+                width: 100%;
+                @include sprite-img('skagen/icons/button_arrow_down_blue.png', 1, 1, 100%, 100%, 50%);
+                background-position: 93.5% center;
+
+                span.text {
+                    float: left;
+                    width: 85%;
+                    padding: .5em;
+                    border-right: 1px solid #ccc;
+                    @include border-left-radius;
+                    @include background(linear-gradient(#fff, #eee));
+
+                    span {
+                        &.level_1,
+                        &.level_2 {
+                            width: 80%;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .active {
+            @include background(linear-gradient(lighten($colour2, 20%), lighten($colour2, 40%)));
+            border: 1px solid #999;
+
+            .arrow {
+                @include sprite-img('skagen/icons/button_arrow_up_white.png', 1, 1, 100%, 100%, 50%);
+                background-position: 93.5% center;
+            }
+        }
     }
 
     nav {
+        html.js & {
+            display: none;
+        }
+
         padding: em(16,14);
+
         > ul {
-            @include subnav;
+            @include subnav(false);
+        }
+    }
+
+    #contents {
+        padding: 1em;
+
+        html.js & h1 {
+            display: none;
         }
     }
 

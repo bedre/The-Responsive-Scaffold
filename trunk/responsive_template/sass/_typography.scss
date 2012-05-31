@@ -97,6 +97,22 @@ header {
 
 #subpage {
     .wrap {
+        #menutoggle {
+            span {
+                &.level_1 {
+                    text-transform: uppercase;
+                    color: #999;
+                    font-size: em(11,16);
+                    line-height: em(14,11);
+                }
+
+                &.level_2 {
+                    color: $colour1;
+                    font-size: em(22,16);
+                }
+            }
+        }
+
         nav {
             font-size: em(14,16);
             line-height: em(47,14);
