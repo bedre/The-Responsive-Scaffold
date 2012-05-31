@@ -148,29 +148,44 @@
     }
 
     #subpage {
+        border-top: em(8,16) solid darken($colour1, 10%);
+        
         .wrap > nav {
             background-color: #f4f4f4;
             border-bottom: 1px solid #dedede;
+            padding: 0;
 
             & > ul {
-                @include pie-clearfix;
-                margin: 0;
-                padding: 0;
-
                 & > li {
-                    display: none;
-
                     &.active {
-                        display: block;
                         width: 100%;
                         & > a {
-                            display: none;                         
+                            display: none;
                         }
 
                         ul {
                             @include horizontal-list(em(12,14));
                             margin: 0;
                             padding: 0 em(16,14);
+
+                            li {
+                                border: none;
+                                width: auto;
+                                clear: none;
+
+                                a {
+                                    background-image: none;
+
+                                    &:hover {
+                                        text-indent: 0;
+                                    }
+                                }
+
+                                &.active a {
+                                    background-color: transparent;
+                                    @include box-shadow(inset 0 0 0 rgba(0,0,0,0));
+                                }
+                            }
                         }  
                     }
                 }

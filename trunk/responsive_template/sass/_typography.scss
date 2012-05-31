@@ -138,12 +138,18 @@ header {
                             }
 
                             &.active a {
-                                @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
-                                text-decoration: underline;
+                                text-decoration: none;
+                                @include link-colors(#fff, #fff, #fff, #fff, #fff);
+                                
+                                // Horizontal menu with different colours in the medium sizes
+                                @media screen and (min-width: $break-3) {
+                                    @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
+                                    text-decoration: underline;                                    
+                                }
 
                                 @media screen and (min-width: $break-6) {
                                     text-decoration: none;
-                                    @include link-colors(#fff, #fff, #fff, #fff, #fff);
+                                    @include link-colors(#fff, #fff, #fff, #fff, #fff);                               
                                 }
                             }
 

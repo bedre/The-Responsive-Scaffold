@@ -13,22 +13,28 @@ body {
         clear: both;
     }
 
-    img.svg-over-png {
-        display: none;
+    // Show PNG normally
+    img {
+        &.svg-over-png {
+            display: none;
+        }
+
+        &.png-over-svg {
+            display: block;
+        }
     }
 
-    img.png-over-svg {
-        display: block;
-    }
-}
+    // Show SVG instead of PNG if possible
+    &.svg {
+        img {
+            &.svg-over-png {
+                display: block;
+            }
 
-body.svg {
-    .svg-over-png {
-        display: block;
-    }
-
-    .png-over-svg {
-        display: none;
+            &.png-over-svg {
+                display: none;
+            }
+        }
     }
 }
 
@@ -288,9 +294,16 @@ header {
 
 #subpage {
     @include pie-clearfix;
-    border-top: em(8,16) solid darken($colour1, 10%);
+
     #contents {
         padding: 1em;
+    }
+
+    nav {
+        padding: em(16,14);
+        > ul {
+            @include subnav;
+        }
     }
 
     #sidebar {
