@@ -22,9 +22,12 @@ require_once 'settings.php';
 
 <head>
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
-    <jdoc:include type="head" />
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= $settings['template_folder'] ?>/css/screen.css">
+    <jdoc:include type="head" />
     <script src="<?= $settings['template_folder'] ?>/js/lib/modernizr-2.5.3.min.js"></script>
     <script>
         Modernizr.load({
@@ -82,7 +85,7 @@ require_once 'settings.php';
                 var button = $('<div id="menutoggle"><div class="button"><div class="arrow"><span class="text"><span class="level_1">'+level_1+'</span><span class="level_2">'+level_2+'</span></span></div></div></div>');
                 button.children('.button').on(Modernizr.touch ? 'touchend' : 'click', function(){
                     this.toggleClass('active'),
-                    subnav.slideToggle()
+                    subnav.slideToggle(200)
                 });
                 $('#subpage').children('.wrap').prepend(button);
 

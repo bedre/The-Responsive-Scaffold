@@ -26,7 +26,7 @@ Originally this was responsive redesign project ordered and paid for by [Skagen 
 9.  Must be used with SASS 3.2 or above, so that you for instance can use [variables in media queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32).
 10.  [Flexslider](http://www.woothemes.com/flexslider/) from WooThemes is included in the package.
 11.  Uses [Adaptive Images](http://adaptive-images.com) for responsive imagery.
-12.  See the logo img element plus _layout.scss for an idea on how we're using SVG with PNG fallbacks. It's not ideal, but basically we load both the PNG and SVG, and then show SVG if it's supported. If not, PNG is shown and SVG is hidden. We decided that since this was the logo that we'd live with the extra HTTP request.
+12.  See the logo img element plus _layout.scss for an idea on how we're using SVG with PNG fallbacks. It's not ideal, since I haven't read [The Article yet](http://www.alistapart.com/articles/using-svg-for-flexible-scalable-and-fun-backgrounds-part-ii/), but basically we load both the PNG and SVG, and then show SVG if it's supported. If not, PNG is shown and SVG is hidden. We decided that since this was the logo that we'd live with the extra HTTP request.
 
 
 ## Setup

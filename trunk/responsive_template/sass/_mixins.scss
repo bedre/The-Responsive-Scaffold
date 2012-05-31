@@ -82,6 +82,7 @@
 
     > li {
         display: none;
+        margin-bottom: 0;
         
         &.active {
             display: block;
