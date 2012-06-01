@@ -411,6 +411,7 @@ footer {
                     width: 100%;
                     border-bottom: 1px solid $colour1;
                     background-color: darken($colour1, 5%);
+                    margin-bottom: 0;
 
                     &:first-child {
                         @include border-top-radius();

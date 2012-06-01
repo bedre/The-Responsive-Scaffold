@@ -172,6 +172,16 @@ header {
     }
 }
 
+@mixin footer-headline {
+    display: block;
+    color: #fff;
+    font-size: em(18,16);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: .5em;
+    font-family: $headline-fonts;  
+}
+
 footer {
 
     a {
@@ -180,25 +190,22 @@ footer {
     }
 
     nav {
-        li.parent {
-            > a {
-                display: block;
-                font-size: em(16,16);
-                text-transform: uppercase;
-                font-weight: bold;
-                margin-bottom: .5em;
+        li {
+            &.parent {
+                > a {
+                    @include footer-headline;
+                }
             }
-        }
 
-        a {
-            font-size: em(13,16);
+            a {
+                font-size: em(13,16);
+            }
         }
 
     }
 
     h3 {
-        text-transform: uppercase;
-        margin-bottom: .5em;
+        @include footer-headline;
     }
 
     #contact {
