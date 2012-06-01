@@ -25,13 +25,23 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
     margin: 0;
 }
 
-$headlines: 30px 24px 18px 14px 12px 11px;
+h1, h2, h3, h4, h5, h6 {
+    a {
+        text-decoration: none;
+        @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
+    }
+}
+
+$headlines: 36px 28px 20px 16px 13px 11px;
 $leaders:    0.5  0    0    0    0    0;
 $trailers:   0.5  0.5  0.5  0.5  0.5  0.5;
 
 @for $i from 1 through 6 {
     h#{$i} {
         @include adjust-font-size-to(nth($headlines, $i));
+        @media screen and (min-width: $break-7) {
+            @include adjust-font-size-to(nth($headlines, $i)*18/16);
+        }
         @include leader(nth($leaders, $i), nth($headlines, $i));
         @include trailer(nth($trailers, $i), nth($headlines, $i));
         font-family: $headline-fonts;

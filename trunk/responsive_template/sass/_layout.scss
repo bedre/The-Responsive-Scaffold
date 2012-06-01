@@ -250,10 +250,11 @@ header {
     @extend .clearfix;
 
     article {
+        @extend .clearfix;
         position: relative;
         float: left;
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
 
         a {
             display: block;
@@ -276,36 +277,34 @@ header {
                 h3 {
                     position: absolute;
                     bottom: -2.5em;
-                    left: -5px;
-
-                    @media screen and (orientation:landscape) {
-                        left: 0;
-                        @include overlay-text-layout;
-                    }
+                    left: 0;
+                    @include overlay-text-layout;
                 }
             }
 
             .description {
-                margin-top: 3em;
-                @media screen and (orientation:landscape) {
-                    margin-top: 1em;
-                }
+                margin-top: 1em;
             }
+        }
+
+        a.readon {
+            float: none;
+            display: inline;
         }
     }
 }
 
 #subpage {
-    @include pie-clearfix;
+    @extend .clearfix;
 
     #menutoggle {
-        @include pie-clearfix;
+        @extend .clearfix;
         clear: both;
         padding: 1em 1em 0 1em;
         width: 100%;
 
         .button {
-            @include pie-clearfix;
+            @extend .clearfix;
             @include border-radius;
             display: block;
             border: 1px solid #ccc;
@@ -313,7 +312,7 @@ header {
             @include background(linear-gradient(#f7f7f7, #e6e6e6));
 
             .arrow {
-                @include pie-clearfix;
+                @extend .clearfix;
                 width: 100%;
                 @include sprite-img('skagen/icons/button_arrow_down_blue.png', 1, 1, 100%, 100%, 50%);
                 background-position: 93.5% center;
