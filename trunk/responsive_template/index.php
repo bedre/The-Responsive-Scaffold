@@ -192,7 +192,8 @@ require_once 'settings.php';
                     <span itemprop="addressRegion"><?= $this->params->get('region');?></span>
                     <span itemprop="addressCountry"><?= $this->params->get('country');?></span>
                     <a itemprop="url" href="<?= $this->params->get('map_url');?>"><?= JText::_('TPL_RWDTPL_MAP'); ?></a>
-                    <img id="map" src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/norway_map.png" alt="Map of Norway">
+                    <span id="map">Map</span>
+                    <!-- <img id="map" src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/norway_map.png" alt="Map of Norway"> -->
                 </div>
             </div>
 

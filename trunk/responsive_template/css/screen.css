@@ -541,9 +541,9 @@ table {
 /*********************** 
   ROUNDED CORNERS
 ***********************/
-/* line 212, skagen/icons/*.png */
+/* line 220, skagen/icons/*.png */
 .icons-sprite {
-  background: url('../images/skagen/icons-s1fc810a803.png') no-repeat;
+  background: url('../images/skagen/icons-sbdf8440f5e.png') no-repeat;
 }
 
 /* line 1, ../sass/_mixins.scss */
@@ -579,10 +579,10 @@ header #logo {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -392px;
+  background-position: 0 -540px;
   height: 14px;
   width: 14px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 37.5em) {
@@ -598,10 +598,10 @@ header #logo {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -392px;
+    background-position: 0 -540px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
   }
 }
@@ -699,10 +699,10 @@ header #extra #language #english {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -90px;
+  background-position: 0 -238px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
 /* line 98, ../sass/_layout.scss */
@@ -710,10 +710,10 @@ header #extra #language #norwegian {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -203px;
+  background-position: 0 -351px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
 /* line 104, ../sass/_layout.scss */
@@ -864,10 +864,10 @@ header nav ul li a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -422px;
+  background-position: 0 -570px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
 /* line 200, ../sass/_layout.scss */
@@ -935,19 +935,19 @@ header nav ul li a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -112px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-position: 0 -260px;
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
   cursor: pointer;
   display: inline-block;
 }
 /* line 233, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
-  background-position: 0 0;
+  background-position: 0 -148px;
 }
 /* line 237, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
-  background-position: 0 -45px;
+  background-position: 0 -193px;
   cursor: default;
 }
 
@@ -1323,8 +1323,9 @@ footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
+  margin-bottom: 0;
 }
-/* line 415, ../sass/_layout.scss */
+/* line 416, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1333,7 +1334,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 419, ../sass/_layout.scss */
+/* line 420, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1343,30 +1344,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 424, ../sass/_layout.scss */
+/* line 425, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 435, ../sass/_layout.scss */
+/* line 436, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 439, ../sass/_layout.scss */
+/* line 440, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 445, ../sass/_layout.scss */
+/* line 446, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 449, ../sass/_layout.scss */
+/* line 450, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 454, ../sass/_layout.scss */
+/* line 455, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1374,35 +1375,35 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 461, ../sass/_layout.scss */
+/* line 462, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 466, ../sass/_layout.scss */
+/* line 467, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -259px;
+  background-position: 0 -407px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
-/* line 470, ../sass/_layout.scss */
+/* line 471, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -406px;
+  background-position: 0 -554px;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
-/* line 475, ../sass/_layout.scss */
+/* line 476, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1415,18 +1416,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 484, ../sass/_layout.scss */
+/* line 485, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 491, ../sass/_layout.scss */
+/* line 492, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 496, ../sass/_layout.scss */
+/* line 497, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1434,7 +1435,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 503, ../sass/_layout.scss */
+/* line 504, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1460,19 +1461,27 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -422px;
+  background-position: 0 -570px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
-/* line 513, ../sass/_layout.scss */
+/* line 514, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
   top: -5px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position: 0 0;
+  height: 148px;
+  width: 120px;
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
+  background-repeat: no-repeat;
 }
-/* line 522, ../sass/_layout.scss */
+/* line 524, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -1541,10 +1550,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -362px;
+    background-position: 0 -510px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
   }
   /* line 28, ../sass/_layout_3.scss */
@@ -1552,10 +1561,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -316px;
+    background-position: 0 -464px;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
   }
   /* line 33, ../sass/_layout_3.scss */
@@ -1578,10 +1587,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -225px;
+    background-position: 0 -373px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
     float: left;
   }
@@ -1590,10 +1599,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -305px;
+    background-position: 0 -453px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
     float: right;
   }
@@ -1970,10 +1979,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -435px;
+    background-position: 0 -583px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
   }
   /* line 115, ../sass/_layout_5.scss */
@@ -2082,10 +2091,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -435px;
+    background-position: 0 -583px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s7bf2660fda.png');
+    background-image: url('../images/skagen/icons-s6d2cd840cc.png');
     background-repeat: no-repeat;
   }
   /* line 38, ../sass/_layout_6.scss */
@@ -2893,7 +2902,7 @@ header nav ul li a:active {
   }
 }
 
-/* line 177, ../sass/_typography.scss */
+/* line 187, ../sass/_typography.scss */
 footer a {
   color: white;
   text-decoration: none;
@@ -2914,37 +2923,44 @@ footer a:hover {
 footer a:active {
   color: white;
 }
-/* line 184, ../sass/_typography.scss */
+/* line 195, ../sass/_typography.scss */
 footer nav li.parent > a {
   display: block;
-  font-size: 1em;
+  color: #fff;
+  font-size: 1.125em;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: .5em;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-/* line 193, ../sass/_typography.scss */
-footer nav a {
+/* line 200, ../sass/_typography.scss */
+footer nav li a {
   font-size: 0.813em;
 }
-/* line 199, ../sass/_typography.scss */
+/* line 207, ../sass/_typography.scss */
 footer h3 {
+  display: block;
+  color: #fff;
+  font-size: 1.125em;
   text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: .5em;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-/* line 204, ../sass/_typography.scss */
+/* line 211, ../sass/_typography.scss */
 footer #contact {
   font-size: 0.875em;
 }
-/* line 208, ../sass/_typography.scss */
+/* line 215, ../sass/_typography.scss */
 footer #contact [itemprop="telephone"],
 footer #contact [itemprop="url"] {
   line-height: 13px;
 }
-/* line 212, ../sass/_typography.scss */
+/* line 219, ../sass/_typography.scss */
 footer #contact [itemprop="address"] a {
   font-size: 0.857em;
 }
-/* line 217, ../sass/_typography.scss */
+/* line 224, ../sass/_typography.scss */
 footer #copyright {
   font-size: 0.75em;
   opacity: .6;
@@ -2962,17 +2978,17 @@ footer #copyright {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -236px;
-  background-image: url('../images/skagen/icons-s7bf2660fda.png');
+  background-position: 0 -384px;
+  background-image: url('../images/skagen/icons-s6d2cd840cc.png');
   background-repeat: no-repeat;
 }
 /* line 12, ../sass/_no-touch.scss */
 .no-touch .slider-wrapper .flex-control-nav li a:hover {
-  background-position: 0 -157px;
+  background-position: 0 -305px;
 }
 /* line 16, ../sass/_no-touch.scss */
 .no-touch .slider-wrapper .flex-control-nav li a.active {
-  background-position: 0 -180px;
+  background-position: 0 -328px;
   cursor: default;
 }
 /* line 28, ../sass/_no-touch.scss */

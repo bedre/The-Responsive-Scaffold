@@ -515,6 +515,7 @@ footer {
                 position: absolute;
                 right: -5px;
                 top: -5px;
+                @include sprite-replace-text-with-dimensions($icons-sprite-map, map); 
             }
         }
 
