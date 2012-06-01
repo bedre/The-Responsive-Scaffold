@@ -10,7 +10,7 @@
                     display: block;
                     float: right;
                     margin-right: 1em;
-                    line-height: image-height(sprite-file($icons-sprite-map, english_large));
+                    line-height: image-height(sprite-file($icons-sprites, english_large));
                 }
             }
         }

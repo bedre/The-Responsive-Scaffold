@@ -19,7 +19,7 @@
                         @include pie-clearfix;
 
                         .infobox {
-                            bottom: 1em + (image-height(sprite-file($icons-sprite-map, navbullet_off))/16px*1em);
+                            bottom: 1em + (image-height(sprite-file($icons-sprites, navbullet_off))/16px*1em);
                             
                             .description {
                                 width: 100%;

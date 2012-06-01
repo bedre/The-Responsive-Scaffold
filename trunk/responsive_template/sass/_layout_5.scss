@@ -22,8 +22,8 @@
             }
 
             #language {
-                height: image-height(sprite-file($icons-sprite-map, english_large));
-                width:  2.5*image-width(sprite-file($icons-sprite-map, english_large));
+                height: image-height(sprite-file($icons-sprites, english_large));
+                width:  2.5*image-width(sprite-file($icons-sprites, english_large));
 
                 span {
                     display: none;

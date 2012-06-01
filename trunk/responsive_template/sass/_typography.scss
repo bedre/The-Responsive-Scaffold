@@ -212,7 +212,7 @@ footer {
 
         [itemprop="telephone"],
         [itemprop="url"] {
-            line-height: image-height(sprite-file($icons-sprite-map, button_arrow)); // match the icons size
+            line-height: image-height(sprite-file($icons-sprites, button_arrow)); // match the icons size
         }
 
         [itemprop="address"] a {

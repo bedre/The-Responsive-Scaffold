@@ -84,7 +84,7 @@ header {
             a {
                 display: block;
                 float: right;
-                height: image-height(sprite-file($icons-sprite-map, english_large));
+                height: image-height(sprite-file($icons-sprites, english_large));
 
                 &.active {
                     display: none;
@@ -92,11 +92,11 @@ header {
             }
 
             #english {
-                @include sprite-replace-text-with-dimensions($icons-sprite-map, english_large);            
+                @include sprite-replace-text-with-dimensions($icons-sprites, english_large);            
             }
             
             #norwegian {
-                @include sprite-replace-text-with-dimensions($icons-sprite-map, norwegian_large);
+                @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_large);
             }
         }
     }
@@ -216,7 +216,7 @@ header {
     /* bullets underneath the slider */
     .flex-control-nav { 
         @include horizontal-list(0);
-        height: image-height(sprite-file($icons-sprite-map, navbullet_off)); 
+        height: image-height(sprite-file($icons-sprites, navbullet_off)); 
         background-color: #eee;
         @include background-image(linear-gradient(#fcfcfc, #dfdfdf));
         text-align: center;
@@ -224,18 +224,18 @@ header {
         li {
             float: none;
             a {
-                width: image-width(sprite-file($icons-sprite-map, navbullet_off));
-                height: image-height(sprite-file($icons-sprite-map, navbullet_off)); 
-                @include sprite-replace-text($icons-sprite-map, navbullet_off); 
+                width: image-width(sprite-file($icons-sprites, navbullet_off));
+                height: image-height(sprite-file($icons-sprites, navbullet_off)); 
+                @include sprite-replace-text($icons-sprites, navbullet_off); 
                 cursor: pointer; 
                 display: inline-block;
 
                 &:hover {
-                    @include sprite($icons-sprite-map, navbullet_hover);
+                    @include sprite($icons-sprites, navbullet_hover);
                 }
 
                 &.active {
-                    @include sprite($icons-sprite-map, navbullet_on);
+                    @include sprite($icons-sprites, navbullet_on);
                     cursor: default;
                 }
             }
@@ -464,11 +464,11 @@ footer {
             }
 
             #phone-icon {
-                @include sprite-replace-text-with-dimensions($icons-sprite-map, phone_white); 
+                @include sprite-replace-text-with-dimensions($icons-sprites, phone_white); 
             }
 
             #facebook-icon {
-                @include sprite-replace-text-with-dimensions($icons-sprite-map, facebook_white); 
+                @include sprite-replace-text-with-dimensions($icons-sprites, facebook_white); 
             }
         }
 
@@ -514,7 +514,7 @@ footer {
                 position: absolute;
                 right: -5px;
                 top: -5px;
-                @include sprite-replace-text-with-dimensions($icons-sprite-map, map); 
+                @include sprite-replace-text-with-dimensions($icons-sprites, map); 
             }
         }
 

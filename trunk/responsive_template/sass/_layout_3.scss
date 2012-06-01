@@ -12,7 +12,7 @@
                     .phone, 
                     .email {
                         float: right;
-                        line-height: image-height(sprite-file($icons-sprite-map, email));
+                        line-height: image-height(sprite-file($icons-sprites, email));
                         margin-right: 2em;
                     }
 
@@ -22,18 +22,18 @@
                     }
 
                     .email_icon {
-                        @include sprite-replace-text-with-dimensions($icons-sprite-map, email); 
+                        @include sprite-replace-text-with-dimensions($icons-sprites, email); 
                     }
 
                     .phone_icon {
-                        @include sprite-replace-text-with-dimensions($icons-sprite-map, phone); 
+                        @include sprite-replace-text-with-dimensions($icons-sprites, phone); 
                     }
                 }
 
                 #language {
                     padding-top: 2px;
-                    height: image-height(sprite-file($icons-sprite-map, english_small));
-                    width:  2.5*image-width(sprite-file($icons-sprite-map, english_small));
+                    height: image-height(sprite-file($icons-sprites, english_small));
+                    width:  2.5*image-width(sprite-file($icons-sprites, english_small));
 
                     span {
                         display: none;
@@ -45,11 +45,11 @@
                     }  
 
                     #english {
-                        @include sprite-replace-text-with-dimensions($icons-sprite-map, english_small);            
+                        @include sprite-replace-text-with-dimensions($icons-sprites, english_small);            
                         float: left;
                     }
                     #norwegian {
-                        @include sprite-replace-text-with-dimensions($icons-sprite-map, norwegian_small);
+                        @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_small);
                         float: right;
                     }
                 }

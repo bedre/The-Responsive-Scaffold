@@ -64,9 +64,9 @@
         }
         margin-left: .5em;
         content: "";
-        width: image-width(sprite-file($icons-sprite-map, $button-arrow));
-        height: image-height(sprite-file($icons-sprite-map, $button-arrow));
-        @include sprite-replace-text-with-dimensions($icons-sprite-map, $button-arrow);
+        width: image-width(sprite-file($icons-sprites, $button-arrow));
+        height: image-height(sprite-file($icons-sprites, $button-arrow));
+        @include sprite-replace-text-with-dimensions($icons-sprites, $button-arrow);
     }
 }
 
