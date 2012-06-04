@@ -1,3 +1,46 @@
+/* mixins */
+@mixin product_grid {
+    & a {
+        display: block;
+        width: 100%;
+        line-height: 0;
+        @extend .clearfix;
+
+        .imageholder {
+            position: relative;
+            display: block;
+            width: 100%;
+            line-height: 0;
+            @include inner-shadow(20px);
+            @include double-border;
+
+            img {
+                width: 100%;
+            }
+
+            h2,h3 {
+                position: absolute;
+                bottom: -2.5em;
+                left: 0;
+                @include overlay-text-layout;
+            }
+
+            h2 {
+                bottom: 1em;
+            }
+        }
+
+        .description {
+            margin-top: 1em;
+        }
+    }
+
+    & a.readon {
+        float: none;
+        display: inline;
+    }
+}
+
 /* General */
 
 * { 
@@ -256,41 +299,7 @@ header {
         width: 100%;
         margin-bottom: 1.5em;
 
-        a {
-            display: block;
-            width: 100%;
-            line-height: 0;
-            @extend .clearfix;
-
-            .imageholder {
-                position: relative;
-                display: block;
-                width: 100%;
-                line-height: 0;
-                @include inner-shadow(20px);
-                @include double-border;
-
-                img {
-                    width: 100%;
-                }
-
-                h3 {
-                    position: absolute;
-                    bottom: -2.5em;
-                    left: 0;
-                    @include overlay-text-layout;
-                }
-            }
-
-            .description {
-                margin-top: 1em;
-            }
-        }
-
-        a.readon {
-            float: none;
-            display: inline;
-        }
+        @include product_grid;
     }
 }
 
@@ -364,6 +373,12 @@ header {
 
         html.js & h1 {
             display: none;
+        }
+
+        section.blog {
+            article {
+                @include product_grid;
+            }
         }
     }
 

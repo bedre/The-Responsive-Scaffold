@@ -210,6 +210,22 @@
                 html.js & h1 {
                     display: block;
                 }
+
+                section.blog {
+                    clear: both;
+                    @include pie-clearfix;
+                    article {
+                        width: 47%;
+                        margin-right: 5.99%;
+                        margin-bottom: 5.99%;
+                        clear: left;
+                        float: left;
+                        &:nth-child(even) {
+                            margin-right: 0;
+                            clear: right;
+                        }
+                    }
+                }
             }
         }
     }

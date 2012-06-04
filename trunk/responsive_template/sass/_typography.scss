@@ -1,3 +1,28 @@
+@mixin product-grid-typography {
+    font-size: em(14,16);
+
+    a {
+        text-decoration: none;
+        @include link-colors($text-colour, $text-colour, $text-colour, $text-colour, $text-colour);
+
+        h2,h3 {
+            @include overlay-text-typography;
+            font-size: em(18,14);
+        }
+
+        .description {
+            line-height: 1.5em;
+            margin-bottom: 0;
+            margin-top: 1em;
+        }
+    }
+
+    a.readon {
+        @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
+        text-decoration: underline;
+    }
+}
+
 header {
 
     #language {
@@ -56,28 +81,8 @@ header {
 }
 
 #product_categories {
-    font-size: em(14,16);
     article {
-        a {
-            text-decoration: none;
-            @include link-colors($text-colour, $text-colour, $text-colour, $text-colour, $text-colour);
-
-            h3 {
-                @include overlay-text-typography;
-                font-size: em(18,14);
-            }
-
-            .description {
-                line-height: 1.5em;
-                margin-bottom: 0;
-                margin-top: 1em;
-            }
-        }
-
-        a.readon {
-            @include link-colors($colour1, $colour1, $colour1, $colour1, $colour1);
-            text-decoration: underline;
-        }
+        @include product-grid-typography;
     }
 }
 
@@ -165,6 +170,14 @@ header {
                         } 
                     }
 
+                }
+            }
+        }
+
+        #contents {
+            section.blog {
+                article {
+                    @include product-grid-typography;
                 }
             }
         }

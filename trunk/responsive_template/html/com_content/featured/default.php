@@ -20,14 +20,14 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
             <?php foreach ($this->lead_items as &$item) :
                 $images = json_decode($item->images);
                 
-                if (file_exists($images->image_fulltext)) {
-                    $imgsize = getimagesize($images->image_fulltext); 
+                if (file_exists($images->image_intro)) {
+                    $imgsize = getimagesize($images->image_intro); 
                 }
                 
                 // If urla link/text is specified, it is used as headline/link. If not, article title and link are used.
                 $urls     = json_decode($item->urls);
                 if (empty($urls->urla)) {
-                    $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
+                    $link = JRoute::_(ContentHelperRoute::getArticleRoute($item->slug, $item->catid));
                 } else {
                     $link = $urls->urla;
                 }
@@ -37,11 +37,13 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
                 <article class="product_category">
                     <a href="<?= $link ?>">
                         
-                        <? if (file_exists($images->image_fulltext)): ?>
+                        <? if (file_exists($images->image_intro)): ?>
                             <span class="imageholder">
-                                <img src="<?= $images->image_fulltext ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_fulltext_alt ?>">
+                                <img src="<?= $images->image_intro ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
                                 <h3><?= !empty($urls->urlatext) ? $urls->urlatext : $item->title; ?></h3>
                             </span>
+                        <? else: ?>
+                            <h3><?= !empty($urls->urlatext) ? $urls->urlatext : $item->title; ?></h3>
                         <? endif; ?>
                         
                         <p class="description"><?= strip_tags($item->introtext) ?></p>
