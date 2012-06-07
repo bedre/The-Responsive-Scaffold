@@ -707,7 +707,7 @@ header #extra #language #english {
   background-repeat: no-repeat;
 }
 /* line 141, ../sass/_layout.scss */
-header #extra #language #norwegian {
+header #extra #language #norsk {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -1613,13 +1613,16 @@ footer #copyright {
   .no-touch header #extra #language span {
     display: none;
   }
-  /* line 42, ../sass/_layout_3.scss */
+  /* line 43, ../sass/_layout_3.scss */
   .no-touch header #extra #language a.active {
     display: block;
-    opacity: .4;
   }
   /* line 47, ../sass/_layout_3.scss */
-  .no-touch header #extra #language #english {
+  .no-touch header #extra #language a.inactive {
+    opacity: .4;
+  }
+  /* line 51, ../sass/_layout_3.scss */
+  .no-touch header #extra #language a#english {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
@@ -1630,8 +1633,8 @@ footer #copyright {
     background-repeat: no-repeat;
     float: left;
   }
-  /* line 51, ../sass/_layout_3.scss */
-  .no-touch header #extra #language #norwegian {
+  /* line 56, ../sass/_layout_3.scss */
+  .no-touch header #extra #language a#norsk {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
@@ -1643,38 +1646,38 @@ footer #copyright {
     float: right;
   }
 
-  /* line 60, ../sass/_layout_3.scss */
+  /* line 66, ../sass/_layout_3.scss */
   header {
     margin-bottom: 0;
   }
-  /* line 63, ../sass/_layout_3.scss */
+  /* line 69, ../sass/_layout_3.scss */
   header #logo {
     width: 25%;
   }
-  /* line 67, ../sass/_layout_3.scss */
+  /* line 73, ../sass/_layout_3.scss */
   header #extra {
     width: 70%;
   }
-  /* line 73, ../sass/_layout_3.scss */
+  /* line 79, ../sass/_layout_3.scss */
   header nav ul li {
     margin-top: 5px;
     width: 20%;
     display: block;
     margin-bottom: 0;
   }
-  /* line 80, ../sass/_layout_3.scss */
+  /* line 86, ../sass/_layout_3.scss */
   header nav ul li:last-child {
     width: 20%;
   }
-  /* line 84, ../sass/_layout_3.scss */
+  /* line 90, ../sass/_layout_3.scss */
   header nav ul li.menulink {
     display: none;
   }
-  /* line 88, ../sass/_layout_3.scss */
+  /* line 94, ../sass/_layout_3.scss */
   header nav ul li a {
     border-bottom: 1px solid #fff;
   }
-  /* line 92, ../sass/_layout_3.scss */
+  /* line 98, ../sass/_layout_3.scss */
   header nav ul li.active {
     margin-top: 0;
     padding-top: 5px;
@@ -1685,39 +1688,39 @@ footer #copyright {
     -webkit-border-top-right-radius: 5px;
     border-top-right-radius: 5px;
   }
-  /* line 97, ../sass/_layout_3.scss */
+  /* line 103, ../sass/_layout_3.scss */
   header nav ul li.active a {
     border-bottom: 1px solid #083156;
   }
-  /* line 102, ../sass/_layout_3.scss */
+  /* line 108, ../sass/_layout_3.scss */
   header nav ul li.highlighted.active a {
     border-bottom: 1px solid #1a1a1a;
   }
-  /* line 106, ../sass/_layout_3.scss */
+  /* line 112, ../sass/_layout_3.scss */
   header nav ul li.call-to-action.active a {
     border-bottom: 1px solid #a11c2f;
   }
-  /* line 111, ../sass/_layout_3.scss */
+  /* line 117, ../sass/_layout_3.scss */
   header nav ul #menu_footer_link {
     display: none;
   }
 
-  /* line 121, ../sass/_layout_3.scss */
+  /* line 127, ../sass/_layout_3.scss */
   .slider-wrapper .slider .slides > li h3 {
     bottom: 1em;
   }
 
-  /* line 129, ../sass/_layout_3.scss */
+  /* line 135, ../sass/_layout_3.scss */
   #product_categories {
     padding: 0;
   }
-  /* line 132, ../sass/_layout_3.scss */
+  /* line 138, ../sass/_layout_3.scss */
   #product_categories article {
     width: 50%;
     padding: 1.231em;
     margin-bottom: 0;
   }
-  /* line 139, ../sass/_layout_3.scss */
+  /* line 145, ../sass/_layout_3.scss */
   #product_categories article a .imageholder h3 {
     left: 0;
     z-index: 1;
@@ -1727,38 +1730,38 @@ footer #copyright {
     float: left;
     margin: 0;
   }
-  /* line 145, ../sass/_layout_3.scss */
+  /* line 151, ../sass/_layout_3.scss */
   #product_categories article a .description {
     margin-top: 1em;
   }
 
-  /* line 152, ../sass/_layout_3.scss */
+  /* line 158, ../sass/_layout_3.scss */
   #subpage {
     border-top: 0.5em solid #083156;
   }
-  /* line 156, ../sass/_layout_3.scss */
+  /* line 162, ../sass/_layout_3.scss */
   #subpage .wrap #menutoggle {
     display: none;
   }
-  /* line 160, ../sass/_layout_3.scss */
+  /* line 166, ../sass/_layout_3.scss */
   #subpage .wrap nav {
     background-color: #f4f4f4;
     border-bottom: 1px solid #dedede;
     padding: 0;
   }
-  /* line 162, ../sass/_layout_3.scss */
+  /* line 168, ../sass/_layout_3.scss */
   html.js #subpage .wrap nav {
     display: block !important;
   }
-  /* line 172, ../sass/_layout_3.scss */
+  /* line 178, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active {
     width: 100%;
   }
-  /* line 174, ../sass/_layout_3.scss */
+  /* line 180, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active > a {
     display: none;
   }
-  /* line 178, ../sass/_layout_3.scss */
+  /* line 184, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active ul {
     margin: 0;
     padding: 0;
@@ -1791,36 +1794,36 @@ footer #copyright {
   #subpage .wrap nav > ul > li.active ul li.last {
     padding-right: 0;
   }
-  /* line 183, ../sass/_layout_3.scss */
+  /* line 189, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active ul li {
     border: none;
     width: auto;
     clear: none;
   }
-  /* line 188, ../sass/_layout_3.scss */
+  /* line 194, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active ul li a {
     background-image: none;
   }
-  /* line 191, ../sass/_layout_3.scss */
+  /* line 197, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active ul li a:hover {
     text-indent: 0;
   }
-  /* line 196, ../sass/_layout_3.scss */
+  /* line 202, ../sass/_layout_3.scss */
   #subpage .wrap nav > ul > li.active ul li.active a {
     background-color: transparent;
     -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
     -moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
     box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
   }
-  /* line 207, ../sass/_layout_3.scss */
+  /* line 213, ../sass/_layout_3.scss */
   #subpage .wrap #contents {
     padding: 1em;
   }
-  /* line 210, ../sass/_layout_3.scss */
+  /* line 216, ../sass/_layout_3.scss */
   html.js #subpage .wrap #contents h1 {
     display: block;
   }
-  /* line 214, ../sass/_layout_3.scss */
+  /* line 220, ../sass/_layout_3.scss */
   #subpage .wrap #contents section.blog {
     clear: both;
     *zoom: 1;
@@ -1831,7 +1834,7 @@ footer #copyright {
     display: table;
     clear: both;
   }
-  /* line 217, ../sass/_layout_3.scss */
+  /* line 223, ../sass/_layout_3.scss */
   #subpage .wrap #contents section.blog article {
     width: 47%;
     margin-right: 5.99%;
@@ -1839,38 +1842,38 @@ footer #copyright {
     clear: left;
     float: left;
   }
-  /* line 223, ../sass/_layout_3.scss */
+  /* line 229, ../sass/_layout_3.scss */
   #subpage .wrap #contents section.blog article:nth-child(even) {
     margin-right: 0;
     clear: right;
   }
 
-  /* line 236, ../sass/_layout_3.scss */
+  /* line 242, ../sass/_layout_3.scss */
   footer nav > ul > li {
     width: 33.333%;
     clear: none;
     padding-right: 1em;
   }
-  /* line 242, ../sass/_layout_3.scss */
+  /* line 248, ../sass/_layout_3.scss */
   footer nav > ul > li:last-child {
     width: 33.334%;
     padding-right: 0;
   }
-  /* line 248, ../sass/_layout_3.scss */
+  /* line 254, ../sass/_layout_3.scss */
   footer #contact {
     position: relative;
   }
-  /* line 251, ../sass/_layout_3.scss */
+  /* line 257, ../sass/_layout_3.scss */
   footer #contact #company_contact {
     width: 50%;
     float: left;
   }
-  /* line 256, ../sass/_layout_3.scss */
+  /* line 262, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] {
     float: right;
     width: 45%;
   }
-  /* line 260, ../sass/_layout_3.scss */
+  /* line 266, ../sass/_layout_3.scss */
   footer #contact [itemprop="address"] #map {
     display: block;
   }
@@ -1948,16 +1951,7 @@ footer #copyright {
   header #extra #language span {
     display: none;
   }
-  /* line 32, ../sass/_layout_5.scss */
-  header #extra #language a.active {
-    display: block;
-    opacity: .4;
-  }
-  /* line 37, ../sass/_layout_5.scss */
-  header #extra #language #norwegian {
-    float: right;
-  }
-  /* line 43, ../sass/_layout_5.scss */
+  /* line 34, ../sass/_layout_5.scss */
   header nav {
     width: 65%;
     clear: right;
@@ -1966,24 +1960,24 @@ footer #copyright {
     bottom: 0;
     right: 0;
   }
-  /* line 54, ../sass/_layout_5.scss */
+  /* line 45, ../sass/_layout_5.scss */
   header nav > ul > li:nth-child(3) {
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
     border-top-left-radius: 5px;
   }
-  /* line 57, ../sass/_layout_5.scss */
+  /* line 48, ../sass/_layout_5.scss */
   header nav > ul > li:last-child {
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
     border-top-right-radius: 5px;
   }
 
-  /* line 65, ../sass/_layout_5.scss */
+  /* line 56, ../sass/_layout_5.scss */
   .slider-wrapper {
     border-bottom: 4px solid #cd233c;
   }
-  /* line 69, ../sass/_layout_5.scss */
+  /* line 60, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox {
     width: 26.875em;
     position: absolute;
@@ -1994,7 +1988,7 @@ footer #copyright {
     background: rgba(0, 0, 0, 0.6);
     padding: 2em;
   }
-  /* line 78, ../sass/_layout_5.scss */
+  /* line 69, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3 {
     position: relative;
     clear: both;
@@ -2003,22 +1997,22 @@ footer #copyright {
     bottom: 0;
     padding: 0;
   }
-  /* line 86, ../sass/_layout_5.scss */
+  /* line 77, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3:after {
     display: none;
   }
-  /* line 92, ../sass/_layout_5.scss */
+  /* line 83, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description,
   .slider-wrapper .slider .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
-  /* line 98, ../sass/_layout_5.scss */
+  /* line 89, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description {
     width: 19.286em;
   }
-  /* line 102, ../sass/_layout_5.scss */
+  /* line 93, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .readon {
     background-color: #cd233c;
     width: auto;
@@ -2045,7 +2039,7 @@ footer #copyright {
     background-image: url('../images/skagen/icons-sbdf8440f5e.png');
     background-repeat: no-repeat;
   }
-  /* line 115, ../sass/_layout_5.scss */
+  /* line 106, ../sass/_layout_5.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -2054,37 +2048,37 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 125, ../sass/_layout_5.scss */
+  /* line 116, ../sass/_layout_5.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 132, ../sass/_layout_5.scss */
+  /* line 123, ../sass/_layout_5.scss */
   #subpage .wrap {
     width: 100%;
   }
-  /* line 135, ../sass/_layout_5.scss */
+  /* line 126, ../sass/_layout_5.scss */
   #subpage .wrap nav {
     width: 100%;
   }
-  /* line 138, ../sass/_layout_5.scss */
+  /* line 129, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active {
     padding: 0;
     width: 65%;
     float: right;
     margin-right: 1em;
   }
-  /* line 144, ../sass/_layout_5.scss */
+  /* line 135, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active ul {
     padding: 0;
   }
-  /* line 150, ../sass/_layout_5.scss */
+  /* line 141, ../sass/_layout_5.scss */
   #subpage .wrap #contents {
     padding-right: 0;
     width: 63%;
     float: left;
   }
-  /* line 156, ../sass/_layout_5.scss */
+  /* line 147, ../sass/_layout_5.scss */
   #subpage .wrap #sidebar {
     margin: 1em 1em 1em 0;
     width: 33%;
@@ -2096,13 +2090,13 @@ footer #copyright {
     border-radius: 5px;
   }
 
-  /* line 166, ../sass/_layout_5.scss */
+  /* line 157, ../sass/_layout_5.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 172, ../sass/_layout_5.scss */
+  /* line 163, ../sass/_layout_5.scss */
   footer #contact {
     width: 50%;
     float: right;

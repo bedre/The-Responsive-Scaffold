@@ -138,7 +138,7 @@ header {
                 @include sprite-replace-text-with-dimensions($icons-sprites, english_large);            
             }
             
-            #norwegian {
+            #norsk {
                 @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_large);
             }
         }

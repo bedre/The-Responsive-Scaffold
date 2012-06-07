@@ -39,18 +39,24 @@
                         display: none;
                     }
 
-                    a.active {
-                        display: block;
-                        opacity: .4;
-                    }  
+                    a {
+                        &.active {
+                            display: block;
+                        }
+                        
+                        &.inactive {
+                            opacity: .4;
+                        }  
 
-                    #english {
-                        @include sprite-replace-text-with-dimensions($icons-sprites, english_small);            
-                        float: left;
-                    }
-                    #norwegian {
-                        @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_small);
-                        float: right;
+                        &#english {
+                            @include sprite-replace-text-with-dimensions($icons-sprites, english_small);            
+                            float: left;
+                        }
+
+                        &#norsk {
+                            @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_small);
+                            float: right;
+                        }
                     }
                 }
             }

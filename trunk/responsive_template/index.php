@@ -124,8 +124,7 @@ require_once 'settings.php';
 
             <div id="extra">
                 <div id="language">
-                    <a id="english" href="#english">English</a>
-                    <a id="norwegian" href="#norwegian" class="active">Norwegian</a>
+                    <jdoc:include type="modules" name="language" />
                     <span><?= JText::_('Switch to') ?>: </span>
                 </div>
 
