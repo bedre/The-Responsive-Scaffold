@@ -38,8 +38,11 @@ require_once 'settings.php';
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?= $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
-    <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
+
+    <?php if ($settings['is_frontpage']): ?>
+        <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
+        <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
+    <?php endif; ?>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?= $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.2.js"></script>
@@ -140,7 +143,7 @@ require_once 'settings.php';
         </div>
     </header>
 
-    <? if ($settings['is_frontpage']): ?>
+    <?php if ($settings['is_frontpage']): ?>
         <div class="slider-wrapper">
             <div class="slider">
                 <jdoc:include type="modules" name="slideshow_frontpage" />
@@ -149,7 +152,7 @@ require_once 'settings.php';
 
         <jdoc:include type="message" />
         <jdoc:include type="component" />
-    <? else: ?>
+    <?php else: ?>
         <div id="subpage" role="main">
             <div class="wrap">
                 <nav>
@@ -164,8 +167,8 @@ require_once 'settings.php';
                 </div>
             </div>
         </div>
-    <? endif; ?>
-    <?php // MAIN CONTENTS END ?>
+    <?php endif; ?>
+    <?php /* MAIN CONTENTS END */ ?>
     
     <footer>
         <div class="wrap">
