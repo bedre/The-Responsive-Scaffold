@@ -28,7 +28,7 @@ if (file_exists($images->image_intro)) {
         
         <span class="imageholder">
             <? if (file_exists($images->image_intro)): ?>
-                <img src="<?= $images->image_intro ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
+                <img src="<?= $images->image_intro ?>?max_width=560px" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
             <? else: ?>
                 <img src="templates/responsive_template/images/skagen/product_image.png">
             <? endif; ?>

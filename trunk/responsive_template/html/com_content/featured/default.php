@@ -39,7 +39,7 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
                         
                         <? if (file_exists($images->image_intro)): ?>
                             <span class="imageholder">
-                                <img src="<?= $images->image_intro ?>" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
+                                <img src="<?= $images->image_intro ?>?max_width=560px" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
                                 <h3><?= !empty($urls->urlatext) ? $urls->urlatext : $item->title; ?></h3>
                             </span>
                         <? else: ?>
