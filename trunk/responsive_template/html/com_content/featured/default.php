@@ -11,8 +11,13 @@ defined('_JEXEC') or die;
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
+$document = JFactory::getDocument();
+$app      = JFactory::getApplication();
+$document->addScript('templates/'.$app->getTemplate().'/js/fit_images.js');
+
 ?>
-<section role="main" id="product_categories">
+
+<section role="main" id="product_categories" class="fit-images">
     <div class="wrap">
 
         <?php if (!empty($this->lead_items)) : ?>

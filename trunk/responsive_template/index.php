@@ -27,6 +27,8 @@ require_once 'settings.php';
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?= $settings['template_folder'] ?>/css/screen.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?= $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <jdoc:include type="head" />
     <script src="<?= $settings['template_folder'] ?>/js/lib/modernizr-2.5.3.min.js"></script>
     <script>
@@ -35,9 +37,6 @@ require_once 'settings.php';
             nope: '<?= $settings['template_folder'] ?>/js/lib/respond.min.js'
         });
     </script>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="<?= $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
     <?php if ($settings['is_frontpage']): ?>
         <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
