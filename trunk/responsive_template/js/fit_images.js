@@ -1,4 +1,4 @@
-$(window).load(function() {
+function fitImages() {
     var max_ratio = 0;
     var imageholders = $(".fit-images").find('.imageholder');
     var images = new Array();
@@ -31,4 +31,4 @@ $(window).load(function() {
             i.css('top', ((height-imgHeight)/2)+'px');
         }
     });
-});  
+}

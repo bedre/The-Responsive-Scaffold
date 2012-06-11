@@ -14,7 +14,6 @@ $params  = &$this->item->params;
 $images  = json_decode($this->item->images);
 $canEdit = $this->item->params->get('access-edit');
 JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');
-JHtml::_('behavior.tooltip');
 JHtml::core();
 
 $link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));
@@ -30,7 +29,7 @@ if (file_exists($images->image_intro)) {
             <? if (file_exists($images->image_intro)): ?>
                 <img src="<?= $images->image_intro ?>?max_width=560px" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= $images->image_intro_alt ?>">
             <? else: ?>
-                <img src="templates/responsive_template/images/skagen/product_image.png">
+                <img src="templates/responsive_template/images/skagen/product_image.png" data-width="1000" data-height="480">
             <? endif; ?>
 
             <?php if ($params->get('show_title')) : ?>

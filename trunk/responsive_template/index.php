@@ -38,10 +38,8 @@ require_once 'settings.php';
         });
     </script>
 
-    <?php if ($settings['is_frontpage']): ?>
-        <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
-        <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
-    <?php endif; ?>
+    <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
+    <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
 
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?= $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.2.js"></script>
@@ -93,6 +91,8 @@ require_once 'settings.php';
 
             }
 
+            fitImages();
+
         });
 
         // Adjust slider when window resizes
@@ -109,6 +109,8 @@ require_once 'settings.php';
                 body.removeClass('landscape');
                 unMaskSliderImages();
             }
+
+            fitImages();
         });
     </script>
 
