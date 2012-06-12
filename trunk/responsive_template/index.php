@@ -92,6 +92,7 @@ require_once 'settings.php';
             }
 
             fitImages();
+            fouc();
 
         });
 
@@ -112,6 +113,18 @@ require_once 'settings.php';
 
             fitImages();
         });
+
+
+        // Flash of unstyled content prevention
+        function fouc() {
+            var fouc_containers = new Array($('.fit-images'), $('.flex-control-nav'));
+
+            fouc_containers.each(function(element){
+                element.each(function(index, el){
+                    $(el).css({'height': 'auto', 'overflow': 'auto'}).fadeTo(250, 1);
+                });
+            });
+        }
     </script>
 
 </head>

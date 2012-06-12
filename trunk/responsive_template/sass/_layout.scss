@@ -1,4 +1,14 @@
 /* mixins */
+
+// Flash of Unstyled Content Killer
+@mixin fuck ($opacity: 0, $height: 10px) {
+    html.js & {
+        opacity:  $opacity;
+        height:   $height;
+        overflow: hidden;
+    }
+}
+
 @mixin product_grid {
     & a {
         display: block;
@@ -258,6 +268,7 @@ header {
 
     /* bullets underneath the slider */
     .flex-control-nav { 
+        @include fuck;
         @include horizontal-list(0);
         height: image-height(sprite-file($icons-sprites, navbullet_off)); 
         background-color: #eee;
@@ -288,6 +299,7 @@ header {
 
 #product_categories {
 
+    @include fuck;
     padding: 0 1.231em;
     margin-bottom: 1em;
     @extend .clearfix;
@@ -376,6 +388,9 @@ header {
         }
 
         section.blog {
+            &.fit-images {
+                @include fuck;
+            }
             article {
                 @include product_grid;
             }
