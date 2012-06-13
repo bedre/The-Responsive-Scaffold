@@ -19,6 +19,10 @@ if (substr($file_name, -2) == '_1') {
 } else {
     $slideshow = array($images->image_fulltext);
 }
+
+$imgsize = array();
+$max_img = 6;
+$count   = 0;
 ?>
 
 <div class="article-image-wrapper fit-images">
@@ -30,15 +34,25 @@ if (substr($file_name, -2) == '_1') {
         </div>
         <div class="article-slider">
             <ul class="slides">
-                <?php foreach ($slideshow as $slide) : ?>
-                    <?php $imgsize = getimagesize($slide); ?>
+                <?php foreach ($slideshow as $key => $slide) : ?>
+                    <?php $imgsize[$key] = getimagesize($slide); ?>
                     <li>
                         <div class="imageholder">
-                            <img src="<?= $slide ?>?max_width=1000px" data-width="<?= $imgsize[0] ?>" data-height="<?= $imgsize[1] ?>" alt="<?= htmlspecialchars($images->image_fulltext_alt); ?>">
+                            <img src="<?= $slide ?>?max_width=1000px" data-width="<?= $imgsize[$key][0] ?>" data-height="<?= $imgsize[$key][1] ?>" alt="<?= htmlspecialchars($images->image_fulltext_alt); ?>">
                         </div>
                     </li>
+                    <?php $count++; if ($count == $max_img) break; ?>
                 <?php endforeach; ?>
             </ul>
         </div>
+        <ul class="controls">
+            <?php foreach ($slideshow as $key => $slide) : ?>
+                <?php $count = 0; ?>
+                <li>
+                    <img src="<?= $slide ?>?max_width=160px" data-width="<?= $imgsize[$key][0] ?>" data-height="<?= $imgsize[$key][1] ?>" alt="<?= htmlspecialchars($images->image_fulltext_alt); ?>">
+                </li>
+                <?php $count++; if ($count == $max_img) break; ?>
+            <?php endforeach; ?>
+        </ul>
     <?php endif; ?>
 </div>

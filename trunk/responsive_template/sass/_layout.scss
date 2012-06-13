@@ -425,7 +425,7 @@ header {
                     z-index: 3;
                     top: 50%;
                     left: 50%;
-                    margin-top: -($btn-height/2);
+                    margin-top: -40px-($btn-height/2);
                     margin-left: -($btn-width/2);
 
                     span {
@@ -467,6 +467,33 @@ header {
                                 position: absolute;
                             }
                         }
+                    }
+                }
+            }
+
+            ul.controls {
+                margin: 1em 0 0 0;
+                padding: 0;
+                list-style: none;
+
+                li {
+                    width: 15%;
+                    float: left;
+                    margin-right: 2%;
+                    overflow: hidden;
+                    position: relative;
+                    opacity: .5;
+
+                    &:nth-child(6n) {
+                        margin-right: 0;
+                    }
+
+                    img {
+                        position: absolute;
+                    }
+
+                    &.active {
+                        opacity: 1;
                     }
                 }
             }
