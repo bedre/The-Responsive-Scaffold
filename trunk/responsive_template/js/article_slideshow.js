@@ -12,7 +12,7 @@ $(window).load(function() {
         start: function(slider) {
 
             // Add swipe instructions
-            if (/*Modernizr.touch && !$.cookie('skagen_swipeinfo_shown')*/true) {
+            if (Modernizr.touch && !$.cookie('skagen_swipeinfo_shown')) {
                 $('#swipe-instructions').show(200);
                 $('#swipe-instructions-button').on('click touchend', function(event){
                     event.preventDefault();
