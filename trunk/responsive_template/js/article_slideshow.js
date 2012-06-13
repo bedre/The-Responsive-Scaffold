@@ -20,31 +20,36 @@ $(window).load(function() {
                 });
             }
             $.cookie('skagen_swipeinfo_shown', true, 30);
-
-            // Resize thumbs
-            var controls = $('.article-image-wrapper').find('.controls'); 
-            var width = 0;
-
-            controls.find('li').each(function(i, item){
-                var li = $(item);
-                if (!width > 0) {
-                    width = li.css('width');
-                }
-                li.height(width);
-            });
-
-            var img_width = 0;
-            controls.find('img').each(function(i, img){
-                var i     = $(img);
-                img_width = Math.round(parseInt(width) * i.attr('data-width') / i.attr('data-height'));
-
-                i.css({
-                    'height': width,
-                    'width' : img_width+'px',
-                    'left'  : ((parseInt(width)-img_width)/2)+'px'
-                });
-                console.log((parseInt(width)-img_width)/2);
-            });
         }
     });
 });
+
+$(window).on('load resize', function(){
+    resizeSliderControls();
+});
+
+function resizeSliderControls() {
+    var controls = $('.article-image-wrapper').find('.controls'); 
+    var width = 0;
+
+    controls.find('li').each(function(i, item){
+        var li = $(item);
+        if (!width > 0) {
+            width = li.css('width');
+        }
+        li.height(width);
+    });
+
+    var img_width = 0;
+    controls.find('img').each(function(i, img){
+        var i     = $(img);
+        img_width = Math.round(parseInt(width) * i.attr('data-width') / i.attr('data-height'));
+
+        i.css({
+            'height': width,
+            'width' : img_width+'px',
+            'left'  : ((parseInt(width)-img_width)/2)+'px'
+        });
+        console.log((parseInt(width)-img_width)/2);
+    });
+}
