@@ -180,6 +180,22 @@ header {
                     @include product-grid-typography;
                 }
             }
+
+            .article-image-wrapper {
+                #swipe-instructions {
+                    a {
+                        @include link-colors(#fff, #fff, #fff, #fff, #fff);
+                        text-decoration: none;
+                        font-weight: bold;
+                        line-height: 1.25em;
+                        @include single-text-shadow(rgba(0,0,0,0.4), 1px, 1px, 3px);
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
     }
 }

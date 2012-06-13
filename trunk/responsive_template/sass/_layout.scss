@@ -402,6 +402,44 @@ header {
             zoom: 1;
             width: 100%;
 
+            #swipe-instructions {
+                display: none;
+                background-color: rgba(255,255,255,0.75);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 2;
+
+                #swipe-instructions-button {
+                    $btn-width:  200px;
+                    $btn-height: 70px;
+                    display: block;
+                    border: 3px solid darken($colour1, 10%);
+                    font-size: em(13,15);
+                    @include border-radius;
+                    padding: 1em 60px 1em 1em;
+                    @include sprite-img('skagen/icons/gesture_swipe_horz.png', 1, 1, $btn-width, $btn-height);
+                    background-position: 82% 100%;
+                    background-color: $colour1;
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -($btn-height/2);
+                    margin-left: -($btn-width/2);
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        line-height: 1em;
+                        padding: 2px 5px 4px 7px;
+                        background-color: darken($colour1, 10%);
+                        @include border-bottom-left-radius;
+                    }
+                }
+            }
+
             .article-slider {
                 background: #fff; 
                 position: relative; 

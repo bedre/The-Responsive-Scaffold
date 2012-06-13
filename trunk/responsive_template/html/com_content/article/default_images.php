@@ -3,6 +3,7 @@ defined('_JEXEC') or die;
 
 $document = JFactory::getDocument();
 $app      = JFactory::getApplication();
+$document->addScript('templates/'.$app->getTemplate().'/js/lib/jquery.cookie.js');
 $document->addScript('templates/'.$app->getTemplate().'/js/article_slideshow.js');
 $document->addScript('templates/'.$app->getTemplate().'/js/fit_images.js');
 
@@ -24,6 +25,9 @@ if (substr($file_name, -2) == '_1') {
     <?php if (count($slideshow) == 1): ?>
         <img src="<?= htmlspecialchars($images->image_fulltext); ?>?max_width=1000px" alt="<?= htmlspecialchars($images->image_fulltext_alt); ?>">
     <?php else: ?>
+        <div id="swipe-instructions">
+            <a href="#" id="swipe-instructions-button"><?= JText::_('Swipe to see more images') ?><span>x</span></a>
+        </div>
         <div class="article-slider">
             <ul class="slides">
                 <?php foreach ($slideshow as $slide) : ?>
