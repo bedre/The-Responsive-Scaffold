@@ -395,6 +395,44 @@ header {
                 @include product_grid;
             }
         }
+
+        .article-image-wrapper {
+            position: relative;
+            margin: 0 0 1em 0;
+            zoom: 1;
+            width: 100%;
+
+            .article-slider {
+                background: #fff; 
+                position: relative; 
+                zoom: 1;
+                width: 100%;
+
+                .slides {
+                    margin: 0; 
+                    padding: 0; 
+                    list-style: none;
+                    zoom: 1;
+
+                    & > li {
+                        margin-bottom: 0;
+                        display: none; 
+                        -webkit-backface-visibility: hidden; /* Hide the slides before the JS is loaded. Avoids image jumping */
+                        position: relative;
+
+                        .imageholder {
+                            position: relative;
+                            line-height: 0;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #sidebar {

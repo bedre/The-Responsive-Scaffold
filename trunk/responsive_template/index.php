@@ -29,7 +29,6 @@ require_once 'settings.php';
     <link rel="stylesheet" href="<?= $settings['template_folder'] ?>/css/screen.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?= $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-    <jdoc:include type="head" />
     <script src="<?= $settings['template_folder'] ?>/js/lib/modernizr-2.5.3.min.js"></script>
     <script>
         Modernizr.load({
@@ -44,6 +43,8 @@ require_once 'settings.php';
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script type="text/javascript" src="<?= $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.2.js"></script>
     <![endif]-->
+
+    <jdoc:include type="head" />
 
     <script type="text/javascript" charset="utf-8">
         $(window).load(function() {

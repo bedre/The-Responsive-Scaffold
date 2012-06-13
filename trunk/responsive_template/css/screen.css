@@ -1333,13 +1333,53 @@ html.js #subpage #contents section.blog.fit-images {
   float: none;
   display: inline;
 }
-/* line 400, ../sass/_layout.scss */
+/* line 399, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper {
+  position: relative;
+  margin: 0 0 1em 0;
+  zoom: 1;
+  width: 100%;
+}
+/* line 405, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper .article-slider {
+  background: #fff;
+  position: relative;
+  zoom: 1;
+  width: 100%;
+}
+/* line 411, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper .article-slider .slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  zoom: 1;
+}
+/* line 417, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper .article-slider .slides > li {
+  margin-bottom: 0;
+  display: none;
+  -webkit-backface-visibility: hidden;
+  /* Hide the slides before the JS is loaded. Avoids image jumping */
+  position: relative;
+}
+/* line 423, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder {
+  position: relative;
+  line-height: 0;
+  width: 100%;
+}
+/* line 427, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder img {
+  width: 100%;
+  position: absolute;
+}
+/* line 438, ../sass/_layout.scss */
 #subpage #sidebar {
   background-color: #f0f0f0;
   padding: 1em;
 }
 
-/* line 406, ../sass/_layout.scss */
+/* line 444, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -1348,11 +1388,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 414, ../sass/_layout.scss */
+/* line 452, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 418, ../sass/_layout.scss */
+/* line 456, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -1360,7 +1400,7 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 426, ../sass/_layout.scss */
+/* line 464, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
@@ -1368,18 +1408,18 @@ footer nav > ul > li {
   margin-bottom: 1em;
   display: none;
 }
-/* line 433, ../sass/_layout.scss */
+/* line 471, ../sass/_layout.scss */
 footer nav > ul > li.normal {
   display: block;
 }
-/* line 439, ../sass/_layout.scss */
+/* line 477, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
   margin-bottom: 0;
 }
-/* line 445, ../sass/_layout.scss */
+/* line 483, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1388,7 +1428,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 449, ../sass/_layout.scss */
+/* line 487, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1398,30 +1438,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 454, ../sass/_layout.scss */
+/* line 492, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 465, ../sass/_layout.scss */
+/* line 503, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 469, ../sass/_layout.scss */
+/* line 507, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 475, ../sass/_layout.scss */
+/* line 513, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 479, ../sass/_layout.scss */
+/* line 517, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 484, ../sass/_layout.scss */
+/* line 522, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1429,13 +1469,13 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 491, ../sass/_layout.scss */
+/* line 529, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 496, ../sass/_layout.scss */
+/* line 534, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1446,7 +1486,7 @@ footer #contact #company_contact #phone-icon {
   background-image: url('../images/skagen/icons-sbdf8440f5e.png');
   background-repeat: no-repeat;
 }
-/* line 500, ../sass/_layout.scss */
+/* line 538, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1457,7 +1497,7 @@ footer #contact #company_contact #facebook-icon {
   background-image: url('../images/skagen/icons-sbdf8440f5e.png');
   background-repeat: no-repeat;
 }
-/* line 505, ../sass/_layout.scss */
+/* line 543, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1470,18 +1510,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 514, ../sass/_layout.scss */
+/* line 552, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 521, ../sass/_layout.scss */
+/* line 559, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 526, ../sass/_layout.scss */
+/* line 564, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1489,7 +1529,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 533, ../sass/_layout.scss */
+/* line 571, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1521,7 +1561,7 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-sbdf8440f5e.png');
   background-repeat: no-repeat;
 }
-/* line 543, ../sass/_layout.scss */
+/* line 581, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
@@ -1535,7 +1575,7 @@ footer #contact > [itemprop="address"] #map {
   background-image: url('../images/skagen/icons-sbdf8440f5e.png');
   background-repeat: no-repeat;
 }
-/* line 553, ../sass/_layout.scss */
+/* line 591, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;

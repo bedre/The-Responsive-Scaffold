@@ -1,7 +1,7 @@
 function fitImages() {
-    var max_ratio = 0;
+    var max_ratio    = 0;
     var imageholders = $(".fit-images").find('.imageholder');
-    var images = new Array();
+    var images       = new Array();
     
     imageholders.each(function(){
         $(this).find('img').each(function(){
@@ -12,15 +12,21 @@ function fitImages() {
     });
     
     var width = 0;
+
     imageholders.each(function(){
         var holder = $(this);
         if (width == 0) {
-            width  = holder.width();
+            var slidewrap = holder.closest('.article-image-wrapper');
+            if (slidewrap.length) {
+                width = slidewrap.width();
+            } else {
+                width  = holder.width();
+            }
             height = width/max_ratio; 
         }
         
         holder.css({
-            'height'  : height+'px',
+            'height'  : Math.round(height)+'px',
             'overflow': 'hidden'
         });
     });
@@ -28,7 +34,7 @@ function fitImages() {
     images.each(function(i){
         var imgHeight = i.attr('data-height') * width / i.attr('data-width');
         if (imgHeight > height) {
-            i.css('top', ((height-imgHeight)/2)+'px');
+            i.css('top', Math.round((height-imgHeight)/2)+'px');
         }
     });
 }

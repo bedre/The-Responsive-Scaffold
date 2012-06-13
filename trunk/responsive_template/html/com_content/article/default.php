@@ -43,14 +43,8 @@ $user       = JFactory::getUser();
     <?= $this->item->event->beforeDisplayContent; ?>
 
     <?php if (isset($images->image_fulltext) and !empty($images->image_fulltext)) : ?>
-    <?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
-    <div class="img-fulltext-<?= htmlspecialchars($imgfloat); ?>">
-        <img
-            <?php if ($images->image_fulltext_caption):
-                echo 'class="caption"'.' title="' .htmlspecialchars($images->image_fulltext_caption) .'"';
-            endif; ?>
-            src="<?= htmlspecialchars($images->image_fulltext); ?>" alt="<?= htmlspecialchars($images->image_fulltext_alt); ?>"/>
-    </div>
+        <?php $this->images = $images; ?>
+        <?= $this->loadTemplate('images'); ?>
     <?php endif; ?>
 
     <?= $this->item->text; ?>
