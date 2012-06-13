@@ -91,7 +91,10 @@ require_once 'settings.php';
 
             }
 
-            fitImages();
+            if (typeof fitImages == 'function') {
+                fitImages();
+            }
+
             fouc();
 
         });
@@ -111,7 +114,9 @@ require_once 'settings.php';
                 unMaskSliderImages();
             }
 
-            fitImages();
+            if (typeof fitImages == 'function') {
+                fitImages();
+            }
         });
 
 
