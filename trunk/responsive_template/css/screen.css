@@ -1433,26 +1433,36 @@ html.js #subpage #contents section.blog.fit-images {
   overflow: hidden;
   position: relative;
   opacity: .5;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-/* line 487, ../sass/_layout.scss */
-#subpage #contents .article-image-wrapper ul.controls li:nth-child(6n) {
+/* line 490, ../sass/_layout.scss */
+#subpage #contents .article-image-wrapper ul.controls li:last-child {
   margin-right: 0;
 }
-/* line 491, ../sass/_layout.scss */
+/* line 494, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li img {
   position: absolute;
 }
-/* line 495, ../sass/_layout.scss */
+/* line 498, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li.active {
   opacity: 1;
 }
-/* line 503, ../sass/_layout.scss */
+/* line 506, ../sass/_layout.scss */
 #subpage #sidebar {
   background-color: #f0f0f0;
   padding: 1em;
 }
 
-/* line 509, ../sass/_layout.scss */
+/* line 512, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -1461,11 +1471,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 517, ../sass/_layout.scss */
+/* line 520, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 521, ../sass/_layout.scss */
+/* line 524, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -1473,7 +1483,7 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 529, ../sass/_layout.scss */
+/* line 532, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
@@ -1481,18 +1491,18 @@ footer nav > ul > li {
   margin-bottom: 1em;
   display: none;
 }
-/* line 536, ../sass/_layout.scss */
+/* line 539, ../sass/_layout.scss */
 footer nav > ul > li.normal {
   display: block;
 }
-/* line 542, ../sass/_layout.scss */
+/* line 545, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
   margin-bottom: 0;
 }
-/* line 548, ../sass/_layout.scss */
+/* line 551, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1501,7 +1511,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 552, ../sass/_layout.scss */
+/* line 555, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1511,30 +1521,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 557, ../sass/_layout.scss */
+/* line 560, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 568, ../sass/_layout.scss */
+/* line 571, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 572, ../sass/_layout.scss */
+/* line 575, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 578, ../sass/_layout.scss */
+/* line 581, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 582, ../sass/_layout.scss */
+/* line 585, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 587, ../sass/_layout.scss */
+/* line 590, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1542,13 +1552,13 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 594, ../sass/_layout.scss */
+/* line 597, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 599, ../sass/_layout.scss */
+/* line 602, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1559,7 +1569,7 @@ footer #contact #company_contact #phone-icon {
   background-image: url('../images/skagen/icons-s3d78a3ad25.png');
   background-repeat: no-repeat;
 }
-/* line 603, ../sass/_layout.scss */
+/* line 606, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1570,7 +1580,7 @@ footer #contact #company_contact #facebook-icon {
   background-image: url('../images/skagen/icons-s3d78a3ad25.png');
   background-repeat: no-repeat;
 }
-/* line 608, ../sass/_layout.scss */
+/* line 611, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1583,18 +1593,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 617, ../sass/_layout.scss */
+/* line 620, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 624, ../sass/_layout.scss */
+/* line 627, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 629, ../sass/_layout.scss */
+/* line 632, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1602,7 +1612,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 636, ../sass/_layout.scss */
+/* line 639, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1634,7 +1644,7 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-s3d78a3ad25.png');
   background-repeat: no-repeat;
 }
-/* line 646, ../sass/_layout.scss */
+/* line 649, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
@@ -1648,7 +1658,7 @@ footer #contact > [itemprop="address"] #map {
   background-image: url('../images/skagen/icons-s3d78a3ad25.png');
   background-repeat: no-repeat;
 }
-/* line 656, ../sass/_layout.scss */
+/* line 659, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;

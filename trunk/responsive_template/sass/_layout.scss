@@ -484,7 +484,10 @@ header {
                     position: relative;
                     opacity: .5;
 
-                    &:nth-child(6n) {
+                    @include transition-property(opacity);
+                    @include transition-duration(.3s);
+
+                    &:last-child {
                         margin-right: 0;
                     }
 
