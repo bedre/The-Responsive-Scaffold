@@ -182,9 +182,9 @@ require_once 'settings.php';
                     <jdoc:include type="message" />
                     <jdoc:include type="component" />
                 </div>
-                <div id="sidebar">
-                    skjema kommer her
-                </div>
+                <aside>
+                    <jdoc:include type="modules" name="aside" style="xhtml" />
+                </aside>
             </div>
         </div>
     <?php endif; ?>
