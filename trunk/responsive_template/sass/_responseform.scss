@@ -1,0 +1,189 @@
+.responseform {
+    p.intro {
+        font-size: em(14,16);
+    }
+
+    hr {
+        height: 1px;
+        overflow: hidden;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 1.5em;
+    }
+
+    form {
+
+        p.help-block {
+            margin-top: -.75em;
+        }
+
+        .size,
+        .duration {
+            width: 35%;
+            float: left;
+            margin-right: 10%;
+        }
+
+        label {
+            font-size: em(14,16);
+            font-weight: bold;
+            &.checkbox {
+                font-weight: normal;
+            }
+        }
+
+        .form-actions {
+            text-align: center;
+
+            input[type="submit"] {
+                font-size: em(25,16);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $break-2) {
+    .responseform {
+        form {
+            label {
+                font-size: em(13,16);
+            }
+            .name, .company_name, .e-mail, .phone, .date_picker {
+                width: 47%;
+                float: left;
+                clear: left;
+            }
+
+            .company_name, .phone {
+                float: right;
+                clear: right;
+            }
+
+            .date_picker {
+                width: 47%;
+                margin-right: 6%;
+            }
+
+            .size, .duration {
+                width: 20.4999%;
+                margin-right: 6%;
+                float: left;
+            }
+
+            .duration {
+                clear: right;
+                float: right;
+                margin-right: 0;
+            }
+
+            .food {
+                width: 47%;
+                float: right;
+                clear: right;
+            }
+
+            .comments {
+                width: 47%;
+                float: left;
+                clear: left;
+                textarea {
+                    min-height: 50px;
+                }
+            }
+
+            .other {
+                clear: both;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $break-4) {
+    .responseform {
+        form {
+            .name, .company_name, .e-mail, .phone, .date_picker, .size, .duration, .food, .comments {
+                width: 30.666%;
+                float: left;
+                clear: none;
+                margin-right: 4%;
+            }
+
+            .food {
+                margin-right: 0;
+            }
+
+            .e-mail, .duration, .comments {
+                float: right;
+                margin-right: 0;
+                clear: right;
+            }
+
+            .size, .duration {
+                width: 13.333%;
+            }
+
+            .comments {
+                width: 65.334%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $break-5) {
+    .responseform {
+        form {
+            .name, .company_name, .e-mail, .phone, .date_picker, .size, .duration, .food, .comments {
+                float: left;
+                clear: both;
+                margin-right: 0;
+                width: 100%;
+            }
+
+            .size,
+            .duration {
+                width: 35%;
+                margin-right: 10%;
+                clear: left;
+            }
+
+            .duration {
+                clear: right;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $break-7) {
+    .responseform {
+        form {
+            .size,
+            .duration,
+            .food {
+                width: 28%;
+                margin-right: 7.999%;
+            }
+
+            .food {
+                float: right;
+                clear: right;
+                margin-right: 0;
+                label {
+                    font-size: em(13,18);
+                    width: 100%;
+                    clear: both;
+                }
+                .checkbox.inline + .checkbox.inline {
+                    margin-left: 0;
+                }
+            }
+
+            .comments {
+                textarea {
+                    min-height: 80px;
+                }
+            }
+        }
+    }
+}

@@ -187,3 +187,24 @@
         }
     }
 }
+
+@mixin font-shorthand($weight: normal, $size: $base-font-size, $lineHeight: $base-line-height, $family: false) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    @if $family == serif {
+        font-family: $serifFontFamily; 
+    } @else if $family == sans-serif {
+        font-family: $sansSerifFontFamily;
+    } @else if $family == monospace {
+        font-family: $monospaceFontFamily;
+    }
+}
+
+@mixin tab-focus() {
+    // Default
+    outline: thin dotted;
+    // Webkit
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}

@@ -11,10 +11,13 @@ $template-root-folder:  '/templates/responsive_template';
   more configuration options: http://compass-style.org/reference/compass/typography/vertical_rhythm/ 
 ***********************/
 
-$base-font-size:    16px;
-$base-line-height:  24px;
-$body-fonts:        Helvetica, Arial, sans-serif;
-$headline-fonts:    'PT Sans', Helvetica, Arial, sans-serif;
+$base-font-size         : 16px;
+$base-line-height       : 24px;
+$body-fonts             : Helvetica, Arial, sans-serif;
+$headline-fonts         : 'PT Sans', Helvetica, Arial, sans-serif;
+$serifFontFamily        : $headline-fonts;
+$sansSerifFontFamily    : $body-fonts;
+$monospaceFontFamily    : Menlo, Monaco, "Courier New", monospace;
 
 
 /*********************** 
@@ -35,3 +38,46 @@ $separator-colour:  #000;
 ***********************/
 
 $default-border-radius: 5px;
+
+// COLORS ----------------------------
+
+// Grays (for forms, from Bootstrap)
+$black                      : #000 !default;
+$grayDarker                 : lighten($black, 10%) !default;
+$grayDark                   : lighten($black, 25%) !default;
+$gray                       : lighten($black, 50%) !default;
+$grayLight                  : lighten($black, 75%) !default;
+$grayLighter                : lighten($black, 90%) !default;
+$white                      : #fff !default;
+
+$border-color               : #ccc;
+$blockquote-border-color    : $border-color;
+
+// Form states and alerts (for forms, from Bootstrap)
+$warningText                : #c09853 !default;
+$warningBackground          : #fcf8e3 !default;
+$warningBorder              : darken(adjust-hue($warningBackground, -10), 3%) !default;
+
+$errorText                  : #b94a48 !default;
+$errorBackground            : #f2dede !default;
+$errorBorder                : darken(adjust-hue($errorBackground, -10), 3%) !default;
+
+$successText                : #468847 !default;
+$successBackground          : #dff0d8 !default;
+$successBorder              : darken(adjust-hue($successBackground, -10), 5%) !default;
+
+$infoText                   : #3a87ad !default;
+$infoBackground             : #d9edf7 !default;
+$infoBorder                 : darken(adjust-hue($infoBackground, -10), 7%) !default;
+
+$placeholderText            : $grayLight;
+
+// Accent colors (for forms, from Bootstrap)
+$blue                       : #049cdb !default;
+$blueDark                   : #0064cd !default;
+$green                      : #46a546 !default;
+$red                        : #9d261d !default;
+$yellow                     : #ffc40d !default;
+$orange                     : #f89406 !default;
+$pink                       : #c3325f !default;
+$purple                     : #7a43b6 !default;
