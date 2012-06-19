@@ -541,9 +541,9 @@ table {
 /*********************** 
   ROUNDED CORNERS
 ***********************/
-/* line 228, skagen/icons/*.png */
+/* line 236, skagen/icons/*.png */
 .icons-sprite {
-  background: url('../images/skagen/icons-s3d78a3ad25.png') no-repeat;
+  background: url('../images/skagen/icons-s6c2801fe0f.png') no-repeat;
 }
 
 /* line 1, ../sass/_mixins.scss */
@@ -579,10 +579,10 @@ header #logo {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -69px -22px;
+  background-position: -41px -16px;
   height: 14px;
   width: 14px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 37.5em) {
@@ -598,10 +598,10 @@ header #logo {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: -69px -22px;
+    background-position: -41px -16px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
 }
@@ -700,10 +700,10 @@ header #extra #language #english {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -83px -22px;
+  background-position: -45px -75px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 151, ../sass/_layout.scss */
@@ -711,10 +711,10 @@ header #extra #language #norsk {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -86px 0;
+  background-position: -89px -120px;
   height: 22px;
   width: 30px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 157, ../sass/_layout.scss */
@@ -865,10 +865,10 @@ header nav ul li a {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -14px -22px;
+  background-position: -28px -16px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 253, ../sass/_layout.scss */
@@ -942,19 +942,19 @@ html.js .slider-wrapper .flex-control-nav {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -14px -44px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-position: -46px -30px;
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
   cursor: pointer;
   display: inline-block;
 }
 /* line 287, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
-  background-position: -59px -44px;
+  background-position: 0 -120px;
 }
 /* line 291, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
-  background-position: -60px -89px;
+  background-position: 0 -75px;
   cursor: default;
 }
 
@@ -1567,10 +1567,10 @@ footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -16px 0;
+  background-position: -48px 0;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 610, ../sass/_layout.scss */
@@ -1578,10 +1578,10 @@ footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -48px 0;
+  background-position: -16px 0;
   height: 16px;
   width: 16px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 615, ../sass/_layout.scss */
@@ -1642,10 +1642,10 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -14px -22px;
+  background-position: -28px -16px;
   height: 13px;
   width: 13px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 653, ../sass/_layout.scss */
@@ -1656,10 +1656,10 @@ footer #contact > [itemprop="address"] #map {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: 0 -183px;
+  background-position: 0 -169px;
   height: 148px;
   width: 120px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 663, ../sass/_layout.scss */
@@ -1734,7 +1734,7 @@ footer #copyright {
     background-position: 0 0;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
   /* line 28, ../sass/_layout_3.scss */
@@ -1742,10 +1742,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: -32px 0;
+    background-position: -75px 0;
     height: 16px;
     width: 16px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
   /* line 33, ../sass/_layout_3.scss */
@@ -1771,10 +1771,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -22px;
+    background-position: 0 -16px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
     float: left;
   }
@@ -1783,10 +1783,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: 0 -44px;
+    background-position: -14px -16px;
     height: 11px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
     float: right;
   }
@@ -2178,10 +2178,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: -41px -22px;
+    background-position: -55px -16px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
   /* line 106, ../sass/_layout_5.scss */
@@ -2290,10 +2290,10 @@ footer #copyright {
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
-    background-position: -41px -22px;
+    background-position: -55px -16px;
     height: 14px;
     width: 14px;
-    background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
   /* line 38, ../sass/_layout_6.scss */
@@ -4031,157 +4031,171 @@ select:focus:required:invalid:focus {
   margin-top: -0.75em;
 }
 /* line 21, ../sass/_responseform.scss */
+.responseform form .date_picker input {
+  background: url('../images/skagen/icons/calendar.png?1340107587') no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: 0% 0%;
+  background-position: 99% 50%;
+  background-color: #fff;
+}
+/* line 29, ../sass/_responseform.scss */
 .responseform form .size,
 .responseform form .duration {
   width: 35%;
   float: left;
   margin-right: 10%;
 }
-/* line 27, ../sass/_responseform.scss */
+/* line 35, ../sass/_responseform.scss */
 .responseform form label {
   font-size: 0.875em;
   font-weight: bold;
 }
-/* line 30, ../sass/_responseform.scss */
+/* line 38, ../sass/_responseform.scss */
 .responseform form label.checkbox {
   font-weight: normal;
 }
-/* line 35, ../sass/_responseform.scss */
+/* line 43, ../sass/_responseform.scss */
 .responseform form .form-actions {
   text-align: center;
 }
-/* line 38, ../sass/_responseform.scss */
+/* line 46, ../sass/_responseform.scss */
 .responseform form .form-actions input[type="submit"] {
   font-size: 1.563em;
 }
+/* line 51, ../sass/_responseform.scss */
+.responseform form input[type="checkbox"] {
+  margin-top: 6px;
+}
 
 @media screen and (min-width: 27.5em) {
-  /* line 49, ../sass/_responseform.scss */
+  /* line 61, ../sass/_responseform.scss */
   .responseform form label {
     font-size: 0.813em;
   }
-  /* line 52, ../sass/_responseform.scss */
+  /* line 64, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker {
     width: 47%;
     float: left;
     clear: left;
   }
-  /* line 58, ../sass/_responseform.scss */
+  /* line 70, ../sass/_responseform.scss */
   .responseform form .company_name, .responseform form .phone {
     float: right;
     clear: right;
   }
-  /* line 63, ../sass/_responseform.scss */
+  /* line 75, ../sass/_responseform.scss */
   .responseform form .date_picker {
     width: 47%;
     margin-right: 6%;
   }
-  /* line 68, ../sass/_responseform.scss */
+  /* line 80, ../sass/_responseform.scss */
   .responseform form .size, .responseform form .duration {
     width: 20.4999%;
     margin-right: 6%;
     float: left;
   }
-  /* line 74, ../sass/_responseform.scss */
+  /* line 86, ../sass/_responseform.scss */
   .responseform form .duration {
     clear: right;
     float: right;
     margin-right: 0;
   }
-  /* line 80, ../sass/_responseform.scss */
+  /* line 92, ../sass/_responseform.scss */
   .responseform form .food {
     width: 47%;
     float: right;
     clear: right;
   }
-  /* line 86, ../sass/_responseform.scss */
+  /* line 98, ../sass/_responseform.scss */
   .responseform form .comments {
     width: 47%;
     float: left;
     clear: left;
   }
-  /* line 90, ../sass/_responseform.scss */
+  /* line 102, ../sass/_responseform.scss */
   .responseform form .comments textarea {
     min-height: 50px;
   }
-  /* line 95, ../sass/_responseform.scss */
+  /* line 107, ../sass/_responseform.scss */
   .responseform form .other {
     clear: both;
     width: 100%;
   }
 }
 @media screen and (min-width: 45em) {
-  /* line 106, ../sass/_responseform.scss */
+  /* line 118, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     width: 30.666%;
     float: left;
     clear: none;
     margin-right: 4%;
   }
-  /* line 113, ../sass/_responseform.scss */
+  /* line 125, ../sass/_responseform.scss */
   .responseform form .food {
     margin-right: 0;
   }
-  /* line 117, ../sass/_responseform.scss */
+  /* line 129, ../sass/_responseform.scss */
   .responseform form .e-mail, .responseform form .duration, .responseform form .comments {
     float: right;
     margin-right: 0;
     clear: right;
   }
-  /* line 123, ../sass/_responseform.scss */
+  /* line 135, ../sass/_responseform.scss */
   .responseform form .size, .responseform form .duration {
     width: 13.333%;
   }
-  /* line 127, ../sass/_responseform.scss */
+  /* line 139, ../sass/_responseform.scss */
   .responseform form .comments {
     width: 65.334%;
   }
 }
 @media screen and (min-width: 64em) {
-  /* line 137, ../sass/_responseform.scss */
+  /* line 149, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     float: left;
     clear: both;
     margin-right: 0;
     width: 100%;
   }
-  /* line 145, ../sass/_responseform.scss */
+  /* line 157, ../sass/_responseform.scss */
   .responseform form .size,
   .responseform form .duration {
     width: 35%;
     margin-right: 10%;
     clear: left;
   }
-  /* line 151, ../sass/_responseform.scss */
+  /* line 163, ../sass/_responseform.scss */
   .responseform form .duration {
     clear: right;
   }
 }
 @media screen and (min-width: 93.75em) {
-  /* line 163, ../sass/_responseform.scss */
+  /* line 175, ../sass/_responseform.scss */
   .responseform form .size,
   .responseform form .duration,
   .responseform form .food {
     width: 28%;
     margin-right: 7.999%;
   }
-  /* line 168, ../sass/_responseform.scss */
+  /* line 180, ../sass/_responseform.scss */
   .responseform form .food {
     float: right;
     clear: right;
     margin-right: 0;
   }
-  /* line 172, ../sass/_responseform.scss */
+  /* line 184, ../sass/_responseform.scss */
   .responseform form .food label {
     font-size: 0.722em;
     width: 100%;
     clear: both;
   }
-  /* line 177, ../sass/_responseform.scss */
+  /* line 189, ../sass/_responseform.scss */
   .responseform form .food .checkbox.inline + .checkbox.inline {
     margin-left: 0;
   }
-  /* line 183, ../sass/_responseform.scss */
+  /* line 195, ../sass/_responseform.scss */
   .responseform form .comments textarea {
     min-height: 80px;
   }
@@ -4297,17 +4311,17 @@ a.button:active {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
-  background-position: -44px -134px;
-  background-image: url('../images/skagen/icons-s3d78a3ad25.png');
+  background-position: -75px -75px;
+  background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
 /* line 12, ../sass/_no-touch.scss */
 .no-touch .slider-wrapper .flex-control-nav li a:hover {
-  background-position: -37px -89px;
+  background-position: -23px -30px;
 }
 /* line 16, ../sass/_no-touch.scss */
 .no-touch .slider-wrapper .flex-control-nav li a.active {
-  background-position: -14px -89px;
+  background-position: 0 -30px;
   cursor: default;
 }
 /* line 28, ../sass/_no-touch.scss */
