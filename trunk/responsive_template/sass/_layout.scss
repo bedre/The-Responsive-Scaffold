@@ -324,7 +324,7 @@ header {
         padding: 1em 1em 0 1em;
         width: 100%;
 
-        .button {
+        .menubutton {
             @extend .clearfix;
             @include border-radius;
             display: block;
@@ -491,12 +491,16 @@ header {
                         margin-right: 0;
                     }
 
-                    img {
-                        position: absolute;
-                    }
-
                     &.active {
                         opacity: 1;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    img {
+                        position: absolute;
                     }
                 }
             }

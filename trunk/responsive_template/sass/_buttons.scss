@@ -1,0 +1,46 @@
+@import "sassy-buttons";
+
+//   Sassy Button defaults
+//   These are the base defaults for the buttons, if you are going to use similar buttons on an entire site,
+//   overriding these can save you some time by calling the sassy button mixin with less arguments.
+
+$sb-base-color: rgba(#999, 1);
+$sb-second-color: false;
+$sb-border-radius: 5px;
+$sb-padding: 0.5em 1em;
+$sb-font-size: $base-font-size;
+$sb-text-color: #fff;
+$sb-text-style: "inset";
+$sb-gradient-style: "glass";
+$sb-pseudo-states: true;
+$sb-ie-support: false;
+
+//  Mixin that gets included when calling the sassy-button-structure if you need any
+//  styles applied to all your sassy buttons, add it here.
+
+@mixin sassy-button-default-structure {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.button { 
+    text-align: center;
+    @include sassy-button-structure(); 
+    @include sassy-button-gradient("glass", #aaa);
+
+    &.call-to-action {
+        @include sassy-button-gradient("glass", $colour3);
+    }
+}
+
+a.button {
+    @include link-colors(#fff, #fff, #fff, #fff, #fff);
+}
+
+//  *    Mixin reference
+//  *   -----------------------------------------
+//  *   @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states, ie-support);
+//  *   @include sassy-button-structure(-border-radius, font-size, padding);
+//  *   @include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states, ie-support);

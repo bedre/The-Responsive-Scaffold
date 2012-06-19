@@ -1,5 +1,6 @@
 # Require any additional compass plugins here.
 require "rgbapng"
+require "sassy-buttons"
 
 http_path       = "/"
 css_dir         = "css"
