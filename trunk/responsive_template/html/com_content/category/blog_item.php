@@ -22,7 +22,7 @@ if (file_exists($images->image_intro)) {
     $imgsize = getimagesize($images->image_intro); 
 }?>
 
-<article class="leading <?php echo $this->item->state == 0 ? ' system-unpublished' : null; ?>">
+
     <a href="<?= $link ?>">
         
         <span class="imageholder">
@@ -48,4 +48,3 @@ if (file_exists($images->image_intro)) {
         <?php echo $this->item->event->afterDisplayContent; ?>
 
     </a>
-</article>

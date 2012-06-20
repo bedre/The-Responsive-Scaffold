@@ -48,11 +48,15 @@ $document->addScript('templates/'.$app->getTemplate().'/js/fit_images.js');
 <?php endif; ?>
 
 <?php if (!empty($this->lead_items)) : ?>
+    <?php $count = 1; ?>
     <?php foreach ($this->lead_items as &$item) : ?>
+        <article class="leading <?= $item->state == 0 ? ' system-unpublished' : null; ?><?= $count % 2 == 0 ? ' even' : ' odd' ?>">
         <?php
             $this->item = &$item;
             echo $this->loadTemplate('item');
+            $count++;
         ?>
+        </article>
     <?php endforeach; ?>
 <?php endif; ?>
 <?php
@@ -60,12 +64,15 @@ $document->addScript('templates/'.$app->getTemplate().'/js/fit_images.js');
     $counter=0;
 ?>
 <?php if (!empty($this->intro_items)) : ?>
-
+    <?php if (!$count) $count = 1; ?>
     <?php foreach ($this->intro_items as $key => &$item) : ?>
+        <article class="leading <?= $item->state == 0 ? ' system-unpublished' : null; ?><?= $count % 2 == 0 ? ' even' : ' odd' ?>">
         <?php
             $this->item = &$item;
             echo $this->loadTemplate('item');
+            $count++;
         ?>
+        </article>
     <?php $counter++; ?>
 
     <?php endforeach; ?>

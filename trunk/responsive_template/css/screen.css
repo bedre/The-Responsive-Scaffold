@@ -1992,7 +1992,7 @@ footer #copyright {
     float: left;
   }
   /* line 228, ../sass/_layout_3.scss */
-  #subpage .wrap #contents section.blog article:nth-child(even) {
+  #subpage .wrap #contents section.blog article.even {
     margin-right: 0;
     clear: right;
   }

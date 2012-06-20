@@ -225,7 +225,7 @@
                         margin-bottom: 5.99%;
                         clear: left;
                         float: left;
-                        &:nth-child(even) {
+                        &.even {
                             margin-right: 0;
                             clear: right;
                         }
