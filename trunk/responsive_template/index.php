@@ -85,7 +85,7 @@ require_once 'settings.php';
                 var level_2 = submenu.find('li.current').children('a').html();
                 
                 var button = $('<div id="menutoggle"><div class="menubutton"><div class="arrow"><span class="text"><span class="level_1">'+level_1+'</span><span class="level_2">'+level_2+'</span></span></div></div></div>');
-                button.children('.button').on(Modernizr.touch ? 'touchend' : 'click', function(){
+                button.children('.menubutton').on(Modernizr.touch ? 'touchend' : 'click', function(){
                     this.toggleClass('active'),
                     subnav.slideToggle(200)
                 });
