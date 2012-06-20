@@ -894,12 +894,12 @@ header nav ul li a {
   *zoom: 1;
   height: 45px;
   background-color: #eee;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #dfdfdf));
-  background-image: -webkit-linear-gradient(#fcfcfc, #dfdfdf);
-  background-image: -moz-linear-gradient(#fcfcfc, #dfdfdf);
-  background-image: -o-linear-gradient(#fcfcfc, #dfdfdf);
-  background-image: -ms-linear-gradient(#fcfcfc, #dfdfdf);
-  background-image: linear-gradient(#fcfcfc, #dfdfdf);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #dfdfdf));
+  background: -webkit-linear-gradient(#fcfcfc, #dfdfdf);
+  background: -moz-linear-gradient(#fcfcfc, #dfdfdf);
+  background: -o-linear-gradient(#fcfcfc, #dfdfdf);
+  background: -ms-linear-gradient(#fcfcfc, #dfdfdf);
+  background: linear-gradient(#fcfcfc, #dfdfdf);
   text-align: center;
 }
 /* line 5, ../sass/_layout.scss */
@@ -931,11 +931,15 @@ html.js .slider-wrapper .flex-control-nav {
 .slider-wrapper .flex-control-nav li.last {
   padding-right: 0;
 }
-/* line 278, ../sass/_layout.scss */
+/* line 276, ../sass/_layout.scss */
+html.lt-ie9 .slider-wrapper .flex-control-nav {
+  background: filter-gradient(#fcfcfc, #dfdfdf);
+}
+/* line 281, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li {
   float: none;
 }
-/* line 280, ../sass/_layout.scss */
+/* line 283, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a {
   width: 45px;
   height: 45px;
@@ -948,17 +952,17 @@ html.js .slider-wrapper .flex-control-nav {
   cursor: pointer;
   display: inline-block;
 }
-/* line 287, ../sass/_layout.scss */
+/* line 290, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
   background-position: 0 -120px;
 }
-/* line 291, ../sass/_layout.scss */
+/* line 294, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
   background-position: 0 -75px;
   cursor: default;
 }
 
-/* line 300, ../sass/_layout.scss */
+/* line 303, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
@@ -969,7 +973,7 @@ html.js #product_categories {
   height: 10px;
   overflow: hidden;
 }
-/* line 307, ../sass/_layout.scss */
+/* line 310, ../sass/_layout.scss */
 #product_categories article {
   position: relative;
   float: left;
@@ -1046,13 +1050,13 @@ html.js #product_categories {
   display: inline;
 }
 
-/* line 321, ../sass/_layout.scss */
+/* line 324, ../sass/_layout.scss */
 #subpage #menutoggle {
   clear: both;
   padding: 1em 1em 0 1em;
   width: 100%;
 }
-/* line 327, ../sass/_layout.scss */
+/* line 330, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1069,7 +1073,7 @@ html.js #product_categories {
   background: -ms-linear-gradient(#f7f7f7, #e6e6e6);
   background: linear-gradient(#f7f7f7, #e6e6e6);
 }
-/* line 335, ../sass/_layout.scss */
+/* line 338, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow {
   width: 100%;
   background: url('../images/skagen/icons/button_arrow_down_blue.png?1338465263') no-repeat;
@@ -1079,7 +1083,7 @@ html.js #product_categories {
   background-position: 0% 0%;
   background-position: 93.5% center;
 }
-/* line 341, ../sass/_layout.scss */
+/* line 344, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow span.text {
   float: left;
   width: 85%;
@@ -1098,12 +1102,12 @@ html.js #product_categories {
   background: -ms-linear-gradient(#ffffff, #eeeeee);
   background: linear-gradient(#ffffff, #eeeeee);
 }
-/* line 351, ../sass/_layout.scss */
+/* line 354, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow span.text span.level_1, #subpage #menutoggle .menubutton .arrow span.text span.level_2 {
   width: 80%;
   float: left;
 }
-/* line 360, ../sass/_layout.scss */
+/* line 363, ../sass/_layout.scss */
 #subpage #menutoggle > .active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #999999));
   background: -webkit-linear-gradient(#666666, #999999);
@@ -1113,7 +1117,7 @@ html.js #product_categories {
   background: linear-gradient(#666666, #999999);
   border: 1px solid #999;
 }
-/* line 364, ../sass/_layout.scss */
+/* line 367, ../sass/_layout.scss */
 #subpage #menutoggle > .active .arrow {
   background: url('../images/skagen/icons/button_arrow_up_white.png?1338465307') no-repeat;
   width: 100%;
@@ -1122,15 +1126,15 @@ html.js #product_categories {
   background-position: 0% 0%;
   background-position: 93.5% center;
 }
-/* line 371, ../sass/_layout.scss */
+/* line 374, ../sass/_layout.scss */
 #subpage nav {
   padding: 1.143em;
 }
-/* line 372, ../sass/_layout.scss */
+/* line 375, ../sass/_layout.scss */
 html.js #subpage nav {
   display: none;
 }
-/* line 378, ../sass/_layout.scss */
+/* line 381, ../sass/_layout.scss */
 #subpage nav > ul {
   width: 100%;
   *zoom: 1;
@@ -1250,11 +1254,11 @@ html.js #subpage nav {
 #subpage nav > ul > li.active ul li a:hover {
   text-indent: .5em;
 }
-/* line 383, ../sass/_layout.scss */
+/* line 386, ../sass/_layout.scss */
 #subpage #contents {
   padding: 1em;
 }
-/* line 386, ../sass/_layout.scss */
+/* line 389, ../sass/_layout.scss */
 html.js #subpage #contents h1 {
   display: none;
 }
@@ -1333,14 +1337,14 @@ html.js #subpage #contents section.blog.fit-images {
   float: none;
   display: inline;
 }
-/* line 399, ../sass/_layout.scss */
+/* line 402, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper {
   position: relative;
   margin: 0 0 1em 0;
   zoom: 1;
   width: 100%;
 }
-/* line 405, ../sass/_layout.scss */
+/* line 408, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions {
   display: none;
   background-color: rgba(255, 255, 255, 0.75);
@@ -1349,7 +1353,7 @@ html.js #subpage #contents section.blog.fit-images {
   position: absolute;
   z-index: 2;
 }
-/* line 413, ../sass/_layout.scss */
+/* line 416, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions #swipe-instructions-button {
   display: block;
   border: 3px solid #083156;
@@ -1374,7 +1378,7 @@ html.js #subpage #contents section.blog.fit-images {
   margin-top: -75px;
   margin-left: -100px;
 }
-/* line 431, ../sass/_layout.scss */
+/* line 434, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions #swipe-instructions-button span {
   position: absolute;
   top: 0;
@@ -1386,21 +1390,21 @@ html.js #subpage #contents section.blog.fit-images {
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 443, ../sass/_layout.scss */
+/* line 446, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider {
   background: #fff;
   position: relative;
   zoom: 1;
   width: 100%;
 }
-/* line 449, ../sass/_layout.scss */
+/* line 452, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides {
   margin: 0;
   padding: 0;
   list-style: none;
   zoom: 1;
 }
-/* line 455, ../sass/_layout.scss */
+/* line 458, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li {
   margin-bottom: 0;
   display: none;
@@ -1408,24 +1412,24 @@ html.js #subpage #contents section.blog.fit-images {
   /* Hide the slides before the JS is loaded. Avoids image jumping */
   position: relative;
 }
-/* line 461, ../sass/_layout.scss */
+/* line 464, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder {
   position: relative;
   line-height: 0;
   width: 100%;
 }
-/* line 465, ../sass/_layout.scss */
+/* line 468, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder img {
   width: 100%;
   position: absolute;
 }
-/* line 474, ../sass/_layout.scss */
+/* line 477, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls {
   margin: 1em 0 0 0;
   padding: 0;
   list-style: none;
 }
-/* line 479, ../sass/_layout.scss */
+/* line 482, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li {
   width: 15%;
   float: left;
@@ -1444,29 +1448,29 @@ html.js #subpage #contents section.blog.fit-images {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 490, ../sass/_layout.scss */
+/* line 493, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li:last-child {
   margin-right: 0;
 }
-/* line 494, ../sass/_layout.scss */
+/* line 497, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li.active {
   opacity: 1;
 }
-/* line 498, ../sass/_layout.scss */
+/* line 501, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li:hover {
   cursor: pointer;
 }
-/* line 502, ../sass/_layout.scss */
+/* line 505, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li img {
   position: absolute;
 }
-/* line 510, ../sass/_layout.scss */
+/* line 513, ../sass/_layout.scss */
 #subpage aside {
   background-color: #f0f0f0;
   padding: 1em;
 }
 
-/* line 516, ../sass/_layout.scss */
+/* line 519, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -1475,11 +1479,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 524, ../sass/_layout.scss */
+/* line 527, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 528, ../sass/_layout.scss */
+/* line 531, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -1487,7 +1491,7 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 536, ../sass/_layout.scss */
+/* line 539, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
@@ -1495,18 +1499,18 @@ footer nav > ul > li {
   margin-bottom: 1em;
   display: none;
 }
-/* line 543, ../sass/_layout.scss */
+/* line 546, ../sass/_layout.scss */
 footer nav > ul > li.normal {
   display: block;
 }
-/* line 549, ../sass/_layout.scss */
+/* line 552, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
   margin-bottom: 0;
 }
-/* line 555, ../sass/_layout.scss */
+/* line 558, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1515,7 +1519,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 559, ../sass/_layout.scss */
+/* line 562, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1525,30 +1529,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 564, ../sass/_layout.scss */
+/* line 567, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 575, ../sass/_layout.scss */
+/* line 578, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 579, ../sass/_layout.scss */
+/* line 582, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 585, ../sass/_layout.scss */
+/* line 588, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 589, ../sass/_layout.scss */
+/* line 592, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 594, ../sass/_layout.scss */
+/* line 597, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1556,13 +1560,13 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 601, ../sass/_layout.scss */
+/* line 604, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 606, ../sass/_layout.scss */
+/* line 609, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1573,7 +1577,7 @@ footer #contact #company_contact #phone-icon {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 610, ../sass/_layout.scss */
+/* line 613, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1584,7 +1588,7 @@ footer #contact #company_contact #facebook-icon {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 615, ../sass/_layout.scss */
+/* line 618, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1597,18 +1601,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 624, ../sass/_layout.scss */
+/* line 627, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 631, ../sass/_layout.scss */
+/* line 634, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 636, ../sass/_layout.scss */
+/* line 639, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1616,7 +1620,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 643, ../sass/_layout.scss */
+/* line 646, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1648,7 +1652,7 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 653, ../sass/_layout.scss */
+/* line 656, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
@@ -1662,7 +1666,7 @@ footer #contact > [itemprop="address"] #map {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 663, ../sass/_layout.scss */
+/* line 666, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
