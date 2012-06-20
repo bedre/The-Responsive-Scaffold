@@ -4031,7 +4031,7 @@ select:focus:required:invalid:focus {
   margin-top: -0.75em;
 }
 /* line 21, ../sass/_responseform.scss */
-.responseform form .date_picker input {
+.responseform form .date input {
   background: url('../images/skagen/icons/calendar.png?1340107587') no-repeat;
   width: 100%;
   height: 100%;
@@ -4075,7 +4075,7 @@ select:focus:required:invalid:focus {
     font-size: 0.813em;
   }
   /* line 64, ../sass/_responseform.scss */
-  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker {
+  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date {
     width: 47%;
     float: left;
     clear: left;
@@ -4086,7 +4086,7 @@ select:focus:required:invalid:focus {
     clear: right;
   }
   /* line 75, ../sass/_responseform.scss */
-  .responseform form .date_picker {
+  .responseform form .date {
     width: 47%;
     margin-right: 6%;
   }
@@ -4126,7 +4126,7 @@ select:focus:required:invalid:focus {
 }
 @media screen and (min-width: 45em) {
   /* line 118, ../sass/_responseform.scss */
-  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
+  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     width: 30.666%;
     float: left;
     clear: none;
@@ -4153,7 +4153,7 @@ select:focus:required:invalid:focus {
 }
 @media screen and (min-width: 64em) {
   /* line 149, ../sass/_responseform.scss */
-  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date_picker, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
+  .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     float: left;
     clear: both;
     margin-right: 0;
@@ -4187,15 +4187,18 @@ select:focus:required:invalid:focus {
   }
   /* line 184, ../sass/_responseform.scss */
   .responseform form .food label {
-    font-size: 0.722em;
     width: 100%;
     clear: both;
   }
   /* line 189, ../sass/_responseform.scss */
+  .responseform form .food .controls .label {
+    font-size: 0.667em;
+  }
+  /* line 193, ../sass/_responseform.scss */
   .responseform form .food .checkbox.inline + .checkbox.inline {
     margin-left: 0;
   }
-  /* line 195, ../sass/_responseform.scss */
+  /* line 199, ../sass/_responseform.scss */
   .responseform form .comments textarea {
     min-height: 80px;
   }

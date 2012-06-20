@@ -17,7 +17,7 @@
             margin-top: -.75em;
         }
 
-        .date_picker {
+        .date {
             input {
                 @include sprite-img('skagen/icons/calendar.png', 1, 1, 100%, 100%, 50%);
                 background-position: 99% 50%;
@@ -61,7 +61,7 @@
             label {
                 font-size: em(13,16);
             }
-            .name, .company_name, .e-mail, .phone, .date_picker {
+            .name, .company_name, .e-mail, .phone, .date {
                 width: 47%;
                 float: left;
                 clear: left;
@@ -72,7 +72,7 @@
                 clear: right;
             }
 
-            .date_picker {
+            .date {
                 width: 47%;
                 margin-right: 6%;
             }
@@ -115,7 +115,7 @@
 @media screen and (min-width: $break-4) {
     .responseform {
         form {
-            .name, .company_name, .e-mail, .phone, .date_picker, .size, .duration, .food, .comments {
+            .name, .company_name, .e-mail, .phone, .date, .size, .duration, .food, .comments {
                 width: 30.666%;
                 float: left;
                 clear: none;
@@ -146,7 +146,7 @@
 @media screen and (min-width: $break-5) {
     .responseform {
         form {
-            .name, .company_name, .e-mail, .phone, .date_picker, .size, .duration, .food, .comments {
+            .name, .company_name, .e-mail, .phone, .date, .size, .duration, .food, .comments {
                 float: left;
                 clear: both;
                 margin-right: 0;
@@ -182,9 +182,13 @@
                 clear: right;
                 margin-right: 0;
                 label {
-                    font-size: em(13,18);
                     width: 100%;
                     clear: both;
+                }
+                .controls {
+                    .label {
+                        font-size: em(12,18);
+                    }
                 }
                 .checkbox.inline + .checkbox.inline {
                     margin-left: 0;
