@@ -26,6 +26,11 @@ require_once 'settings.php';
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="<?= $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.3b.js"></script>
+    <![endif]-->
+
     <link rel="stylesheet" href="<?= $settings['template_folder'] ?>/css/screen.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?= $settings['template_folder'] ?>/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
@@ -39,10 +44,6 @@ require_once 'settings.php';
 
     <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
     <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
-
-    <!--[if (gte IE 6)&(lte IE 8)]>
-        <script type="text/javascript" src="<?= $settings['template_folder'] ?>/js/lib/selectivizr-min-1.0.2.js"></script>
-    <![endif]-->
 
     <jdoc:include type="head" />
 
