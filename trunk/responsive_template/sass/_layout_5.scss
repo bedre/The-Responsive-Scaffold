@@ -62,8 +62,7 @@
                     position: absolute;
                     bottom: 1em;
                     left: 1em;
-                    background-color: red;
-                    @include rgba-background(rgba(0,0,0,0.6));
+                    @include rgba-background-inline(rgba(0,0,0,0.6));
                     padding: 2em;
 
                     h3 {
