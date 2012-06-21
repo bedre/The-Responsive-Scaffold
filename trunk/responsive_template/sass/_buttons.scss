@@ -33,6 +33,11 @@ $sb-ie-support: false;
     &.call-to-action {
         @include sassy-button-gradient("glass", $colour3);
     }
+
+    &.white {
+        @include sassy-button("glass", 5px, 1em, #efefef, #fff, #555, "inset"); 
+        padding: .25em .5em;
+    }
 }
 
 a.button {

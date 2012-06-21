@@ -161,6 +161,8 @@ require_once 'settings.php';
             <nav>
                 <jdoc:include type="modules" name="mainmenu" />
             </nav>
+
+            <jdoc:include type="modules" name="booking" />
         </div>
     </header>
 

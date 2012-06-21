@@ -216,6 +216,61 @@ header {
             }
         }
     }
+
+    #booking {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        background: $colour3;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        max-width: em(450,16);
+        padding: 1em;
+        color: #fff;
+
+        span.call_us {
+            font-size: em(12,16);
+            float: left;
+            clear: left;
+            width: 60%;
+        }
+
+        h3 {
+            color: #fff;
+            margin-bottom: 1em;
+            margin-top: 1em;
+        }
+
+        form {
+            margin-bottom: 0;
+
+            .control-group {
+                width: 47%;
+                float: left;
+
+                &.nights {
+                    float: right;
+                }
+
+                label {
+                    color: #fff;
+                }
+
+                #arrival {
+                    @include sprite-img('skagen/icons/calendar.png', 1, 1, 100%, 100%, 50%);
+                    background-position: 95% 50%;
+                    background-color: #fff;
+                    cursor: text;
+                }
+            }
+
+            input.button {
+                width: 25%;
+                float: right;
+            }
+        }
+    }
 }
 
 .slider-wrapper {
