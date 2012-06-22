@@ -25,6 +25,7 @@ require_once 'settings.php';
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--[if (gte IE 6)&(lte IE 8)]>
@@ -205,7 +206,7 @@ require_once 'settings.php';
                 <h3><?= JText::_('TPL_RWDTPL_CONTACT_US'); ?></h3>
                 <div id="company_contact">
                     <span itemprop="name"><?= $this->params->get('company_name');?></span>
-                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span><?= $this->params->get('phone');?></span>
+                    <span itemprop="telephone"><span id="phone-icon" class="icon"> </span><a href="tel:<?= $this->params->get('phone');?>"><?= $this->params->get('phone');?></a></span>
                     <a itemprop="url" href="<?= $this->params->get('facebook_url');?>" target="_blank"><span id="facebook-icon" class="icon"> </span><?= str_replace('http://', '', $this->params->get('facebook_url'));?></a>
                 </div>
 
@@ -218,7 +219,6 @@ require_once 'settings.php';
                     <span itemprop="addressCountry"><?= $this->params->get('country');?></span>
                     <a itemprop="url" href="<?= $this->params->get('map_url');?>"><?= JText::_('TPL_RWDTPL_MAP'); ?></a>
                     <span id="map">Map</span>
-                    <!-- <img id="map" src="<?= $settings['template_folder'] ?>/images/<?= $settings['template_style'] ?>/norway_map.png" alt="Map of Norway"> -->
                 </div>
             </div>
 

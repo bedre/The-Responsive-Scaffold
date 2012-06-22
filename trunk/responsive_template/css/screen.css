@@ -606,6 +606,148 @@ header #logo {
   }
 }
 
+/* line 28, ../sass/_buttons.scss */
+.button {
+  text-align: center;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #aaaaaa;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #bebebe), color-stop(51%, #aaaaaa));
+  background: -webkit-linear-gradient(#bebebe 50%, #aaaaaa 51%);
+  background: -moz-linear-gradient(#bebebe 50%, #aaaaaa 51%);
+  background: -o-linear-gradient(#bebebe 50%, #aaaaaa 51%);
+  background: -ms-linear-gradient(#bebebe 50%, #aaaaaa 51%);
+  background: linear-gradient(#bebebe 50%, #aaaaaa 51%);
+  -webkit-box-shadow: #e5e5e5 0 1px 0 inset;
+  -moz-box-shadow: #e5e5e5 0 1px 0 inset;
+  box-shadow: #e5e5e5 0 1px 0 inset;
+  border: 1px solid #9d9d9d;
+  color: white;
+  text-shadow: #7d7d7d 0 -1px 0;
+}
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button:hover {
+  background-color: #989898;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #adadad), color-stop(51%, #989898));
+  background: -webkit-linear-gradient(#adadad 50%, #989898 51%);
+  background: -moz-linear-gradient(#adadad 50%, #989898 51%);
+  background: -o-linear-gradient(#adadad 50%, #989898 51%);
+  background: -ms-linear-gradient(#adadad 50%, #989898 51%);
+  background: linear-gradient(#adadad 50%, #989898 51%);
+}
+/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button:active {
+  -webkit-box-shadow: #969696 0 1px 2px inset;
+  -moz-box-shadow: #969696 0 1px 2px inset;
+  box-shadow: #969696 0 1px 2px inset;
+}
+/* line 33, ../sass/_buttons.scss */
+.button.call-to-action {
+  background-color: #cd233c;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #de3b53), color-stop(51%, #cd233c));
+  background: -webkit-linear-gradient(#de3b53 50%, #cd233c 51%);
+  background: -moz-linear-gradient(#de3b53 50%, #cd233c 51%);
+  background: -o-linear-gradient(#de3b53 50%, #cd233c 51%);
+  background: -ms-linear-gradient(#de3b53 50%, #cd233c 51%);
+  background: linear-gradient(#de3b53 50%, #cd233c 51%);
+  -webkit-box-shadow: #e97d8c 0 1px 0 inset;
+  -moz-box-shadow: #e97d8c 0 1px 0 inset;
+  box-shadow: #e97d8c 0 1px 0 inset;
+  border: 1px solid #b71f36;
+  color: white;
+  text-shadow: #7f1625 0 -1px 0;
+}
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button.call-to-action:hover {
+  background-color: #af1e33;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #d1243d), color-stop(51%, #af1e33));
+  background: -webkit-linear-gradient(#d1243d 50%, #af1e33 51%);
+  background: -moz-linear-gradient(#d1243d 50%, #af1e33 51%);
+  background: -o-linear-gradient(#d1243d 50%, #af1e33 51%);
+  background: -ms-linear-gradient(#d1243d 50%, #af1e33 51%);
+  background: linear-gradient(#d1243d 50%, #af1e33 51%);
+}
+/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button.call-to-action:active {
+  -webkit-box-shadow: #aa1d32 0 1px 2px inset;
+  -moz-box-shadow: #aa1d32 0 1px 2px inset;
+  box-shadow: #aa1d32 0 1px 2px inset;
+}
+/* line 37, ../sass/_buttons.scss */
+.button.white {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f9f9f9), color-stop(51%, #efefef));
+  background: -webkit-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -moz-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -o-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -ms-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: linear-gradient(#f9f9f9 50%, #efefef 51%);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #f2f2f2;
+  color: #555555;
+  text-shadow: white 0 1px 0;
+  padding: .25em .5em;
+}
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button.white:hover {
+  background-color: #ededed;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #e7e7e7), color-stop(51%, #ededed));
+  background: -webkit-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -moz-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -o-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -ms-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: linear-gradient(#e7e7e7 50%, #ededed 51%);
+}
+/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.button.white:active {
+  -webkit-box-shadow: #ebebeb 0 1px 2px inset;
+  -moz-box-shadow: #ebebeb 0 1px 2px inset;
+  box-shadow: #ebebeb 0 1px 2px inset;
+}
+
+/* line 43, ../sass/_buttons.scss */
+a.button {
+  color: white;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a.button:visited {
+  color: white;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a.button:focus {
+  color: white;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a.button:hover {
+  color: white;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a.button:active {
+  color: white;
+}
+
 /* layout */
 /* mixins */
 /* General */
@@ -825,36 +967,104 @@ header #booking {
   color: #fff;
 }
 /* line 232, ../sass/_layout.scss */
-header #booking span.call_us {
+html.lt-ie9 header #booking {
+  width: 28.125em;
+}
+/* line 236, ../sass/_layout.scss */
+header #booking .call_us {
   font-size: 0.75em;
   float: left;
   clear: left;
   width: 60%;
 }
-/* line 239, ../sass/_layout.scss */
+/* line 242, ../sass/_layout.scss */
+header #booking .call_us a {
+  color: white;
+  text-decoration: none;
+}
+/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #booking .call_us a:visited {
+  color: white;
+}
+/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #booking .call_us a:focus {
+  color: white;
+}
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #booking .call_us a:hover {
+  color: white;
+}
+/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+header #booking .call_us a:active {
+  color: white;
+}
+/* line 246, ../sass/_layout.scss */
+html.touch header #booking .call_us a {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f9f9f9), color-stop(51%, #efefef));
+  background: -webkit-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -moz-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -o-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: -ms-linear-gradient(#f9f9f9 50%, #efefef 51%);
+  background: linear-gradient(#f9f9f9 50%, #efefef 51%);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #f2f2f2;
+  color: #555555;
+  text-shadow: white 0 1px 0;
+}
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+html.touch header #booking .call_us a:hover {
+  background-color: #ededed;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #e7e7e7), color-stop(51%, #ededed));
+  background: -webkit-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -moz-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -o-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: -ms-linear-gradient(#e7e7e7 50%, #ededed 51%);
+  background: linear-gradient(#e7e7e7 50%, #ededed 51%);
+}
+/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+html.touch header #booking .call_us a:active {
+  -webkit-box-shadow: #ebebeb 0 1px 2px inset;
+  -moz-box-shadow: #ebebeb 0 1px 2px inset;
+  box-shadow: #ebebeb 0 1px 2px inset;
+}
+/* line 252, ../sass/_layout.scss */
 header #booking h3 {
   color: #fff;
   margin-bottom: 1em;
   margin-top: 1em;
 }
-/* line 245, ../sass/_layout.scss */
+/* line 258, ../sass/_layout.scss */
 header #booking form {
   margin-bottom: 0;
 }
-/* line 248, ../sass/_layout.scss */
+/* line 261, ../sass/_layout.scss */
 header #booking form .control-group {
   width: 47%;
   float: left;
 }
-/* line 252, ../sass/_layout.scss */
+/* line 265, ../sass/_layout.scss */
 header #booking form .control-group.nights {
   float: right;
 }
-/* line 256, ../sass/_layout.scss */
+/* line 269, ../sass/_layout.scss */
 header #booking form .control-group label {
   color: #fff;
 }
-/* line 260, ../sass/_layout.scss */
+/* line 273, ../sass/_layout.scss */
 header #booking form .control-group #arrival {
   background: url('../images/skagen/icons/calendar.png?1340107587') no-repeat;
   width: 100%;
@@ -865,37 +1075,37 @@ header #booking form .control-group #arrival {
   background-color: #fff;
   cursor: text;
 }
-/* line 268, ../sass/_layout.scss */
+/* line 281, ../sass/_layout.scss */
 header #booking form input.button {
   width: 25%;
   float: right;
 }
 
-/* line 276, ../sass/_layout.scss */
+/* line 289, ../sass/_layout.scss */
 .slider-wrapper {
   position: relative;
   margin: 0 0 1em 0;
   zoom: 1;
   /* bullets underneath the slider */
 }
-/* line 282, ../sass/_layout.scss */
+/* line 295, ../sass/_layout.scss */
 .slider-wrapper a:active, .slider-wrapper a:focus {
   outline: none;
 }
-/* line 286, ../sass/_layout.scss */
+/* line 299, ../sass/_layout.scss */
 .slider-wrapper .slider {
   background: #fff;
   position: relative;
   zoom: 1;
 }
-/* line 291, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 .slider-wrapper .slider .slides {
   margin: 0;
   padding: 0;
   list-style: none;
   zoom: 1;
 }
-/* line 297, ../sass/_layout.scss */
+/* line 310, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li {
   margin-bottom: 0;
   display: none;
@@ -903,7 +1113,7 @@ header #booking form input.button {
   /* Hide the slides before the JS is loaded. Avoids image jumping */
   position: relative;
 }
-/* line 303, ../sass/_layout.scss */
+/* line 316, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li h3 {
   z-index: 1;
   position: absolute;
@@ -930,21 +1140,21 @@ header #booking form input.button {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 308, ../sass/_layout.scss */
+/* line 321, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .imagemask {
   position: relative;
   line-height: 0;
 }
-/* line 311, ../sass/_layout.scss */
+/* line 324, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .imagemask img {
   width: 100%;
 }
-/* line 317, ../sass/_layout.scss */
+/* line 330, ../sass/_layout.scss */
 .slider-wrapper .slider .slides > li .description,
 .slider-wrapper .slider .slides > li .readon {
   display: none;
 }
-/* line 325, ../sass/_layout.scss */
+/* line 338, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav {
   margin: 0;
   padding: 0;
@@ -990,15 +1200,15 @@ html.js .slider-wrapper .flex-control-nav {
 .slider-wrapper .flex-control-nav li.last {
   padding-right: 0;
 }
-/* line 331, ../sass/_layout.scss */
+/* line 344, ../sass/_layout.scss */
 html.lt-ie9 .slider-wrapper .flex-control-nav {
   background: filter-gradient(#fcfcfc, #dfdfdf);
 }
-/* line 336, ../sass/_layout.scss */
+/* line 349, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li {
   float: none;
 }
-/* line 338, ../sass/_layout.scss */
+/* line 351, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a {
   width: 45px;
   height: 45px;
@@ -1011,17 +1221,17 @@ html.lt-ie9 .slider-wrapper .flex-control-nav {
   cursor: pointer;
   display: inline-block;
 }
-/* line 345, ../sass/_layout.scss */
+/* line 358, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a:hover {
   background-position: 0 -120px;
 }
-/* line 349, ../sass/_layout.scss */
+/* line 362, ../sass/_layout.scss */
 .slider-wrapper .flex-control-nav li a.active {
   background-position: 0 -75px;
   cursor: default;
 }
 
-/* line 358, ../sass/_layout.scss */
+/* line 371, ../sass/_layout.scss */
 #product_categories {
   padding: 0 1.231em;
   margin-bottom: 1em;
@@ -1032,7 +1242,7 @@ html.js #product_categories {
   height: 10px;
   overflow: hidden;
 }
-/* line 365, ../sass/_layout.scss */
+/* line 378, ../sass/_layout.scss */
 #product_categories article {
   position: relative;
   float: left;
@@ -1109,13 +1319,13 @@ html.js #product_categories {
   display: inline;
 }
 
-/* line 379, ../sass/_layout.scss */
+/* line 392, ../sass/_layout.scss */
 #subpage #menutoggle {
   clear: both;
   padding: 1em 1em 0 1em;
   width: 100%;
 }
-/* line 385, ../sass/_layout.scss */
+/* line 398, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1132,7 +1342,7 @@ html.js #product_categories {
   background: -ms-linear-gradient(#f7f7f7, #e6e6e6);
   background: linear-gradient(#f7f7f7, #e6e6e6);
 }
-/* line 393, ../sass/_layout.scss */
+/* line 406, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow {
   width: 100%;
   background: url('../images/skagen/icons/button_arrow_down_blue.png?1338465263') no-repeat;
@@ -1142,7 +1352,7 @@ html.js #product_categories {
   background-position: 0% 0%;
   background-position: 93.5% center;
 }
-/* line 399, ../sass/_layout.scss */
+/* line 412, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow span.text {
   float: left;
   width: 85%;
@@ -1161,12 +1371,12 @@ html.js #product_categories {
   background: -ms-linear-gradient(#ffffff, #eeeeee);
   background: linear-gradient(#ffffff, #eeeeee);
 }
-/* line 409, ../sass/_layout.scss */
+/* line 422, ../sass/_layout.scss */
 #subpage #menutoggle .menubutton .arrow span.text span.level_1, #subpage #menutoggle .menubutton .arrow span.text span.level_2 {
   width: 80%;
   float: left;
 }
-/* line 418, ../sass/_layout.scss */
+/* line 431, ../sass/_layout.scss */
 #subpage #menutoggle > .active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #999999));
   background: -webkit-linear-gradient(#666666, #999999);
@@ -1176,7 +1386,7 @@ html.js #product_categories {
   background: linear-gradient(#666666, #999999);
   border: 1px solid #999;
 }
-/* line 422, ../sass/_layout.scss */
+/* line 435, ../sass/_layout.scss */
 #subpage #menutoggle > .active .arrow {
   background: url('../images/skagen/icons/button_arrow_up_white.png?1338465307') no-repeat;
   width: 100%;
@@ -1185,15 +1395,15 @@ html.js #product_categories {
   background-position: 0% 0%;
   background-position: 93.5% center;
 }
-/* line 429, ../sass/_layout.scss */
+/* line 442, ../sass/_layout.scss */
 #subpage nav {
   padding: 1.143em;
 }
-/* line 430, ../sass/_layout.scss */
+/* line 443, ../sass/_layout.scss */
 html.js #subpage nav {
   display: none;
 }
-/* line 436, ../sass/_layout.scss */
+/* line 449, ../sass/_layout.scss */
 #subpage nav > ul {
   width: 100%;
   *zoom: 1;
@@ -1313,11 +1523,11 @@ html.js #subpage nav {
 #subpage nav > ul > li.active ul li a:hover {
   text-indent: .5em;
 }
-/* line 441, ../sass/_layout.scss */
+/* line 454, ../sass/_layout.scss */
 #subpage #contents {
   padding: 1em;
 }
-/* line 444, ../sass/_layout.scss */
+/* line 457, ../sass/_layout.scss */
 html.js #subpage #contents h1 {
   display: none;
 }
@@ -1396,14 +1606,14 @@ html.js #subpage #contents section.blog.fit-images {
   float: none;
   display: inline;
 }
-/* line 457, ../sass/_layout.scss */
+/* line 470, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper {
   position: relative;
   margin: 0 0 1em 0;
   zoom: 1;
   width: 100%;
 }
-/* line 463, ../sass/_layout.scss */
+/* line 476, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions {
   display: none;
   background-color: rgba(255, 255, 255, 0.75);
@@ -1412,7 +1622,7 @@ html.js #subpage #contents section.blog.fit-images {
   position: absolute;
   z-index: 2;
 }
-/* line 471, ../sass/_layout.scss */
+/* line 484, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions #swipe-instructions-button {
   display: block;
   border: 3px solid #083156;
@@ -1437,7 +1647,7 @@ html.js #subpage #contents section.blog.fit-images {
   margin-top: -75px;
   margin-left: -100px;
 }
-/* line 489, ../sass/_layout.scss */
+/* line 502, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper #swipe-instructions #swipe-instructions-button span {
   position: absolute;
   top: 0;
@@ -1449,21 +1659,21 @@ html.js #subpage #contents section.blog.fit-images {
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 501, ../sass/_layout.scss */
+/* line 514, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider {
   background: #fff;
   position: relative;
   zoom: 1;
   width: 100%;
 }
-/* line 507, ../sass/_layout.scss */
+/* line 520, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides {
   margin: 0;
   padding: 0;
   list-style: none;
   zoom: 1;
 }
-/* line 513, ../sass/_layout.scss */
+/* line 526, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li {
   margin-bottom: 0;
   display: none;
@@ -1471,24 +1681,24 @@ html.js #subpage #contents section.blog.fit-images {
   /* Hide the slides before the JS is loaded. Avoids image jumping */
   position: relative;
 }
-/* line 519, ../sass/_layout.scss */
+/* line 532, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder {
   position: relative;
   line-height: 0;
   width: 100%;
 }
-/* line 523, ../sass/_layout.scss */
+/* line 536, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper .article-slider .slides > li .imageholder img {
   width: 100%;
   position: absolute;
 }
-/* line 532, ../sass/_layout.scss */
+/* line 545, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls {
   margin: 1em 0 0 0;
   padding: 0;
   list-style: none;
 }
-/* line 537, ../sass/_layout.scss */
+/* line 550, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li {
   width: 15%;
   float: left;
@@ -1507,29 +1717,29 @@ html.js #subpage #contents section.blog.fit-images {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 548, ../sass/_layout.scss */
+/* line 561, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li:last-child {
   margin-right: 0;
 }
-/* line 552, ../sass/_layout.scss */
+/* line 565, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li.active {
   opacity: 1;
 }
-/* line 556, ../sass/_layout.scss */
+/* line 569, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li:hover {
   cursor: pointer;
 }
-/* line 560, ../sass/_layout.scss */
+/* line 573, ../sass/_layout.scss */
 #subpage #contents .article-image-wrapper ul.controls li img {
   position: absolute;
 }
-/* line 568, ../sass/_layout.scss */
+/* line 581, ../sass/_layout.scss */
 #subpage aside {
   background-color: #f0f0f0;
   padding: 1em;
 }
 
-/* line 574, ../sass/_layout.scss */
+/* line 587, ../sass/_layout.scss */
 footer {
   padding: 1em;
   background-color: #0d4c84;
@@ -1538,11 +1748,11 @@ footer {
   width: 100%;
   border-top: 4px solid #cd233c;
 }
-/* line 582, ../sass/_layout.scss */
+/* line 595, ../sass/_layout.scss */
 footer nav {
   margin-bottom: 1em;
 }
-/* line 586, ../sass/_layout.scss */
+/* line 599, ../sass/_layout.scss */
 footer nav ul {
   float: left;
   padding: 0;
@@ -1550,7 +1760,7 @@ footer nav ul {
   list-style: none;
   width: 100%;
 }
-/* line 594, ../sass/_layout.scss */
+/* line 607, ../sass/_layout.scss */
 footer nav > ul > li {
   width: 100%;
   clear: both;
@@ -1558,18 +1768,18 @@ footer nav > ul > li {
   margin-bottom: 1em;
   display: none;
 }
-/* line 601, ../sass/_layout.scss */
+/* line 614, ../sass/_layout.scss */
 footer nav > ul > li.normal {
   display: block;
 }
-/* line 607, ../sass/_layout.scss */
+/* line 620, ../sass/_layout.scss */
 footer nav > ul > li > ul > li {
   width: 100%;
   border-bottom: 1px solid #0d4c84;
   background-color: #0b3f6d;
   margin-bottom: 0;
 }
-/* line 613, ../sass/_layout.scss */
+/* line 626, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -1578,7 +1788,7 @@ footer nav > ul > li > ul > li:first-child {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 617, ../sass/_layout.scss */
+/* line 630, ../sass/_layout.scss */
 footer nav > ul > li > ul > li:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -1588,30 +1798,30 @@ footer nav > ul > li > ul > li:last-child {
   border-bottom-right-radius: 5px;
   border-bottom: 0;
 }
-/* line 622, ../sass/_layout.scss */
+/* line 635, ../sass/_layout.scss */
 footer nav > ul > li > ul > li a {
   display: block;
   padding: 0 1em;
   width: 100%;
   line-height: 3.143em;
 }
-/* line 633, ../sass/_layout.scss */
+/* line 646, ../sass/_layout.scss */
 footer #contact {
   width: 100%;
 }
-/* line 637, ../sass/_layout.scss */
+/* line 650, ../sass/_layout.scss */
 footer #contact h3 {
   margin-top: 0;
 }
-/* line 643, ../sass/_layout.scss */
+/* line 656, ../sass/_layout.scss */
 footer #contact #company_contact > * {
   line-height: 1.5em;
 }
-/* line 647, ../sass/_layout.scss */
+/* line 660, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="name"] {
   display: none;
 }
-/* line 652, ../sass/_layout.scss */
+/* line 665, ../sass/_layout.scss */
 footer #contact #company_contact [itemprop="telephone"],
 footer #contact #company_contact [itemprop="url"] {
   width: 100%;
@@ -1619,13 +1829,18 @@ footer #contact #company_contact [itemprop="url"] {
   clear: both;
   margin-bottom: .5em;
 }
-/* line 659, ../sass/_layout.scss */
+/* line 672, ../sass/_layout.scss */
+footer #contact #company_contact [itemprop="telephone"] a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 677, ../sass/_layout.scss */
 footer #contact #company_contact .icon {
   float: left;
   margin-right: .5em;
   margin-top: 0.125em;
 }
-/* line 664, ../sass/_layout.scss */
+/* line 682, ../sass/_layout.scss */
 footer #contact #company_contact #phone-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1636,7 +1851,7 @@ footer #contact #company_contact #phone-icon {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 668, ../sass/_layout.scss */
+/* line 686, ../sass/_layout.scss */
 footer #contact #company_contact #facebook-icon {
   text-indent: 110%;
   white-space: nowrap;
@@ -1647,7 +1862,7 @@ footer #contact #company_contact #facebook-icon {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 673, ../sass/_layout.scss */
+/* line 691, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] {
   position: relative;
   background-color: #083156;
@@ -1660,18 +1875,18 @@ footer #contact > [itemprop="address"] {
   margin-top: 1em;
   max-width: 24em;
 }
-/* line 682, ../sass/_layout.scss */
+/* line 700, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] span {
   width: 100%;
   display: block;
   clear: both;
 }
-/* line 689, ../sass/_layout.scss */
+/* line 707, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressRegion"],
 footer #contact > [itemprop="address"] [itemprop="addressCountry"] {
   display: none;
 }
-/* line 694, ../sass/_layout.scss */
+/* line 712, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="addressLocality"],
 footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   width: auto;
@@ -1679,7 +1894,7 @@ footer #contact > [itemprop="address"] [itemprop="postalCode"] {
   margin-right: .5em;
   clear: none;
 }
-/* line 701, ../sass/_layout.scss */
+/* line 719, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] [itemprop="url"] {
   float: left;
   width: auto;
@@ -1711,7 +1926,7 @@ footer #contact > [itemprop="address"] [itemprop="url"]:after {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 711, ../sass/_layout.scss */
+/* line 729, ../sass/_layout.scss */
 footer #contact > [itemprop="address"] #map {
   position: absolute;
   right: -5px;
@@ -1725,7 +1940,7 @@ footer #contact > [itemprop="address"] #map {
   background-image: url('../images/skagen/icons-s6c2801fe0f.png');
   background-repeat: no-repeat;
 }
-/* line 721, ../sass/_layout.scss */
+/* line 739, ../sass/_layout.scss */
 footer #copyright {
   clear: both;
   width: 100%;
@@ -4266,149 +4481,6 @@ select:focus:required:invalid:focus {
     min-height: 80px;
   }
 }
-/* buttons */
-/* line 28, ../sass/_buttons.scss */
-.button {
-  text-align: center;
-  font-size: 18px;
-  padding: 0.5em 1em;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  line-height: 1.5;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #aaaaaa;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #bebebe), color-stop(51%, #aaaaaa));
-  background: -webkit-linear-gradient(#bebebe 50%, #aaaaaa 51%);
-  background: -moz-linear-gradient(#bebebe 50%, #aaaaaa 51%);
-  background: -o-linear-gradient(#bebebe 50%, #aaaaaa 51%);
-  background: -ms-linear-gradient(#bebebe 50%, #aaaaaa 51%);
-  background: linear-gradient(#bebebe 50%, #aaaaaa 51%);
-  -webkit-box-shadow: #e5e5e5 0 1px 0 inset;
-  -moz-box-shadow: #e5e5e5 0 1px 0 inset;
-  box-shadow: #e5e5e5 0 1px 0 inset;
-  border: 1px solid #9d9d9d;
-  color: white;
-  text-shadow: #7d7d7d 0 -1px 0;
-}
-/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button:hover {
-  background-color: #989898;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #adadad), color-stop(51%, #989898));
-  background: -webkit-linear-gradient(#adadad 50%, #989898 51%);
-  background: -moz-linear-gradient(#adadad 50%, #989898 51%);
-  background: -o-linear-gradient(#adadad 50%, #989898 51%);
-  background: -ms-linear-gradient(#adadad 50%, #989898 51%);
-  background: linear-gradient(#adadad 50%, #989898 51%);
-}
-/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button:active {
-  -webkit-box-shadow: #969696 0 1px 2px inset;
-  -moz-box-shadow: #969696 0 1px 2px inset;
-  box-shadow: #969696 0 1px 2px inset;
-}
-/* line 33, ../sass/_buttons.scss */
-.button.call-to-action {
-  background-color: #cd233c;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #de3b53), color-stop(51%, #cd233c));
-  background: -webkit-linear-gradient(#de3b53 50%, #cd233c 51%);
-  background: -moz-linear-gradient(#de3b53 50%, #cd233c 51%);
-  background: -o-linear-gradient(#de3b53 50%, #cd233c 51%);
-  background: -ms-linear-gradient(#de3b53 50%, #cd233c 51%);
-  background: linear-gradient(#de3b53 50%, #cd233c 51%);
-  -webkit-box-shadow: #e97d8c 0 1px 0 inset;
-  -moz-box-shadow: #e97d8c 0 1px 0 inset;
-  box-shadow: #e97d8c 0 1px 0 inset;
-  border: 1px solid #b71f36;
-  color: white;
-  text-shadow: #7f1625 0 -1px 0;
-}
-/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button.call-to-action:hover {
-  background-color: #af1e33;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #d1243d), color-stop(51%, #af1e33));
-  background: -webkit-linear-gradient(#d1243d 50%, #af1e33 51%);
-  background: -moz-linear-gradient(#d1243d 50%, #af1e33 51%);
-  background: -o-linear-gradient(#d1243d 50%, #af1e33 51%);
-  background: -ms-linear-gradient(#d1243d 50%, #af1e33 51%);
-  background: linear-gradient(#d1243d 50%, #af1e33 51%);
-}
-/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button.call-to-action:active {
-  -webkit-box-shadow: #aa1d32 0 1px 2px inset;
-  -moz-box-shadow: #aa1d32 0 1px 2px inset;
-  box-shadow: #aa1d32 0 1px 2px inset;
-}
-/* line 37, ../sass/_buttons.scss */
-.button.white {
-  font-size: 1em;
-  padding: 0.5em 1em;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-  line-height: 1.5;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #efefef;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #f9f9f9), color-stop(51%, #efefef));
-  background: -webkit-linear-gradient(#f9f9f9 50%, #efefef 51%);
-  background: -moz-linear-gradient(#f9f9f9 50%, #efefef 51%);
-  background: -o-linear-gradient(#f9f9f9 50%, #efefef 51%);
-  background: -ms-linear-gradient(#f9f9f9 50%, #efefef 51%);
-  background: linear-gradient(#f9f9f9 50%, #efefef 51%);
-  -webkit-box-shadow: white 0 1px 0 inset;
-  -moz-box-shadow: white 0 1px 0 inset;
-  box-shadow: white 0 1px 0 inset;
-  border: 1px solid #f2f2f2;
-  color: #555555;
-  text-shadow: white 0 1px 0;
-  padding: .25em .5em;
-}
-/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button.white:hover {
-  background-color: #ededed;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #e7e7e7), color-stop(51%, #ededed));
-  background: -webkit-linear-gradient(#e7e7e7 50%, #ededed 51%);
-  background: -moz-linear-gradient(#e7e7e7 50%, #ededed 51%);
-  background: -o-linear-gradient(#e7e7e7 50%, #ededed 51%);
-  background: -ms-linear-gradient(#e7e7e7 50%, #ededed 51%);
-  background: linear-gradient(#e7e7e7 50%, #ededed 51%);
-}
-/* line 25, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.1.0/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.button.white:active {
-  -webkit-box-shadow: #ebebeb 0 1px 2px inset;
-  -moz-box-shadow: #ebebeb 0 1px 2px inset;
-  box-shadow: #ebebeb 0 1px 2px inset;
-}
-
-/* line 43, ../sass/_buttons.scss */
-a.button {
-  color: white;
-}
-/* line 18, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a.button:visited {
-  color: white;
-}
-/* line 21, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a.button:focus {
-  color: white;
-}
-/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a.button:hover {
-  color: white;
-}
-/* line 27, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-a.button:active {
-  color: white;
-}
-
 /* styles for special devices */
 /* line 3, ../sass/_no-touch.scss */
 .no-touch .slider-wrapper .flex-control-nav {

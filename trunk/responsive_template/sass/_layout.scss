@@ -229,11 +229,24 @@ header {
         padding: 1em;
         color: #fff;
 
-        span.call_us {
+        html.lt-ie9 & {
+            width: em(450,16);
+        }
+
+        .call_us {
             font-size: em(12,16);
             float: left;
             clear: left;
             width: 60%;
+
+            a {
+                @include link-colors(#fff,#fff,#fff,#fff,#fff);
+                text-decoration: none;
+
+                html.touch & {
+                    @include sassy-button("glass", 5px, 1em, #efefef, #fff, #555, "inset"); 
+                }
+            }
         }
 
         h3 {
@@ -654,6 +667,11 @@ footer {
                 display: block;
                 clear: both;
                 margin-bottom: .5em;
+            }
+
+            [itemprop="telephone"] a {
+                color: #fff;
+                text-decoration: none;
             }
 
             .icon {

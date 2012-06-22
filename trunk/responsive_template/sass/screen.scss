@@ -12,6 +12,7 @@
 @import "mixins";
 @import "breakpoints";
 @import "style_skagen";
+@import "buttons";
 
 /* layout */
 @import "layout";
@@ -31,9 +32,6 @@
 /* forms */
 @import "forms";
 @import "responseform";
-
-/* buttons */
-@import "buttons";
 
 /* styles for special devices */
 @import "no-touch";
