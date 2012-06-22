@@ -18,14 +18,22 @@ $urls       = json_decode($this->item->urls);
 $canEdit    = $this->item->params->get('access-edit');
 $user       = JFactory::getUser();
 
+$menuItem = JFactory::getApplication()->getMenu()->getActive();
+if (count($menuItem->tree) == 2 && $menuItem->query['view'] == 'category') {
+    // Second level category view, so we're at the third level
+    $thirdLevel = true;
+} else {
+    $thirdLevel = false;
+}
+
 ?>
 <div class="item-page<?= $this->pageclass_sfx?>">
     <?php if ($this->params->get('show_page_heading', 1)) : ?>
-        <h1><?= $this->escape($this->params->get('page_heading')); ?></h1>
+        <h1 class="thirdlevel page-header"><?= $this->escape($this->params->get('page_heading')); ?></h1>
     <?php endif; ?>
 
     <?php if ($params->get('show_title')) : ?>
-        <h1>
+        <h1 class="thirdlevel">
             <?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
                 <a href="<?= $this->item->readmore_link; ?>">
                 <?= $this->escape($this->item->title); ?></a>

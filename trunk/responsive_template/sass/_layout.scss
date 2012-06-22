@@ -456,6 +456,10 @@ header {
 
         html.js & h1 {
             display: none;
+
+            &.thirdlevel {
+                display: block;
+            }
         }
 
         section.blog {
