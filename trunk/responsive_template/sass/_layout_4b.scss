@@ -1,0 +1,22 @@
+@media screen and (min-width: $break-4b) {
+    #subpage {
+        
+        .wrap {
+            width: 100%;
+            @include pie-clearfix;
+
+            #contents {
+                padding-right: 0;
+                width: 60%;
+                float: left;
+            }
+
+            aside {
+                margin: 1em 1em 1em 0;
+                width: 33%;
+                float: right;
+                @include border-radius;
+            }
+        }
+    }
+}
