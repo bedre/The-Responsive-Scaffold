@@ -67,7 +67,7 @@
                     bottom: 1em;
                     left: 1em;
                     @include rgba-background-inline(rgba(0,0,0,0.6));
-                    padding: 2em;
+                    padding: 1em 2em 2em 2em;
 
                     h3 {
                         position: relative;
@@ -76,6 +76,7 @@
                         background: none;
                         bottom: 0;
                         padding: 0;
+                        margin: 0;
 
                         &:after {
                             display: none;

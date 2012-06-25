@@ -2447,7 +2447,7 @@ footer #copyright {
     left: 1em;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNimAkAAKIAnNwSwMYAAAAASUVORK5CYII=');
     background: rgba(0, 0, 0, 0.6);
-    padding: 2em;
+    padding: 1em 2em 2em 2em;
   }
   /* line 72, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3 {
@@ -2457,23 +2457,24 @@ footer #copyright {
     background: none;
     bottom: 0;
     padding: 0;
+    margin: 0;
   }
-  /* line 80, ../sass/_layout_5.scss */
+  /* line 81, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox h3:after {
     display: none;
   }
-  /* line 86, ../sass/_layout_5.scss */
+  /* line 87, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description,
   .slider-wrapper .slider .slides .infobox .readon {
     margin: 0;
     display: block;
     clear: both;
   }
-  /* line 92, ../sass/_layout_5.scss */
+  /* line 93, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .description {
     width: 19.286em;
   }
-  /* line 96, ../sass/_layout_5.scss */
+  /* line 97, ../sass/_layout_5.scss */
   .slider-wrapper .slider .slides .infobox .readon {
     background-color: #cd233c;
     width: auto;
@@ -2500,7 +2501,7 @@ footer #copyright {
     background-image: url('../images/skagen/icons-s6c2801fe0f.png');
     background-repeat: no-repeat;
   }
-  /* line 109, ../sass/_layout_5.scss */
+  /* line 110, ../sass/_layout_5.scss */
   .slider-wrapper .flex-control-nav {
     position: absolute;
     bottom: 0;
@@ -2509,42 +2510,42 @@ footer #copyright {
     background-color: transparent;
   }
 
-  /* line 119, ../sass/_layout_5.scss */
+  /* line 120, ../sass/_layout_5.scss */
   #product_categories article {
     width: 25%;
   }
 
-  /* line 128, ../sass/_layout_5.scss */
+  /* line 129, ../sass/_layout_5.scss */
   #subpage .wrap nav {
     width: 100%;
   }
-  /* line 131, ../sass/_layout_5.scss */
+  /* line 132, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active {
     padding: 0;
     width: 65%;
     float: right;
     margin-right: 1em;
   }
-  /* line 137, ../sass/_layout_5.scss */
+  /* line 138, ../sass/_layout_5.scss */
   #subpage .wrap nav > ul > li.active ul {
     padding: 0;
   }
-  /* line 143, ../sass/_layout_5.scss */
+  /* line 144, ../sass/_layout_5.scss */
   #subpage .wrap #contents {
     width: 63%;
   }
-  /* line 147, ../sass/_layout_5.scss */
+  /* line 148, ../sass/_layout_5.scss */
   #subpage .wrap aside {
     width: 33%;
   }
 
-  /* line 154, ../sass/_layout_5.scss */
+  /* line 155, ../sass/_layout_5.scss */
   footer nav {
     width: 50%;
     max-width: 50em;
     float: left;
   }
-  /* line 160, ../sass/_layout_5.scss */
+  /* line 161, ../sass/_layout_5.scss */
   footer #contact {
     width: 50%;
     float: right;
