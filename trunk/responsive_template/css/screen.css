@@ -2387,8 +2387,9 @@ footer #copyright {
   /* line 9, ../sass/_layout_5.scss */
   header #logo {
     margin-bottom: 1em;
+    width: 22%;
   }
-  /* line 13, ../sass/_layout_5.scss */
+  /* line 14, ../sass/_layout_5.scss */
   header #extra {
     position: absolute;
     right: 0;
@@ -2410,7 +2411,7 @@ footer #copyright {
   }
   /* line 34, ../sass/_layout_5.scss */
   header nav {
-    width: 65%;
+    width: 72%;
     clear: right;
     margin-right: 1em;
     position: absolute;
