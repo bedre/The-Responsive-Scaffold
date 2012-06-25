@@ -9,6 +9,10 @@
         #logo {
             margin-bottom: 1em;
             width: 22%;
+
+            html.touch & {
+                margin-top: 2em; // make room for the bigger flag icons
+            }
         }
 
         #extra {
