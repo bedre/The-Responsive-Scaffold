@@ -174,15 +174,24 @@ require_once 'settings.php';
             </div>
         </div>
 
+        <div id="breadcrumbs">
+            <jdoc:include type="modules" name="breadcrumbs" />
+        </div>
+
         <jdoc:include type="message" />
         <jdoc:include type="component" />
     <?php else: ?>
         <div id="subpage" role="main">
-            <div class="wrap">
+            <div class="wrap">               
                 <nav>
                     <jdoc:include type="modules" name="submenu" />
                 </nav>
                 <div id="contents">
+
+                    <div id="breadcrumbs">
+                        <jdoc:include type="modules" name="breadcrumbs" />
+                    </div>
+
                     <jdoc:include type="message" />
                     <jdoc:include type="component" />
                 </div>

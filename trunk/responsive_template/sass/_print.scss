@@ -1,0 +1,75 @@
+@media print {
+
+    header {
+        nav, #booking {
+            display: none;
+        }
+
+        #extra {
+            #language {
+                display: none;
+            }
+        }
+    }
+
+    #breadcrumbs {
+        display: block;
+    }
+
+    .slider-wrapper {
+        display: none !important;
+    }
+
+    #product_categories {
+        .wrap {
+            article {
+                width: 50%;
+                padding: 1.231em;
+                float: left;
+            }
+        }
+    }
+
+    #subpage {
+        .wrap {
+            #menutoggle {
+                display: none;
+            }
+
+            #contents {
+                width: 100%;
+
+                section.blog {
+                    width: 100%;
+
+                    article {
+                        width: 50%;
+                        padding: 1.231em;
+                        float: left;
+                    }
+                }
+            }
+
+            aside {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        .wrap {
+            nav {
+                display: none;
+            }
+
+            #contact {
+                div[itemprop="address"] {
+                    a[itemprop="url"],
+                    #map {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
