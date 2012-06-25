@@ -4344,166 +4344,167 @@ select:focus:required:invalid:focus {
   background-position: 99% 50%;
   background-color: #fff;
   cursor: text;
+  border-color: #ccc;
 }
-/* line 30, ../sass/_responseform.scss */
+/* line 31, ../sass/_responseform.scss */
 .responseform form .size,
 .responseform form .duration {
   width: 35%;
   float: left;
   margin-right: 10%;
 }
-/* line 36, ../sass/_responseform.scss */
+/* line 37, ../sass/_responseform.scss */
 .responseform form label {
   font-size: 0.875em;
   font-weight: bold;
 }
-/* line 39, ../sass/_responseform.scss */
+/* line 40, ../sass/_responseform.scss */
 .responseform form label.checkbox {
   font-weight: normal;
 }
-/* line 44, ../sass/_responseform.scss */
+/* line 45, ../sass/_responseform.scss */
 .responseform form .form-actions {
   text-align: center;
 }
-/* line 47, ../sass/_responseform.scss */
+/* line 48, ../sass/_responseform.scss */
 .responseform form .form-actions input[type="submit"] {
   font-size: 1.563em;
 }
-/* line 52, ../sass/_responseform.scss */
+/* line 53, ../sass/_responseform.scss */
 .responseform form input[type="checkbox"] {
   margin-top: 6px;
 }
 
 @media screen and (min-width: 27.5em) {
-  /* line 62, ../sass/_responseform.scss */
+  /* line 63, ../sass/_responseform.scss */
   .responseform form label {
     font-size: 0.813em;
   }
-  /* line 65, ../sass/_responseform.scss */
+  /* line 66, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date {
     width: 47%;
     float: left;
     clear: left;
   }
-  /* line 71, ../sass/_responseform.scss */
+  /* line 72, ../sass/_responseform.scss */
   .responseform form .company_name, .responseform form .phone {
     float: right;
     clear: right;
   }
-  /* line 76, ../sass/_responseform.scss */
+  /* line 77, ../sass/_responseform.scss */
   .responseform form .date {
     width: 47%;
     margin-right: 6%;
   }
-  /* line 81, ../sass/_responseform.scss */
+  /* line 82, ../sass/_responseform.scss */
   .responseform form .size, .responseform form .duration {
     width: 20.4999%;
     margin-right: 6%;
     float: left;
   }
-  /* line 87, ../sass/_responseform.scss */
+  /* line 88, ../sass/_responseform.scss */
   .responseform form .duration {
     clear: right;
     float: right;
     margin-right: 0;
   }
-  /* line 93, ../sass/_responseform.scss */
+  /* line 94, ../sass/_responseform.scss */
   .responseform form .food {
     width: 47%;
     float: right;
     clear: right;
   }
-  /* line 99, ../sass/_responseform.scss */
+  /* line 100, ../sass/_responseform.scss */
   .responseform form .comments {
     width: 47%;
     float: left;
     clear: left;
   }
-  /* line 103, ../sass/_responseform.scss */
+  /* line 104, ../sass/_responseform.scss */
   .responseform form .comments textarea {
     min-height: 50px;
   }
-  /* line 108, ../sass/_responseform.scss */
+  /* line 109, ../sass/_responseform.scss */
   .responseform form .other {
     clear: both;
     width: 100%;
   }
 }
 @media screen and (min-width: 45em) {
-  /* line 119, ../sass/_responseform.scss */
+  /* line 120, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     width: 30.666%;
     float: left;
     clear: none;
     margin-right: 4%;
   }
-  /* line 126, ../sass/_responseform.scss */
+  /* line 127, ../sass/_responseform.scss */
   .responseform form .food {
     margin-right: 0;
   }
-  /* line 130, ../sass/_responseform.scss */
+  /* line 131, ../sass/_responseform.scss */
   .responseform form .e-mail, .responseform form .duration, .responseform form .comments {
     float: right;
     margin-right: 0;
     clear: right;
   }
-  /* line 136, ../sass/_responseform.scss */
+  /* line 137, ../sass/_responseform.scss */
   .responseform form .size, .responseform form .duration {
     width: 13.333%;
   }
-  /* line 140, ../sass/_responseform.scss */
+  /* line 141, ../sass/_responseform.scss */
   .responseform form .comments {
     width: 65.334%;
   }
 }
 @media screen and (min-width: 50em) {
-  /* line 150, ../sass/_responseform.scss */
+  /* line 151, ../sass/_responseform.scss */
   .responseform form .name, .responseform form .company_name, .responseform form .e-mail, .responseform form .phone, .responseform form .date, .responseform form .size, .responseform form .duration, .responseform form .food, .responseform form .comments {
     float: left;
     clear: both;
     margin-right: 0;
     width: 100%;
   }
-  /* line 158, ../sass/_responseform.scss */
+  /* line 159, ../sass/_responseform.scss */
   .responseform form .size,
   .responseform form .duration {
     width: 35%;
     margin-right: 10%;
     clear: left;
   }
-  /* line 164, ../sass/_responseform.scss */
+  /* line 165, ../sass/_responseform.scss */
   .responseform form .duration {
     clear: right;
   }
 }
 @media screen and (min-width: 93.75em) {
-  /* line 176, ../sass/_responseform.scss */
+  /* line 177, ../sass/_responseform.scss */
   .responseform form .size,
   .responseform form .duration,
   .responseform form .food {
     width: 28%;
     margin-right: 7.999%;
   }
-  /* line 181, ../sass/_responseform.scss */
+  /* line 182, ../sass/_responseform.scss */
   .responseform form .food {
     float: right;
     clear: right;
     margin-right: 0;
   }
-  /* line 185, ../sass/_responseform.scss */
+  /* line 186, ../sass/_responseform.scss */
   .responseform form .food label {
     width: 100%;
     clear: both;
   }
-  /* line 190, ../sass/_responseform.scss */
+  /* line 191, ../sass/_responseform.scss */
   .responseform form .food .controls .label {
     font-size: 0.667em;
   }
-  /* line 194, ../sass/_responseform.scss */
+  /* line 195, ../sass/_responseform.scss */
   .responseform form .food .checkbox.inline + .checkbox.inline {
     margin-left: 0;
   }
-  /* line 200, ../sass/_responseform.scss */
+  /* line 201, ../sass/_responseform.scss */
   .responseform form .comments textarea {
     min-height: 80px;
   }
