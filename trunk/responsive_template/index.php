@@ -154,8 +154,8 @@ require_once 'settings.php';
                 </div>
 
                 <div id="contact_short">
-                    <a href="mailto:<?= $this->params->get('email');?>" class="email"><span class="email_icon"> </span><?= $this->params->get('email');?></a>
-                    <span class="phone"><span class="phone_icon"> </span><?= $this->params->get('phone');?></span>
+                    <a href="mailto:<?= $this->params->get('email');?>" class="email"><?= $this->params->get('email');?></a>
+                    <span class="phone"><?= $this->params->get('phone');?></span>
                 </div>
             </div>
         

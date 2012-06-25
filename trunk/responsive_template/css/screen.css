@@ -2006,34 +2006,25 @@ footer #copyright {
     float: right;
     line-height: 16px;
     margin-right: 2em;
+    padding-left: 1.75em;
   }
   /* line 20, ../sass/_layout_3.scss */
-  .no-touch header #extra #contact_short .email_icon,
-  .no-touch header #extra #contact_short .phone_icon {
-    float: left;
-    margin-right: .5em;
-  }
-  /* line 24, ../sass/_layout_3.scss */
-  .no-touch header #extra #contact_short .email_icon {
-    text-indent: 110%;
-    white-space: nowrap;
+  .no-touch header #extra #contact_short .email {
+    background: url('../images/skagen/icons/email.png?1337604284') no-repeat;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    background-position: 0 0;
-    height: 16px;
-    width: 16px;
-    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
-    background-repeat: no-repeat;
+    background-position: 0 30%;
+    width: auto;
   }
-  /* line 28, ../sass/_layout_3.scss */
-  .no-touch header #extra #contact_short .phone_icon {
-    text-indent: 110%;
-    white-space: nowrap;
+  /* line 26, ../sass/_layout_3.scss */
+  .no-touch header #extra #contact_short .phone {
+    background: url('../images/skagen/icons/phone.png?1337604284') no-repeat;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    background-position: -75px 0;
-    height: 16px;
-    width: 16px;
-    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
-    background-repeat: no-repeat;
+    background-position: 0 30%;
+    width: auto;
   }
   /* line 33, ../sass/_layout_3.scss */
   .no-touch header #extra #language {
@@ -2311,7 +2302,81 @@ footer #copyright {
   }
 }
 @media (min-width: 45em) {
-  /* line 5, ../sass/_layout_4.scss */
+  /* line 6, ../sass/_layout_4.scss */
+  .touch header #extra #contact_short {
+    display: block;
+    margin-top: 1.5em;
+  }
+  /* line 11, ../sass/_layout_4.scss */
+  .touch header #extra #contact_short .phone,
+  .touch header #extra #contact_short .email {
+    float: right;
+    line-height: 16px;
+    margin-right: 2em;
+    padding-left: 1.75em;
+  }
+  /* line 18, ../sass/_layout_4.scss */
+  .touch header #extra #contact_short .email {
+    background: url('../images/skagen/icons/email.png?1337604284') no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: 0 30%;
+    width: auto;
+  }
+  /* line 24, ../sass/_layout_4.scss */
+  .touch header #extra #contact_short .phone {
+    background: url('../images/skagen/icons/phone.png?1337604284') no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: 0 30%;
+    width: auto;
+  }
+  /* line 31, ../sass/_layout_4.scss */
+  .touch header #extra #language {
+    margin-bottom: .5em;
+    padding-top: 2px;
+    height: 22px;
+    width: 75px;
+  }
+  /* line 37, ../sass/_layout_4.scss */
+  .touch header #extra #language span {
+    display: none;
+  }
+  /* line 42, ../sass/_layout_4.scss */
+  .touch header #extra #language a.active {
+    display: block;
+  }
+  /* line 46, ../sass/_layout_4.scss */
+  .touch header #extra #language a.inactive {
+    opacity: .4;
+  }
+  /* line 50, ../sass/_layout_4.scss */
+  .touch header #extra #language a#english {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: -45px -75px;
+    height: 22px;
+    width: 30px;
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
+    background-repeat: no-repeat;
+    float: left;
+  }
+  /* line 55, ../sass/_layout_4.scss */
+  .touch header #extra #language a#norsk {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: -89px -120px;
+    height: 22px;
+    width: 30px;
+    background-image: url('../images/skagen/icons-s6c2801fe0f.png');
+    background-repeat: no-repeat;
+    float: right;
+  }
+  /* line 66, ../sass/_layout_4.scss */
   header nav ul li a.popout {
     background: url('../images/skagen/icons/menu_arrow.png?1337604284') no-repeat;
     width: 100%;
@@ -2320,7 +2385,7 @@ footer #copyright {
     background-position: 92% 48%;
   }
 
-  /* line 17, ../sass/_layout_4.scss */
+  /* line 78, ../sass/_layout_4.scss */
   #subpage nav .wrap > ul > li.active ul {
     margin: 0;
     padding: 0;

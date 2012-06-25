@@ -14,19 +14,19 @@
                         float: right;
                         line-height: image-height(sprite-file($icons-sprites, email));
                         margin-right: 2em;
+                        padding-left: 1.75em;
                     }
 
-                    .email_icon,
-                    .phone_icon {
-                        @include inline-icon;
+                    .email {
+                        @include sprite-background($template-style-folder+'/icons/email.png', 100%, 100%);
+                        background-position: 0 30%;
+                        width: auto;
                     }
 
-                    .email_icon {
-                        @include sprite-replace-text-with-dimensions($icons-sprites, email); 
-                    }
-
-                    .phone_icon {
-                        @include sprite-replace-text-with-dimensions($icons-sprites, phone); 
+                    .phone {
+                        @include sprite-background($template-style-folder+'/icons/phone.png', 100%, 100%);
+                        background-position: 0 30%;
+                        width: auto;
                     }
                 }
 

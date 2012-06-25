@@ -1,5 +1,66 @@
 @media (min-width: $break-4) { 
     header {
+
+        .touch & {
+            #extra {
+                #contact_short {
+                    display: block;
+                    margin-top: 1.5em;
+
+                    .phone, 
+                    .email {
+                        float: right;
+                        line-height: image-height(sprite-file($icons-sprites, email));
+                        margin-right: 2em;
+                        padding-left: 1.75em;
+                    }
+
+                    .email {
+                        @include sprite-background($template-style-folder+'/icons/email.png', 100%, 100%);
+                        background-position: 0 30%;
+                        width: auto;
+                    }
+
+                    .phone {
+                        @include sprite-background($template-style-folder+'/icons/phone.png', 100%, 100%);
+                        background-position: 0 30%;
+                        width: auto;
+                    }
+                }
+
+                #language {
+                    margin-bottom: .5em;
+                    padding-top: 2px;
+                    height: image-height(sprite-file($icons-sprites, english_large));
+                    width:  2.5*image-width(sprite-file($icons-sprites, english_large));
+
+                    span {
+                        display: none;
+                    }
+
+                    a {
+                        &.active {
+                            display: block;
+                        }
+                        
+                        &.inactive {
+                            opacity: .4;
+                        }  
+
+                        &#english {
+                            @include sprite-replace-text-with-dimensions($icons-sprites, english_large);            
+                            float: left;
+                        }
+
+                        &#norsk {
+                            @include sprite-replace-text-with-dimensions($icons-sprites, norwegian_large);
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+
         nav ul {
             li {
                 a.popout {
