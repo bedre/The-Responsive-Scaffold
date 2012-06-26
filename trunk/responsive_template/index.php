@@ -46,6 +46,10 @@ require_once 'settings.php';
     <script src="<?= $settings['template_folder'] ?>/js/lib/jquery.flexslider-min.js"></script>
     <script src="<?= $settings['template_folder'] ?>/js/flexslider_mask.js"></script>
 
+    <?php if(!$settings['is_frontpage']): ?>
+        <script src="<?= $settings['template_folder'] ?>/js/responsive_tables.js"></script>
+    <?php endif; ?>
+
     <jdoc:include type="head" />
 
     <script type="text/javascript" charset="utf-8">

@@ -5,6 +5,17 @@
 
 // Source: https://github.com/hecbuma/compass-bootstrap/
 
+@mixin caption {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: $colour2;
+    padding: 8px;
+    @include border-top-radius;
+    font-size: em(15,13);
+    font-family: $headline-fonts;
+    font-weight: 700;
+}
 
 table {
     width: 100%;
@@ -23,15 +34,7 @@ table {
 
     // Caption
     caption {
-        text-transform: uppercase;
-        text-align: center;
-        color: #fff;
-        background-color: $colour2;
-        padding: 8px;
-        @include border-top-radius;
-        font-size: em(15,13);
-        font-family: $headline-fonts;
-        font-weight: 700;
+        @include caption;
     }
 
     // Cells
@@ -111,6 +114,78 @@ table {
         th,
         td {
             padding: 4px 5px;
+        }
+    }
+}
+
+// Make them responsive
+// Kudos: http://www.zurb.com/playground/playground/responsive-tables/index.html
+// Modified to work with <caption>
+// Caveat: breakpoint width much match that in responsive_tables.js
+@media only screen and (max-width: 720px) {
+   
+    .pinned { 
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        background: #fff; 
+        width: 35%; 
+        overflow: hidden; 
+        overflow-x: scroll; 
+        border-right: 1px solid #ccc; 
+
+        table { 
+            border-right: none; 
+            width: 100%; 
+
+            th, 
+            table td {
+                white-space: nowrap; 
+            }
+
+            td:last-child { 
+                border-bottom: 0; 
+            }
+        }
+    }
+    
+    div.table-wrapper { 
+        position: relative; 
+        margin-bottom: 20px; 
+        overflow: hidden; 
+
+        div.caption {
+            @include caption;
+            font-size: em(15,16);
+        }
+
+        div.scrollable {
+            overflow: scroll; 
+            overflow-y: hidden;
+
+            table {
+                margin-left: 35%;
+                @include border-radius(0 0 5px 0);
+                border-left: none;
+            }
+        }
+    }
+
+    table.responsive { 
+        margin-bottom: 0; 
+
+        td, th {
+            position: relative; 
+            white-space: nowrap; 
+            overflow: hidden;
+
+            &:first-child {
+                display: none;
+            }
+        }
+
+        &.pinned td {
+            display: none;
         }
     }
 }
