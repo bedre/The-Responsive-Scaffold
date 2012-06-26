@@ -1,0 +1,111 @@
+//
+// Tables.less
+// Tables for, you guessed it, tabular data
+// ----------------------------------------
+
+// Source: https://github.com/hecbuma/compass-bootstrap/
+
+
+table {
+    width: 100%;
+    margin-bottom: $base-line-height;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    border-collapse: separate; // Done so we can round those corners!
+    font-size: em(13,16);
+    @include border-bottom-radius;
+
+    html.lt-ie8 & {
+        border-collapse: collapsed; // IE7 can't round corners anyway
+    }
+
+    // Caption
+    caption {
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        background-color: $colour2;
+        padding: 8px;
+        @include border-top-radius;
+    }
+
+    // Cells
+    th,
+    td {
+        padding: 8px;
+        line-height: $base-line-height;
+        text-align: left;
+        border-top: 1px solid #ddd;
+    }
+    td {
+        vertical-align: top;
+    }
+
+    // Headers styling
+    th[scope="col"] {
+        font-weight: bold;
+        vertical-align: bottom;
+    }
+
+    th[scope="row"] {
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    thead tr:first-child th {
+        background-color: #eee;
+        @include background-image(linear-gradient(#fafafa, #eee));
+    }
+
+    // Borders
+    th + th,
+    td + td,
+    th + td,
+    td + th {
+        border-left: 1px solid #ddd;
+    }
+
+    // Remove top border from thead by default
+    thead:first-child tr th,
+    thead:first-child tr td {
+        border-top: 0;
+    }
+
+    // Account for multiple tbody instances
+    tbody + tbody {
+        border-top: 2px solid #ddd;
+    }
+        
+    // Prevent a double border
+    thead:first-child tr:first-child th,
+    tbody:first-child tr:first-child th,
+    tbody:first-child tr:first-child td {
+        border-top: 0;
+    }
+
+    // For last th or td in the last row in the last thead or tbody
+    thead:last-child tr:last-child th:first-child,
+    tbody:last-child tr:last-child td:first-child {
+        @include border-bottom-left-radius;
+    }
+    thead:last-child tr:last-child th:last-child,
+    tbody:last-child tr:last-child td:last-child {
+        @include border-bottom-right-radius;
+    }
+
+    tbody {
+        tr:nth-child(odd) td,
+        tr:nth-child(odd) th {
+            background-color: #f9f9f9;
+        }
+    }
+
+    &.condensed {
+        th,
+        td {
+            padding: 4px 5px;
+        }
+    }
+}
