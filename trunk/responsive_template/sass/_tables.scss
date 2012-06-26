@@ -137,6 +137,7 @@ table {
         table { 
             border-right: none; 
             width: 100%; 
+            @include border-radius(0 0 0 $default-border-radius);
 
             th, 
             table td {
@@ -182,10 +183,6 @@ table {
             &:first-child {
                 display: none;
             }
-        }
-
-        &.pinned td {
-            display: none;
         }
     }
 }
