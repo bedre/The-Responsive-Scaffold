@@ -4622,8 +4622,11 @@ table caption {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
+  font-size: 1.154em;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
-/* line 36, ../sass/_tables.scss */
+/* line 39, ../sass/_tables.scss */
 table th,
 table td {
   padding: 8px;
@@ -4631,21 +4634,23 @@ table td {
   text-align: left;
   border-top: 1px solid #ddd;
 }
-/* line 42, ../sass/_tables.scss */
+/* line 45, ../sass/_tables.scss */
 table td {
   vertical-align: top;
 }
-/* line 47, ../sass/_tables.scss */
+/* line 50, ../sass/_tables.scss */
 table th[scope="col"] {
   font-weight: bold;
   vertical-align: bottom;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-/* line 52, ../sass/_tables.scss */
+/* line 56, ../sass/_tables.scss */
 table th[scope="row"] {
   font-weight: normal;
   font-style: italic;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-/* line 57, ../sass/_tables.scss */
+/* line 62, ../sass/_tables.scss */
 table thead tr:first-child th {
   background-color: #eee;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eeeeee));
@@ -4655,48 +4660,48 @@ table thead tr:first-child th {
   background-image: -ms-linear-gradient(#fafafa, #eeeeee);
   background-image: linear-gradient(#fafafa, #eeeeee);
 }
-/* line 66, ../sass/_tables.scss */
+/* line 71, ../sass/_tables.scss */
 table th + th,
 table td + td,
 table th + td,
 table td + th {
   border-left: 1px solid #ddd;
 }
-/* line 72, ../sass/_tables.scss */
+/* line 77, ../sass/_tables.scss */
 table thead:first-child tr th,
 table thead:first-child tr td {
   border-top: 0;
 }
-/* line 77, ../sass/_tables.scss */
+/* line 82, ../sass/_tables.scss */
 table tbody + tbody {
   border-top: 2px solid #ddd;
 }
-/* line 84, ../sass/_tables.scss */
+/* line 89, ../sass/_tables.scss */
 table thead:first-child tr:first-child th,
 table tbody:first-child tr:first-child th,
 table tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 90, ../sass/_tables.scss */
+/* line 95, ../sass/_tables.scss */
 table thead:last-child tr:last-child th:first-child,
 table tbody:last-child tr:last-child td:first-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 94, ../sass/_tables.scss */
+/* line 99, ../sass/_tables.scss */
 table thead:last-child tr:last-child th:last-child,
 table tbody:last-child tr:last-child td:last-child {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 100, ../sass/_tables.scss */
+/* line 105, ../sass/_tables.scss */
 table tbody tr:nth-child(odd) td,
 table tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-/* line 107, ../sass/_tables.scss */
+/* line 112, ../sass/_tables.scss */
 table.condensed th,
 table.condensed td {
   padding: 4px 5px;

@@ -29,6 +29,9 @@ table {
         background-color: $colour2;
         padding: 8px;
         @include border-top-radius;
+        font-size: em(15,13);
+        font-family: $headline-fonts;
+        font-weight: 700;
     }
 
     // Cells
@@ -47,11 +50,13 @@ table {
     th[scope="col"] {
         font-weight: bold;
         vertical-align: bottom;
+        font-family: $headline-fonts;
     }
 
     th[scope="row"] {
         font-weight: normal;
         font-style: italic;
+        font-family: $headline-fonts;
     }
 
     thead tr:first-child th {
