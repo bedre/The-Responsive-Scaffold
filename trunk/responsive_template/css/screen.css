@@ -4587,6 +4587,12 @@ select:focus:required:invalid:focus {
     min-height: 80px;
   }
 }
+.moduletable_cat .duration,
+.moduletable_cat .food,
+.moduletable_cat .other
+{display:none;}
+.form-actions{float:left;}
+
 /* tables */
 /* line 20, ../sass/_tables.scss */
 table {
